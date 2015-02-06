@@ -50,14 +50,19 @@
 				</div>
 			</div>
 		</div>
-	</div>
+		</div>
 	</div>
 
 
 	<div id="phase2" class="panel panel-info">
 		<div class="panel-heading">
-			<h3 class="panel-title">Create VM</h3>
+			<h3 class="panel-title">
+				 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+				Create VM
+				</a>
+			</h3>
 		</div>
+		<div id="collapseTwo" class="panel-collapse collapse">
 		<div class="panel-body">
 			<div class="form-group">
 				<label for="inputPassword3" class="col-sm-4 control-label">Amount</label>
@@ -109,12 +114,19 @@
 			</div>
 		</div>
 	</div>
+	</div>
 
 
 <div id="phase3" class="panel panel-info">
 	<div class="panel-heading">
-		<h3 class="panel-title">Create migration environment</h3>
+
+		<h3 class="panel-title">
+ <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+			Create migration environment
+		</a>
+		</h3>
 	</div>
+		<div id="collapseThree" class="panel-collapse collapse">
 	<div class="panel-body">
 			<div class="form-group">
 				<label for="inputEmail3" class="col-sm-4 control-label">Migration environment name</label>
@@ -208,10 +220,19 @@
 			</div>
 	</div>
 </div>
+</div>
+
 <div id="phase4" class="panel panel-info">
 	<div class="panel-heading">
-		<h3 class="panel-title">Create app setting</h3>
+		<h3 class="panel-title">
+			 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+		
+	
+			Create app setting
+			</a>
+		</h3>
 	</div>
+	<div id="collapseFour" class="panel-collapse collapse">
 	<div class="panel-body">
 			<div class="form-group">
 				<label for="inputPassword3" class="col-sm-4 control-label">wwsRatio</label>
@@ -265,10 +286,16 @@
 			</div>
 	</div>
 </div>
+</div>
 <div id="phase5" class="panel panel-info">
 	<div class="panel-heading">
-		<h3 class="panel-title">Create simulation</h3>
+
+		<h3 class="panel-title">
+			 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+			Create simulation </a>
+		</h3>
 	</div>
+	<div id="collapseFive" class="panel-collapse collapse">
 	<div class="panel-body">
 			<div class="form-group">
 				<label for="inputEmail3" class="col-sm-4 control-label">Simulation name</label>
@@ -298,10 +325,20 @@
 			</div>
 	</div>
 </div>
-<div id="phase6">
+</div>
 
+<div id="phase6" class="panel panel-info">
 
-<h1>Overview your setting information</h1>
+	<div class="panel-heading">
+
+		<h3 class="panel-title">
+ <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+			Overview your setting information
+		</a>
+		</h3>
+	</div>
+	<div id="collapseSix" class="panel-collapse collapse">
+	<div class="panel-body">
 <hr>
 <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -346,9 +383,13 @@
 			<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
 		</div>	
 	</div>	
-	</div>	
-</div>
+	
 
+
+	
+		</div>
+	</div>
+	<br>
 	<div class="form-group">
 				<div class="col-sm-offset-4 col-sm-4">
 					<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-circle-o-notch"></i> Default</a>
@@ -362,7 +403,9 @@
 					<i class="fa fa-caret-right"></i> run
 					</button>
 				</div>
-			</div>
+		</div>
+</div>
+</div>
 </div>
 </div>
 </form>
