@@ -20,6 +20,12 @@ content:"\e080";
 <h1>Run simulation</h1>
 <hr>
 <h3> Comming soon..... </h3>
+<div class="alert alert-danger alert-dismissible danger" role="alert" style="display:none;">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <ul>
+
+  </ul>
+</div>
 <form   class="form-horizontal" role="form" method="post">
 	<div id="phase1" class="panel panel-info">
 		<div class="panel-heading">
@@ -39,7 +45,7 @@ content:"\e080";
 				<div class="form-group">
 					<label for="inputPassword3" class="col-sm-4 control-label">Round</label>
 					<div class="col-sm-6">
-						<input id="qos" type="text" value="" name="qos" placeholder="enter round">
+						<input id="round" type="text" value="" name="round" placeholder="enter round">
 					</div>
 				</div>
 				<div class="form-group pull-right">
@@ -66,7 +72,12 @@ content:"\e080";
 				<div class="form-group">
 					<label for="inputEmail3" class="col-sm-4 control-label">Configuration name</label>
 					<div class="col-sm-6">
-						{{ Form::select('config_name', $config_select,null,array('class' => 'form-control','id'=>'config_select')) }}
+						<select name="config_name" id="config_select" class="form-control" required="required">
+							<option value="" selected disabled>Please select</option>
+							@foreach($configs as $c)
+								<option value="{{$c->id}}">{{$c->config_name}}</option>
+							@endforeach
+						</select>
 					</div>
 				</div>
 				<!-- vm info -->
@@ -267,6 +278,9 @@ content:"\e080";
 			<button id="setAllDefault" type="button" class="btn btn-sm btn-primary">
 			<i class="fa fa-circle-o-notch"></i> set all default
 			</button>
+			<button id="nextPahse5" type="submit" class="btn btn-sm btn-success update_form">
+					<i class="fa fa-floppy-o"></i> save
+			</button>
 		</div>
 		
 	</form>
@@ -291,7 +305,7 @@ content:"\e080";
 	{{ HTML::script('js/jquery.serialize-object.js') }}
 	{{ HTML::script('js/runsim.js') }}
 	<script type="text/javascript">
-		$("input[name='qos']").TouchSpin({
+		$("input[name='round']").TouchSpin({
 		verticalbuttons: true,
 		max: 100,
 		initval: 1

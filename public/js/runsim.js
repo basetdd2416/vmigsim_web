@@ -1,5 +1,5 @@
 $(function() {
-	
+	var mesgalert = $('.alert');
 	var envi_info = $('#envi_info');
 	var policy_info = $('#policy_info');
 	var app_info = $('#app_info');
@@ -36,7 +36,7 @@ $(function() {
 		
 		 $("input[name='simulation_name']").val(sim_name);
 		 $("input[name='sim_round']").val('1');
-
+		 $("#config_select").val('1').change();
 		
 		   
 		 
@@ -60,7 +60,8 @@ $(function() {
            		policy_info.hide();
            		envi_info.hide();
            		app_info.hide();
-           		alert(data.envi.normal_dirty_rate)
+           		vm_info.hide();
+           		
            		if(data.envi.id) {
 
 
@@ -111,13 +112,13 @@ $(function() {
 	$(".update_form").click(function() { // changed
 	 var myform = $(this).closest("form");
 	 var mycustomform =	myform.serializeObject();
-	 mycustomform['vmList'] = vmList;
+	 
 	
 	
     $.ajax({
 		
            type: "POST",
-           url: "saveallconfig",
+           url: "savesimulation",
            dataType: 'json',
       
            
