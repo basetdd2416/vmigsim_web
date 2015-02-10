@@ -328,9 +328,9 @@ class QuickSimController extends \BaseController {
 		$this->saveToDatabase();
 		
 		$data['redirect'] = '../runsimulation';
-		$data['message'] = 'success';
+		$data['success'] = true;
 		//exec("start /B vmigsimOK.jar ". $filename.$configname . ' ' . $outputPath.'rs.txt' .' '. "1");
-		//Session::flash('success_msg', 'Success!');
+		Session::flash('success_msg', 'Success!');
 		return Response::json($data);
 
 		//return Response::json($data);

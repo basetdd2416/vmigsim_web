@@ -162,7 +162,7 @@ $(function() {
            			});
            			mesgalert.slideDown();
            		} else {
-           			alert('success');
+           			window.location.href = data.redirect;
            		}
            		
                // show response from the php script.

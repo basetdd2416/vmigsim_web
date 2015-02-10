@@ -1,5 +1,6 @@
 @extends('layouts.sidebarsim')
 @section('content')
+
 <h1>Quick simulation</h1>
 <hr>
 <div class="form-group">

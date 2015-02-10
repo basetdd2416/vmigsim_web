@@ -58,6 +58,7 @@ Route::get('simulation/quicksim/createvm', 'QuickSimController@createVM');
 Route::get('simulation/quicksim/createenvi', 'QuickSimController@createEnvi');
 Route::get('simulation/quicksim/reportcreate', 'QuickSimController@reportCreate');
 Route::get('simulation/runsimulation', 'RunSimController@index');
+Route::get('simulation/ajax-config', 'RunSimController@ajaxConfig');
 
 ///
 Route::get('/shell', function()

@@ -333,6 +333,11 @@
 </div>
 
 @section('js')
+{{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
+{{ HTML::script('js/jquery.serialize-object.js') }}
+{{ HTML::script('js/quicksim.js') }}
+
+
 <script type="text/javascript">
 	var confname,amount,ram,priority,qos
 
