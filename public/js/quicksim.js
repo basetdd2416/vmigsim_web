@@ -162,7 +162,7 @@ $(function() {
            			});
            			mesgalert.slideDown();
            		} else {
-           			alert('my elase');
+           			alert('success');
            		}
            		
                // show response from the php script.

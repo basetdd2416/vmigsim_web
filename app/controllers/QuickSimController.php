@@ -329,8 +329,8 @@ class QuickSimController extends \BaseController {
 		
 		$data['redirect'] = '../runsimulation';
 		$data['message'] = 'success';
-		exec("start /B vmigsimOK.jar ". $filename.$configname . ' ' . $outputPath.'rs.txt' .' '. "1");
-		Session::flash('success_msg', 'Success!');
+		//exec("start /B vmigsimOK.jar ". $filename.$configname . ' ' . $outputPath.'rs.txt' .' '. "1");
+		//Session::flash('success_msg', 'Success!');
 		return Response::json($data);
 
 		//return Response::json($data);
@@ -340,7 +340,7 @@ class QuickSimController extends \BaseController {
 	public function saveToDatabase() {
 		// config
 		$config = new Configuration;
-		$config->name = $this->config_name;
+		$config->config_name = $this->config_name;
 		if($config->save()) {
 			//vm
 			for ($i=0; $i < count($this->vmList); $i++) { 
@@ -376,11 +376,11 @@ class QuickSimController extends \BaseController {
 			$envi->configuration_id = $config->id;
 			$envi->save();
 			// sim 
-			$sim = new Simulation;
+			/*$sim = new Simulation;
 			$sim->name = $this->simulation_name;
 			$sim->round = $this->sim_round;
 			$sim->configuration_id = $config->id;
-			$sim->save();
+			$sim->save();*/
 		}
 		
 

@@ -116,9 +116,6 @@
 					<button id="backPhase1" type="button" class="btn btn-primary">
 					<i class="fa fa-caret-left"></i> back
 					</button>
-					<button id="rmVM" type="button" class="btn btn-primary">
-					<i class="fa fa-caret-right"></i> remove
-					</button>
 					<button id="addVM" type="button" class="btn btn-primary">
 					<i class="fa fa-caret-right"></i> add
 					</button>
