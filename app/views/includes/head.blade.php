@@ -1,10 +1,5 @@
  <title>Look! I'm CRUDding</title>
-{{ HTML::script('js/jquery.js') }}
- 
 
-
-{{ HTML::script('js/bootstrap.js') }}
-{{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
 {{ HTML::style('css/bootstrap.css') }}
 {{ HTML::style('css/jasny-bootstrap.css') }}
 {{ HTML::style('css/vmig.css') }}

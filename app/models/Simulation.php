@@ -2,7 +2,9 @@
 	class Simulation extends Eloquent 
 	{
 		protected $fillable = array(
-				'name'
+				'name',
+				'configuration_id',
+				'round'
 			);
 		
 	}

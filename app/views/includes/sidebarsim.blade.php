@@ -16,6 +16,9 @@
                             <a class="{{set_active('simulation/quicksim')}}" href="{{ URL::to('simulation/quicksim') }}"><i class="fa fa-dashboard fa-fw"></i> Quick simulation</a>
                         </li>
                         <li>
+                            <a class="{{set_active('simulation/runsimulation')}}" href="{{ URL::to('simulation/runsimulation') }}"><i class="fa fa-dashboard fa-fw"></i> Run simulation</a>
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>

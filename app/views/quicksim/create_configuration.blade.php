@@ -1,5 +1,8 @@
 @extends('layouts.sidebarsim')
 @section('content')
+
+   
+
 <style type="text/css">
 .panel-heading .accordion-toggle:after {
     /* symbol for "opening" panels */
@@ -19,12 +22,23 @@
 		1/4
 	</div>
 </div>
-<form action="{{ URL::to('simulation/quicksim/saveconfig')}}" class="form-horizontal" role="form" method="post">
-<div class="panel-group" id="accordion">
+
+
+
+<div class="alert alert-danger alert-dismissible danger" role="alert" style="display:none;">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <ul>
+
+  </ul>
+</div>
+
+<form   class="form-horizontal" role="form" method="post">
+	 
 	<div id="phase1" class="panel panel-info">
 		<div class="panel-heading">
 
 			<h3 class="panel-title">
+
 				 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 				Create configuration</a>
 			</h3>
@@ -35,16 +49,14 @@
 				<label for="inputEmail3" class="col-sm-4 control-label">Configuration name</label>
 				<div class="col-sm-6">
 					{{ Form::text('name', Input::old('name'), array('class' => 'form-control','id'=>'name')) }}
+					
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="col-sm-offset-4 col-sm-5">
+				
+				<div class="col-sm-2 pull-right">
 					
-					<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
-				</div>
-				<div class="col-sm-2">
-					
-					<button id="nextPahse1" type="button" class="btn btn-primary">
+					<button id="nextPahse1" type="submit" class="btn btn-primary update_form">
 					<i class="fa fa-caret-right"></i> Next
 					</button>
 				</div>
@@ -99,22 +111,42 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="col-sm-offset-4 col-sm-4">
-					<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-circle-o-notch"></i> Default</a>
-					<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
-				</div>
-				<div class="col-sm-4">
+				
+				<div class="col-sm-4 pull-right">
 					<button id="backPhase1" type="button" class="btn btn-primary">
 					<i class="fa fa-caret-left"></i> back
+					</button>
+					<button id="rmVM" type="button" class="btn btn-primary">
+					<i class="fa fa-caret-right"></i> remove
+					</button>
+					<button id="addVM" type="button" class="btn btn-primary">
+					<i class="fa fa-caret-right"></i> add
 					</button>
 					<button id="nextPahse2" type="button" class="btn btn-primary">
 					<i class="fa fa-caret-right"></i> Next
 					</button>
+
 				</div>
 			</div>
+			
+				<table id="showVM" class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>amount</th>
+							<th>ram</th>
+							<th>qos</th>
+							<th>priority</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			
 		</div>
 	</div>
-	</div>
+
+</div>
 
 
 <div id="phase3" class="panel panel-info">
@@ -138,9 +170,9 @@
 				<label for="inputPassword3" class="col-sm-4 control-label">Migration algorithm</label>
 				<div  class="col-sm-6">
 					<select id="migration_algorithm" name="migration_algorithm" class="form-control">
-						<option value="" selected disabled>Please select</option>
-						<option>Offline</option>
-						<option>Pre-copy</option>
+						
+						<option value="offline">Offline</option>
+						<option value="precopy">Pre-copy</option>
 					</select>
 				</div>
 			</div>
@@ -148,9 +180,9 @@
 				<label for="inputPassword3" class="col-sm-4 control-label">Scheduling algorithm</label>
 				<div class="col-sm-6">
 					<select id="scheduling_algorithm" name="scheduling_algorithm" class="form-control">
-						<option value="" selected disabled>Please select</option>
-						<option>FIFO</option>
-						<option>Priority based</option>
+						
+						<option value="fifo">FIFO</option>
+						<option value="priority">Priority based</option>
 					</select>
 				</div>
 			</div>
@@ -158,9 +190,9 @@
 				<label for="inputPassword3" class="col-sm-4 control-label">Control alogorithm</label>
 				<div class="col-sm-6">
 					<select id="control_algorithm" name="control_algorithm" class="form-control">
-						<option value="" selected disabled>Please select</option>
-						<option>Open loop</option>
-						<option>Close loop</option>
+						
+						<option value="openloop">Open loop</option>
+						<option value="closeloop">Close loop</option>
 					</select>
 				</div>
 			</div>
@@ -180,9 +212,9 @@
 				<label for="inputPassword3" class="col-sm-4 control-label">Network status</label>
 				<div class="col-sm-6">
 					<select id="network_status" name="network_status" class="form-control">
-						<option value="" selected disabled>Please select</option>
-						<option>Stable</option>
-						<option>Dynamic</option>
+						
+						<option value="stable">Stable</option>
+						<option value="dynamic">Dynamic</option>
 					</select>
 				</div>
 			</div>
@@ -205,11 +237,8 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="col-sm-offset-4 col-sm-4">
-					<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-circle-o-notch"></i> Default</a>
-					<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
-				</div>
-				<div class="col-sm-4">
+				
+				<div class="col-sm-4 pull-right">
 					<button id="backPhase2" type="button" class="btn btn-primary">
 					<i class="fa fa-caret-left"></i> back
 					</button>
@@ -221,6 +250,7 @@
 	</div>
 </div>
 </div>
+
 
 <div id="phase4" class="panel panel-info">
 	<div class="panel-heading">
@@ -271,144 +301,41 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="col-sm-offset-4 col-sm-4">
-					<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-circle-o-notch"></i> Default</a>
-					<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
-				</div>
-				<div class="col-sm-4">
+				
+				<div class="col-sm-4 pull-right">
 					<button id="backPhase3" type="button" class="btn btn-primary">
 					<i class="fa fa-caret-left"></i> back
 					</button>
-					<button id="nextPahse4" type="button" class="btn btn-primary">
-					<i class="fa fa-caret-right"></i> Next
-					</button>
-				</div>
-			</div>
-	</div>
-</div>
-</div>
-<div id="phase5" class="panel panel-info">
-	<div class="panel-heading">
-
-		<h3 class="panel-title">
-			 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-			Create simulation </a>
-		</h3>
-	</div>
-	<div id="collapseFive" class="panel-collapse collapse">
-	<div class="panel-body">
-			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-4 control-label">Simulation name</label>
-				<div class="col-sm-6">
-					<input type="text" class="form-control" name="s" id="simulation_name" value="" placeholder="enter your simulation name">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-4 control-label">Number of simulation round</label>
-				<div class="col-sm-6">
-					<input type="text" class="form-control" name="sim_round" id="sim_round" value="" placeholder="enter your round">
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-4 col-sm-4">
-					<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-circle-o-notch"></i> Default</a>
-					<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
-				</div>
-				<div class="col-sm-4">
-					<button id="backPhase4" type="button" class="btn btn-primary">
-					<i class="fa fa-caret-left"></i> back
-					</button>
-					<button id="nextPahse5" type="button" class="btn btn-primary">
-					<i class="fa fa-caret-right"></i> Next
-					</button>
-				</div>
-			</div>
-	</div>
-</div>
-</div>
-
-<div id="phase6" class="panel panel-info">
-
-	<div class="panel-heading">
-
-		<h3 class="panel-title">
- <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-			Overview your setting information
-		</a>
-		</h3>
-	</div>
-	<div id="collapseSix" class="panel-collapse collapse">
-	<div class="panel-body">
-<hr>
-<div class="row">
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-upload"></i> Export</a>
-	</div>
-</div>
-<br>
-<div class="row">
-	<label for="input-id" class="col-sm-3">Configuration name</label>
-	<label for="input-id" class="col-sm-2">configA</label>
-</div>
-<br>
-<div class="panel panel-info">
-	<div class="panel-heading">
-		<h3 class="panel-title">VMs information</h3>
-	</div>
-	<div class="panel-body">
-		ข้อมูลจากหน้า create vm
-					<div class="form-group">
-				<div class="col-sm-4">
-					<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
-				</div>
-				
 					
-					
-				
+				</div>
 			</div>
-				
-			</div>
-			
-		
+	</div>
+	</div>
 </div>
 
-<div class="panel panel-info">
-	<div class="panel-heading">
-		<h3 class="panel-title">Migration environment information</h3>
-	</div>
-	<div class="panel-body">
-		ข้อมูลจากหน้า migration environment
-	<div class="form-group">
-		<div class="col-sm-4">
-			<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
-		</div>	
-	</div>	
-	
 
 
-	
-		</div>
-	</div>
-	<br>
-	<div class="form-group">
-				<div class="col-sm-offset-4 col-sm-4">
-					<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-circle-o-notch"></i> Default</a>
-					<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
-				</div>
-				<div class="col-sm-4">
-					<button id="backPhase5" type="button" class="btn btn-primary">
-					<i class="fa fa-caret-left"></i> back
+
+
+
+<div class="form-group">
+				
+				<div class="col-sm-offset-4 col-sm-12">
+					<a href="{{URL::to('simulation/quicksim')}}" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> cancel</a>
+					<button id="setAllDefault" type="button" class="btn btn-sm btn-primary">
+					<i class="fa fa-circle-o-notch"></i> set all default
 					</button>
-					<button id="nextPhase6" type="submit" class="btn btn-primary">
-					<i class="fa fa-caret-right"></i> run
+					<button id="nextPahse5" type="submit" class="btn btn-sm btn-success update_form">
+					<i class="fa fa-floppy-o"></i> save
 					</button>
 				</div>
-		</div>
-</div>
-</div>
-</div>
-</div>
+
 </form>
+
+				
+</div>
+
+@section('js')
 <script type="text/javascript">
 	var confname,amount,ram,priority,qos
 
@@ -423,7 +350,7 @@
 		}
 
 		// bin event btn
-		$('#nextPahse1').click(processPhase1);
+		/*$('#nextPahse1').click(processPhase1);
 		$('#nextPahse2').click(processPhase2);
 		$('#nextPahse3').click(processPhase3);
 		$('#nextPahse4').click(processPhase4);
@@ -433,11 +360,12 @@
 		$('#backPhase3').click(backPhase3);
 		$('#backPhase4').click(backPhase4);
 		$('#backPhase5').click(backPhase5);
-
+		*/
 
 		// main flow
 		//hidePanels();
-	
+		
+		// angular here
 	});
 
 	function processPhase1(){
@@ -597,4 +525,6 @@ $("input[name='network_bandwidth']").TouchSpin({
        postfix: '%'
     });
 </script>
+@stop
+
 @stop

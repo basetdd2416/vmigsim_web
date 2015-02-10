@@ -52,11 +52,13 @@ Route::get('simulation/showresult/bwu', function()
 Route::get('simulation/quicksim', 'QuickSimController@index');
 Route::get('simulation/quicksim/import', 'QuickSimController@import');
 Route::get('simulation/quicksim/createconfig', 'QuickSimController@createConfig');
-Route::post('simulation/quicksim/saveconfig', 'QuickSimController@saveConfig');
+Route::post('simulation/quicksim/saveallconfig', 'QuickSimController@saveAllConfig');
 Route::post('simulation/quicksim/backtoconfig', 'QuickSimController@backToConfig');
 Route::get('simulation/quicksim/createvm', 'QuickSimController@createVM');
 Route::get('simulation/quicksim/createenvi', 'QuickSimController@createEnvi');
 Route::get('simulation/quicksim/reportcreate', 'QuickSimController@reportCreate');
+Route::get('simulation/runsimulation', 'RunSimController@index');
+
 ///
 Route::get('/shell', function()
 {

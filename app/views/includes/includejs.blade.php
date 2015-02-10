@@ -1,6 +1,13 @@
-
-    {{ HTML::script('js/jasny-bootstrap.js') }}
-    {{ HTML::script('js/sb-admin-2.js') }}
+{{ HTML::script('js/jquery.js') }}
+{{ HTML::script('js/moment.js') }}
+{{ HTML::script('js/bootstrap.js') }}
+{{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
+{{ HTML::script('js/jquery.serialize-object.js') }}
+{{ HTML::script('https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js') }}
+{{ HTML::script('js/app.js') }}
+{{ HTML::script('js/quicksim.js') }}
+{{ HTML::script('js/jasny-bootstrap.js') }}
+{{ HTML::script('js/sb-admin-2.js') }}
     <!-- Metis Menu Plugin JavaScript -->
 
     {{ HTML::script('js/plugins/metisMenu/metisMenu.min.js') }}
