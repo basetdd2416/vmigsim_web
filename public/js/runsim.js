@@ -4,6 +4,14 @@ $(function() {
 	var policy_info = $('#policy_info');
 	var app_info = $('#app_info');
 	var vm_info = $('#vm_info');
+
+	$(document).ajaxStart(function(){
+    $('#loading').show();
+    $('.myform').hide();
+ }).ajaxStop(function(){
+    $('#loading').hide();
+    $('.myform').show();
+ });
 	$('.readMore').click(function(e){
 		var content = $(this).next('div.content');
 		e.preventDefault();
@@ -30,7 +38,7 @@ $(function() {
 
 	$("#setAllDefault").click(function(){
 		
-		var date_time = moment().format('MM-DD-YYYY_h-mm-ss a');
+		var date_time = moment().format('MM-DD-YYYY_h-mm-ss_a');
 		var user_name = 'Vmig';
 		var sim_name = user_name + '_' + date_time;
 		

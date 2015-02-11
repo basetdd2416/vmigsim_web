@@ -1,0 +1,39 @@
+{
+    "environment": {
+        "bandwidth": 0,
+        "timeLimit": 1,
+        "scheduleType": "fifo",
+        "migrationType": "offline",
+        "controlType": "openloop",
+        "networkType": "stable",
+        "pageSize": 0,
+        "wwsRatio": 1,
+        "wwsDirtyRate": 90,
+        "normalDirtyRate": 20,
+        "maxPreCopyRound": 30,
+        "minDirtyPage": 50,
+        "maxNoProgressRound": 2,
+        "networkInterval": 1,
+        "networkSD": 55
+    },
+    "vmSpecList": [
+        {
+            "vmAmount": 200,
+            "ram": 512,
+            "qos": 30,
+            "priority": 1
+        },
+        {
+            "vmAmount": 200,
+            "ram": 512,
+            "qos": 30,
+            "priority": 2
+        },
+        {
+            "vmAmount": 200,
+            "ram": 512,
+            "qos": 30,
+            "priority": 3
+        }
+    ]
+}

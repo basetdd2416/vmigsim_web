@@ -26,7 +26,15 @@ content:"\e080";
 
   </ul>
 </div>
-<form   class="form-horizontal" role="form" method="post">
+
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div id="loading" style="display:none" >
+		  <p class="text-center"><img height="200" width="200" src="{{URL::to('images/loading.gif')}}" /><br> Please Wait </p>
+		</div>
+	</div>
+</div>
+<form  class="form-horizontal myform" role="form" method="post">
 	<div id="phase1" class="panel panel-info">
 		<div class="panel-heading">
 			<h3 class="panel-title">
@@ -196,81 +204,6 @@ content:"\e080";
 			</div>
 		</div>
 	</div>
-	<div id="phase6" class="panel panel-info">
-		<div class="panel-heading">
-			<h3 class="panel-title">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-				Overview your setting information
-			</a>
-			</h3>
-		</div>
-		<div id="collapseSix" class="panel-collapse collapse">
-			<div class="panel-body">
-				<hr>
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-upload"></i> Export</a>
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					<label for="input-id" class="col-sm-3">Configuration name</label>
-					<label for="input-id" class="col-sm-2">configA</label>
-				</div>
-				<br>
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3 class="panel-title">VMs information</h3>
-					</div>
-					<div class="panel-body">
-						ข้อมูลจากหน้า create vm
-						<div class="form-group">
-							<div class="col-sm-4">
-								<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
-							</div>
-							
-							
-							
-							
-						</div>
-						
-					</div>
-					
-					
-				</div>
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3 class="panel-title">Migration environment information</h3>
-					</div>
-					<div class="panel-body">
-						ข้อมูลจากหน้า migration environment
-						<div class="form-group">
-							<div class="col-sm-4">
-								<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
-							</div>
-						</div>
-						
-						
-					</div>
-				</div>
-				<br>
-				<div class="form-group">
-					<div class="col-sm-offset-4 col-sm-4">
-						<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-circle-o-notch"></i> Default</a>
-						<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
-					</div>
-					<div class="col-sm-4">
-						<button id="backPhase5" type="button" class="btn btn-primary">
-						<i class="fa fa-caret-left"></i> back
-						</button>
-						<button id="nextPhase6" type="submit" class="update_form btn btn-primary">
-						<i class="fa fa-caret-right"></i> run
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div class="form-group">
 		
 		<div class="col-sm-12">
@@ -282,24 +215,8 @@ content:"\e080";
 					<i class="fa fa-floppy-o"></i> save
 			</button>
 		</div>
-		
-	</form>
-	<div class="panel-default">
-		<div class="panel-heading">
-			<h3 class="readMore panel-title"><a>Panel title</a></h3>
-		</div>
-		<div class="content panel-body" style="display:none">
-			Panel content
-		</div>
 	</div>
-	<div class="panel-default">
-		<div class="panel-heading">
-			<h3 class="readMore panel-title"><a>Panel title</a></h3>
-		</div>
-		<div class="content panel-body" style="display:none">
-			Panel content
-		</div>
-	</div>
+	</form>	
 	@section('js')
 	{{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
 	{{ HTML::script('js/jquery.serialize-object.js') }}

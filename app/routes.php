@@ -61,7 +61,13 @@ Route::get('simulation/runsimulation', 'RunSimController@index');
 Route::get('simulation/ajax-config', 'RunSimController@ajaxConfig');
 Route::post('simulation/savesimulation', 'RunSimController@ajaxSaveSimulation');
 Route::get('simulation/simulation_result', 'SimResultController@index');
-///
+Route::get('simulation/ajax-sim-name', 'SimResultController@ajaxSimName');
+Route::get('simulation/ajax-sim-rs', 'SimResultController@ajaxSimRsType');
+Route::get('simulation/ajax-sim-round', 'SimResultController@ajaxSimRound');
+
+//existing sim
+Route::get('simulation/quicksim/existing_sim', 'ExistSimController@index');
+
 Route::get('/shell', function()
 {
 	return View::make('shell');

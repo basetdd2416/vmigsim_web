@@ -118,7 +118,6 @@ class RunSimController extends \BaseController {
 			));
 
 		if(!$validator->fails()) {
-			
 			$sim = new Simulation;
 			$sim->sim_name = Input::get('simulation_name');
 			$sim->configuration_id = Input::get('config_name');
@@ -127,32 +126,75 @@ class RunSimController extends \BaseController {
 				// get json
 				
 				$config_input_file = array();
-				$envi = Environment::where("configuration_id","=",Input::get('config_name'))->first();
-				$vms = Vm::where("configuration_id","=",Input::get('config_name'))->get();
+				$envi = array();
+				$vms = array();
+				$envi_db = Environment::where("configuration_id","=",Input::get('config_name'))->first();
+				$vms_db = Vm::where("configuration_id","=",Input::get('config_name'))->get();
+
+				$envi['bandwidth'] = $envi_db->bandwidth;
+				$envi['timeLimit'] = $envi_db->time_limit;
+				$envi['scheduleType'] = $envi_db->schedule_type;
+				$envi['migrationType'] = $envi_db->migration_type;
+				$envi['controlType'] = $envi_db->control_type;
+				$envi['networkType'] = $envi_db->network_type;
+				$envi['pageSize'] = $envi_db->page_size; // fix name
+				$envi['wwsRatio'] = $envi_db->wws_ratio;
+				$envi['wwsDirtyRate'] = $envi_db->wws_dirty_rate;
+				$envi['normalDirtyRate'] = $envi_db->normal_dirty_rate;
+				$envi['maxPreCopyRound' ] = $envi_db->max_precopy_round;
+				$envi['minDirtyPage' ] = $envi_db->min_dirty_page;
+				$envi['maxNoProgressRound' ] =$envi_db->max_no_progress_round;
+				$envi['networkInterval' ] = $envi_db->network_interval;
+				$envi['networkSD' ] = $envi_db->network_sd;
+
+				for ($i=0; $i < count($vms_db) ; $i++) { 
+					$vms[$i]['vmAmount'] = $vms_db[$i]['amount'];
+					$vms[$i]['ram'] = $vms_db[$i]['ram'];
+					$vms[$i]['qos'] = $vms_db[$i]['qos'];
+					$vms[$i]['priority'] = $vms_db[$i]['priority'];
+				}
+
+
 				$config_input_file['environment'] = $envi;
 				$config_input_file['vmSpecList'] = $vms;
 				$configname = Configuration::find(Input::get('config_name'))->first()->config_name.'.json';
 				$dirname = $sim->sim_name;
-				$filename = "run_simulation/input/" . $dirname . "/";
+				$filename = 'run_simulation\\input\\' . $dirname . '\\';
 				$fullpathtofile = $filename.$configname;
-				$outputPath = 'run_simulation/output/' . $dirname . "/";
-			
+				$outputPath = 'run_simulation\\output\\' . $dirname;
+				
 				if(!file_exists($filename)){
 					mkdir($filename, 0777);
 				}
+
 				$fp = fopen($fullpathtofile, 'w');
  				fwrite($fp, json_encode($config_input_file,JSON_PRETTY_PRINT));
  				fclose($fp);
- 				//$this->execInBackground('java -jar vmigsim.jar configA.json text.txt 1');
 
+ 				//$this->execInBackground('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1');
+ 				//$objDateTime = new DateTime('NOW')
+
+			
+				//$time_pre = microtime(true);
+ 				exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $sim->round,$output, $return);
+ 				//$time_post = microtime(true);
+ 				
+ 				if (!$return) {
+ 				//var_dump( shell_exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1 2>&1'));
+ 				//$PID = shell_exec('nohup java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1' . ' ' . '> /dev/null 2> /dev/null & echo $!');
+ 				//var_dump($PID);
 				$data['redirect'] = 'simulation_result';
 				$data['success'] = true;
+
+				return Response::json($data);
+				}
 			} else {
 				$data['success'] = false;
 				$data['errors'] = 'insert fails';
+				return Response::json($data);
 			}
 				
-			return Response::json($data);
+			
 		} else {
 			$data['success'] = false;
 			$data['errors'] = $validator->errors()->toArray();
@@ -169,5 +211,19 @@ class RunSimController extends \BaseController {
         exec($cmd . " > /dev/null &");   
     } 
 }
+
+public function get_time_difference($time1, $time2) 
+{ 
+    $time1 = strtotime("1/1/1980 $time1"); 
+    $time2 = strtotime("1/1/1980 $time2"); 
+     
+    if ($time2 < $time1) 
+    { 
+        $time2 = $time2 + 86400; 
+    } 
+     
+    return ($time2 - $time1) / 3600; 
+     
+}  
 
 }

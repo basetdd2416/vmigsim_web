@@ -163,36 +163,7 @@
 					<input type="text" class="form-control" name="enviname_name" id="enviname_name" value="" placeholder="enter your migration enviroment name">
 				</div>
 			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Migration algorithm</label>
-				<div  class="col-sm-6">
-					<select id="migration_algorithm" name="migration_algorithm" class="form-control">
-						
-						<option value="offline">Offline</option>
-						<option value="precopy">Pre-copy</option>
-					</select>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Scheduling algorithm</label>
-				<div class="col-sm-6">
-					<select id="scheduling_algorithm" name="scheduling_algorithm" class="form-control">
-						
-						<option value="fifo">FIFO</option>
-						<option value="priority">Priority based</option>
-					</select>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Control alogorithm</label>
-				<div class="col-sm-6">
-					<select id="control_algorithm" name="control_algorithm" class="form-control">
-						
-						<option value="openloop">Open loop</option>
-						<option value="closeloop">Close loop</option>
-					</select>
-				</div>
-			</div>
+			
 			<div class="form-group">
 				<label for="inputPassword3" class="col-sm-4 control-label">Time limitation of migration (Min.)</label>
 				<div class="col-sm-6">
@@ -253,9 +224,7 @@
 	<div class="panel-heading">
 		<h3 class="panel-title">
 			 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-		
-	
-			Create app setting
+			Create application setting
 			</a>
 		</h3>
 	</div>
@@ -295,6 +264,58 @@
 				<label for="inputPassword3" class="col-sm-4 control-label">maxNoProgressRound</label>
 				<div class="col-sm-6">
 					<input id="max_no_prog_round" type="text" value="" name="max_no_prog_round" placeholder="enter your network bandwidth">
+				</div>
+			</div>
+			<div class="form-group">
+				
+				<div class="col-sm-4 pull-right">
+					<button id="backPhase3" type="button" class="btn btn-primary">
+					<i class="fa fa-caret-left"></i> back
+					</button>
+					
+				</div>
+			</div>
+	</div>
+	</div>
+</div>
+<div id="phase5" class="panel panel-info">
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+			Ccreate policy settings
+			</a>
+		</h3>
+	</div>
+	<div id="collapseFive" class="panel-collapse collapse">
+	<div class="panel-body">
+			<div class="form-group">
+				<label for="inputPassword3" class="col-sm-4 control-label">Migration algorithm</label>
+				<div  class="col-sm-6">
+					<select id="migration_algorithm" name="migration_algorithm" class="form-control">
+						
+						<option value="offline">Offline</option>
+						<option value="precopy">Pre-copy</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword3" class="col-sm-4 control-label">Scheduling algorithm</label>
+				<div class="col-sm-6">
+					<select id="scheduling_algorithm" name="scheduling_algorithm" class="form-control">
+						
+						<option value="fifo">FIFO</option>
+						<option value="priority">Priority based</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword3" class="col-sm-4 control-label">Control alogorithm</label>
+				<div class="col-sm-6">
+					<select id="control_algorithm" name="control_algorithm" class="form-control">
+						
+						<option value="openloop">Open loop</option>
+						<option value="closeloop">Close loop</option>
+					</select>
 				</div>
 			</div>
 			<div class="form-group">

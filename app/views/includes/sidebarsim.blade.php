@@ -19,6 +19,9 @@
                             <a class="{{set_active('simulation/runsimulation')}}" href="{{ URL::to('simulation/runsimulation') }}"><i class="fa fa-dashboard fa-fw"></i> Run simulation</a>
                         </li>
                         <li>
+                            <a class="{{set_active('simulation/simulation_result')}}" href="{{ URL::to('simulation/simulation_result') }}"><i class="fa fa-dashboard fa-fw"></i> Simulation result</a>
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>

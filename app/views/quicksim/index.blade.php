@@ -10,14 +10,16 @@
 
 					
 				</div>
+				
+
 				<div class="col-sm-4">
-					<a href="{{ URL::to('simulation/quicksim/import') }}" class="btn btn-warning btn-lg"><i class="fa fa-download"></i> Import exist simulation</a>
-					
+
+					<a href="{{ URL::to('simulation/quicksim/existing_sim') }}"class="btn btn-success btn-lg"><i class="fa fa-file-text-o"></i> from existing simulation</a>
 				</div>
 
 				<div class="col-sm-4">
-
-					<a href="{{ URL::to('simulation/quicksim/createconfig') }}"class="btn btn-primary btn-lg"><i class="fa fa-list-alt"></i> Default setting</a>
+					<a href="{{ URL::to('simulation/quicksim/import') }}" class="btn btn-warning btn-lg"><i class="fa fa-download"></i> from upload file</a>
+					
 				</div>
 </div>
 @stop
