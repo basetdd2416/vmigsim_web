@@ -330,7 +330,7 @@ class QuickSimController extends \BaseController {
 		$data['redirect'] = '../runsimulation';
 		$data['success'] = true;
 		//exec("start /B vmigsimOK.jar ". $filename.$configname . ' ' . $outputPath.'rs.txt' .' '. "1");
-		Session::flash('success_msg', 'Success!');
+		Session::flash('success_msg', 'Create configuration success.');
 		return Response::json($data);
 
 		//return Response::json($data);

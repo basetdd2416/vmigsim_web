@@ -10,7 +10,7 @@ class RunSimController extends \BaseController {
 	public function index()
 	{
 		//$config_select = array('0'=>'Please select configuration name');
-		$configs = Configuration::all();
+		$configs = Configuration::orderBy('created_at', 'desc')->get();
 		/*foreach ($configs as $c) {
 			$config_select[$c->id] = $c->config_name; 
 		}*/
@@ -92,8 +92,29 @@ class RunSimController extends \BaseController {
 	{
 		$data = array();
 		$config_id = Input::get('config_id');
-		$data['envi'] = Environment::where('configuration_id','=',$config_id)->first();
+		$envi = Environment::where('configuration_id','=',$config_id)->first();
+		if(!Input::get('create_exist')) {
+
+
+			if($envi->schedule_type == 'priority') {
+				$envi->schedule_type = 'Priority based';
+			}else {
+				$envi->schedule_type = 'FIFO';
+			}
+			if($envi->migration_type == 'offline') {
+				$envi->migration_type = 'Offline';
+			}else {
+				$envi->migration_type = 'Pre-copy';
+			}
+			if($envi->control_type == 'openloop') {
+				$envi->control_type = 'Open loop';
+			}else {
+				$envi->control_type = 'Close loop';
+			}
+		}
+		$data['envi'] = $envi;
 		$data['vms'] = Vm::where('configuration_id','=',$config_id)->get();
+		$data['message'] = true;
 		return Response::json($data);
 
 	}
@@ -157,7 +178,7 @@ class RunSimController extends \BaseController {
 
 				$config_input_file['environment'] = $envi;
 				$config_input_file['vmSpecList'] = $vms;
-				$configname = Configuration::find(Input::get('config_name'))->first()->config_name.'.json';
+				$configname = Configuration::find(Input::get('config_name'))->config_name.'.json';
 				$dirname = $sim->sim_name;
 				$filename = 'run_simulation\\input\\' . $dirname . '\\';
 				$fullpathtofile = $filename.$configname;
@@ -175,14 +196,15 @@ class RunSimController extends \BaseController {
  				//$objDateTime = new DateTime('NOW')
 
 			
-				//$time_pre = microtime(true);
+				ini_set('max_execution_time', 300);
  				exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $sim->round,$output, $return);
- 				//$time_post = microtime(true);
  				
+ 				//pclose(popen('start /B java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $sim->round.' 2>nul >nul', "r")); 
  				if (!$return) {
  				//var_dump( shell_exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1 2>&1'));
  				//$PID = shell_exec('nohup java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1' . ' ' . '> /dev/null 2> /dev/null & echo $!');
  				//var_dump($PID);
+ 				Session::flash('success_msg', 'Run simulation completed.');
 				$data['redirect'] = 'simulation_result';
 				$data['success'] = true;
 

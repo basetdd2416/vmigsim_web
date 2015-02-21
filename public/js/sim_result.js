@@ -1,9 +1,11 @@
 $(function() {
-
+	$('#simbar').attr('class','active');
+	var mesgalert = $('.alert');
 	var rs_info = $('#rs_info');
 	var round_info = $('#round_info');
 	var content_info = $('#content_info');
 		$(document).ajaxStart(function(){
+			mesgalert.hide().find('ul').empty();
     $('#loading').show();
     $('.myform').hide();
  }).ajaxStop(function(){
@@ -108,7 +110,7 @@ $(function() {
            
            cache: false,
            data:  {
-           		rs_type : $('input[type=radio][name=rs_type]').val(),
+           		rs_type : $('input[name=rs_type]:checked').val(),
            		sim_name : $("#sim_select").val(),
            		round_name : round_name
 

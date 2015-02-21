@@ -16,25 +16,38 @@
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
 </style>
-<div class="progress">
-	<div class="progress-bar" role="progressbar" aria-valuenow="25"
-		aria-valuemin="0" aria-valuemax="100" style="width:25%">
-		1/4
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div id="loading" style="display:none" >
+			<p class="text-center"><img height="200" width="200" src="{{URL::to('images/loading.gif')}}" /><br> Please Wait </p>
+		</div>
 	</div>
 </div>
 
 
 
-<div class="alert alert-danger alert-dismissible danger" role="alert" style="display:none;">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <ul>
 
-  </ul>
+
+<form  class="form-horizontal myform" role="form" method="post">
+	<h1>Create from scratch</h1>
+	<hr>
+	<div class="alert alert-danger alert-dismissible danger" role="alert" style="display:none;">
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	  <ul>
+
+	  </ul>
+	</div>
+
+<div class="alert alert-success alert--success__reset alert-dismissible success" role="alert" style="display:none;">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	<ul>
+	</ul>
 </div>
 
-<form   class="form-horizontal" role="form" method="post">
-	 
-	<div id="phase1" class="panel panel-info">
+
+
+
+	<div id="config_info" class="panel panel-info">
 		<div class="panel-heading">
 
 			<h3 class="panel-title">
@@ -46,7 +59,7 @@
 		<div id="collapseOne" class="panel-collapse collapse in">
 		<div class="panel-body">
 			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-4 control-label">Configuration name</label>
+				<label for="inputEmail3" class="col-sm-4 control-label">New Configuration name</label>
 				<div class="col-sm-6">
 					{{ Form::text('name', Input::old('name'), array('class' => 'form-control','id'=>'name')) }}
 					
@@ -56,7 +69,7 @@
 				
 				<div class="col-sm-2 pull-right">
 					
-					<button id="nextPahse1" type="submit" class="btn btn-primary update_form">
+					<button id="nextPahse1" type="button" class="btn btn-primary" name="btnConfig" value="1">
 					<i class="fa fa-caret-right"></i> Next
 					</button>
 				</div>
@@ -102,7 +115,7 @@
 						<option>4</option>
 					</select>
 				</div>
-				<a id="mytool" href="#" data-toggle="tooltip" title="first tooltip"><i class="fa fa-question-circle"></i> </a>
+				<a id="mytool" href="#" data-toggle="tooltip" title="ลำดับความสำคัญเลขน้อยจะสำคัญมากที่สุด"><i class="fa fa-question-circle"></i> </a>
 			</div>
 			<div class="form-group">
 				<label for="inputPassword3" class="col-sm-4 control-label">(QoS)Maximum down time(Min.)</label>
@@ -125,7 +138,12 @@
 
 				</div>
 			</div>
-			
+				<div class="alert alert-success alert--vm alert-dismissible success " role="alert" style="display:none;">
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				  <ul>
+
+				  </ul>
+				</div>
 				<table id="showVM" class="table table-striped table-hover">
 					<thead>
 						<tr>
@@ -134,6 +152,7 @@
 							<th>ram</th>
 							<th>qos</th>
 							<th>priority</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -171,7 +190,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network bandwidth(Mbit/s)</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Network bandwidth (Mbit/s)</label>
 				<div class="col-sm-6">
 					<input id="network_bandwidth" type="text" value="" name="network_bandwidth" placeholder="enter your network bandwidth">
 				</div>
@@ -187,19 +206,19 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Page size</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Page size (KB)</label>
 				<div class="col-sm-6">
 					<input id="page_dirty" type="text" value="" name="page_dirty" placeholder="enter your network bandwidth">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network Interval</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Network Interval (Second)</label>
 				<div class="col-sm-6">
 					<input id="network_interval" type="text" value="" name="network_interval" placeholder="enter your network bandwidth">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network SD</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Network SD (Second)</label>
 				<div class="col-sm-6">
 					<input id="network_sd" type="text" value="" name="network_sd" placeholder="enter your network bandwidth">
 				</div>
@@ -208,7 +227,7 @@
 				
 				<div class="col-sm-4 pull-right">
 					<button id="backPhase2" type="button" class="btn btn-primary">
-					<i class="fa fa-caret-left"></i> back
+					<i class="fa fa-caret-left"></i> Back
 					</button>
 					<button id="nextPahse3" type="button" class="btn btn-primary">
 					<i class="fa fa-caret-right"></i> Next
@@ -231,37 +250,37 @@
 	<div id="collapseFour" class="panel-collapse collapse">
 	<div class="panel-body">
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">wwsRatio</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">WWS ratio (%)</label>
 				<div class="col-sm-6">
 					<input id="wwws_ratio" name="wwws_ratio" type="text" value="" placeholder="enter your time limitation of migration">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">wwsDirtyRate</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">WWS dirty rate (%)</label>
 				<div class="col-sm-6">
 					<input id="wws_dirty_rate" type="text" value="" name="wws_dirty_rate" placeholder="enter your network bandwidth">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">normalDirtyRate</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Normal dirty rate (%)</label>
 				<div class="col-sm-6">
 					<input id="normal_dirty_rate" type="text" value="" name="normal_dirty_rate" placeholder="enter your network bandwidth">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">maxPreCopyRound</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Max pre-copy round</label>
 				<div class="col-sm-6">
 					<input id="max_pre_copy_rate" type="text" value="" name="max_pre_copy_rate" placeholder="enter your network bandwidth">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">minDirtyPage</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Min dirt page</label>
 				<div class="col-sm-6">
 					<input id="min_dirty_page" type="text" value="" name="min_dirty_page" placeholder="enter your network bandwidth">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">maxNoProgressRound</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Max no progress round</label>
 				<div class="col-sm-6">
 					<input id="max_no_prog_round" type="text" value="" name="max_no_prog_round" placeholder="enter your network bandwidth">
 				</div>
@@ -270,9 +289,11 @@
 				
 				<div class="col-sm-4 pull-right">
 					<button id="backPhase3" type="button" class="btn btn-primary">
-					<i class="fa fa-caret-left"></i> back
+					<i class="fa fa-caret-left"></i> Back
 					</button>
-					
+					<button id="nextPahse4" type="button" class="btn btn-primary">
+					<i class="fa fa-caret-right"></i> Next
+					</button>
 				</div>
 			</div>
 	</div>
@@ -314,14 +335,14 @@
 					<select id="control_algorithm" name="control_algorithm" class="form-control">
 						
 						<option value="openloop">Open loop</option>
-						<option value="closeloop">Close loop</option>
+						
 					</select>
 				</div>
 			</div>
 			<div class="form-group">
 				
 				<div class="col-sm-4 pull-right">
-					<button id="backPhase3" type="button" class="btn btn-primary">
+					<button id="backPhase4" type="button" class="btn btn-primary">
 					<i class="fa fa-caret-left"></i> back
 					</button>
 					
@@ -341,7 +362,7 @@
 				<div class="col-sm-offset-4 col-sm-12">
 					<a href="{{URL::to('simulation/quicksim')}}" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> cancel</a>
 					<button id="setAllDefault" type="button" class="btn btn-sm btn-primary">
-					<i class="fa fa-circle-o-notch"></i> set all default
+					<i class="fa fa-circle-o-notch"></i> reset all default
 					</button>
 					<button id="nextPahse5" type="submit" class="btn btn-sm btn-success update_form">
 					<i class="fa fa-floppy-o"></i> save
@@ -528,8 +549,7 @@ max: 1000,
 initval: 2
 });
 
-$('#mytool').tooltip('hide')
-$('#mytool').tooltip('toggle')
+
 
 $("input[name='demo_vertical']").TouchSpin({
       verticalbuttons: true,
@@ -545,7 +565,7 @@ $("input[name='network_bandwidth']").TouchSpin({
     });
      $("input[name='page_dirty']").TouchSpin({
       verticalbuttons: true,
-       postfix: '%'
+       
     });
 </script>
 @stop

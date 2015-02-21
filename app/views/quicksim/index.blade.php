@@ -14,7 +14,7 @@
 
 				<div class="col-sm-4">
 
-					<a href="{{ URL::to('simulation/quicksim/existing_sim') }}"class="btn btn-success btn-lg"><i class="fa fa-file-text-o"></i> from existing simulation</a>
+					<a href="{{ URL::to('simulation/quicksim/existing-config') }}"class="btn btn-success btn-lg"><i class="fa fa-file-text-o"></i> from existing configuration</a>
 				</div>
 
 				<div class="col-sm-4">
@@ -22,4 +22,8 @@
 					
 				</div>
 </div>
+@section('js')
+{{ HTML::script('js/quicksim.js') }}
+
+@stop
 @stop

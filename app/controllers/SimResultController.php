@@ -85,6 +85,22 @@ class SimResultController extends \BaseController {
 		}
 		// take name and show detail of file name
 		$file = file_get_contents($dir_output_to_file.'/'.$dirs['0'], FILE_USE_INCLUDE_PATH);
+		
+		$file = '<pre>'. $file .'</pre>';
+		 //$file = explode("\n", $file);
+		/*$file  = "";
+		$handle = fopen($dir_output_to_file.'/'.$dirs['0'], "r");
+		if ($handle) {
+   			 while (($line = fgets($handle)) !== false) {
+        // process the line read
+        $file .= $line . '</br>';
+   	 	}
+
+    	
+} else {
+    // error opening the file.
+		}
+		fclose($handle); */
 		$data['content_default'] = $file;
 		$data['f_names'] = $dirs;
 		$data['success'] = true;
@@ -122,6 +138,7 @@ class SimResultController extends \BaseController {
 		
 
 		$file = file_get_contents($dir_output_to_file.'/'.$round_name, FILE_USE_INCLUDE_PATH);
+		$file = '<pre>'. $file .'</pre>';
 		$data['content_default'] = $file;
 		
 		$data['success'] = true;

@@ -12,25 +12,32 @@ content:"\e080";
 }
 </style>
 @if(Session::has('success_msg'))
-<div class="alert alert-success alert-dismissible">
-	<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-	{{Session::get('success_msg')}}
+<div class="alert alert-success alert-dismissible " role="alert" >
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	 <ul>
+{{Session::get('success_msg')}}
+	</ul>
+
 </div>
 @endif
 <h1>Run simulation</h1>
 <hr>
-<h3> Comming soon..... </h3>
-<div class="alert alert-danger alert-dismissible danger" role="alert" style="display:none;">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <ul>
+<div class="alert--sim alert-dismissible" role="alert" style="display:none;">
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				  <ul>
 
-  </ul>
+				  </ul>
 </div>
 
 <div class="row">
+	<div id="clock" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		
+	</div>
+</div>
+<div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<div id="loading" style="display:none" >
-		  <p class="text-center"><img height="200" width="200" src="{{URL::to('images/loading.gif')}}" /><br> Please Wait </p>
+		  <p class="text-center"><img height="600" width="600" src="{{URL::to('images/loading-src-dest-3.gif')}}" /><br> Please Wait </p>
 		</div>
 	</div>
 </div>
@@ -56,15 +63,7 @@ content:"\e080";
 						<input id="round" type="text" value="" name="round" placeholder="enter round">
 					</div>
 				</div>
-				<div class="form-group pull-right">
-					
-					<div class="col-sm-12 ">
-						
-						<button id="nextPahse5" type="submit" class="btn btn-primary update_form">
-						<i class="fa fa-caret-right"></i> Next
-						</button>
-					</div>
-				</div>
+			
 			</div>
 		</div>
 	</div>
@@ -101,9 +100,9 @@ content:"\e080";
 									<thead>
 										<tr>
 											<th>#</th>
-											<th>amonut</th>
+											<th>amount</th>
 											<th>ram</th>
-											<th>qos</th>
+											<th>QoS</th>
 											<th>priority</th>
 										</tr>
 									</thead>
@@ -111,6 +110,47 @@ content:"\e080";
 
 									</tbody>
 								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- environment -->
+				<div id="envi_info" class="panel panel-info" style="display:none;">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo_three">Environment informations</a></h3>
+					</div>
+					<div id="collapseTwo_three" class="panel-collapse collapse in">
+						<div class="panel-body" >
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-4 control-label">Environment name:</label>
+								<label id="envi_name" for="inputEmail3" class="control-label"></label>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-4 control-label">Time limitation of migration (Min.):</label>
+								<label id="time_limit" for="inputEmail3" class="control-label"></label>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-4 control-label">Network bandwidth (Mbit/s):</label>
+								<label id="bandwidth" for="inputEmail3" class="control-label"></label>
+							</div>
+							
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-4 control-label">Network status:</label>
+								<label id="network_type" for="inputEmail3" class="control-label"></label>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-4 control-label">Page size (KB):</label>
+								<label id="page_size" for="inputEmail3" class="control-label"></label>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-4 control-label">Network interval (Second):</label>
+								<label id="network_interval" for="inputEmail3" class="control-label"></label>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-4 control-label">Network SD (Second):</label>
+								<label id="network_sd" for="inputEmail3" class="control-label"></label>
 							</div>
 						</div>
 					</div>
@@ -124,11 +164,15 @@ content:"\e080";
 					<div id="collapseTwo_two" class="panel-collapse collapse in">
 						<div class="panel-body" >
 							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-4 control-label">WWS ratio:</label>
+								<label for="inputEmail3" class="col-sm-4 control-label">WWS ratio (%):</label>
 								<label id="wws_ratio" for="inputEmail3" class="control-label"></label>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-4 control-label">Normal dirty rate:</label>
+								<label for="inputEmail3" class="col-sm-4 control-label">WWS dirty rate (%):</label>
+								<label id="wws_dirty_rate" for="inputEmail3" class="control-label"></label>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-4 control-label">Normal dirty rate (%):</label>
 								<label id="normal_dirty_rate" for="inputEmail3" class="control-label"></label>
 							</div>
 							<div class="form-group">
@@ -146,37 +190,7 @@ content:"\e080";
 						</div>
 					</div>
 				</div>
-				<!-- environment -->
-				<div id="envi_info" class="panel panel-info" style="display:none;">
-					<div class="panel-heading">
-						<h3 class="panel-title">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo_three">Environment informations</a></h3>
-					</div>
-					<div id="collapseTwo_three" class="panel-collapse collapse in">
-						<div class="panel-body" >
-							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-4 control-label">Environment name:</label>
-								<label id="envi_name" for="inputEmail3" class="control-label"></label>
-							</div>
-							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-4 control-label">Bandwidth:</label>
-								<label id="bandwidth" for="inputEmail3" class="control-label"></label>
-							</div>
-							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-4 control-label">Limit time:</label>
-								<label id="time_limit" for="inputEmail3" class="control-label"></label>
-							</div>
-							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-4 control-label">Network interval:</label>
-								<label id="network_interval" for="inputEmail3" class="control-label"></label>
-							</div>
-							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-4 control-label">Network sd:</label>
-								<label id="network_sd" for="inputEmail3" class="control-label"></label>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 				<!-- Policy information. -->
 				<div id="policy_info" class="panel panel-info" style="display:none;">
 					<div class="panel-heading">
@@ -206,13 +220,13 @@ content:"\e080";
 	</div>
 	<div class="form-group">
 		
-		<div class="col-sm-12">
+		<div class="col-sm-offset-4 col-sm-12">
 			<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
 			<button id="setAllDefault" type="button" class="btn btn-sm btn-primary">
 			<i class="fa fa-circle-o-notch"></i> set all default
 			</button>
 			<button id="nextPahse5" type="submit" class="btn btn-sm btn-success update_form">
-					<i class="fa fa-floppy-o"></i> save
+					<i class="fa fa-play-circle-o"></i> Run
 			</button>
 		</div>
 	</div>

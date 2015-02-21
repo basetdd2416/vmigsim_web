@@ -1,17 +1,28 @@
 $(function() {
+	// clock
+	
+	
+ 	
+	//
+	$('#simbar').attr('class','active');
 	var mesgalert = $('.alert');
 	var envi_info = $('#envi_info');
 	var policy_info = $('#policy_info');
 	var app_info = $('#app_info');
 	var vm_info = $('#vm_info');
 
+
 	$(document).ajaxStart(function(){
+	mesgalert.hide().find('ul').empty();
     $('#loading').show();
     $('.myform').hide();
  }).ajaxStop(function(){
     $('#loading').hide();
     $('.myform').show();
+
  });
+ 
+
 	$('.readMore').click(function(e){
 		var content = $(this).next('div.content');
 		e.preventDefault();
@@ -37,29 +48,38 @@ $(function() {
 	});
 
 	$("#setAllDefault").click(function(){
-		
+		mesgalert.hide().find('ul').empty();
+		mesgalert = $('.alert--sim');
+
 		var date_time = moment().format('MM-DD-YYYY_h-mm-ss_a');
-		var user_name = 'Vmig';
+		var user_name = 'Sim';
 		var sim_name = user_name + '_' + date_time;
 		
 		 $("input[name='simulation_name']").val(sim_name);
 		 $("input[name='sim_round']").val('1');
-		 $("#config_select").val('1').change();
-		
-		   
+		 $("#config_select option:eq(1)").change();
+
+		mesgalert.attr('class','alert alert--sim alert-success');
+		mesgalert.find('ul').append('<li>set all default simulation completed.</li>');
+		mesgalert.slideDown();
 		 
 		
 	});
 	
 	$("#config_select").on('change',function(e){
 		e.preventDefault();
+		$('img').attr('height','200');
+		$('img').attr('width','200');
+		$('img').attr('src','http://vmig.dev/images/loading.gif');
+		
+
 		var config_id = e.target.value;
 		 $.ajax({
 		
            type: "GET",
            url: "ajax-config?config_id=" + config_id,
            dataType: 'json',
-      
+      		async : false,
            
            cache: false,
            data:  config_id,
@@ -75,6 +95,7 @@ $(function() {
 
            		//$('#envi_name').empty();
            		console.log(data.envi);
+           		$("#config_select").val(data.envi.configuration_id);
            		$('#envi_name').text(data.envi.name);
            		$('#bandwidth').text(data.envi.bandwidth);
            		$('#time_limit').text(data.envi.time_limit);
@@ -84,11 +105,13 @@ $(function() {
            		$('#network').text(data.envi.network_type);
            		$('#page_size').text(data.envi.page_size);
            		$('#wws_ratio').text(data.envi.wws_ratio);
-           		$('#wwws_dirty_rate').text(data.envi.wwws_dirty_rate);
+           		$('#wws_dirty_rate').text(data.envi.wws_dirty_rate);
            		$('#max_pre_round').text(data.envi.max_precopy_round);
            		$('#normal_dirty_rate').text(data.envi.normal_dirty_rate);
            		$('#min_dirty_page').text(data.envi.min_dirty_page);
            		$('#max_no_prog').text(data.envi.max_no_progress_round);
+           		$('#network_type').text(data.envi.network_type);
+           		$('#page_size').text(data.envi.page_size);
            		$('#network_interval').text(data.envi.network_interval);
            		$('#network_sd').text(data.envi.network_sd);
 
@@ -118,11 +141,15 @@ $(function() {
 	});
 	
 	$(".update_form").click(function() { // changed
+	$('img').attr('height','600');
+	$('img').attr('width','600');
+	$('img').attr('src','http://vmig.dev/images/loading-src-dest-3.gif');
+	 
 	 var myform = $(this).closest("form");
 	 var mycustomform =	myform.serializeObject();
+	 //setInterval('updateClock()', 1000);
+	
 	 
-	
-	
     $.ajax({
 		
            type: "POST",
@@ -134,8 +161,9 @@ $(function() {
            data:  mycustomform,
            success: function(data)
            {
-           	alert(data.success);
+           	//alert(data.success);
            		mesgalert.hide().find('ul').empty();
+           		mesgalert.attr('class','alert alert--sim alert-danger');
            		if(!data.success) {
            			
            			//window.location.replace(data.redirect);
@@ -147,6 +175,7 @@ $(function() {
            			mesgalert.slideDown();
            		} else {
            			window.location.href = data.redirect;
+           			
            		}
            		
                // show response from the php script.
@@ -164,3 +193,32 @@ $(function() {
     return false; // avoid to execute the actual submit of the form.
 	});
 });
+
+
+function updateClock ( )
+    {
+    var currentTime = new Date ( );
+    var currentHours = currentTime.getHours ( );
+    var currentMinutes = currentTime.getMinutes ( );
+    var currentSeconds = currentTime.getSeconds ( );
+ 
+    // Pad the minutes and seconds with leading zeros, if required
+    currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+    currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+ 
+    // Choose either "AM" or "PM" as appropriate
+    var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+ 
+    // Convert the hours component to 12-hour format if needed
+    currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+ 
+    // Convert an hours component of "0" to "12"
+    currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+ 
+    // Compose the string for display
+    var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+     
+     
+    $("#clock").html(currentTimeString);
+         
+ 	}

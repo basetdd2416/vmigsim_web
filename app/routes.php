@@ -26,6 +26,11 @@ Route::get('/simulation', function()
 	return View::make('pages.simulation');
 });
 
+Route::get('/about', function()
+{
+	return View::make('pages.about');
+});
+
 Route::resource('simulation/srcdc', 'SrcDCController');
 Route::resource('simulation/srchost', 'SrcHostController');
 Route::resource('simulation/srcvm', 'SrcVMController');
@@ -66,7 +71,7 @@ Route::get('simulation/ajax-sim-rs', 'SimResultController@ajaxSimRsType');
 Route::get('simulation/ajax-sim-round', 'SimResultController@ajaxSimRound');
 
 //existing sim
-Route::get('simulation/quicksim/existing_sim', 'ExistSimController@index');
+Route::get('simulation/quicksim/existing-config', 'ExistConfigController@index');
 
 Route::get('/shell', function()
 {

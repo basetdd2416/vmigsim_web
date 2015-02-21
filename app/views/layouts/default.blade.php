@@ -18,5 +18,7 @@
 			@include('includes.footer')
 		</footer>
 	</div>
+	@include('includes.includejs')
+	@yield('js')
 </body>
 </html>

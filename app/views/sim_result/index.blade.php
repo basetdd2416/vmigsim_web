@@ -13,13 +13,16 @@ content:"\e080";
 </style>
 @if(Session::has('success_msg'))
 <div class="alert alert-success alert-dismissible">
-	<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-	{{Session::get('success_msg')}}
+	<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+	<ul>
+		{{Session::get('success_msg')}}
+	</ul>
+	
 </div>
 @endif
 <h1>Simulation result</h1>
 <hr>
-<h3> Comming soon..... </h3>
+
 <div class="alert alert-danger alert-dismissible danger" role="alert" style="display:none;">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	<ul>
@@ -85,33 +88,30 @@ content:"\e080";
 						</select>
 					</div>
 				</div>
-				<div id="content_info"  style="display:none;" class="panel panel-info">
+				
+			</div>
+		</div>
+	</div>
+	
+	<div id="content_info"  style="display:none;" class="panel panel-info">
 						<div class="panel-heading">
-							<h3 class="panel-title">Result information</h3>
+						
+							<h3 class="panel-title">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+								Result information</a></h3>
 						</div>
+						<div id="collapseThree" class="panel-collapse collapse in">
 						<div class="panel-body mypanel">
 							
 						</div>
 					</div>
-			</div>
-		</div>
-	</div>
-	<div class="form-group">
-		
-		<div class="col-sm-12">
-			<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
-			<button id="setAllDefault" type="button" class="btn btn-sm btn-primary">
-			<i class="fa fa-circle-o-notch"></i> set all default
-			</button>
-			<button id="nextPahse5" type="submit" class="btn btn-sm btn-success update_form">
-			<i class="fa fa-floppy-o"></i> save
-			</button>
-		</div>
-	</div>
+				</div>
+
+
 </form>
 <style type="text/css">
 .mypanel{
-max-height: 100px;
+max-height: 400px;
 overflow-y:scroll;
 }
 </style>

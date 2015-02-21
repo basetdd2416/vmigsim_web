@@ -19,8 +19,5 @@
 			'configuration_id'
 			);
 
-		public function configuration()
-		{
-			$this->belongsTo('Configuration');
-		}
+		
 	}
