@@ -4,6 +4,7 @@ $(function() {
    
     console.log(jQuery.fn.jquery);
 }
+	defineSpinner();
 	$('#simbar').attr('class','active');
 	var mesgalert = $('.alert-danger');
 
@@ -17,6 +18,112 @@ $(function() {
     $('#loading').hide();
     $('.myform').show();
  });
+ 	function defineSpinner() {
+ 		//part of spinnere
+		$("input[name='amount']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 1
+		});
+		$("input[name='ram']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 512,
+		postfix: 'MB'
+		});
+
+		$("input[name='qos']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 30,
+		postfix: 'Min'
+		});
+
+		$("input[name='network_interval']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 1,
+		postfix: 'Second'
+		});
+		$("input[name='network_mean']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 62,	
+		forcestepdivisibility: 'none',
+		postfix: 'Mbps'
+		});
+		$("input[name='network_sd']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 54.8222,
+		forcestepdivisibility: 'none',
+		postfix: '%'
+		});
+
+		$("input[name='wwws_ratio']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 1,
+		postfix: '%'
+		});
+
+		$("input[name='wws_dirty_rate']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 90,
+		postfix: '%'
+		});
+		$("input[name='normal_dirty_rate']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 20,
+		postfix: '%'
+		});
+
+		$("input[name='max_pre_copy_rate']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 30
+		});
+
+		$("input[name='min_dirty_page']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 50
+		});
+
+		$("input[name='max_no_prog_round']").TouchSpin({
+		verticalbuttons: true,
+		max: 1000,
+		initval: 2
+		});
+
+
+
+		$("input[name='demo_vertical']").TouchSpin({
+		      verticalbuttons: true,
+
+		    });
+		$("input[name='limit_time']").TouchSpin({
+		      verticalbuttons: true,
+		      max: 100000,
+		      postfix: 'Second'
+
+		    });
+		$("input[name='network_bandwidth']").TouchSpin({
+		      verticalbuttons: true,
+		      max: 150000,
+		      forcestepdivisibility: 'none',
+		      postfix: 'Mbps'
+		    });
+		     $("input[name='page_dirty']").TouchSpin({
+		      verticalbuttons: true,
+		      postfix: 'KB'
+		       
+		    });
+
+ 	}
+
 	function defineDefalut() {
 		var date_time = moment().format('MM-DD-YYYY_h-mm-ss_a');
 		var user_name = 'Config';
@@ -52,24 +159,25 @@ $(function() {
 		 vmList = [];
 		 vmList.push({
 		 	amount: 200,
-			qos: 512,
+			qos: 300,
 			priority: 1,
-			ram: 300
+			ram: 512
 		 });
 		 vmList.push({
 		 	amount: 200,
-			qos: 512,
+			qos: 2700,
 			priority: 2,
-			ram: 2700
+			ram: 512
 		 });
 		 vmList.push({
 		 	amount: 200,
-			qos: 512,
+			qos: 32400,
 			priority: 3,
-			ram: 32400
+			ram: 512
 		 });
 		 updateVMTable();
 	}
+
 	defineDefalut();
 	function updateVMTable(){
 		
@@ -145,7 +253,7 @@ $(function() {
 	});
 
 	$("#setAllDefault").click(function(){
-		
+		mesgalert.hide().find('ul').empty();
 		var date_time = moment().format('MM-DD-YYYY_h-mm-ss_a');
 		var user_name = 'Config';
 		var config_name = user_name + '_' + date_time;
@@ -180,23 +288,23 @@ $(function() {
 		 vmList = [];
 		 vmList.push({
 		 	amount: 200,
-			qos: 512,
+			qos: 300,
 			priority: 1,
-			ram: 300
+			ram: 512
 		 });
 		 vmList.push({
 		 	amount: 200,
-			qos: 512,
+			qos: 2700,
 			priority: 2,
-			ram: 2700
+			ram: 512
 		 });
 		 vmList.push({
 		 	amount: 200,
-			qos: 512,
+			qos: 32400,
 			priority: 3,
-			ram: 32400
+			ram: 512
 		 });
-		 mesgalert.hide().find('ul').empty();
+		 
 		 updateVMTable();
 		 mesgalert = $('.alert--success__reset');
 		 mesgalert.find('ul').append('<li>reset all default completed. </li>');

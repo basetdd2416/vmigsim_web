@@ -1,0 +1,40 @@
+
+0.1 DC id: 2: Recieved start migration message from controller
+Starting the migration with vm amount: 1
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 0 added to a waiting queue
+Amount in a waiting queue: 1
+Broker1 is shutting down...
+VmigSim finished!
+
+Migrated VM details ::
+
+Overall details ::
+	Total migrated VM = 0 / 1
+	Total migrated priority: 
+		Priority 1 = 0 / 1
+		Priority 2 = 0 / 0
+		Priority 3 = 0 / 0
+	Total violated VM = 0
+	Total migration time = 0.0 (Avg. = NaN) secs
+	Total down time = 0.0 (Avg. = NaN) secs
+
+Environment details ::
+	Network type = dynamic
+		Max Bandwidth = 1.4156 Mbps
+		Mean Bandwidth = 0.8433555061 Mbps
+		Network's standard deviation = 12.0%
+		Network Interval = 1.0
+	Page size = 4 KB
+	Time limit = 1800.0 secs
+	Schedule type = priority
+	Migration type = precopy
+		Normal dirty rate = 20.0%
+		WWS dirty rate = 90.0%
+		WWS page ratio = 1.0%
+		Max pre-copy iteration = 30
+		Min dirty page = 50
+		Max no-progress round = 2
+	Control type = openloop
+

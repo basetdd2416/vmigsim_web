@@ -22,8 +22,5 @@
 					
 				</div>
 </div>
-@section('js')
-{{ HTML::script('js/quicksim.js') }}
 
-@stop
 @stop

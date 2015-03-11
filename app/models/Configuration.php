@@ -13,4 +13,9 @@
 			return $this->hasOne('Environment');
 		}
 
+		public function simulation()
+		{
+			return $this->hasOne('Simulation');
+		}
+
 	}

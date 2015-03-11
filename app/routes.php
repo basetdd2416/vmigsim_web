@@ -69,10 +69,10 @@ Route::get('simulation/simulation_result', 'SimResultController@index');
 Route::get('simulation/ajax-sim-name', 'SimResultController@ajaxSimName');
 Route::get('simulation/ajax-sim-rs', 'SimResultController@ajaxSimRsType');
 Route::get('simulation/ajax-sim-round', 'SimResultController@ajaxSimRound');
-
+Route::get('simulation/ajax-sim-netcompar', 'SimResultController@ajaxSimNetCompar');
 //existing sim
 Route::get('simulation/quicksim/existing-config', 'ExistConfigController@index');
-
+Route::post('simulation/quicksim/uploadConfig', 'UploadConfigController@index');
 Route::get('/shell', function()
 {
 	return View::make('shell');
@@ -84,4 +84,22 @@ Route::get('test/form1', 'TestJsonController@form1');
 Route::post('test/form1', 'TestJsonController@processform1');
 Route::post('test/form2', 'TestJsonController@processForm2');
 Route::get('test/form2', 'TestJsonController@createForm2');
+Route::get('test/file', function () {
+	$data = array();
+	$data['xAxis'] = array(1,2,3,4,5);
+	$data['yAxis'] = array(
+						array(
+							'name'=>'apisit',
+							'lastname' => 'onakekasit',
+							'ages' => 19
+						),
+						array(
+							'name'=>'lookme',
+							'lastname' => 'lookmho',
+							'ages' => 30
+							)
+					);
+	//$workflow = json_decode(file_get_contents('C:\xampp\htdocs\vmig\public\temp.json'), true);
+	return var_dump(json_encode($data, JSON_PRETTY_PRINT) );
+});
 

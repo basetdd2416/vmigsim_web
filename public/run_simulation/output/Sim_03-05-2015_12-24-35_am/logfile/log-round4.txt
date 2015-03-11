@@ -1,0 +1,1452 @@
+
+0.1 DC id: 2: Recieved start migration message from controller
+Starting the migration with vm amount: 200
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 108 added to a waiting queue
+Amount in a waiting queue: 1
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 56 added to a waiting queue
+Amount in a waiting queue: 2
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 191 added to a waiting queue
+Amount in a waiting queue: 3
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 183 added to a waiting queue
+Amount in a waiting queue: 4
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 90 added to a waiting queue
+Amount in a waiting queue: 5
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 111 added to a waiting queue
+Amount in a waiting queue: 6
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 28 added to a waiting queue
+Amount in a waiting queue: 7
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 2 added to a waiting queue
+Amount in a waiting queue: 8
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 164 added to a waiting queue
+Amount in a waiting queue: 9
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 162 added to a waiting queue
+Amount in a waiting queue: 10
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 173 added to a waiting queue
+Amount in a waiting queue: 11
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 29 added to a waiting queue
+Amount in a waiting queue: 12
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 4 added to a waiting queue
+Amount in a waiting queue: 13
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 24 added to a waiting queue
+Amount in a waiting queue: 14
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 160 added to a waiting queue
+Amount in a waiting queue: 15
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 102 added to a waiting queue
+Amount in a waiting queue: 16
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 13 added to a waiting queue
+Amount in a waiting queue: 17
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 17 added to a waiting queue
+Amount in a waiting queue: 18
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 53 added to a waiting queue
+Amount in a waiting queue: 19
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 156 added to a waiting queue
+Amount in a waiting queue: 20
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 89 added to a waiting queue
+Amount in a waiting queue: 21
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 195 added to a waiting queue
+Amount in a waiting queue: 22
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 146 added to a waiting queue
+Amount in a waiting queue: 23
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 197 added to a waiting queue
+Amount in a waiting queue: 24
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 142 added to a waiting queue
+Amount in a waiting queue: 25
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 91 added to a waiting queue
+Amount in a waiting queue: 26
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 34 added to a waiting queue
+Amount in a waiting queue: 27
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 147 added to a waiting queue
+Amount in a waiting queue: 28
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 170 added to a waiting queue
+Amount in a waiting queue: 29
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 112 added to a waiting queue
+Amount in a waiting queue: 30
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 100 added to a waiting queue
+Amount in a waiting queue: 31
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 1 added to a waiting queue
+Amount in a waiting queue: 32
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 9 added to a waiting queue
+Amount in a waiting queue: 33
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 187 added to a waiting queue
+Amount in a waiting queue: 34
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 22 added to a waiting queue
+Amount in a waiting queue: 35
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 64 added to a waiting queue
+Amount in a waiting queue: 36
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 55 added to a waiting queue
+Amount in a waiting queue: 37
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 45 added to a waiting queue
+Amount in a waiting queue: 38
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 188 added to a waiting queue
+Amount in a waiting queue: 39
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 75 added to a waiting queue
+Amount in a waiting queue: 40
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 73 added to a waiting queue
+Amount in a waiting queue: 41
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 6 added to a waiting queue
+Amount in a waiting queue: 42
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 172 added to a waiting queue
+Amount in a waiting queue: 43
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 180 added to a waiting queue
+Amount in a waiting queue: 44
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 125 added to a waiting queue
+Amount in a waiting queue: 45
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 49 added to a waiting queue
+Amount in a waiting queue: 46
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 194 added to a waiting queue
+Amount in a waiting queue: 47
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 158 added to a waiting queue
+Amount in a waiting queue: 48
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 186 added to a waiting queue
+Amount in a waiting queue: 49
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 184 added to a waiting queue
+Amount in a waiting queue: 50
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 130 added to a waiting queue
+Amount in a waiting queue: 51
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 82 added to a waiting queue
+Amount in a waiting queue: 52
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 19 added to a waiting queue
+Amount in a waiting queue: 53
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 144 added to a waiting queue
+Amount in a waiting queue: 54
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 95 added to a waiting queue
+Amount in a waiting queue: 55
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 129 added to a waiting queue
+Amount in a waiting queue: 56
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 135 added to a waiting queue
+Amount in a waiting queue: 57
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 155 added to a waiting queue
+Amount in a waiting queue: 58
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 114 added to a waiting queue
+Amount in a waiting queue: 59
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 61 added to a waiting queue
+Amount in a waiting queue: 60
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 126 added to a waiting queue
+Amount in a waiting queue: 61
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 179 added to a waiting queue
+Amount in a waiting queue: 62
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 153 added to a waiting queue
+Amount in a waiting queue: 63
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 166 added to a waiting queue
+Amount in a waiting queue: 64
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 47 added to a waiting queue
+Amount in a waiting queue: 65
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 26 added to a waiting queue
+Amount in a waiting queue: 66
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 151 added to a waiting queue
+Amount in a waiting queue: 67
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 68 added to a waiting queue
+Amount in a waiting queue: 68
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 66 added to a waiting queue
+Amount in a waiting queue: 69
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 59 added to a waiting queue
+Amount in a waiting queue: 70
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 94 added to a waiting queue
+Amount in a waiting queue: 71
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 50 added to a waiting queue
+Amount in a waiting queue: 72
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 86 added to a waiting queue
+Amount in a waiting queue: 73
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 181 added to a waiting queue
+Amount in a waiting queue: 74
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 20 added to a waiting queue
+Amount in a waiting queue: 75
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 11 added to a waiting queue
+Amount in a waiting queue: 76
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 99 added to a waiting queue
+Amount in a waiting queue: 77
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 117 added to a waiting queue
+Amount in a waiting queue: 78
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 136 added to a waiting queue
+Amount in a waiting queue: 79
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 14 added to a waiting queue
+Amount in a waiting queue: 80
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 88 added to a waiting queue
+Amount in a waiting queue: 81
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 101 added to a waiting queue
+Amount in a waiting queue: 82
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 128 added to a waiting queue
+Amount in a waiting queue: 83
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 113 added to a waiting queue
+Amount in a waiting queue: 84
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 196 added to a waiting queue
+Amount in a waiting queue: 85
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 177 added to a waiting queue
+Amount in a waiting queue: 86
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 70 added to a waiting queue
+Amount in a waiting queue: 87
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 12 added to a waiting queue
+Amount in a waiting queue: 88
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 122 added to a waiting queue
+Amount in a waiting queue: 89
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 107 added to a waiting queue
+Amount in a waiting queue: 90
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 116 added to a waiting queue
+Amount in a waiting queue: 91
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 40 added to a waiting queue
+Amount in a waiting queue: 92
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 39 added to a waiting queue
+Amount in a waiting queue: 93
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 165 added to a waiting queue
+Amount in a waiting queue: 94
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 80 added to a waiting queue
+Amount in a waiting queue: 95
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 168 added to a waiting queue
+Amount in a waiting queue: 96
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 52 added to a waiting queue
+Amount in a waiting queue: 97
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 140 added to a waiting queue
+Amount in a waiting queue: 98
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 63 added to a waiting queue
+Amount in a waiting queue: 99
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 58 added to a waiting queue
+Amount in a waiting queue: 100
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 31 added to a waiting queue
+Amount in a waiting queue: 101
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 65 added to a waiting queue
+Amount in a waiting queue: 102
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 143 added to a waiting queue
+Amount in a waiting queue: 103
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 51 added to a waiting queue
+Amount in a waiting queue: 104
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 84 added to a waiting queue
+Amount in a waiting queue: 105
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 152 added to a waiting queue
+Amount in a waiting queue: 106
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 110 added to a waiting queue
+Amount in a waiting queue: 107
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 37 added to a waiting queue
+Amount in a waiting queue: 108
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 171 added to a waiting queue
+Amount in a waiting queue: 109
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 189 added to a waiting queue
+Amount in a waiting queue: 110
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 38 added to a waiting queue
+Amount in a waiting queue: 111
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 120 added to a waiting queue
+Amount in a waiting queue: 112
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 72 added to a waiting queue
+Amount in a waiting queue: 113
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 83 added to a waiting queue
+Amount in a waiting queue: 114
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 48 added to a waiting queue
+Amount in a waiting queue: 115
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 30 added to a waiting queue
+Amount in a waiting queue: 116
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 33 added to a waiting queue
+Amount in a waiting queue: 117
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 98 added to a waiting queue
+Amount in a waiting queue: 118
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 169 added to a waiting queue
+Amount in a waiting queue: 119
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 190 added to a waiting queue
+Amount in a waiting queue: 120
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 161 added to a waiting queue
+Amount in a waiting queue: 121
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 87 added to a waiting queue
+Amount in a waiting queue: 122
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 32 added to a waiting queue
+Amount in a waiting queue: 123
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 133 added to a waiting queue
+Amount in a waiting queue: 124
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 35 added to a waiting queue
+Amount in a waiting queue: 125
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 199 added to a waiting queue
+Amount in a waiting queue: 126
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 198 added to a waiting queue
+Amount in a waiting queue: 127
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 78 added to a waiting queue
+Amount in a waiting queue: 128
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 5 added to a waiting queue
+Amount in a waiting queue: 129
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 60 added to a waiting queue
+Amount in a waiting queue: 130
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 138 added to a waiting queue
+Amount in a waiting queue: 131
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 121 added to a waiting queue
+Amount in a waiting queue: 132
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 115 added to a waiting queue
+Amount in a waiting queue: 133
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 106 added to a waiting queue
+Amount in a waiting queue: 134
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 7 added to a waiting queue
+Amount in a waiting queue: 135
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 27 added to a waiting queue
+Amount in a waiting queue: 136
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 10 added to a waiting queue
+Amount in a waiting queue: 137
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 124 added to a waiting queue
+Amount in a waiting queue: 138
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 132 added to a waiting queue
+Amount in a waiting queue: 139
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 67 added to a waiting queue
+Amount in a waiting queue: 140
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 118 added to a waiting queue
+Amount in a waiting queue: 141
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 71 added to a waiting queue
+Amount in a waiting queue: 142
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 3 added to a waiting queue
+Amount in a waiting queue: 143
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 85 added to a waiting queue
+Amount in a waiting queue: 144
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 149 added to a waiting queue
+Amount in a waiting queue: 145
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 41 added to a waiting queue
+Amount in a waiting queue: 146
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 36 added to a waiting queue
+Amount in a waiting queue: 147
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 192 added to a waiting queue
+Amount in a waiting queue: 148
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 176 added to a waiting queue
+Amount in a waiting queue: 149
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 174 added to a waiting queue
+Amount in a waiting queue: 150
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 134 added to a waiting queue
+Amount in a waiting queue: 151
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 178 added to a waiting queue
+Amount in a waiting queue: 152
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 21 added to a waiting queue
+Amount in a waiting queue: 153
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 15 added to a waiting queue
+Amount in a waiting queue: 154
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 54 added to a waiting queue
+Amount in a waiting queue: 155
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 97 added to a waiting queue
+Amount in a waiting queue: 156
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 44 added to a waiting queue
+Amount in a waiting queue: 157
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 167 added to a waiting queue
+Amount in a waiting queue: 158
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 92 added to a waiting queue
+Amount in a waiting queue: 159
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 79 added to a waiting queue
+Amount in a waiting queue: 160
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 109 added to a waiting queue
+Amount in a waiting queue: 161
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 46 added to a waiting queue
+Amount in a waiting queue: 162
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 74 added to a waiting queue
+Amount in a waiting queue: 163
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 43 added to a waiting queue
+Amount in a waiting queue: 164
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 148 added to a waiting queue
+Amount in a waiting queue: 165
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 42 added to a waiting queue
+Amount in a waiting queue: 166
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 131 added to a waiting queue
+Amount in a waiting queue: 167
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 119 added to a waiting queue
+Amount in a waiting queue: 168
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 163 added to a waiting queue
+Amount in a waiting queue: 169
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 62 added to a waiting queue
+Amount in a waiting queue: 170
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 193 added to a waiting queue
+Amount in a waiting queue: 171
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 185 added to a waiting queue
+Amount in a waiting queue: 172
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 25 added to a waiting queue
+Amount in a waiting queue: 173
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 105 added to a waiting queue
+Amount in a waiting queue: 174
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 137 added to a waiting queue
+Amount in a waiting queue: 175
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 141 added to a waiting queue
+Amount in a waiting queue: 176
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 139 added to a waiting queue
+Amount in a waiting queue: 177
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 77 added to a waiting queue
+Amount in a waiting queue: 178
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 76 added to a waiting queue
+Amount in a waiting queue: 179
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 154 added to a waiting queue
+Amount in a waiting queue: 180
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 96 added to a waiting queue
+Amount in a waiting queue: 181
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 150 added to a waiting queue
+Amount in a waiting queue: 182
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 145 added to a waiting queue
+Amount in a waiting queue: 183
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 127 added to a waiting queue
+Amount in a waiting queue: 184
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 23 added to a waiting queue
+Amount in a waiting queue: 185
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 18 added to a waiting queue
+Amount in a waiting queue: 186
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 69 added to a waiting queue
+Amount in a waiting queue: 187
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 157 added to a waiting queue
+Amount in a waiting queue: 188
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 16 added to a waiting queue
+Amount in a waiting queue: 189
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 103 added to a waiting queue
+Amount in a waiting queue: 190
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 182 added to a waiting queue
+Amount in a waiting queue: 191
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 123 added to a waiting queue
+Amount in a waiting queue: 192
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 104 added to a waiting queue
+Amount in a waiting queue: 193
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 159 added to a waiting queue
+Amount in a waiting queue: 194
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 8 added to a waiting queue
+Amount in a waiting queue: 195
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 57 added to a waiting queue
+Amount in a waiting queue: 196
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 93 added to a waiting queue
+Amount in a waiting queue: 197
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 175 added to a waiting queue
+Amount in a waiting queue: 198
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 0 added to a waiting queue
+Amount in a waiting queue: 199
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 81 added to a waiting queue
+Amount in a waiting queue: 200
+
+47.175458359760846 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Received all memory page of VM: 131072 pages
+
+56.871278279476506 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Dirty page amount: 26982
+
+66.64967095209823 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Dirty page amount: 27097
+
+76.42583615973543 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Dirty page amount: 27045
+
+86.1464505641366 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Dirty page amount: 26964
+
+95.96736794841398 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Dirty page amount: 27298
+
+105.67129879841858 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Dirty page amount: 27125
+
+115.44761495867336 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Dirty page amount: 27128
+
+125.28110041108235 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 108
+	Dirty page amount: 27419
+	VM id: 108 has done the migration.
+VM id: 108 allocated into Host id 0
+
+172.47324040722353 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Received all memory page of VM: 131072 pages
+
+182.32553617366167 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27276
+
+192.06168538200882 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27166
+
+201.83748041775056 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27137
+
+211.66202432622086 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27337
+
+221.3351747720064 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 26927
+
+231.16584129700297 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27251
+
+240.90021577283136 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27234
+
+250.62654822115414 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27186
+
+260.29032446704105 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 26883
+
+270.17787600517045 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27450
+
+279.95302870770223 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27154
+
+289.7324670250564 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27094
+
+299.55601349247434 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27323
+
+309.381571809925 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27219
+
+319.192261402644 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27195
+
+328.9386094047221 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27056
+
+338.77113916153706 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27292
+
+348.53194849326826 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27075
+
+358.2686809394917 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27092
+
+368.0058832652907 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27063
+
+377.8226904577507 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27359
+
+387.6918855697417 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 56
+	Dirty page amount: 27467
+	VM id: 56 has done the migration.
+VM id: 56 allocated into Host id 1
+
+434.8871924595197 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Received all memory page of VM: 131072 pages
+
+444.5698309239918 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Dirty page amount: 27055
+
+454.3101342538252 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Dirty page amount: 27168
+
+464.0106282442374 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Dirty page amount: 27136
+
+473.73693562181336 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Dirty page amount: 27194
+
+483.50836917269527 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 191
+	Dirty page amount: 27210
+	VM id: 191 has done the migration.
+VM id: 191 allocated into Host id 2
+
+530.6694370067835 DC id: 3: Recieved VM pages from controller
+	VM id: 183
+	Received all memory page of VM: 131072 pages
+
+540.478246923612 DC id: 3: Recieved VM pages from controller
+	VM id: 183
+	Dirty page amount: 27229
+
+550.2311799216085 DC id: 3: Recieved VM pages from controller
+	VM id: 183
+	Dirty page amount: 27007
+
+559.9589877007314 DC id: 3: Recieved VM pages from controller
+	VM id: 183
+	Dirty page amount: 27143
+
+569.6937205121127 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 183
+	Dirty page amount: 27182
+	VM id: 183 has done the migration.
+VM id: 183 allocated into Host id 3
+
+616.8671838478448 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Received all memory page of VM: 131072 pages
+
+626.6973456531304 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27178
+
+636.4443667415644 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27083
+
+646.1988703318344 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27063
+
+655.9081239150939 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27042
+
+665.6984767645355 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27104
+
+675.4324285037208 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 90
+	Dirty page amount: 27107
+	VM id: 90 has done the migration.
+VM id: 90 allocated into Host id 4
+
+722.6141005958347 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Received all memory page of VM: 131072 pages
+
+732.3837224112907 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27189
+
+742.2469201112543 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27350
+
+751.9757229599439 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27140
+
+761.7502954655502 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27173
+
+771.5189083747696 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27112
+
+781.1450302610094 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 26808
+
+790.8770259769028 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27106
+
+800.5488488651764 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 26958
+
+810.3350337970425 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27274
+
+820.0954275085938 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27215
+
+829.9210996440002 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27269
+
+839.7353458085043 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27147
+
+849.488836140086 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27101
+
+859.2184815328786 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27096
+
+869.0726922626881 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27160
+
+878.7982170346908 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 27076
+
+888.5057873588497 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 26969
+
+898.2163586328833 DC id: 3: Recieved VM pages from controller
+	VM id: 111
+	Dirty page amount: 26972
+
+907.9626109857774 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 111
+	Dirty page amount: 27127
+	VM id: 111 has done the migration.
+VM id: 111 allocated into Host id 5
+
+955.0776214679294 DC id: 3: Recieved VM pages from controller
+	VM id: 28
+	Received all memory page of VM: 131072 pages
+
+964.7537301416961 DC id: 3: Recieved VM pages from controller
+	VM id: 28
+	Dirty page amount: 26828
+
+974.5936958033618 DC id: 3: Recieved VM pages from controller
+	VM id: 28
+	Dirty page amount: 27233
+
+984.4148265935895 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 28
+	Dirty page amount: 27258
+	VM id: 28 has done the migration.
+VM id: 28 allocated into Host id 6
+
+1031.6769040249774 DC id: 3: Recieved VM pages from controller
+	VM id: 2
+	Received all memory page of VM: 131072 pages
+
+1041.4562182608006 DC id: 3: Recieved VM pages from controller
+	VM id: 2
+	Dirty page amount: 27145
+
+1051.0932691319902 DC id: 3: Recieved VM pages from controller
+	VM id: 2
+	Dirty page amount: 26890
+
+1060.836212163598 DC id: 3: Recieved VM pages from controller
+	VM id: 2
+	Dirty page amount: 27276
+
+1070.4714757123452 DC id: 3: Recieved VM pages from controller
+	VM id: 2
+	Dirty page amount: 26882
+
+1080.3200216881526 DC id: 3: Recieved VM pages from controller
+	VM id: 2
+	Dirty page amount: 27221
+
+1090.0518702880775 DC id: 3: Recieved VM pages from controller
+	VM id: 2
+	Dirty page amount: 27083
+
+1099.7948627663568 DC id: 3: Recieved VM pages from controller
+	VM id: 2
+	Dirty page amount: 27258
+
+1109.4821077041422 DC id: 3: Recieved VM pages from controller
+	VM id: 2
+	Dirty page amount: 26980
+
+1119.2728446407689 DC id: 3: Recieved VM pages from controller
+	VM id: 2
+	Dirty page amount: 27141
+
+1129.0532707692855 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 2
+	Dirty page amount: 27157
+	VM id: 2 has done the migration.
+VM id: 2 allocated into Host id 7
+
+1176.2489696785333 DC id: 3: Recieved VM pages from controller
+	VM id: 164
+	Received all memory page of VM: 131072 pages
+
+1186.042223254666 DC id: 3: Recieved VM pages from controller
+	VM id: 164
+	Dirty page amount: 27209
+
+1195.7418071064258 DC id: 3: Recieved VM pages from controller
+	VM id: 164
+	Dirty page amount: 27043
+
+1205.4204640414264 DC id: 3: Recieved VM pages from controller
+	VM id: 164
+	Dirty page amount: 27013
+
+1215.2335205992094 DC id: 3: Recieved VM pages from controller
+	VM id: 164
+	Dirty page amount: 27327
+
+1224.923440462084 DC id: 3: Recieved VM pages from controller
+	VM id: 164
+	Dirty page amount: 27063
+
+1234.656588294398 DC id: 3: Recieved VM pages from controller
+	VM id: 164
+	Dirty page amount: 27120
+
+1244.3607306135261 DC id: 3: Recieved VM pages from controller
+	VM id: 164
+	Dirty page amount: 26915
+
+1254.1548711706264 DC id: 3: Recieved VM pages from controller
+	VM id: 164
+	Dirty page amount: 27144
+
+1263.9695918190635 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 164
+	Dirty page amount: 27251
+	VM id: 164 has done the migration.
+VM id: 164 allocated into Host id 8
+
+1311.1391770673958 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Received all memory page of VM: 131072 pages
+
+1321.004049425946 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27218
+
+1330.8175599713948 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27139
+
+1340.6029954272094 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27163
+
+1350.3948158580035 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27137
+
+1360.1257523351496 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27025
+
+1369.8065640244108 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 26878
+
+1379.5528454522168 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27025
+
+1389.319207114847 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 162
+	Dirty page amount: 27240
+	VM id: 162 has done the migration.
+VM id: 162 allocated into Host id 9
+
+1436.4029695439249 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Received all memory page of VM: 131072 pages
+
+1446.2210709580831 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 27207
+
+1456.0389581759187 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 27317
+
+1465.6795261734587 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 26702
+
+1475.5872835464963 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 27409
+
+1485.2279523072464 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 26841
+
+1494.859864991946 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 26932
+
+1504.626705696035 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 173
+	Dirty page amount: 27130
+	VM id: 173 has done the migration.
+VM id: 173 allocated into Host id 10
+
+1551.6236886274664 DC id: 3: Recieved VM pages from controller
+	VM id: 29
+	Received all memory page of VM: 131072 pages
+
+1561.4489533276574 DC id: 3: Recieved VM pages from controller
+	VM id: 29
+	Dirty page amount: 27229
+
+1571.2917641225808 DC id: 3: Recieved VM pages from controller
+	VM id: 29
+	Dirty page amount: 27270
+
+1581.0943637849543 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 29
+	Dirty page amount: 27298
+	VM id: 29 has done the migration.
+VM id: 29 allocated into Host id 11
+
+1628.2079558444523 DC id: 3: Recieved VM pages from controller
+	VM id: 4
+	Received all memory page of VM: 131072 pages
+
+1637.9250905033146 DC id: 3: Recieved VM pages from controller
+	VM id: 4
+	Dirty page amount: 27057
+
+1647.6818736170326 DC id: 3: Recieved VM pages from controller
+	VM id: 4
+	Dirty page amount: 27141
+
+1657.520404357313 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 4
+	Dirty page amount: 27428
+	VM id: 4 has done the migration.
+VM id: 4 allocated into Host id 12
+
+1704.621560254618 DC id: 3: Recieved VM pages from controller
+	VM id: 24
+	Received all memory page of VM: 131072 pages
+
+1714.3130229442295 DC id: 3: Recieved VM pages from controller
+	VM id: 24
+	Dirty page amount: 26981
+
+1724.1350488000267 DC id: 3: Recieved VM pages from controller
+	VM id: 24
+	Dirty page amount: 27232
+
+1733.9715276563463 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 24
+	Dirty page amount: 27377
+	VM id: 24 has done the migration.
+VM id: 24 allocated into Host id 13
+
+1781.124667860127 DC id: 3: Recieved VM pages from controller
+	VM id: 160
+	Received all memory page of VM: 131072 pages
+
+1790.8671660991058 DC id: 3: Recieved VM pages from controller
+	VM id: 160
+	Dirty page amount: 27074
+Broker1 is shutting down...
+VmigSim finished!
+
+Migrated VM details ::
+	VM: 108 finished the migration with the time 125.18110041108235 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.833485452408993 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 56 finished the migration with the time 262.4107851586592 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.869195111991036 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 191 finished the migration with the time 95.81648360295355 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.771433550881898 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 183 finished the migration with the time 86.1853513394174 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.734732811381285 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 90 finished the migration with the time 105.73870799160802 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.733951739185247 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 111 finished the migration with the time 232.53018248205692 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.746252352894146 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 28 finished the migration with the time 76.45221560781212 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.821130790227695 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 2 finished the migration with the time 144.6384441756962 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.780426128516577 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 164 finished the migration with the time 134.916321049778 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.81472064843706 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 162 finished the migration with the time 125.34961529578321 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.766361662630079 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 173 finished the migration with the time 115.30749858118817 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.76684070408893 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 29 finished the migration with the time 76.46765808891921 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.802599662373467 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 4 finished the migration with the time 76.42604057235864 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.838530740280493 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 24 finished the migration with the time 76.45112329903296 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 9.836478856319578 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+
+Overall details ::
+	Total migrated VM = 14 / 200
+	Total migrated priority: 
+		Priority 1 = 14 / 200
+		Priority 2 = 0 / 0
+		Priority 3 = 0 / 0
+	Total violated VM = 0
+	Total migration time = 1733.8715276563462 (Avg. = 123.84796626116758) secs
+	Total down time = 137.11614021161648 (Avg. = 9.794010015115463) secs
+
+Environment details ::
+	Network type = dynamic
+		Max Bandwidth = 91.0 Mbps
+		Mean Bandwidth = 86.90016676 Mbps
+		Network's standard deviation = 1.0%
+		Network Interval = 1.0
+	Page size = 4 KB
+	Time limit = 1800.0 secs
+	Schedule type = priority
+	Migration type = precopy
+		Normal dirty rate = 20.0%
+		WWS dirty rate = 90.0%
+		WWS page ratio = 1.0%
+		Max pre-copy iteration = 30
+		Min dirty page = 50
+		Max no-progress round = 2
+	Control type = openloop
+

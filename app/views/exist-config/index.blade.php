@@ -107,7 +107,7 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 				</div>
 				
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">RAM(MB)</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">RAM</label>
 					<div class="col-sm-6">
 						<input id="ram" type="text" value="" name="ram" placeholder="enter your RAM">
 					</div>
@@ -128,7 +128,7 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 					<a id="mytool" href="#" data-toggle="tooltip" title="ลำดับความสำคัญเลขน้อยจะสำคัญมากที่สุด"><i class="fa fa-question-circle"></i> </a>
 				</div>
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">(QoS)Maximum down time(Min.)</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">(QoS)Maximum down time</label>
 					<div class="col-sm-6">
 						<input id="qos" type="text" value="" name="qos" placeholder="enter maximum down time">
 					</div>
@@ -190,13 +190,13 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 			</div>
 			
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Time limitation of migration (Min.)</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Time limitation of migration </label>
 				<div class="col-sm-6">
 					<input id="limit_time" name="limit_time" type="text" value="" placeholder="enter your time limitation of migration">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network bandwidth (Mbit/s)</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Network bandwidth</label>
 				<div class="col-sm-6">
 					<input id="network_bandwidth" type="text" value="" name="network_bandwidth" placeholder="enter your network bandwidth">
 				</div>
@@ -212,19 +212,25 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Page size (KB)</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Page size</label>
 				<div class="col-sm-6">
 					<input id="page_dirty" type="text" value="" name="page_dirty" placeholder="enter your network bandwidth">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network Interval (Second)</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Network Interval</label>
 				<div class="col-sm-6">
 					<input id="network_interval" type="text" value="" name="network_interval" placeholder="enter your network bandwidth">
 				</div>
 			</div>
+				<div class="form-group">
+				<label for="inputPassword3" class="col-sm-4 control-label">Network Mean</label>
+				<div class="col-sm-6">
+					<input id="network_mean" type="text" value="" name="network_mean" placeholder="enter your network bandwidth">
+				</div>
+			</div>
 			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network SD (%)</label>
+				<label for="inputPassword3" class="col-sm-4 control-label">Network SD</label>
 				<div class="col-sm-6">
 					<input id="network_sd" type="text" value="" name="network_sd" placeholder="enter your network bandwidth">
 				</div>
@@ -254,19 +260,19 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 		<div id="collapseFour" class="panel-collapse collapse">
 			<div class="panel-body">
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">WWS ratio (%)</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">WWS ratio</label>
 					<div class="col-sm-6">
 						<input id="wwws_ratio" name="wwws_ratio" type="text" value="" placeholder="enter your time limitation of migration">
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">WWS dirty rate (%)</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">WWS dirty rate</label>
 					<div class="col-sm-6">
 						<input id="wws_dirty_rate" type="text" value="" name="wws_dirty_rate" placeholder="enter your network bandwidth">
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">Normal dirty rate (%)</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">Normal dirty rate</label>
 					<div class="col-sm-6">
 						<input id="normal_dirty_rate" type="text" value="" name="normal_dirty_rate" placeholder="enter your network bandwidth">
 					</div>
@@ -366,85 +372,15 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 			<i class="fa fa-floppy-o"></i> save
 			</button>
 		</div>
+		</div>
 	</form>
 	
-</div>
+
 @section('js')
 {{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
 {{ HTML::script('js/jquery.serialize-object.js') }}
 {{ HTML::script('js/quicksim.js') }}
 {{ HTML::script('js/exist-config.js') }}
-<script type="text/javascript">
-//part of spinnere
-$("input[name='amount']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 1
-});
-$("input[name='ram']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 512
-});
-$("input[name='qos']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 30
-});
-$("input[name='network_interval']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 1
-});
-$("input[name='network_sd']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 54.8222
-});
-$("input[name='wwws_ratio']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 1
-});
-$("input[name='wws_dirty_rate']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 90
-});
-$("input[name='normal_dirty_rate']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 20
-});
-$("input[name='max_pre_copy_rate']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 30
-});
-$("input[name='min_dirty_page']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 50
-});
-$("input[name='max_no_prog_round']").TouchSpin({
-verticalbuttons: true,
-max: 1000,
-initval: 2
-});
 
-$("input[name='demo_vertical']").TouchSpin({
-verticalbuttons: true,
-});
-$("input[name='limit_time']").TouchSpin({
-verticalbuttons: true,
-});
-$("input[name='network_bandwidth']").TouchSpin({
-verticalbuttons: true,
-});
-$("input[name='page_dirty']").TouchSpin({
-verticalbuttons: true,
-
-});
-</script>
 @stop
 @stop

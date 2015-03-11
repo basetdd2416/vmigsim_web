@@ -128,7 +128,7 @@ content:"\e080";
 								<label id="envi_name" for="inputEmail3" class="control-label"></label>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-4 control-label">Time limitation of migration (Min.):</label>
+								<label for="inputEmail3" class="col-sm-5 control-label">Time limitation of migration (Second):</label>
 								<label id="time_limit" for="inputEmail3" class="control-label"></label>
 							</div>
 							<div class="form-group">
@@ -149,7 +149,11 @@ content:"\e080";
 								<label id="network_interval" for="inputEmail3" class="control-label"></label>
 							</div>
 							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-4 control-label">Network SD (Second):</label>
+								<label for="inputEmail3" class="col-sm-4 control-label">Network Mean (Mbps):</label>
+								<label id="network_mean" for="inputEmail3" class="control-label"></label>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-4 control-label">Network SD (Percent):</label>
 								<label id="network_sd" for="inputEmail3" class="control-label"></label>
 							</div>
 						</div>
@@ -239,7 +243,7 @@ content:"\e080";
 		$("input[name='round']").TouchSpin({
 		verticalbuttons: true,
 		max: 100,
-		initval: 1
+		initval: 10
 		});
 	</script>
 	@stop

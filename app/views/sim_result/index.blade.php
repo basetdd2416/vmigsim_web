@@ -22,7 +22,6 @@ content:"\e080";
 @endif
 <h1>Simulation result</h1>
 <hr>
-
 <div class="alert alert-danger alert-dismissible danger" role="alert" style="display:none;">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	<ul>
@@ -78,6 +77,9 @@ content:"\e080";
 						<div class="radio">
 							<label class="control-label "><input type="radio" name="rs_type" value="net">Newrok trace</label>
 						</div>
+						<div class="radio">
+							<label class="control-label "><input type="radio" name="rs_type" value="compar-net">Comparison network trace each round</label>
+						</div>
 					</div>
 				</div>
 				<div id="round_info" class="form-group" style="display:none;">
@@ -92,33 +94,47 @@ content:"\e080";
 			</div>
 		</div>
 	</div>
-	
-	<div id="content_info"  style="display:none;" class="panel panel-info">
-						<div class="panel-heading">
-						
-							<h3 class="panel-title">
-								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-								Result information</a></h3>
-						</div>
-						<div id="collapseThree" class="panel-collapse collapse in">
-						<div class="panel-body mypanel">
-							
-						</div>
-					</div>
+	<div id="graph_info" class="panel panel-info" style="display:none;">
+		  <div class="panel-heading">
+				<h3 class="panel-title">Network bandwidth graph</h3>
+		  </div>
+		  <div class="panel-body">
+				<div id="graph_container" style="min-width: 800px; height: 400px; margin: 0 auto">
+
 				</div>
 
+				<div id="graph--bar__container" style="min-width: 800px; height: 400px; margin: 0 auto; display:none;">
 
+				</div>
+		  </div>
+	</div>
+	<div id="content_info"  style="display:none;" class="panel panel-info">
+		<div class="panel-heading">
+			
+			<h3 class="panel-title">
+			<a id="stat_title" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+			</a></h3>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse in">
+			<div class="panel-body mypanel">
+				
+			</div>
+		</div>
+	</div>
 </form>
+
 <style type="text/css">
 .mypanel{
 max-height: 400px;
 overflow-y:scroll;
 }
 </style>
-
 @section('js')
 {{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
 {{ HTML::script('js/jquery.serialize-object.js') }}
+
+{{ HTML::script('http://code.highcharts.com/stock/highstock.js') }}
+{{ HTML::script('http://code.highcharts.com/modules/exporting.js') }}
 {{ HTML::script('js/sim_result.js') }}
 @stop
 @stop

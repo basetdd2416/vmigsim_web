@@ -1,0 +1,5128 @@
+
+0.1 DC id: 2: Recieved start migration message from controller
+Starting the migration with vm amount: 200
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 34 added to a waiting queue
+Amount in a waiting queue: 1
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 11 added to a waiting queue
+Amount in a waiting queue: 2
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 42 added to a waiting queue
+Amount in a waiting queue: 3
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 4 added to a waiting queue
+Amount in a waiting queue: 4
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 75 added to a waiting queue
+Amount in a waiting queue: 5
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 91 added to a waiting queue
+Amount in a waiting queue: 6
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 96 added to a waiting queue
+Amount in a waiting queue: 7
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 156 added to a waiting queue
+Amount in a waiting queue: 8
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 30 added to a waiting queue
+Amount in a waiting queue: 9
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 26 added to a waiting queue
+Amount in a waiting queue: 10
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 109 added to a waiting queue
+Amount in a waiting queue: 11
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 199 added to a waiting queue
+Amount in a waiting queue: 12
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 140 added to a waiting queue
+Amount in a waiting queue: 13
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 3 added to a waiting queue
+Amount in a waiting queue: 14
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 82 added to a waiting queue
+Amount in a waiting queue: 15
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 61 added to a waiting queue
+Amount in a waiting queue: 16
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 71 added to a waiting queue
+Amount in a waiting queue: 17
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 128 added to a waiting queue
+Amount in a waiting queue: 18
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 114 added to a waiting queue
+Amount in a waiting queue: 19
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 107 added to a waiting queue
+Amount in a waiting queue: 20
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 66 added to a waiting queue
+Amount in a waiting queue: 21
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 5 added to a waiting queue
+Amount in a waiting queue: 22
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 68 added to a waiting queue
+Amount in a waiting queue: 23
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 121 added to a waiting queue
+Amount in a waiting queue: 24
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 196 added to a waiting queue
+Amount in a waiting queue: 25
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 43 added to a waiting queue
+Amount in a waiting queue: 26
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 1 added to a waiting queue
+Amount in a waiting queue: 27
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 188 added to a waiting queue
+Amount in a waiting queue: 28
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 85 added to a waiting queue
+Amount in a waiting queue: 29
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 20 added to a waiting queue
+Amount in a waiting queue: 30
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 133 added to a waiting queue
+Amount in a waiting queue: 31
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 138 added to a waiting queue
+Amount in a waiting queue: 32
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 37 added to a waiting queue
+Amount in a waiting queue: 33
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 77 added to a waiting queue
+Amount in a waiting queue: 34
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 81 added to a waiting queue
+Amount in a waiting queue: 35
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 191 added to a waiting queue
+Amount in a waiting queue: 36
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 22 added to a waiting queue
+Amount in a waiting queue: 37
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 148 added to a waiting queue
+Amount in a waiting queue: 38
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 189 added to a waiting queue
+Amount in a waiting queue: 39
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 63 added to a waiting queue
+Amount in a waiting queue: 40
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 87 added to a waiting queue
+Amount in a waiting queue: 41
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 95 added to a waiting queue
+Amount in a waiting queue: 42
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 173 added to a waiting queue
+Amount in a waiting queue: 43
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 131 added to a waiting queue
+Amount in a waiting queue: 44
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 137 added to a waiting queue
+Amount in a waiting queue: 45
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 21 added to a waiting queue
+Amount in a waiting queue: 46
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 44 added to a waiting queue
+Amount in a waiting queue: 47
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 178 added to a waiting queue
+Amount in a waiting queue: 48
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 60 added to a waiting queue
+Amount in a waiting queue: 49
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 123 added to a waiting queue
+Amount in a waiting queue: 50
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 113 added to a waiting queue
+Amount in a waiting queue: 51
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 101 added to a waiting queue
+Amount in a waiting queue: 52
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 154 added to a waiting queue
+Amount in a waiting queue: 53
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 100 added to a waiting queue
+Amount in a waiting queue: 54
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 12 added to a waiting queue
+Amount in a waiting queue: 55
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 35 added to a waiting queue
+Amount in a waiting queue: 56
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 69 added to a waiting queue
+Amount in a waiting queue: 57
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 6 added to a waiting queue
+Amount in a waiting queue: 58
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 193 added to a waiting queue
+Amount in a waiting queue: 59
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 78 added to a waiting queue
+Amount in a waiting queue: 60
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 183 added to a waiting queue
+Amount in a waiting queue: 61
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 152 added to a waiting queue
+Amount in a waiting queue: 62
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 9 added to a waiting queue
+Amount in a waiting queue: 63
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 160 added to a waiting queue
+Amount in a waiting queue: 64
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 79 added to a waiting queue
+Amount in a waiting queue: 65
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 13 added to a waiting queue
+Amount in a waiting queue: 66
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 48 added to a waiting queue
+Amount in a waiting queue: 67
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 120 added to a waiting queue
+Amount in a waiting queue: 68
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 39 added to a waiting queue
+Amount in a waiting queue: 69
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 53 added to a waiting queue
+Amount in a waiting queue: 70
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 182 added to a waiting queue
+Amount in a waiting queue: 71
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 45 added to a waiting queue
+Amount in a waiting queue: 72
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 170 added to a waiting queue
+Amount in a waiting queue: 73
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 130 added to a waiting queue
+Amount in a waiting queue: 74
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 168 added to a waiting queue
+Amount in a waiting queue: 75
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 99 added to a waiting queue
+Amount in a waiting queue: 76
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 32 added to a waiting queue
+Amount in a waiting queue: 77
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 172 added to a waiting queue
+Amount in a waiting queue: 78
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 108 added to a waiting queue
+Amount in a waiting queue: 79
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 24 added to a waiting queue
+Amount in a waiting queue: 80
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 83 added to a waiting queue
+Amount in a waiting queue: 81
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 74 added to a waiting queue
+Amount in a waiting queue: 82
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 198 added to a waiting queue
+Amount in a waiting queue: 83
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 56 added to a waiting queue
+Amount in a waiting queue: 84
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 134 added to a waiting queue
+Amount in a waiting queue: 85
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 135 added to a waiting queue
+Amount in a waiting queue: 86
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 157 added to a waiting queue
+Amount in a waiting queue: 87
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 116 added to a waiting queue
+Amount in a waiting queue: 88
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 52 added to a waiting queue
+Amount in a waiting queue: 89
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 174 added to a waiting queue
+Amount in a waiting queue: 90
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 167 added to a waiting queue
+Amount in a waiting queue: 91
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 88 added to a waiting queue
+Amount in a waiting queue: 92
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 162 added to a waiting queue
+Amount in a waiting queue: 93
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 84 added to a waiting queue
+Amount in a waiting queue: 94
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 41 added to a waiting queue
+Amount in a waiting queue: 95
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 93 added to a waiting queue
+Amount in a waiting queue: 96
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 90 added to a waiting queue
+Amount in a waiting queue: 97
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 49 added to a waiting queue
+Amount in a waiting queue: 98
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 40 added to a waiting queue
+Amount in a waiting queue: 99
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 27 added to a waiting queue
+Amount in a waiting queue: 100
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 132 added to a waiting queue
+Amount in a waiting queue: 101
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 184 added to a waiting queue
+Amount in a waiting queue: 102
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 129 added to a waiting queue
+Amount in a waiting queue: 103
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 117 added to a waiting queue
+Amount in a waiting queue: 104
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 161 added to a waiting queue
+Amount in a waiting queue: 105
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 112 added to a waiting queue
+Amount in a waiting queue: 106
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 70 added to a waiting queue
+Amount in a waiting queue: 107
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 166 added to a waiting queue
+Amount in a waiting queue: 108
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 65 added to a waiting queue
+Amount in a waiting queue: 109
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 16 added to a waiting queue
+Amount in a waiting queue: 110
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 144 added to a waiting queue
+Amount in a waiting queue: 111
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 180 added to a waiting queue
+Amount in a waiting queue: 112
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 59 added to a waiting queue
+Amount in a waiting queue: 113
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 25 added to a waiting queue
+Amount in a waiting queue: 114
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 14 added to a waiting queue
+Amount in a waiting queue: 115
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 164 added to a waiting queue
+Amount in a waiting queue: 116
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 195 added to a waiting queue
+Amount in a waiting queue: 117
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 150 added to a waiting queue
+Amount in a waiting queue: 118
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 119 added to a waiting queue
+Amount in a waiting queue: 119
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 23 added to a waiting queue
+Amount in a waiting queue: 120
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 111 added to a waiting queue
+Amount in a waiting queue: 121
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 8 added to a waiting queue
+Amount in a waiting queue: 122
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 7 added to a waiting queue
+Amount in a waiting queue: 123
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 50 added to a waiting queue
+Amount in a waiting queue: 124
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 86 added to a waiting queue
+Amount in a waiting queue: 125
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 33 added to a waiting queue
+Amount in a waiting queue: 126
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 15 added to a waiting queue
+Amount in a waiting queue: 127
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 115 added to a waiting queue
+Amount in a waiting queue: 128
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 151 added to a waiting queue
+Amount in a waiting queue: 129
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 104 added to a waiting queue
+Amount in a waiting queue: 130
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 62 added to a waiting queue
+Amount in a waiting queue: 131
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 139 added to a waiting queue
+Amount in a waiting queue: 132
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 159 added to a waiting queue
+Amount in a waiting queue: 133
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 73 added to a waiting queue
+Amount in a waiting queue: 134
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 92 added to a waiting queue
+Amount in a waiting queue: 135
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 146 added to a waiting queue
+Amount in a waiting queue: 136
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 47 added to a waiting queue
+Amount in a waiting queue: 137
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 2 added to a waiting queue
+Amount in a waiting queue: 138
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 36 added to a waiting queue
+Amount in a waiting queue: 139
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 179 added to a waiting queue
+Amount in a waiting queue: 140
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 197 added to a waiting queue
+Amount in a waiting queue: 141
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 76 added to a waiting queue
+Amount in a waiting queue: 142
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 169 added to a waiting queue
+Amount in a waiting queue: 143
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 64 added to a waiting queue
+Amount in a waiting queue: 144
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 67 added to a waiting queue
+Amount in a waiting queue: 145
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 94 added to a waiting queue
+Amount in a waiting queue: 146
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 38 added to a waiting queue
+Amount in a waiting queue: 147
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 187 added to a waiting queue
+Amount in a waiting queue: 148
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 118 added to a waiting queue
+Amount in a waiting queue: 149
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 147 added to a waiting queue
+Amount in a waiting queue: 150
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 177 added to a waiting queue
+Amount in a waiting queue: 151
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 176 added to a waiting queue
+Amount in a waiting queue: 152
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 149 added to a waiting queue
+Amount in a waiting queue: 153
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 192 added to a waiting queue
+Amount in a waiting queue: 154
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 54 added to a waiting queue
+Amount in a waiting queue: 155
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 55 added to a waiting queue
+Amount in a waiting queue: 156
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 0 added to a waiting queue
+Amount in a waiting queue: 157
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 28 added to a waiting queue
+Amount in a waiting queue: 158
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 19 added to a waiting queue
+Amount in a waiting queue: 159
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 58 added to a waiting queue
+Amount in a waiting queue: 160
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 175 added to a waiting queue
+Amount in a waiting queue: 161
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 57 added to a waiting queue
+Amount in a waiting queue: 162
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 126 added to a waiting queue
+Amount in a waiting queue: 163
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 145 added to a waiting queue
+Amount in a waiting queue: 164
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 127 added to a waiting queue
+Amount in a waiting queue: 165
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 80 added to a waiting queue
+Amount in a waiting queue: 166
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 194 added to a waiting queue
+Amount in a waiting queue: 167
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 10 added to a waiting queue
+Amount in a waiting queue: 168
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 143 added to a waiting queue
+Amount in a waiting queue: 169
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 141 added to a waiting queue
+Amount in a waiting queue: 170
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 72 added to a waiting queue
+Amount in a waiting queue: 171
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 29 added to a waiting queue
+Amount in a waiting queue: 172
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 106 added to a waiting queue
+Amount in a waiting queue: 173
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 89 added to a waiting queue
+Amount in a waiting queue: 174
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 98 added to a waiting queue
+Amount in a waiting queue: 175
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 136 added to a waiting queue
+Amount in a waiting queue: 176
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 165 added to a waiting queue
+Amount in a waiting queue: 177
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 46 added to a waiting queue
+Amount in a waiting queue: 178
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 186 added to a waiting queue
+Amount in a waiting queue: 179
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 103 added to a waiting queue
+Amount in a waiting queue: 180
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 163 added to a waiting queue
+Amount in a waiting queue: 181
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 181 added to a waiting queue
+Amount in a waiting queue: 182
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 124 added to a waiting queue
+Amount in a waiting queue: 183
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 171 added to a waiting queue
+Amount in a waiting queue: 184
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 105 added to a waiting queue
+Amount in a waiting queue: 185
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 158 added to a waiting queue
+Amount in a waiting queue: 186
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 125 added to a waiting queue
+Amount in a waiting queue: 187
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 185 added to a waiting queue
+Amount in a waiting queue: 188
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 51 added to a waiting queue
+Amount in a waiting queue: 189
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 110 added to a waiting queue
+Amount in a waiting queue: 190
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 155 added to a waiting queue
+Amount in a waiting queue: 191
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 102 added to a waiting queue
+Amount in a waiting queue: 192
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 190 added to a waiting queue
+Amount in a waiting queue: 193
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 153 added to a waiting queue
+Amount in a waiting queue: 194
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 18 added to a waiting queue
+Amount in a waiting queue: 195
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 142 added to a waiting queue
+Amount in a waiting queue: 196
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 97 added to a waiting queue
+Amount in a waiting queue: 197
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 122 added to a waiting queue
+Amount in a waiting queue: 198
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 17 added to a waiting queue
+Amount in a waiting queue: 199
+
+0.1 Broker: Received queue message from dc id2 sent at 0.1
+VM id: 31 added to a waiting queue
+Amount in a waiting queue: 200
+
+82.98119704823355 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Received all memory page of VM: 131072 pages
+
+100.61060133541706 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27072
+
+117.05383633224608 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27164
+
+134.64856647600917 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27057
+
+152.252607205205 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27179
+
+169.3187748344769 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27018
+
+186.7201923434486 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27192
+
+203.08460746951198 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27094
+
+219.76052974490065 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27083
+
+237.80680119815142 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27231
+
+254.86380339886855 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27214
+
+271.95042372397785 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27098
+
+289.93302323168757 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27145
+
+306.5622697547738 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27046
+
+323.2635242840128 DC id: 3: Recieved VM pages from controller
+	VM id: 34
+	Dirty page amount: 27335
+
+340.6777150633986 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 34
+	Dirty page amount: 27362
+	VM id: 34 has done the migration.
+VM id: 34 allocated into Host id 0
+
+424.80308047377423 DC id: 3: Recieved VM pages from controller
+	VM id: 11
+	Received all memory page of VM: 131072 pages
+
+442.1512006707303 DC id: 3: Recieved VM pages from controller
+	VM id: 11
+	Dirty page amount: 27128
+
+459.92333575465744 DC id: 3: Recieved VM pages from controller
+	VM id: 11
+	Dirty page amount: 26938
+
+476.83151768162816 DC id: 3: Recieved VM pages from controller
+	VM id: 11
+	Dirty page amount: 27143
+
+493.78073139629566 DC id: 3: Recieved VM pages from controller
+	VM id: 11
+	Dirty page amount: 26976
+
+510.7023232156907 DC id: 3: Recieved VM pages from controller
+	VM id: 11
+	Dirty page amount: 27087
+
+529.4228859023897 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 11
+	Dirty page amount: 27201
+	VM id: 11 has done the migration.
+VM id: 11 allocated into Host id 1
+
+611.8061770579645 DC id: 3: Recieved VM pages from controller
+	VM id: 42
+	Received all memory page of VM: 131072 pages
+
+629.4964821041411 DC id: 3: Recieved VM pages from controller
+	VM id: 42
+	Dirty page amount: 27182
+
+646.7477578689995 DC id: 3: Recieved VM pages from controller
+	VM id: 42
+	Dirty page amount: 26979
+
+662.89745390024 DC id: 3: Recieved VM pages from controller
+	VM id: 42
+	Dirty page amount: 27017
+
+679.829487108427 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 42
+	Dirty page amount: 27165
+	VM id: 42 has done the migration.
+VM id: 42 allocated into Host id 2
+
+763.4417012127678 DC id: 3: Recieved VM pages from controller
+	VM id: 4
+	Received all memory page of VM: 131072 pages
+
+780.6880711176997 DC id: 3: Recieved VM pages from controller
+	VM id: 4
+	Dirty page amount: 26999
+
+797.8940653949645 DC id: 3: Recieved VM pages from controller
+	VM id: 4
+	Dirty page amount: 27209
+
+814.9456171516352 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 4
+	Dirty page amount: 27325
+	VM id: 4 has done the migration.
+VM id: 4 allocated into Host id 3
+
+898.9318006512792 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Received all memory page of VM: 131072 pages
+
+916.0988814708297 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27065
+
+932.5121502566666 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27095
+
+948.6806784580036 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 26938
+
+965.6450704383717 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27270
+
+983.1320449068979 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27200
+
+1000.7300118208808 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27018
+
+1018.2624068736637 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27118
+
+1034.838955709919 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 26996
+
+1051.7594176085688 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27514
+
+1068.7229910474903 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 26969
+
+1085.7688424952669 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27155
+
+1102.7725624558393 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27049
+
+1121.6388092047573 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27315
+
+1138.965036221053 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 26854
+
+1156.9765264079388 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27109
+
+1173.7496106080393 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27056
+
+1190.4856855658113 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27042
+
+1207.3846007534098 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27350
+
+1223.7330444892048 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27144
+
+1241.9807725352373 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27367
+
+1258.7213613408762 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 26799
+
+1274.7645476653884 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27126
+
+1291.9621977028903 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 26971
+
+1308.654119089191 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27020
+
+1325.715755275555 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 26963
+
+1343.2260180076298 DC id: 3: Recieved VM pages from controller
+	VM id: 75
+	Dirty page amount: 27201
+
+1361.3969198218622 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 75
+	Dirty page amount: 27495
+	VM id: 75 has done the migration.
+VM id: 75 allocated into Host id 4
+
+1445.908764008292 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Received all memory page of VM: 131072 pages
+
+1464.0372327825455 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 27216
+
+1480.7331444063484 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 27076
+
+1497.7522719427275 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 27058
+
+1514.2990691664127 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 27190
+
+1531.0892238928789 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 27081
+
+1548.461575074673 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 27068
+
+1564.8046480262349 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 27103
+
+1581.4035952810318 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 26794
+
+1598.3667584025393 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 27299
+
+1615.7761600240515 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 26961
+
+1632.93315285228 DC id: 3: Recieved VM pages from controller
+	VM id: 91
+	Dirty page amount: 27110
+
+1649.6130846821018 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 91
+	Dirty page amount: 27160
+	VM id: 91 has done the migration.
+VM id: 91 allocated into Host id 5
+
+1733.9165354726822 DC id: 3: Recieved VM pages from controller
+	VM id: 96
+	Received all memory page of VM: 131072 pages
+
+1751.4367501950812 DC id: 3: Recieved VM pages from controller
+	VM id: 96
+	Dirty page amount: 27195
+
+1768.2892650947545 DC id: 3: Recieved VM pages from controller
+	VM id: 96
+	Dirty page amount: 27181
+
+1784.7991815603493 DC id: 3: Recieved VM pages from controller
+	VM id: 96
+	Dirty page amount: 27289
+
+1802.008331221612 DC id: 3: Recieved VM pages from controller
+	VM id: 96
+	Dirty page amount: 26930
+
+1819.4240716278484 DC id: 3: Recieved VM pages from controller
+	VM id: 96
+	Dirty page amount: 27105
+
+1837.1205098291907 DC id: 3: Recieved VM pages from controller
+	VM id: 96
+	Dirty page amount: 26985
+
+1854.9067120905158 DC id: 3: Recieved VM pages from controller
+	VM id: 96
+	Dirty page amount: 27145
+
+1870.697173710846 DC id: 3: Recieved VM pages from controller
+	VM id: 96
+	Dirty page amount: 26860
+
+1888.474035056931 DC id: 3: Recieved VM pages from controller
+	VM id: 96
+	Dirty page amount: 26942
+
+1905.8249314387958 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 96
+	Dirty page amount: 27065
+	VM id: 96 has done the migration.
+VM id: 96 allocated into Host id 6
+
+1988.5047383450672 DC id: 3: Recieved VM pages from controller
+	VM id: 156
+	Received all memory page of VM: 131072 pages
+
+2005.1535610742515 DC id: 3: Recieved VM pages from controller
+	VM id: 156
+	Dirty page amount: 27423
+
+2022.3185397617008 DC id: 3: Recieved VM pages from controller
+	VM id: 156
+	Dirty page amount: 27056
+
+2039.987928190605 DC id: 3: Recieved VM pages from controller
+	VM id: 156
+	Dirty page amount: 27032
+
+2056.944242444249 DC id: 3: Recieved VM pages from controller
+	VM id: 156
+	Dirty page amount: 27126
+
+2072.9749072885634 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 156
+	Dirty page amount: 27229
+	VM id: 156 has done the migration.
+VM id: 156 allocated into Host id 7
+
+2154.774588503377 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Received all memory page of VM: 131072 pages
+
+2171.9225386766257 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Dirty page amount: 27223
+
+2189.4096467072914 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Dirty page amount: 27083
+
+2207.3621815500333 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Dirty page amount: 27306
+
+2224.0367448100096 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Dirty page amount: 27226
+
+2241.230249846674 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Dirty page amount: 26976
+
+2258.9755014520697 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Dirty page amount: 27248
+
+2276.5173300686097 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Dirty page amount: 27042
+
+2293.9300473121302 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Dirty page amount: 27336
+
+2310.446732753623 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Dirty page amount: 26821
+
+2327.4423695826213 DC id: 3: Recieved VM pages from controller
+	VM id: 30
+	Dirty page amount: 27234
+
+2344.6292844494164 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 30
+	Dirty page amount: 27364
+	VM id: 30 has done the migration.
+VM id: 30 allocated into Host id 8
+
+2427.0505321643377 DC id: 3: Recieved VM pages from controller
+	VM id: 26
+	Received all memory page of VM: 131072 pages
+
+2444.0556924652483 DC id: 3: Recieved VM pages from controller
+	VM id: 26
+	Dirty page amount: 27143
+
+2460.430675817367 DC id: 3: Recieved VM pages from controller
+	VM id: 26
+	Dirty page amount: 27100
+
+2477.4781402315402 DC id: 3: Recieved VM pages from controller
+	VM id: 26
+	Dirty page amount: 27193
+
+2495.970036755191 DC id: 3: Recieved VM pages from controller
+	VM id: 26
+	Dirty page amount: 27176
+
+2513.677577462239 DC id: 3: Recieved VM pages from controller
+	VM id: 26
+	Dirty page amount: 26959
+
+2531.2390264588926 DC id: 3: Recieved VM pages from controller
+	VM id: 26
+	Dirty page amount: 27375
+
+2548.7582482336143 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 26
+	Dirty page amount: 27377
+	VM id: 26 has done the migration.
+VM id: 26 allocated into Host id 9
+
+2632.3421982069844 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Received all memory page of VM: 131072 pages
+
+2648.6856851765338 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27165
+
+2665.497400647303 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27047
+
+2681.7748076267167 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 26889
+
+2698.095930759738 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27206
+
+2715.2092313739076 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27119
+
+2731.987246419582 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27085
+
+2748.952608117862 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27005
+
+2765.873527052213 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27270
+
+2782.979483363511 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27109
+
+2800.494353799058 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27024
+
+2818.0347918905936 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 26823
+
+2834.747100463145 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27242
+
+2852.618502271009 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27039
+
+2870.314744988205 DC id: 3: Recieved VM pages from controller
+	VM id: 109
+	Dirty page amount: 27296
+
+2887.994571495244 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 109
+	Dirty page amount: 27302
+	VM id: 109 has done the migration.
+VM id: 109 allocated into Host id 10
+
+2971.320964266916 DC id: 3: Recieved VM pages from controller
+	VM id: 199
+	Received all memory page of VM: 131072 pages
+
+2988.5249648655144 DC id: 3: Recieved VM pages from controller
+	VM id: 199
+	Dirty page amount: 27312
+
+3005.549792841871 DC id: 3: Recieved VM pages from controller
+	VM id: 199
+	Dirty page amount: 27260
+
+3022.9870955853085 DC id: 3: Recieved VM pages from controller
+	VM id: 199
+	Dirty page amount: 27057
+
+3040.409674515022 DC id: 3: Recieved VM pages from controller
+	VM id: 199
+	Dirty page amount: 27441
+
+3056.8722049940498 DC id: 3: Recieved VM pages from controller
+	VM id: 199
+	Dirty page amount: 27122
+
+3073.3326204697382 DC id: 3: Recieved VM pages from controller
+	VM id: 199
+	Dirty page amount: 26865
+
+3089.5187837579765 DC id: 3: Recieved VM pages from controller
+	VM id: 199
+	Dirty page amount: 27194
+
+3106.7026605649494 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 199
+	Dirty page amount: 27195
+	VM id: 199 has done the migration.
+VM id: 199 allocated into Host id 11
+
+3187.3718372816643 DC id: 3: Recieved VM pages from controller
+	VM id: 140
+	Received all memory page of VM: 131072 pages
+
+3204.7005530543643 DC id: 3: Recieved VM pages from controller
+	VM id: 140
+	Dirty page amount: 27073
+
+3221.246264585395 DC id: 3: Recieved VM pages from controller
+	VM id: 140
+	Dirty page amount: 27205
+
+3238.1498619281774 DC id: 3: Recieved VM pages from controller
+	VM id: 140
+	Dirty page amount: 27065
+
+3255.73399744106 DC id: 3: Recieved VM pages from controller
+	VM id: 140
+	Dirty page amount: 26872
+
+3272.5555486235667 DC id: 3: Recieved VM pages from controller
+	VM id: 140
+	Dirty page amount: 27147
+
+3289.119181063516 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 140
+	Dirty page amount: 27209
+	VM id: 140 has done the migration.
+VM id: 140 allocated into Host id 12
+
+3373.0085398812657 DC id: 3: Recieved VM pages from controller
+	VM id: 3
+	Received all memory page of VM: 131072 pages
+
+3390.762872059593 DC id: 3: Recieved VM pages from controller
+	VM id: 3
+	Dirty page amount: 27401
+
+3408.3260641810903 DC id: 3: Recieved VM pages from controller
+	VM id: 3
+	Dirty page amount: 27340
+
+3426.363836839333 DC id: 3: Recieved VM pages from controller
+	VM id: 3
+	Dirty page amount: 27173
+
+3443.9962075078492 DC id: 3: Recieved VM pages from controller
+	VM id: 3
+	Dirty page amount: 27201
+
+3461.8233398687175 DC id: 3: Recieved VM pages from controller
+	VM id: 3
+	Dirty page amount: 27101
+
+3478.871359145569 DC id: 3: Recieved VM pages from controller
+	VM id: 3
+	Dirty page amount: 27409
+
+3497.051176306615 DC id: 3: Recieved VM pages from controller
+	VM id: 3
+	Dirty page amount: 27165
+
+3514.199912888934 DC id: 3: Recieved VM pages from controller
+	VM id: 3
+	Dirty page amount: 27291
+
+3531.7238766756072 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 3
+	Dirty page amount: 27363
+	VM id: 3 has done the migration.
+VM id: 3 allocated into Host id 13
+
+3615.081633672809 DC id: 3: Recieved VM pages from controller
+	VM id: 82
+	Received all memory page of VM: 131072 pages
+
+3632.536799053471 DC id: 3: Recieved VM pages from controller
+	VM id: 82
+	Dirty page amount: 27245
+
+3649.4212433757807 DC id: 3: Recieved VM pages from controller
+	VM id: 82
+	Dirty page amount: 27103
+
+3666.427272127486 DC id: 3: Recieved VM pages from controller
+	VM id: 82
+	Dirty page amount: 26915
+
+3683.1839719992913 DC id: 3: Recieved VM pages from controller
+	VM id: 82
+	Dirty page amount: 27199
+
+3699.6836057894293 DC id: 3: Recieved VM pages from controller
+	VM id: 82
+	Dirty page amount: 27080
+
+3717.3740588303986 DC id: 3: Recieved VM pages from controller
+	VM id: 82
+	Dirty page amount: 27221
+
+3734.367341044383 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 82
+	Dirty page amount: 27355
+	VM id: 82 has done the migration.
+VM id: 82 allocated into Host id 14
+
+3816.632778582579 DC id: 3: Recieved VM pages from controller
+	VM id: 61
+	Received all memory page of VM: 131072 pages
+
+3833.4482653742775 DC id: 3: Recieved VM pages from controller
+	VM id: 61
+	Dirty page amount: 27189
+
+3851.878575637898 DC id: 3: Recieved VM pages from controller
+	VM id: 61
+	Dirty page amount: 27363
+
+3870.0017663444214 DC id: 3: Recieved VM pages from controller
+	VM id: 61
+	Dirty page amount: 27135
+
+3886.214759863341 DC id: 3: Recieved VM pages from controller
+	VM id: 61
+	Dirty page amount: 27075
+
+3903.327270489174 DC id: 3: Recieved VM pages from controller
+	VM id: 61
+	Dirty page amount: 27184
+
+3921.409123871935 DC id: 3: Recieved VM pages from controller
+	VM id: 61
+	Dirty page amount: 27107
+
+3939.6244898609375 DC id: 3: Recieved VM pages from controller
+	VM id: 61
+	Dirty page amount: 27234
+
+3956.342027888852 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 61
+	Dirty page amount: 27301
+	VM id: 61 has done the migration.
+VM id: 61 allocated into Host id 15
+
+4036.7715740808867 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Received all memory page of VM: 131072 pages
+
+4053.0787484342272 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 27057
+
+4070.089165629758 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 27275
+
+4086.2917863757434 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 27071
+
+4103.2775698148 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 26908
+
+4121.30806339132 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 26860
+
+4138.711331436913 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 27153
+
+4156.705346259994 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 27079
+
+4173.6881263479045 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 27067
+
+4190.32214529893 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 27037
+
+4207.294569875243 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 26921
+
+4224.597476617185 DC id: 3: Recieved VM pages from controller
+	VM id: 71
+	Dirty page amount: 27204
+
+4242.290479424829 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 71
+	Dirty page amount: 27318
+	VM id: 71 has done the migration.
+VM id: 71 allocated into Host id 16
+
+4324.463200611105 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Received all memory page of VM: 131072 pages
+
+4342.738133203999 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 27175
+
+4359.532821455973 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 26978
+
+4376.680849580885 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 26967
+
+4394.084834937135 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 27138
+
+4412.094600189285 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 26867
+
+4429.197966595199 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 27248
+
+4445.469519088281 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 27093
+
+4462.258982618157 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 26941
+
+4478.101923204425 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 27026
+
+4495.075612845888 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 27024
+
+4512.565169934416 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 27143
+
+4529.847733925176 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 27119
+
+4548.0605161541625 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 26803
+
+4564.295222929226 DC id: 3: Recieved VM pages from controller
+	VM id: 128
+	Dirty page amount: 27028
+
+4581.588534833206 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 128
+	Dirty page amount: 27308
+	VM id: 128 has done the migration.
+VM id: 128 allocated into Host id 17
+
+4664.333256155973 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Received all memory page of VM: 131072 pages
+
+4681.615182118177 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 26882
+
+4699.132857615592 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27193
+
+4716.253904687158 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27090
+
+4732.403390243391 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 26899
+
+4748.992381227058 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27076
+
+4766.376461823853 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27071
+
+4784.8667471088875 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27281
+
+4802.094434452085 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27195
+
+4820.156775065064 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27265
+
+4836.773296139438 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27173
+
+4853.360228186467 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27093
+
+4870.715470268069 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27121
+
+4887.68119628051 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 26994
+
+4905.070692491373 DC id: 3: Recieved VM pages from controller
+	VM id: 114
+	Dirty page amount: 27029
+
+4921.942821736232 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 114
+	Dirty page amount: 27105
+	VM id: 114 has done the migration.
+VM id: 114 allocated into Host id 18
+
+5005.336162592046 DC id: 3: Recieved VM pages from controller
+	VM id: 107
+	Received all memory page of VM: 131072 pages
+
+5023.308994442472 DC id: 3: Recieved VM pages from controller
+	VM id: 107
+	Dirty page amount: 27128
+
+5040.293654431036 DC id: 3: Recieved VM pages from controller
+	VM id: 107
+	Dirty page amount: 27352
+
+5056.825822229272 DC id: 3: Recieved VM pages from controller
+	VM id: 107
+	Dirty page amount: 27135
+
+5073.865019821745 DC id: 3: Recieved VM pages from controller
+	VM id: 107
+	Dirty page amount: 27031
+
+5091.066087409315 DC id: 3: Recieved VM pages from controller
+	VM id: 107
+	Dirty page amount: 27156
+
+5107.993627577413 DC id: 3: Recieved VM pages from controller
+	VM id: 107
+	Dirty page amount: 27045
+
+5125.503984736614 DC id: 3: Recieved VM pages from controller
+	VM id: 107
+	Dirty page amount: 27059
+
+5142.464856752828 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 107
+	Dirty page amount: 27242
+	VM id: 107 has done the migration.
+VM id: 107 allocated into Host id 19
+
+5225.624077816074 DC id: 3: Recieved VM pages from controller
+	VM id: 66
+	Received all memory page of VM: 131072 pages
+
+5243.043426803959 DC id: 3: Recieved VM pages from controller
+	VM id: 66
+	Dirty page amount: 26996
+
+5260.417419081565 DC id: 3: Recieved VM pages from controller
+	VM id: 66
+	Dirty page amount: 26803
+
+5276.937228794475 DC id: 3: Recieved VM pages from controller
+	VM id: 66
+	Dirty page amount: 27161
+
+5295.144765775616 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 66
+	Dirty page amount: 27482
+	VM id: 66 has done the migration.
+VM id: 66 allocated into Host id 20
+
+5378.72018696135 DC id: 3: Recieved VM pages from controller
+	VM id: 5
+	Received all memory page of VM: 131072 pages
+
+5395.956705454496 DC id: 3: Recieved VM pages from controller
+	VM id: 5
+	Dirty page amount: 27129
+
+5412.784761599968 DC id: 3: Recieved VM pages from controller
+	VM id: 5
+	Dirty page amount: 27115
+
+5430.39745737413 DC id: 3: Recieved VM pages from controller
+	VM id: 5
+	Dirty page amount: 27216
+
+5447.365892483698 DC id: 3: Recieved VM pages from controller
+	VM id: 5
+	Dirty page amount: 27137
+
+5463.988790069421 DC id: 3: Recieved VM pages from controller
+	VM id: 5
+	Dirty page amount: 27031
+
+5480.242767871754 DC id: 3: Recieved VM pages from controller
+	VM id: 5
+	Dirty page amount: 27140
+
+5498.6256554349775 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 5
+	Dirty page amount: 27199
+	VM id: 5 has done the migration.
+VM id: 5 allocated into Host id 21
+
+5581.7884906569 DC id: 3: Recieved VM pages from controller
+	VM id: 68
+	Received all memory page of VM: 131072 pages
+
+5599.527360951941 DC id: 3: Recieved VM pages from controller
+	VM id: 68
+	Dirty page amount: 27208
+
+5616.083611893583 DC id: 3: Recieved VM pages from controller
+	VM id: 68
+	Dirty page amount: 27175
+
+5633.617901059586 DC id: 3: Recieved VM pages from controller
+	VM id: 68
+	Dirty page amount: 27290
+
+5651.2281334165245 DC id: 3: Recieved VM pages from controller
+	VM id: 68
+	Dirty page amount: 27126
+
+5668.000297644057 DC id: 3: Recieved VM pages from controller
+	VM id: 68
+	Dirty page amount: 27284
+
+5684.447354694425 DC id: 3: Recieved VM pages from controller
+	VM id: 68
+	Dirty page amount: 27158
+
+5701.408508934208 DC id: 3: Recieved VM pages from controller
+	VM id: 68
+	Dirty page amount: 26974
+
+5718.660737791562 DC id: 3: Recieved VM pages from controller
+	VM id: 68
+	Dirty page amount: 27034
+
+5736.400438012679 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 68
+	Dirty page amount: 27150
+	VM id: 68 has done the migration.
+VM id: 68 allocated into Host id 22
+
+5819.7096190469 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Received all memory page of VM: 131072 pages
+
+5836.720539154831 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Dirty page amount: 27307
+
+5854.222095076286 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Dirty page amount: 27222
+
+5871.425374392341 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Dirty page amount: 27236
+
+5889.164314320131 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Dirty page amount: 26987
+
+5905.197548718385 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Dirty page amount: 27003
+
+5922.603881422499 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Dirty page amount: 26958
+
+5939.791551598139 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Dirty page amount: 26922
+
+5957.166344220263 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Dirty page amount: 27270
+
+5974.7689695277495 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Dirty page amount: 26830
+
+5991.048965443352 DC id: 3: Recieved VM pages from controller
+	VM id: 121
+	Dirty page amount: 27058
+
+6007.9797834228375 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 121
+	Dirty page amount: 27201
+	VM id: 121 has done the migration.
+VM id: 121 allocated into Host id 23
+
+6091.024826648464 DC id: 3: Recieved VM pages from controller
+	VM id: 196
+	Received all memory page of VM: 131072 pages
+
+6107.32701689645 DC id: 3: Recieved VM pages from controller
+	VM id: 196
+	Dirty page amount: 26894
+
+6123.505616695561 DC id: 3: Recieved VM pages from controller
+	VM id: 196
+	Dirty page amount: 27261
+
+6141.2009991887235 DC id: 3: Recieved VM pages from controller
+	VM id: 196
+	Dirty page amount: 26950
+
+6159.007047428125 DC id: 3: Recieved VM pages from controller
+	VM id: 196
+	Dirty page amount: 27086
+
+6175.633782737627 DC id: 3: Recieved VM pages from controller
+	VM id: 196
+	Dirty page amount: 27022
+
+6192.814240084413 DC id: 3: Recieved VM pages from controller
+	VM id: 196
+	Dirty page amount: 27212
+
+6209.395763140452 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 196
+	Dirty page amount: 27244
+	VM id: 196 has done the migration.
+VM id: 196 allocated into Host id 24
+
+6293.21743723813 DC id: 3: Recieved VM pages from controller
+	VM id: 43
+	Received all memory page of VM: 131072 pages
+
+6309.951227691092 DC id: 3: Recieved VM pages from controller
+	VM id: 43
+	Dirty page amount: 26996
+
+6327.441245608462 DC id: 3: Recieved VM pages from controller
+	VM id: 43
+	Dirty page amount: 27419
+
+6344.745627926598 DC id: 3: Recieved VM pages from controller
+	VM id: 43
+	Dirty page amount: 27015
+
+6360.774345343009 DC id: 3: Recieved VM pages from controller
+	VM id: 43
+	Dirty page amount: 27027
+
+6377.178369061837 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 43
+	Dirty page amount: 27098
+	VM id: 43 has done the migration.
+VM id: 43 allocated into Host id 25
+
+6459.373792299072 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Received all memory page of VM: 131072 pages
+
+6476.116955168062 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 26919
+
+6493.840439691627 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 27307
+
+6510.904496466715 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 26969
+
+6528.0833168327545 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 27197
+
+6545.566489891711 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 27067
+
+6563.261766926989 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 27110
+
+6579.396288259931 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 26954
+
+6597.013563007566 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 27246
+
+6612.9454584281475 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 26985
+
+6629.797082149508 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 26845
+
+6647.750438226152 DC id: 3: Recieved VM pages from controller
+	VM id: 1
+	Dirty page amount: 27119
+
+6664.512087708656 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 1
+	Dirty page amount: 27225
+	VM id: 1 has done the migration.
+VM id: 1 allocated into Host id 26
+
+6746.492035664104 DC id: 3: Recieved VM pages from controller
+	VM id: 188
+	Received all memory page of VM: 131072 pages
+
+6763.458875003322 DC id: 3: Recieved VM pages from controller
+	VM id: 188
+	Dirty page amount: 27097
+
+6780.016159087304 DC id: 3: Recieved VM pages from controller
+	VM id: 188
+	Dirty page amount: 27053
+
+6797.398435597458 DC id: 3: Recieved VM pages from controller
+	VM id: 188
+	Dirty page amount: 27314
+
+6814.6551487788665 DC id: 3: Recieved VM pages from controller
+	VM id: 188
+	Dirty page amount: 27041
+
+6830.535918797942 DC id: 3: Recieved VM pages from controller
+	VM id: 188
+	Dirty page amount: 26727
+
+6847.219029965976 DC id: 3: Recieved VM pages from controller
+	VM id: 188
+	Dirty page amount: 26910
+
+6864.565109469095 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 188
+	Dirty page amount: 27321
+	VM id: 188 has done the migration.
+VM id: 188 allocated into Host id 27
+
+6949.49081266145 DC id: 3: Recieved VM pages from controller
+	VM id: 85
+	Received all memory page of VM: 131072 pages
+
+6965.672564018119 DC id: 3: Recieved VM pages from controller
+	VM id: 85
+	Dirty page amount: 27179
+
+6982.878086518723 DC id: 3: Recieved VM pages from controller
+	VM id: 85
+	Dirty page amount: 27039
+
+6999.463543618938 DC id: 3: Recieved VM pages from controller
+	VM id: 85
+	Dirty page amount: 27059
+
+7016.950608603408 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 85
+	Dirty page amount: 27380
+	VM id: 85 has done the migration.
+VM id: 85 allocated into Host id 28
+
+7098.854272342037 DC id: 3: Recieved VM pages from controller
+	VM id: 20
+	Received all memory page of VM: 131072 pages
+
+7117.662637096285 DC id: 3: Recieved VM pages from controller
+	VM id: 20
+	Dirty page amount: 27451
+
+7134.391955134837 DC id: 3: Recieved VM pages from controller
+	VM id: 20
+	Dirty page amount: 27096
+
+7151.628999453381 DC id: 3: Recieved VM pages from controller
+	VM id: 20
+	Dirty page amount: 26711
+
+7169.212162004887 DC id: 3: Recieved VM pages from controller
+	VM id: 20
+	Dirty page amount: 26979
+
+7186.627674931657 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 20
+	Dirty page amount: 26988
+	VM id: 20 has done the migration.
+VM id: 20 allocated into Host id 29
+
+7269.15261281061 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Received all memory page of VM: 131072 pages
+
+7287.399077248913 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 27290
+
+7304.961434621847 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 27439
+
+7322.801313885576 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 27150
+
+7339.394930030832 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 27355
+
+7356.178349352891 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 27341
+
+7372.954805737337 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 27199
+
+7390.862785809977 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 27427
+
+7408.505745624063 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 27018
+
+7425.258071066557 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 27213
+
+7442.7041406311955 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 26943
+
+7460.84682962627 DC id: 3: Recieved VM pages from controller
+	VM id: 133
+	Dirty page amount: 27144
+
+7478.830140488286 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 133
+	Dirty page amount: 27153
+	VM id: 133 has done the migration.
+VM id: 133 allocated into Host id 30
+
+7561.661472045216 DC id: 3: Recieved VM pages from controller
+	VM id: 138
+	Received all memory page of VM: 131072 pages
+
+7577.964405550757 DC id: 3: Recieved VM pages from controller
+	VM id: 138
+	Dirty page amount: 27052
+
+7595.020441040668 DC id: 3: Recieved VM pages from controller
+	VM id: 138
+	Dirty page amount: 27260
+
+7611.484408238309 DC id: 3: Recieved VM pages from controller
+	VM id: 138
+	Dirty page amount: 27159
+
+7628.419943517889 DC id: 3: Recieved VM pages from controller
+	VM id: 138
+	Dirty page amount: 26883
+
+7644.924213653925 DC id: 3: Recieved VM pages from controller
+	VM id: 138
+	Dirty page amount: 27064
+
+7661.095748216475 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 138
+	Dirty page amount: 27193
+	VM id: 138 has done the migration.
+VM id: 138 allocated into Host id 31
+
+7743.1573608714125 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Received all memory page of VM: 131072 pages
+
+7759.555439283987 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27002
+
+7776.5984256724805 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27455
+
+7794.150498448666 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27206
+
+7811.47211955834 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27046
+
+7829.6584509088525 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27361
+
+7846.758516719193 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27042
+
+7863.952262386646 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27323
+
+7882.420556249581 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27123
+
+7900.028364378523 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27286
+
+7916.925637541037 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27181
+
+7934.566131225857 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27206
+
+7952.297158065449 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 26870
+
+7969.770429154883 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27170
+
+7986.095395041054 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27113
+
+8002.835429491322 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 26913
+
+8020.683860192938 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27202
+
+8037.35109818637 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 26981
+
+8055.178165126789 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27205
+
+8071.557031558494 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27086
+
+8088.993094612208 DC id: 3: Recieved VM pages from controller
+	VM id: 37
+	Dirty page amount: 27097
+
+8106.361194818212 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 37
+	Dirty page amount: 27390
+	VM id: 37 has done the migration.
+VM id: 37 allocated into Host id 32
+
+8189.87937466964 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Received all memory page of VM: 131072 pages
+
+8207.26324833911 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Dirty page amount: 26817
+
+8224.431667460707 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Dirty page amount: 27262
+
+8242.179070493416 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Dirty page amount: 27056
+
+8259.201761751583 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Dirty page amount: 27174
+
+8275.97209350857 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Dirty page amount: 27087
+
+8293.62775228837 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Dirty page amount: 27071
+
+8312.74891472135 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Dirty page amount: 26972
+
+8331.085125847952 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Dirty page amount: 27237
+
+8348.771362735082 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Dirty page amount: 27079
+
+8365.135353288606 DC id: 3: Recieved VM pages from controller
+	VM id: 77
+	Dirty page amount: 27142
+
+8382.249871595326 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 77
+	Dirty page amount: 27233
+	VM id: 77 has done the migration.
+VM id: 77 allocated into Host id 33
+
+8464.789011911129 DC id: 3: Recieved VM pages from controller
+	VM id: 81
+	Received all memory page of VM: 131072 pages
+
+8481.540380246672 DC id: 3: Recieved VM pages from controller
+	VM id: 81
+	Dirty page amount: 27154
+
+8497.848491880146 DC id: 3: Recieved VM pages from controller
+	VM id: 81
+	Dirty page amount: 27089
+
+8514.908692391935 DC id: 3: Recieved VM pages from controller
+	VM id: 81
+	Dirty page amount: 27221
+
+8531.555225874361 DC id: 3: Recieved VM pages from controller
+	VM id: 81
+	Dirty page amount: 26862
+
+8548.88499657523 DC id: 3: Recieved VM pages from controller
+	VM id: 81
+	Dirty page amount: 27299
+
+8567.145443302412 DC id: 3: Recieved VM pages from controller
+	VM id: 81
+	Dirty page amount: 27287
+
+8583.683327047243 DC id: 3: Recieved VM pages from controller
+	VM id: 81
+	Dirty page amount: 26939
+
+8599.97180809769 DC id: 3: Recieved VM pages from controller
+	VM id: 81
+	Dirty page amount: 27128
+
+8617.516825338807 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 81
+	Dirty page amount: 27147
+	VM id: 81 has done the migration.
+VM id: 81 allocated into Host id 34
+
+8701.743764110457 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Received all memory page of VM: 131072 pages
+
+8719.817044098234 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Dirty page amount: 27198
+
+8738.068293064767 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Dirty page amount: 27128
+
+8755.60003204962 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Dirty page amount: 27257
+
+8772.713762604304 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Dirty page amount: 27026
+
+8789.65777643329 DC id: 3: Recieved VM pages from controller
+	VM id: 191
+	Dirty page amount: 27037
+
+8806.866280958506 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 191
+	Dirty page amount: 27218
+	VM id: 191 has done the migration.
+VM id: 191 allocated into Host id 35
+
+8889.951285416211 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Received all memory page of VM: 131072 pages
+
+8907.096643349065 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 26944
+
+8923.704545328592 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27212
+
+8941.618390422042 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27174
+
+8958.094591343708 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27059
+
+8975.569082278065 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27262
+
+8992.385586025552 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 26989
+
+9008.880535690418 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27276
+
+9027.028406279047 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 26849
+
+9045.116512342507 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27164
+
+9061.399010510057 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27130
+
+9078.860101057042 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27197
+
+9095.398101277926 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27057
+
+9112.763585177714 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27034
+
+9129.607534431616 DC id: 3: Recieved VM pages from controller
+	VM id: 22
+	Dirty page amount: 27108
+
+9146.665268391627 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 22
+	Dirty page amount: 27263
+	VM id: 22 has done the migration.
+VM id: 22 allocated into Host id 36
+
+9230.245187576724 DC id: 3: Recieved VM pages from controller
+	VM id: 148
+	Received all memory page of VM: 131072 pages
+
+9247.240456507721 DC id: 3: Recieved VM pages from controller
+	VM id: 148
+	Dirty page amount: 27128
+
+9264.287584206613 DC id: 3: Recieved VM pages from controller
+	VM id: 148
+	Dirty page amount: 27246
+
+9280.485933735648 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 148
+	Dirty page amount: 27293
+	VM id: 148 has done the migration.
+VM id: 148 allocated into Host id 37
+
+9362.01502861318 DC id: 3: Recieved VM pages from controller
+	VM id: 189
+	Received all memory page of VM: 131072 pages
+
+9379.288722673853 DC id: 3: Recieved VM pages from controller
+	VM id: 189
+	Dirty page amount: 26933
+
+9396.268259793573 DC id: 3: Recieved VM pages from controller
+	VM id: 189
+	Dirty page amount: 27303
+
+9413.363622835739 DC id: 3: Recieved VM pages from controller
+	VM id: 189
+	Dirty page amount: 27184
+
+9430.232747170601 DC id: 3: Recieved VM pages from controller
+	VM id: 189
+	Dirty page amount: 27064
+
+9446.890524417742 DC id: 3: Recieved VM pages from controller
+	VM id: 189
+	Dirty page amount: 27111
+
+9463.979674062984 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 189
+	Dirty page amount: 27194
+	VM id: 189 has done the migration.
+VM id: 189 allocated into Host id 38
+
+9548.20653452363 DC id: 3: Recieved VM pages from controller
+	VM id: 63
+	Received all memory page of VM: 131072 pages
+
+9566.359439715763 DC id: 3: Recieved VM pages from controller
+	VM id: 63
+	Dirty page amount: 26759
+
+9583.152924118409 DC id: 3: Recieved VM pages from controller
+	VM id: 63
+	Dirty page amount: 27038
+
+9599.218868010727 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 63
+	Dirty page amount: 27150
+	VM id: 63 has done the migration.
+VM id: 63 allocated into Host id 39
+
+9683.092606997821 DC id: 3: Recieved VM pages from controller
+	VM id: 87
+	Received all memory page of VM: 131072 pages
+
+9700.225154808448 DC id: 3: Recieved VM pages from controller
+	VM id: 87
+	Dirty page amount: 27138
+
+9717.515990634874 DC id: 3: Recieved VM pages from controller
+	VM id: 87
+	Dirty page amount: 26983
+
+9734.4218486193 DC id: 3: Recieved VM pages from controller
+	VM id: 87
+	Dirty page amount: 27248
+
+9751.597519030096 DC id: 3: Recieved VM pages from controller
+	VM id: 87
+	Dirty page amount: 27075
+
+9768.335211354894 DC id: 3: Recieved VM pages from controller
+	VM id: 87
+	Dirty page amount: 27110
+
+9786.031053778 DC id: 3: Recieved VM pages from controller
+	VM id: 87
+	Dirty page amount: 27079
+
+9802.759240005844 DC id: 3: Recieved VM pages from controller
+	VM id: 87
+	Dirty page amount: 26870
+
+9818.972468458363 DC id: 3: Recieved VM pages from controller
+	VM id: 87
+	Dirty page amount: 26945
+
+9836.075065447672 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 87
+	Dirty page amount: 27063
+	VM id: 87 has done the migration.
+VM id: 87 allocated into Host id 40
+
+9917.577393222467 DC id: 3: Recieved VM pages from controller
+	VM id: 95
+	Received all memory page of VM: 131072 pages
+
+9934.813722139803 DC id: 3: Recieved VM pages from controller
+	VM id: 95
+	Dirty page amount: 27227
+
+9951.286314427038 DC id: 3: Recieved VM pages from controller
+	VM id: 95
+	Dirty page amount: 27212
+
+9968.556412520697 DC id: 3: Recieved VM pages from controller
+	VM id: 95
+	Dirty page amount: 27033
+
+9985.113172580386 DC id: 3: Recieved VM pages from controller
+	VM id: 95
+	Dirty page amount: 27342
+
+10003.820266542998 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 95
+	Dirty page amount: 27372
+	VM id: 95 has done the migration.
+VM id: 95 allocated into Host id 41
+
+10086.536976404073 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Received all memory page of VM: 131072 pages
+
+10103.252694159102 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 27199
+
+10120.212971639434 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 26967
+
+10136.82940000103 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 27204
+
+10153.686248832179 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 27105
+
+10170.79476675752 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 27254
+
+10186.958460046875 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 26762
+
+10203.34647322037 DC id: 3: Recieved VM pages from controller
+	VM id: 173
+	Dirty page amount: 26939
+
+10221.298687074317 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 173
+	Dirty page amount: 27209
+	VM id: 173 has done the migration.
+VM id: 173 allocated into Host id 42
+
+10305.603035295368 DC id: 3: Recieved VM pages from controller
+	VM id: 131
+	Received all memory page of VM: 131072 pages
+
+10323.150059563151 DC id: 3: Recieved VM pages from controller
+	VM id: 131
+	Dirty page amount: 27133
+
+10340.207976823382 DC id: 3: Recieved VM pages from controller
+	VM id: 131
+	Dirty page amount: 27246
+
+10356.534033316371 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 131
+	Dirty page amount: 27274
+	VM id: 131 has done the migration.
+VM id: 131 allocated into Host id 43
+
+10437.107563948095 DC id: 3: Recieved VM pages from controller
+	VM id: 137
+	Received all memory page of VM: 131072 pages
+
+10453.900783696237 DC id: 3: Recieved VM pages from controller
+	VM id: 137
+	Dirty page amount: 27078
+
+10471.361262038254 DC id: 3: Recieved VM pages from controller
+	VM id: 137
+	Dirty page amount: 27231
+
+10489.536129557979 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 137
+	Dirty page amount: 27245
+	VM id: 137 has done the migration.
+VM id: 137 allocated into Host id 44
+
+10573.176441258787 DC id: 3: Recieved VM pages from controller
+	VM id: 21
+	Received all memory page of VM: 131072 pages
+
+10591.385299000036 DC id: 3: Recieved VM pages from controller
+	VM id: 21
+	Dirty page amount: 27173
+
+10607.747550319256 DC id: 3: Recieved VM pages from controller
+	VM id: 21
+	Dirty page amount: 27042
+
+10624.726617626142 DC id: 3: Recieved VM pages from controller
+	VM id: 21
+	Dirty page amount: 27086
+
+10642.444253944706 DC id: 3: Recieved VM pages from controller
+	VM id: 21
+	Dirty page amount: 26936
+
+10660.29727148634 DC id: 3: Recieved VM pages from controller
+	VM id: 21
+	Dirty page amount: 27069
+
+10678.005788560884 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 21
+	Dirty page amount: 27146
+	VM id: 21 has done the migration.
+VM id: 21 allocated into Host id 45
+
+10761.216640445446 DC id: 3: Recieved VM pages from controller
+	VM id: 44
+	Received all memory page of VM: 131072 pages
+
+10778.848671100224 DC id: 3: Recieved VM pages from controller
+	VM id: 44
+	Dirty page amount: 27135
+
+10797.34402464193 DC id: 3: Recieved VM pages from controller
+	VM id: 44
+	Dirty page amount: 27124
+
+10814.347601530235 DC id: 3: Recieved VM pages from controller
+	VM id: 44
+	Dirty page amount: 27195
+
+10831.178391568157 DC id: 3: Recieved VM pages from controller
+	VM id: 44
+	Dirty page amount: 27042
+
+10848.530786775795 DC id: 3: Recieved VM pages from controller
+	VM id: 44
+	Dirty page amount: 27110
+
+10866.074596425007 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 44
+	Dirty page amount: 27116
+	VM id: 44 has done the migration.
+VM id: 44 allocated into Host id 46
+
+10948.138577808602 DC id: 3: Recieved VM pages from controller
+	VM id: 178
+	Received all memory page of VM: 131072 pages
+
+10966.01456949642 DC id: 3: Recieved VM pages from controller
+	VM id: 178
+	Dirty page amount: 27347
+
+10982.409192349876 DC id: 3: Recieved VM pages from controller
+	VM id: 178
+	Dirty page amount: 27180
+
+10999.931758835723 DC id: 3: Recieved VM pages from controller
+	VM id: 178
+	Dirty page amount: 27001
+
+11017.150928752437 DC id: 3: Recieved VM pages from controller
+	VM id: 178
+	Dirty page amount: 27131
+
+11034.851906200725 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 178
+	Dirty page amount: 27144
+	VM id: 178 has done the migration.
+VM id: 178 allocated into Host id 47
+
+11117.862912607068 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Received all memory page of VM: 131072 pages
+
+11135.319443735962 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 27400
+
+11153.053924087277 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 27108
+
+11171.26614270158 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 27153
+
+11189.056012202138 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 27064
+
+11206.355761692112 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 27188
+
+11223.582533256491 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 26965
+
+11240.754590041266 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 27299
+
+11258.335126813497 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 27100
+
+11275.316511836212 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 27167
+
+11291.634358032294 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 26853
+
+11309.376601861593 DC id: 3: Recieved VM pages from controller
+	VM id: 60
+	Dirty page amount: 26918
+
+11325.89645986533 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 60
+	Dirty page amount: 27182
+	VM id: 60 has done the migration.
+VM id: 60 allocated into Host id 48
+
+11408.042977994237 DC id: 3: Recieved VM pages from controller
+	VM id: 123
+	Received all memory page of VM: 131072 pages
+
+11425.495412481412 DC id: 3: Recieved VM pages from controller
+	VM id: 123
+	Dirty page amount: 26908
+
+11442.669912765232 DC id: 3: Recieved VM pages from controller
+	VM id: 123
+	Dirty page amount: 26988
+
+11460.756674305183 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 123
+	Dirty page amount: 27053
+	VM id: 123 has done the migration.
+VM id: 123 allocated into Host id 49
+
+11542.604113466487 DC id: 3: Recieved VM pages from controller
+	VM id: 113
+	Received all memory page of VM: 131072 pages
+
+11559.781451775883 DC id: 3: Recieved VM pages from controller
+	VM id: 113
+	Dirty page amount: 27259
+
+11576.849703101525 DC id: 3: Recieved VM pages from controller
+	VM id: 113
+	Dirty page amount: 27087
+
+11593.652167950106 DC id: 3: Recieved VM pages from controller
+	VM id: 113
+	Dirty page amount: 27367
+
+11609.560385727329 DC id: 3: Recieved VM pages from controller
+	VM id: 113
+	Dirty page amount: 27285
+
+11626.848091264445 DC id: 3: Recieved VM pages from controller
+	VM id: 113
+	Dirty page amount: 26938
+
+11643.468464449967 DC id: 3: Recieved VM pages from controller
+	VM id: 113
+	Dirty page amount: 27080
+
+11660.730140915672 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 113
+	Dirty page amount: 27129
+	VM id: 113 has done the migration.
+VM id: 113 allocated into Host id 0
+
+11744.521001975065 DC id: 3: Recieved VM pages from controller
+	VM id: 101
+	Received all memory page of VM: 131072 pages
+
+11760.841597910514 DC id: 3: Recieved VM pages from controller
+	VM id: 101
+	Dirty page amount: 26906
+
+11778.203805004441 DC id: 3: Recieved VM pages from controller
+	VM id: 101
+	Dirty page amount: 27396
+
+11795.132693870897 DC id: 3: Recieved VM pages from controller
+	VM id: 101
+	Dirty page amount: 27155
+
+11812.261627491855 DC id: 3: Recieved VM pages from controller
+	VM id: 101
+	Dirty page amount: 27150
+
+11830.098174277331 DC id: 3: Recieved VM pages from controller
+	VM id: 101
+	Dirty page amount: 27350
+
+11847.298665339487 DC id: 3: Recieved VM pages from controller
+	VM id: 101
+	Dirty page amount: 27003
+
+11864.330658126275 DC id: 3: Recieved VM pages from controller
+	VM id: 101
+	Dirty page amount: 27111
+
+11881.960657796048 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 101
+	Dirty page amount: 27235
+	VM id: 101 has done the migration.
+VM id: 101 allocated into Host id 1
+
+11965.62076324886 DC id: 3: Recieved VM pages from controller
+	VM id: 154
+	Received all memory page of VM: 131072 pages
+
+11983.615413933354 DC id: 3: Recieved VM pages from controller
+	VM id: 154
+	Dirty page amount: 27222
+
+12000.881431148382 DC id: 3: Recieved VM pages from controller
+	VM id: 154
+	Dirty page amount: 27476
+
+12018.113099142922 DC id: 3: Recieved VM pages from controller
+	VM id: 154
+	Dirty page amount: 26918
+
+12034.452507227565 DC id: 3: Recieved VM pages from controller
+	VM id: 154
+	Dirty page amount: 27071
+
+12051.820753325384 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 154
+	Dirty page amount: 27392
+	VM id: 154 has done the migration.
+VM id: 154 allocated into Host id 2
+
+12134.237413788433 DC id: 3: Recieved VM pages from controller
+	VM id: 100
+	Received all memory page of VM: 131072 pages
+
+12151.458268668044 DC id: 3: Recieved VM pages from controller
+	VM id: 100
+	Dirty page amount: 27194
+
+12169.029362330884 DC id: 3: Recieved VM pages from controller
+	VM id: 100
+	Dirty page amount: 26736
+
+12186.474646390436 DC id: 3: Recieved VM pages from controller
+	VM id: 100
+	Dirty page amount: 27236
+
+12203.506860864842 DC id: 3: Recieved VM pages from controller
+	VM id: 100
+	Dirty page amount: 27179
+
+12221.188267299454 DC id: 3: Recieved VM pages from controller
+	VM id: 100
+	Dirty page amount: 26936
+
+12238.115400792054 DC id: 3: Recieved VM pages from controller
+	VM id: 100
+	Dirty page amount: 26985
+
+12254.831357342275 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 100
+	Dirty page amount: 27113
+	VM id: 100 has done the migration.
+VM id: 100 allocated into Host id 3
+
+12336.597069547428 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Received all memory page of VM: 131072 pages
+
+12354.39246119979 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Dirty page amount: 27163
+
+12370.728942361016 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Dirty page amount: 27147
+
+12387.533782996743 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Dirty page amount: 27018
+
+12405.04182778674 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Dirty page amount: 27163
+
+12423.342206573732 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Dirty page amount: 27162
+
+12440.9909745739 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Dirty page amount: 27060
+
+12458.157071478106 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Dirty page amount: 27135
+
+12475.284064845151 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Dirty page amount: 27098
+
+12492.633978585503 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Dirty page amount: 26880
+
+12509.300168471891 DC id: 3: Recieved VM pages from controller
+	VM id: 12
+	Dirty page amount: 27188
+
+12527.502926407722 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 12
+	Dirty page amount: 27223
+	VM id: 12 has done the migration.
+VM id: 12 allocated into Host id 4
+
+12610.93387416492 DC id: 3: Recieved VM pages from controller
+	VM id: 35
+	Received all memory page of VM: 131072 pages
+
+12627.776605360496 DC id: 3: Recieved VM pages from controller
+	VM id: 35
+	Dirty page amount: 27242
+
+12643.831644451739 DC id: 3: Recieved VM pages from controller
+	VM id: 35
+	Dirty page amount: 27037
+
+12660.70274853278 DC id: 3: Recieved VM pages from controller
+	VM id: 35
+	Dirty page amount: 27288
+
+12678.526459959152 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 35
+	Dirty page amount: 27295
+	VM id: 35 has done the migration.
+VM id: 35 allocated into Host id 5
+
+12761.827250992392 DC id: 3: Recieved VM pages from controller
+	VM id: 69
+	Received all memory page of VM: 131072 pages
+
+12779.764602031173 DC id: 3: Recieved VM pages from controller
+	VM id: 69
+	Dirty page amount: 26994
+
+12796.379649985287 DC id: 3: Recieved VM pages from controller
+	VM id: 69
+	Dirty page amount: 27134
+
+12813.057094716141 DC id: 3: Recieved VM pages from controller
+	VM id: 69
+	Dirty page amount: 26997
+
+12830.462403916239 DC id: 3: Recieved VM pages from controller
+	VM id: 69
+	Dirty page amount: 27044
+
+12847.666203948216 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 69
+	Dirty page amount: 27328
+	VM id: 69 has done the migration.
+VM id: 69 allocated into Host id 6
+
+12928.023074096363 DC id: 3: Recieved VM pages from controller
+	VM id: 6
+	Received all memory page of VM: 131072 pages
+
+12944.774517371437 DC id: 3: Recieved VM pages from controller
+	VM id: 6
+	Dirty page amount: 27173
+
+12961.546551410229 DC id: 3: Recieved VM pages from controller
+	VM id: 6
+	Dirty page amount: 27274
+
+12979.234277837084 DC id: 3: Recieved VM pages from controller
+	VM id: 6
+	Dirty page amount: 27116
+
+12995.641056397579 DC id: 3: Recieved VM pages from controller
+	VM id: 6
+	Dirty page amount: 26958
+
+13012.790993652401 DC id: 3: Recieved VM pages from controller
+	VM id: 6
+	Dirty page amount: 26966
+
+13029.773015410598 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 6
+	Dirty page amount: 27295
+	VM id: 6 has done the migration.
+VM id: 6 allocated into Host id 7
+
+13112.814354971291 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Received all memory page of VM: 131072 pages
+
+13130.007216631826 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27344
+
+13146.763267933104 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27009
+
+13165.213314295444 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27328
+
+13182.916430460076 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27159
+
+13200.4630983587 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27008
+
+13218.252751171643 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27369
+
+13235.920971543566 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27022
+
+13252.833346448513 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 26935
+
+13269.625281461802 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27359
+
+13287.462636070484 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27067
+
+13305.950676185905 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27328
+
+13323.807407210203 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27268
+
+13341.376273119811 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27335
+
+13357.693661241126 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 26912
+
+13375.277445395459 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27129
+
+13390.94448635225 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 26822
+
+13408.285572564193 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27152
+
+13425.57546580585 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27113
+
+13442.768767876907 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 27201
+
+13459.507059181693 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 26941
+
+13477.391354791185 DC id: 3: Recieved VM pages from controller
+	VM id: 193
+	Dirty page amount: 26990
+
+13495.217096007096 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 193
+	Dirty page amount: 27270
+	VM id: 193 has done the migration.
+VM id: 193 allocated into Host id 8
+
+13579.12143633329 DC id: 3: Recieved VM pages from controller
+	VM id: 78
+	Received all memory page of VM: 131072 pages
+
+13597.371256808085 DC id: 3: Recieved VM pages from controller
+	VM id: 78
+	Dirty page amount: 27116
+
+13615.106157437092 DC id: 3: Recieved VM pages from controller
+	VM id: 78
+	Dirty page amount: 27203
+
+13633.792568023184 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 78
+	Dirty page amount: 27300
+	VM id: 78 has done the migration.
+VM id: 78 allocated into Host id 9
+
+13717.409627949333 DC id: 3: Recieved VM pages from controller
+	VM id: 183
+	Received all memory page of VM: 131072 pages
+
+13734.222317150028 DC id: 3: Recieved VM pages from controller
+	VM id: 183
+	Dirty page amount: 27067
+
+13750.573259541205 DC id: 3: Recieved VM pages from controller
+	VM id: 183
+	Dirty page amount: 26972
+
+13767.789824340327 DC id: 3: Recieved VM pages from controller
+	VM id: 183
+	Dirty page amount: 27002
+
+13784.861813282276 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 183
+	Dirty page amount: 27022
+	VM id: 183 has done the migration.
+VM id: 183 allocated into Host id 10
+
+13867.0428249349 DC id: 3: Recieved VM pages from controller
+	VM id: 152
+	Received all memory page of VM: 131072 pages
+
+13884.562861710521 DC id: 3: Recieved VM pages from controller
+	VM id: 152
+	Dirty page amount: 27222
+
+13902.331592440618 DC id: 3: Recieved VM pages from controller
+	VM id: 152
+	Dirty page amount: 27244
+
+13919.147693462688 DC id: 3: Recieved VM pages from controller
+	VM id: 152
+	Dirty page amount: 27236
+
+13936.367607311047 DC id: 3: Recieved VM pages from controller
+	VM id: 152
+	Dirty page amount: 27261
+
+13953.017381883941 DC id: 3: Recieved VM pages from controller
+	VM id: 152
+	Dirty page amount: 27018
+
+13970.602026228644 DC id: 3: Recieved VM pages from controller
+	VM id: 152
+	Dirty page amount: 27060
+
+13988.064529609695 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 152
+	Dirty page amount: 27277
+	VM id: 152 has done the migration.
+VM id: 152 allocated into Host id 11
+
+14072.40557432322 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Received all memory page of VM: 131072 pages
+
+14089.345135160223 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 26970
+
+14106.279841584663 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27145
+
+14122.646576281348 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27141
+
+14139.20650783772 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27022
+
+14155.401905443727 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 26925
+
+14171.554255595125 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 26917
+
+14188.45124091979 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27310
+
+14205.950879906964 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27246
+
+14222.4603282689 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 26739
+
+14238.458629765142 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27146
+
+14255.423817469118 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27120
+
+14271.19231038863 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27082
+
+14288.189775444522 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27068
+
+14304.413349811446 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27174
+
+14321.330787028139 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27047
+
+14339.45546314743 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 27066
+
+14355.945127798921 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 26938
+
+14373.094930184887 DC id: 3: Recieved VM pages from controller
+	VM id: 9
+	Dirty page amount: 26949
+
+14391.091081032664 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 9
+	Dirty page amount: 26998
+	VM id: 9 has done the migration.
+VM id: 9 allocated into Host id 12
+
+14475.718830541331 DC id: 3: Recieved VM pages from controller
+	VM id: 160
+	Received all memory page of VM: 131072 pages
+
+14492.308594793887 DC id: 3: Recieved VM pages from controller
+	VM id: 160
+	Dirty page amount: 27188
+
+14510.208556137426 DC id: 3: Recieved VM pages from controller
+	VM id: 160
+	Dirty page amount: 27321
+
+14526.266209279422 DC id: 3: Recieved VM pages from controller
+	VM id: 160
+	Dirty page amount: 27133
+
+14542.954658446064 DC id: 3: Recieved VM pages from controller
+	VM id: 160
+	Dirty page amount: 26977
+
+14559.5940417062 DC id: 3: Recieved VM pages from controller
+	VM id: 160
+	Dirty page amount: 26943
+
+14576.55389163006 DC id: 3: Recieved VM pages from controller
+	VM id: 160
+	Dirty page amount: 27344
+
+14594.791272921655 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 160
+	Dirty page amount: 27347
+	VM id: 160 has done the migration.
+VM id: 160 allocated into Host id 13
+
+14677.213260269933 DC id: 3: Recieved VM pages from controller
+	VM id: 79
+	Received all memory page of VM: 131072 pages
+
+14693.804009149026 DC id: 3: Recieved VM pages from controller
+	VM id: 79
+	Dirty page amount: 27254
+
+14711.041030027587 DC id: 3: Recieved VM pages from controller
+	VM id: 79
+	Dirty page amount: 27217
+
+14727.995781321746 DC id: 3: Recieved VM pages from controller
+	VM id: 79
+	Dirty page amount: 27127
+
+14744.464367495828 DC id: 3: Recieved VM pages from controller
+	VM id: 79
+	Dirty page amount: 26971
+
+14761.871329112337 DC id: 3: Recieved VM pages from controller
+	VM id: 79
+	Dirty page amount: 26745
+
+14778.413839598665 DC id: 3: Recieved VM pages from controller
+	VM id: 79
+	Dirty page amount: 27347
+
+14795.657613901723 DC id: 3: Recieved VM pages from controller
+	VM id: 79
+	Dirty page amount: 27126
+
+14813.455157012344 DC id: 3: Recieved VM pages from controller
+	VM id: 79
+	Dirty page amount: 27175
+
+14830.183715315268 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 79
+	Dirty page amount: 27442
+	VM id: 79 has done the migration.
+VM id: 79 allocated into Host id 14
+
+14912.513136905749 DC id: 3: Recieved VM pages from controller
+	VM id: 13
+	Received all memory page of VM: 131072 pages
+
+14930.9448327163 DC id: 3: Recieved VM pages from controller
+	VM id: 13
+	Dirty page amount: 26984
+
+14948.348496484648 DC id: 3: Recieved VM pages from controller
+	VM id: 13
+	Dirty page amount: 26956
+
+14966.346270681246 DC id: 3: Recieved VM pages from controller
+	VM id: 13
+	Dirty page amount: 27176
+
+14984.289235490833 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 13
+	Dirty page amount: 27193
+	VM id: 13 has done the migration.
+VM id: 13 allocated into Host id 15
+
+15068.466504397678 DC id: 3: Recieved VM pages from controller
+	VM id: 48
+	Received all memory page of VM: 131072 pages
+
+15085.583409501372 DC id: 3: Recieved VM pages from controller
+	VM id: 48
+	Dirty page amount: 27071
+
+15102.403325863661 DC id: 3: Recieved VM pages from controller
+	VM id: 48
+	Dirty page amount: 27233
+
+15119.845698643892 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 48
+	Dirty page amount: 27270
+	VM id: 48 has done the migration.
+VM id: 48 allocated into Host id 16
+
+15203.429433825773 DC id: 3: Recieved VM pages from controller
+	VM id: 120
+	Received all memory page of VM: 131072 pages
+
+15219.964876210346 DC id: 3: Recieved VM pages from controller
+	VM id: 120
+	Dirty page amount: 27172
+
+15237.378862793665 DC id: 3: Recieved VM pages from controller
+	VM id: 120
+	Dirty page amount: 27147
+
+15254.820094179722 DC id: 3: Recieved VM pages from controller
+	VM id: 120
+	Dirty page amount: 27138
+
+15271.5709791463 DC id: 3: Recieved VM pages from controller
+	VM id: 120
+	Dirty page amount: 27053
+
+15287.727963455362 DC id: 3: Recieved VM pages from controller
+	VM id: 120
+	Dirty page amount: 26926
+
+15303.803175209223 DC id: 3: Recieved VM pages from controller
+	VM id: 120
+	Dirty page amount: 27098
+
+15320.614425066244 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 120
+	Dirty page amount: 27134
+	VM id: 120 has done the migration.
+VM id: 120 allocated into Host id 17
+
+15404.343405214147 DC id: 3: Recieved VM pages from controller
+	VM id: 39
+	Received all memory page of VM: 131072 pages
+
+15420.737870536446 DC id: 3: Recieved VM pages from controller
+	VM id: 39
+	Dirty page amount: 27137
+
+15437.677975488588 DC id: 3: Recieved VM pages from controller
+	VM id: 39
+	Dirty page amount: 27217
+
+15454.414942941132 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 39
+	Dirty page amount: 27259
+	VM id: 39 has done the migration.
+VM id: 39 allocated into Host id 18
+
+15536.14997100382 DC id: 3: Recieved VM pages from controller
+	VM id: 53
+	Received all memory page of VM: 131072 pages
+
+15553.041249155995 DC id: 3: Recieved VM pages from controller
+	VM id: 53
+	Dirty page amount: 27222
+
+15570.350143747759 DC id: 3: Recieved VM pages from controller
+	VM id: 53
+	Dirty page amount: 27174
+
+15588.005712655093 DC id: 3: Recieved VM pages from controller
+	VM id: 53
+	Dirty page amount: 27076
+
+15604.903988902997 DC id: 3: Recieved VM pages from controller
+	VM id: 53
+	Dirty page amount: 27190
+
+15621.844633376768 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 53
+	Dirty page amount: 27279
+	VM id: 53 has done the migration.
+VM id: 53 allocated into Host id 19
+
+15705.789647417287 DC id: 3: Recieved VM pages from controller
+	VM id: 182
+	Received all memory page of VM: 131072 pages
+
+15723.38222556035 DC id: 3: Recieved VM pages from controller
+	VM id: 182
+	Dirty page amount: 27156
+
+15740.054219185187 DC id: 3: Recieved VM pages from controller
+	VM id: 182
+	Dirty page amount: 27030
+
+15756.947119205115 DC id: 3: Recieved VM pages from controller
+	VM id: 182
+	Dirty page amount: 27341
+
+15773.587681246228 DC id: 3: Recieved VM pages from controller
+	VM id: 182
+	Dirty page amount: 27292
+
+15790.857695089224 DC id: 3: Recieved VM pages from controller
+	VM id: 182
+	Dirty page amount: 27159
+
+15808.814195224866 DC id: 3: Recieved VM pages from controller
+	VM id: 182
+	Dirty page amount: 27026
+
+15826.606546408822 DC id: 3: Recieved VM pages from controller
+	VM id: 182
+	Dirty page amount: 27056
+
+15843.285693091935 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 182
+	Dirty page amount: 27176
+	VM id: 182 has done the migration.
+VM id: 182 allocated into Host id 20
+
+15925.876015004187 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Received all memory page of VM: 131072 pages
+
+15944.863830749886 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 27115
+
+15961.737885581144 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 27036
+
+15979.683268190334 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 27114
+
+15997.063633481803 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 26796
+
+16013.71293697959 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 27266
+
+16030.532862542026 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 27186
+
+16047.368126878331 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 27292
+
+16064.421874294487 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 27130
+
+16081.832524674019 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 27320
+
+16099.711739925855 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 27136
+
+16116.649399399836 DC id: 3: Recieved VM pages from controller
+	VM id: 45
+	Dirty page amount: 27231
+
+16133.448187683332 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 45
+	Dirty page amount: 27475
+	VM id: 45 has done the migration.
+VM id: 45 allocated into Host id 21
+
+16217.511240908496 DC id: 3: Recieved VM pages from controller
+	VM id: 170
+	Received all memory page of VM: 131072 pages
+
+16234.402224152424 DC id: 3: Recieved VM pages from controller
+	VM id: 170
+	Dirty page amount: 26952
+
+16251.89753336437 DC id: 3: Recieved VM pages from controller
+	VM id: 170
+	Dirty page amount: 27226
+
+16269.539528582083 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 170
+	Dirty page amount: 27432
+	VM id: 170 has done the migration.
+VM id: 170 allocated into Host id 22
+
+16353.846628616653 DC id: 3: Recieved VM pages from controller
+	VM id: 130
+	Received all memory page of VM: 131072 pages
+
+16370.096985512913 DC id: 3: Recieved VM pages from controller
+	VM id: 130
+	Dirty page amount: 26846
+
+16388.736832065202 DC id: 3: Recieved VM pages from controller
+	VM id: 130
+	Dirty page amount: 27333
+
+16406.710521540408 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 130
+	Dirty page amount: 27388
+	VM id: 130 has done the migration.
+VM id: 130 allocated into Host id 23
+
+16490.287215467444 DC id: 3: Recieved VM pages from controller
+	VM id: 168
+	Received all memory page of VM: 131072 pages
+
+16507.606102062597 DC id: 3: Recieved VM pages from controller
+	VM id: 168
+	Dirty page amount: 27174
+
+16524.7460136763 DC id: 3: Recieved VM pages from controller
+	VM id: 168
+	Dirty page amount: 26919
+
+16542.63018204369 DC id: 3: Recieved VM pages from controller
+	VM id: 168
+	Dirty page amount: 27270
+
+16561.04689925295 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 168
+	Dirty page amount: 27462
+	VM id: 168 has done the migration.
+VM id: 168 allocated into Host id 24
+
+16644.57989769322 DC id: 3: Recieved VM pages from controller
+	VM id: 99
+	Received all memory page of VM: 131072 pages
+
+16661.7781835304 DC id: 3: Recieved VM pages from controller
+	VM id: 99
+	Dirty page amount: 27154
+
+16678.910287891165 DC id: 3: Recieved VM pages from controller
+	VM id: 99
+	Dirty page amount: 27311
+
+16696.09190122832 DC id: 3: Recieved VM pages from controller
+	VM id: 99
+	Dirty page amount: 27192
+
+16713.286269270575 DC id: 3: Recieved VM pages from controller
+	VM id: 99
+	Dirty page amount: 27309
+
+16731.071378978177 DC id: 3: Recieved VM pages from controller
+	VM id: 99
+	Dirty page amount: 27283
+
+16749.193984213594 DC id: 3: Recieved VM pages from controller
+	VM id: 99
+	Dirty page amount: 27287
+
+16765.4029064467 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 99
+	Dirty page amount: 27391
+	VM id: 99 has done the migration.
+VM id: 99 allocated into Host id 25
+
+16848.637418562903 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Received all memory page of VM: 131072 pages
+
+16867.249711967223 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 27005
+
+16883.85394661926 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 26955
+
+16901.967719987806 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 27159
+
+16919.439883829393 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 26988
+
+16936.70642879081 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 27105
+
+16953.793432202794 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 27095
+
+16971.271255620268 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 27282
+
+16988.940237945797 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 27191
+
+17007.634033664755 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 27180
+
+17024.949324068886 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 27126
+
+17043.10120262948 DC id: 3: Recieved VM pages from controller
+	VM id: 32
+	Dirty page amount: 27244
+
+17060.204386097907 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 32
+	Dirty page amount: 27430
+	VM id: 32 has done the migration.
+VM id: 32 allocated into Host id 26
+
+17142.856788745747 DC id: 3: Recieved VM pages from controller
+	VM id: 172
+	Received all memory page of VM: 131072 pages
+
+17160.58544469961 DC id: 3: Recieved VM pages from controller
+	VM id: 172
+	Dirty page amount: 26986
+
+17177.811225728205 DC id: 3: Recieved VM pages from controller
+	VM id: 172
+	Dirty page amount: 26851
+
+17195.328665995607 DC id: 3: Recieved VM pages from controller
+	VM id: 172
+	Dirty page amount: 26913
+
+17213.12138865348 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 172
+	Dirty page amount: 26923
+	VM id: 172 has done the migration.
+VM id: 172 allocated into Host id 27
+
+17298.548488050794 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Received all memory page of VM: 131072 pages
+
+17315.421390286338 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Dirty page amount: 26835
+
+17332.07446530314 DC id: 3: Recieved VM pages from controller
+	VM id: 108
+	Dirty page amount: 27213
+
+17349.986537131514 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 108
+	Dirty page amount: 27258
+	VM id: 108 has done the migration.
+VM id: 108 allocated into Host id 28
+
+17432.699451780365 DC id: 3: Recieved VM pages from controller
+	VM id: 24
+	Received all memory page of VM: 131072 pages
+
+17449.93579765417 DC id: 3: Recieved VM pages from controller
+	VM id: 24
+	Dirty page amount: 26943
+
+17467.185871235455 DC id: 3: Recieved VM pages from controller
+	VM id: 24
+	Dirty page amount: 27201
+
+17484.462125527658 DC id: 3: Recieved VM pages from controller
+	VM id: 24
+	Dirty page amount: 27030
+
+17501.825364548626 DC id: 3: Recieved VM pages from controller
+	VM id: 24
+	Dirty page amount: 27014
+
+17519.112392296105 DC id: 3: Recieved VM pages from controller
+	VM id: 24
+	Dirty page amount: 27132
+
+17536.226991834563 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 24
+	Dirty page amount: 27326
+	VM id: 24 has done the migration.
+VM id: 24 allocated into Host id 29
+
+17618.91600095965 DC id: 3: Recieved VM pages from controller
+	VM id: 83
+	Received all memory page of VM: 131072 pages
+
+17636.03607491831 DC id: 3: Recieved VM pages from controller
+	VM id: 83
+	Dirty page amount: 26950
+
+17652.00917246898 DC id: 3: Recieved VM pages from controller
+	VM id: 83
+	Dirty page amount: 27019
+
+17669.840510008926 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 83
+	Dirty page amount: 27177
+	VM id: 83 has done the migration.
+VM id: 83 allocated into Host id 30
+
+17751.576805142337 DC id: 3: Recieved VM pages from controller
+	VM id: 74
+	Received all memory page of VM: 131072 pages
+
+17767.827890406275 DC id: 3: Recieved VM pages from controller
+	VM id: 74
+	Dirty page amount: 26937
+
+17785.2128953965 DC id: 3: Recieved VM pages from controller
+	VM id: 74
+	Dirty page amount: 27206
+
+17801.758658604518 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 74
+	Dirty page amount: 27297
+	VM id: 74 has done the migration.
+VM id: 74 allocated into Host id 31
+
+17883.257414055774 DC id: 3: Recieved VM pages from controller
+	VM id: 198
+	Received all memory page of VM: 131072 pages
+
+17899.13185110073 DC id: 3: Recieved VM pages from controller
+	VM id: 198
+	Dirty page amount: 27065
+
+17916.540373940094 DC id: 3: Recieved VM pages from controller
+	VM id: 198
+	Dirty page amount: 27248
+
+17933.998994362926 DC id: 3: Recieved VM pages from controller
+	VM id: 198
+	Dirty page amount: 27062
+
+17951.88983801707 DC id: 3: Recieved VM pages from controller
+	VM id: 198
+	Dirty page amount: 26951
+
+17969.001034505374 DC id: 3: Recieved VM pages from controller
+	VM id: 198
+	Dirty page amount: 27026
+
+17986.013623748186 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 198
+	Dirty page amount: 27123
+	VM id: 198 has done the migration.
+VM id: 198 allocated into Host id 32
+
+18068.367770025587 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Received all memory page of VM: 131072 pages
+
+18085.827036114253 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27140
+
+18102.297936868512 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27103
+
+18119.8570342211 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27231
+
+18138.022630690055 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27068
+
+18155.213513650255 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27058
+
+18172.341586990064 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27244
+
+18189.375175835077 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 26986
+
+18205.858343290816 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27051
+
+18222.45672300871 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 26805
+
+18239.26220556063 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27023
+
+18255.545721706152 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 27021
+
+18272.279523673657 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 26811
+
+18289.90185821501 DC id: 3: Recieved VM pages from controller
+	VM id: 56
+	Dirty page amount: 26985
+
+18306.538873831316 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 56
+	Dirty page amount: 27080
+	VM id: 56 has done the migration.
+VM id: 56 allocated into Host id 33
+
+18388.672106822964 DC id: 3: Recieved VM pages from controller
+	VM id: 134
+	Received all memory page of VM: 131072 pages
+
+18405.965006858325 DC id: 3: Recieved VM pages from controller
+	VM id: 134
+	Dirty page amount: 27335
+
+18423.27923409245 DC id: 3: Recieved VM pages from controller
+	VM id: 134
+	Dirty page amount: 27115
+
+18440.213592204214 DC id: 3: Recieved VM pages from controller
+	VM id: 134
+	Dirty page amount: 27099
+
+18457.35800133056 DC id: 3: Recieved VM pages from controller
+	VM id: 134
+	Dirty page amount: 27229
+
+18474.304365037293 DC id: 3: Recieved VM pages from controller
+	VM id: 134
+	Dirty page amount: 27104
+
+18490.967165374193 DC id: 3: Recieved VM pages from controller
+	VM id: 134
+	Dirty page amount: 27044
+
+18507.836558110153 DC id: 3: Recieved VM pages from controller
+	VM id: 134
+	Dirty page amount: 26884
+
+18523.891850688513 DC id: 3: Recieved VM pages from controller
+	VM id: 134
+	Dirty page amount: 27048
+
+18541.413177729948 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 134
+	Dirty page amount: 27373
+	VM id: 134 has done the migration.
+VM id: 134 allocated into Host id 34
+
+18621.808881861667 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Received all memory page of VM: 131072 pages
+
+18639.017118264645 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 27295
+
+18657.000240138004 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 27318
+
+18674.265220627127 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 26882
+
+18691.23556560033 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 27099
+
+18708.76584270907 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 26992
+
+18726.587919941387 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 26942
+
+18742.81679525131 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 27055
+
+18761.312475681647 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 26990
+
+18777.40484962683 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 27201
+
+18795.2722665685 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 27175
+
+18812.22456822139 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 27083
+
+18829.206830997256 DC id: 3: Recieved VM pages from controller
+	VM id: 135
+	Dirty page amount: 27131
+
+18847.54837649587 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 135
+	Dirty page amount: 27474
+	VM id: 135 has done the migration.
+VM id: 135 allocated into Host id 35
+
+18931.320572986173 DC id: 3: Recieved VM pages from controller
+	VM id: 157
+	Received all memory page of VM: 131072 pages
+
+18948.340091328362 DC id: 3: Recieved VM pages from controller
+	VM id: 157
+	Dirty page amount: 27398
+
+18964.43314486384 DC id: 3: Recieved VM pages from controller
+	VM id: 157
+	Dirty page amount: 27178
+
+18981.516307007278 DC id: 3: Recieved VM pages from controller
+	VM id: 157
+	Dirty page amount: 27236
+
+18998.17685824286 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 157
+	Dirty page amount: 27312
+	VM id: 157 has done the migration.
+VM id: 157 allocated into Host id 36
+
+19080.024479509797 DC id: 3: Recieved VM pages from controller
+	VM id: 116
+	Received all memory page of VM: 131072 pages
+
+19097.11957294683 DC id: 3: Recieved VM pages from controller
+	VM id: 116
+	Dirty page amount: 27196
+
+19113.570982066125 DC id: 3: Recieved VM pages from controller
+	VM id: 116
+	Dirty page amount: 27076
+
+19130.165125440737 DC id: 3: Recieved VM pages from controller
+	VM id: 116
+	Dirty page amount: 26978
+
+19147.54165114562 DC id: 3: Recieved VM pages from controller
+	VM id: 116
+	Dirty page amount: 27070
+
+19164.823287665633 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 116
+	Dirty page amount: 27187
+	VM id: 116 has done the migration.
+VM id: 116 allocated into Host id 37
+
+19248.950187412636 DC id: 3: Recieved VM pages from controller
+	VM id: 52
+	Received all memory page of VM: 131072 pages
+
+19265.32070335121 DC id: 3: Recieved VM pages from controller
+	VM id: 52
+	Dirty page amount: 27088
+
+19282.33086736413 DC id: 3: Recieved VM pages from controller
+	VM id: 52
+	Dirty page amount: 26850
+
+19298.999344803302 DC id: 3: Recieved VM pages from controller
+	VM id: 52
+	Dirty page amount: 26899
+
+19316.593393131498 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 52
+	Dirty page amount: 27285
+	VM id: 52 has done the migration.
+VM id: 52 allocated into Host id 38
+
+19401.213430184576 DC id: 3: Recieved VM pages from controller
+	VM id: 174
+	Received all memory page of VM: 131072 pages
+
+19418.311507956074 DC id: 3: Recieved VM pages from controller
+	VM id: 174
+	Dirty page amount: 27147
+
+19436.045222580524 DC id: 3: Recieved VM pages from controller
+	VM id: 174
+	Dirty page amount: 27234
+
+19453.748023282336 DC id: 3: Recieved VM pages from controller
+	VM id: 174
+	Dirty page amount: 27170
+
+19470.888917386907 DC id: 3: Recieved VM pages from controller
+	VM id: 174
+	Dirty page amount: 27185
+
+19487.18907448121 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 174
+	Dirty page amount: 27194
+	VM id: 174 has done the migration.
+VM id: 174 allocated into Host id 39
+
+19571.177808486897 DC id: 3: Recieved VM pages from controller
+	VM id: 167
+	Received all memory page of VM: 131072 pages
+
+19588.01989299857 DC id: 3: Recieved VM pages from controller
+	VM id: 167
+	Dirty page amount: 27121
+
+19605.42428323748 DC id: 3: Recieved VM pages from controller
+	VM id: 167
+	Dirty page amount: 27091
+
+19622.806411207865 DC id: 3: Recieved VM pages from controller
+	VM id: 167
+	Dirty page amount: 26883
+
+19639.821911480376 DC id: 3: Recieved VM pages from controller
+	VM id: 167
+	Dirty page amount: 27104
+
+19656.598899501307 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 167
+	Dirty page amount: 27145
+	VM id: 167 has done the migration.
+VM id: 167 allocated into Host id 40
+
+19737.504017713014 DC id: 3: Recieved VM pages from controller
+	VM id: 88
+	Received all memory page of VM: 131072 pages
+
+19754.345376930032 DC id: 3: Recieved VM pages from controller
+	VM id: 88
+	Dirty page amount: 26973
+
+19771.089851882476 DC id: 3: Recieved VM pages from controller
+	VM id: 88
+	Dirty page amount: 26962
+
+19788.195382247275 DC id: 3: Recieved VM pages from controller
+	VM id: 88
+	Dirty page amount: 27070
+
+19805.222536391422 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 88
+	Dirty page amount: 27082
+	VM id: 88 has done the migration.
+VM id: 88 allocated into Host id 41
+
+19889.310048689615 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Received all memory page of VM: 131072 pages
+
+19906.37953198291 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27317
+
+19923.35645991381 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27067
+
+19939.79809365229 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 26986
+
+19956.351164592987 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27182
+
+19973.603734809523 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27122
+
+19990.463356457698 DC id: 3: Recieved VM pages from controller
+	VM id: 162
+	Dirty page amount: 27149
+
+20008.26650787303 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 162
+	Dirty page amount: 27205
+	VM id: 162 has done the migration.
+VM id: 162 allocated into Host id 42
+
+20091.532232434503 DC id: 3: Recieved VM pages from controller
+	VM id: 84
+	Received all memory page of VM: 131072 pages
+
+20108.962474030675 DC id: 3: Recieved VM pages from controller
+	VM id: 84
+	Dirty page amount: 27058
+
+20125.04214335609 DC id: 3: Recieved VM pages from controller
+	VM id: 84
+	Dirty page amount: 27236
+
+20141.401220754877 DC id: 3: Recieved VM pages from controller
+	VM id: 84
+	Dirty page amount: 27205
+
+20158.98714690815 DC id: 3: Recieved VM pages from controller
+	VM id: 84
+	Dirty page amount: 27266
+
+20177.112805457877 DC id: 3: Recieved VM pages from controller
+	VM id: 84
+	Dirty page amount: 27083
+
+20194.219681307557 DC id: 3: Recieved VM pages from controller
+	VM id: 84
+	Dirty page amount: 27091
+
+20211.114360820833 DC id: 3: Recieved VM pages from controller
+	VM id: 84
+	Dirty page amount: 27035
+
+20227.648843842002 DC id: 3: Recieved VM pages from controller
+	VM id: 84
+	Dirty page amount: 27081
+
+20244.54977365325 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 84
+	Dirty page amount: 27141
+	VM id: 84 has done the migration.
+VM id: 84 allocated into Host id 43
+
+20326.314898922188 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Received all memory page of VM: 131072 pages
+
+20343.64845947042 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27058
+
+20362.261569468632 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27263
+
+20380.81227964868 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27259
+
+20397.453621461522 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27077
+
+20415.013163566684 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27132
+
+20431.254611427972 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27123
+
+20448.831819286574 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27326
+
+20466.75393722076 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27232
+
+20484.024182467918 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27352
+
+20500.21026918445 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27071
+
+20517.14414210968 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 26982
+
+20535.562363740155 DC id: 3: Recieved VM pages from controller
+	VM id: 41
+	Dirty page amount: 27143
+
+20552.450123984854 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 41
+	Dirty page amount: 27266
+	VM id: 41 has done the migration.
+VM id: 41 allocated into Host id 44
+
+20634.79883569896 DC id: 3: Recieved VM pages from controller
+	VM id: 93
+	Received all memory page of VM: 131072 pages
+
+20653.47446553523 DC id: 3: Recieved VM pages from controller
+	VM id: 93
+	Dirty page amount: 27075
+
+20670.585013271088 DC id: 3: Recieved VM pages from controller
+	VM id: 93
+	Dirty page amount: 27323
+
+20688.039057653157 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 93
+	Dirty page amount: 27340
+	VM id: 93 has done the migration.
+VM id: 93 allocated into Host id 45
+
+20771.137436326393 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Received all memory page of VM: 131072 pages
+
+20788.546356851006 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27284
+
+20805.483934891927 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27095
+
+20822.969691632752 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 26934
+
+20840.26921362443 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27129
+
+20857.228818113737 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27056
+
+20875.080214994363 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27167
+
+20892.815042598366 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 26982
+
+20910.190617583132 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27106
+
+20927.257625107683 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27091
+
+20944.89503114051 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 26865
+
+20961.733190790917 DC id: 3: Recieved VM pages from controller
+	VM id: 90
+	Dirty page amount: 27144
+
+20978.65203160465 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 90
+	Dirty page amount: 27147
+	VM id: 90 has done the migration.
+VM id: 90 allocated into Host id 46
+
+21064.78977520906 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Received all memory page of VM: 131072 pages
+
+21082.062242135977 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Dirty page amount: 26833
+
+21099.21592387242 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Dirty page amount: 27031
+
+21116.24189732269 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Dirty page amount: 26940
+
+21133.006112468625 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Dirty page amount: 27335
+
+21150.114965065764 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Dirty page amount: 27217
+
+21167.009277714114 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Dirty page amount: 27451
+
+21183.814161589264 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Dirty page amount: 27258
+
+21201.015480978782 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Dirty page amount: 26979
+
+21218.25302671737 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Dirty page amount: 26847
+
+21235.282471264156 DC id: 3: Recieved VM pages from controller
+	VM id: 49
+	Dirty page amount: 27216
+
+21252.389341229362 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 49
+	Dirty page amount: 27248
+	VM id: 49 has done the migration.
+VM id: 49 allocated into Host id 47
+
+21335.742936263297 DC id: 3: Recieved VM pages from controller
+	VM id: 40
+	Received all memory page of VM: 131072 pages
+
+21353.15756937183 DC id: 3: Recieved VM pages from controller
+	VM id: 40
+	Dirty page amount: 26977
+
+21371.160492863135 DC id: 3: Recieved VM pages from controller
+	VM id: 40
+	Dirty page amount: 27273
+
+21388.83125564871 DC id: 3: Recieved VM pages from controller
+	VM id: 40
+	Dirty page amount: 26944
+
+21406.080131729832 DC id: 3: Recieved VM pages from controller
+	VM id: 40
+	Dirty page amount: 27054
+
+21423.294695708253 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 40
+	Dirty page amount: 27384
+	VM id: 40 has done the migration.
+VM id: 40 allocated into Host id 48
+
+21506.291009669036 DC id: 3: Recieved VM pages from controller
+	VM id: 27
+	Received all memory page of VM: 131072 pages
+
+21524.605070970738 DC id: 3: Recieved VM pages from controller
+	VM id: 27
+	Dirty page amount: 27207
+
+21542.535248628796 DC id: 3: Recieved VM pages from controller
+	VM id: 27
+	Dirty page amount: 27009
+
+21559.763508373133 DC id: 3: Recieved VM pages from controller
+	VM id: 27
+	Dirty page amount: 27010
+
+21577.131446829033 DC id: 3: Recieved dirty pages and VM state from controller
+	VM id: 27
+	Dirty page amount: 27156
+	VM id: 27 has done the migration.
+VM id: 27 allocated into Host id 49
+Broker1 is shutting down...
+VmigSim finished!
+
+Migrated VM details ::
+	VM: 34 finished the migration with the time 340.57771506339856 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.414190779385738 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 11 finished the migration with the time 188.7451708389911 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.72056268669904 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 42 finished the migration with the time 150.40660120603735 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.932033208187043 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 4 finished the migration with the time 135.11613004320827 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.051551756670715 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 75 finished the migration with the time 546.4513026702272 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.170901814232444 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 91 finished the migration with the time 288.21616486023964 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.679931829821662 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 96 finished the migration with the time 256.211846756694 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.350896381864832 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 156 finished the migration with the time 167.14997584976746 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.030664844314256 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 30 finished the migration with the time 271.6543771608534 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.186914866795252 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 26 finished the migration with the time 204.12896378419742 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.519221774721593 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 109 finished the migration with the time 339.23632326163 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.679826507039078 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 199 finished the migration with the time 218.70808906970444 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.183876806972663 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 140 finished the migration with the time 182.4165204985666 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.563632439949373 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 3 finished the migration with the time 242.60469561209223 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.523963786673523 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 82 finished the migration with the time 202.6434643687759 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.99328221398434 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 61 finished the migration with the time 221.97468684446875 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.71753802791474 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 71 finished the migration with the time 285.9484515359769 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.69300280764443 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 128 finished the migration with the time 339.2980554083764 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.29331190397961 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 114 finished the migration with the time 340.3542869030253 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.872129244859046 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 107 finished the migration with the time 220.52203501659707 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.960872016214392 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 66 finished the migration with the time 152.67990902278837 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.207536981141224 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 5 finished the migration with the time 203.48088965936134 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.38288756322341 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 68 finished the migration with the time 237.77478257770008 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.739700221117282 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 121 finished the migration with the time 271.57934541015834 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.93081797948562 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 196 finished the migration with the time 201.4159797176153 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.581523056039508 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 43 finished the migration with the time 167.78260592138537 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.40402371882701 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 1 finished the migration with the time 287.33371864681766 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.761649482503564 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 188 finished the migration with the time 200.05302176043904 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.346079503118986 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 85 finished the migration with the time 152.38549913431302 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.487064984469978 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 20 finished the migration with the time 169.67706632824908 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.415512926769463 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 133 finished the migration with the time 292.2024655566286 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.98331086201641 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 138 finished the migration with the time 182.26560772818956 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.17153456254979 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 37 finished the migration with the time 445.26544660173647 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.368100206004733 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 77 finished the migration with the time 275.8886767771123 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.114518306720505 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 81 finished the migration with the time 235.2669537434809 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.545017241116774 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 191 finished the migration with the time 189.34945561970184 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.208504525215847 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 22 finished the migration with the time 339.7989874331205 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.05773396001073 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 148 finished the migration with the time 133.82066534402142 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.198349529035756 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 189 finished the migration with the time 183.4937403273358 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.089149645242045 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 63 finished the migration with the time 135.23919394774026 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.065943892316835 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 87 finished the migration with the time 236.85619743694596 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.10259698930826 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 95 finished the migration with the time 167.74520109532546 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.707093962611726 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 173 finished the migration with the time 217.47842053131865 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.952213853947278 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 131 finished the migration with the time 135.23534624205263 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.326056492989586 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 137 finished the migration with the time 133.00209624160718 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.174867519725105 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 21 finished the migration with the time 188.46965900290581 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.708517074542797 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 44 finished the migration with the time 188.06880786412307 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.543809649212378 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 178 finished the migration with the time 168.7773097757168 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.700977448288157 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 60 finished the migration with the time 291.0445536646053 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.519858003735823 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 123 finished the migration with the time 134.86021443985314 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.08676153995168 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 113 finished the migration with the time 199.9734666104866 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.26167646570465 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 101 finished the migration with the time 221.2305168803757 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.629999669772868 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 154 finished the migration with the time 169.8600955293361 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.368246097819636 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 100 finished the migration with the time 203.01060401688838 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.715956550220053 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 12 finished the migration with the time 272.67156906544886 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.202757935831773 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 35 finished the migration with the time 151.02353355142884 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.823711426371244 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 69 finished the migration with the time 169.1397439890648 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.20380003197729 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 6 finished the migration with the time 182.10681146237846 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.98202175819569 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 193 finished the migration with the time 465.44408059649646 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.825741215910167 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 78 finished the migration with the time 138.57547201608563 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.686410586090886 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 183 finished the migration with the time 151.06924525909253 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.071988941949684 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 152 finished the migration with the time 203.20271632741753 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.462503381050897 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 9 finished the migration with the time 403.0265514229687 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.996150847777297 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 160 finished the migration with the time 203.700191888992 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.237381291596343 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 79 finished the migration with the time 235.39244239361295 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.728558302925155 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 13 finished the migration with the time 154.1055201755666 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.942964809586655 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 48 finished the migration with the time 135.55646315306015 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.442372780231583 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 120 finished the migration with the time 200.76872642235173 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.81124985702057 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 39 finished the migration with the time 133.80051787488827 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.73696745254332 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 53 finished the migration with the time 167.4296904356355 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.940644473770263 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 182 finished the migration with the time 221.44105971516814 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.679146683113203 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 45 finished the migration with the time 290.1624945913995 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.798788283496016 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 170 finished the migration with the time 136.0913408987507 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.641995217712502 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 130 finished the migration with the time 137.17099295832662 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.973689475207557 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 168 finished the migration with the time 154.33637771253782 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.416717209258422 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 99 finished the migration with the time 204.35600719374875 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.208922233104193 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 32 finished the migration with the time 294.8014796512035 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.103183468426046 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 172 finished the migration with the time 152.91700255557166 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.792722657872183 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 108 finished the migration with the time 136.86514847803517 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.912071828374845 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 24 finished the migration with the time 186.2404547030475 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.114599538455963 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 83 finished the migration with the time 133.61351817436721 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.8313375399458 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 74 finished the migration with the time 131.91814859559082 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.545763208016837 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 198 finished the migration with the time 184.25496514366563 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.012589242810435 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 56 finished the migration with the time 320.52525008313177 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.6370156163053 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 134 finished the migration with the time 234.8743038986298 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.521327041433437 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 135 finished the migration with the time 306.13519876592625 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 18.34154549861245 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 157 finished the migration with the time 150.62848174698854 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.66055123558137 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 116 finished the migration with the time 166.64642942277644 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.281636520013052 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 52 finished the migration with the time 151.7701054658646 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.59404832819582 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 174 finished the migration with the time 170.59568134971425 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.30015709430366 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 167 finished the migration with the time 169.4098250200973 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.776988020929778 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 88 finished the migration with the time 148.62363689011457 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.027154144145808 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 162 finished the migration with the time 203.04397148160632 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.803151415333907 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 84 finished the migration with the time 236.28326578021523 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.90092981124833 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 41 finished the migration with the time 307.9003503316052 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.88776024469737 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 93 finished the migration with the time 135.58893366830245 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.454044382068155 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 90 finished the migration with the time 290.6129739514926 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 16.91884081373343 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 49 finished the migration with the time 273.7373096247133 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.106869965206645 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 40 finished the migration with the time 170.90535447889044 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.2145639784218 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+	VM: 27 finished the migration with the time 153.83675112077876 seconds
+		RAM = 512 MB
+		Priority = 1
+		Downtime = 17.367938455899377 seconds
+		QoS = 300 seconds / violate = false
+		Migration result = true
+
+Overall details ::
+	Total migrated VM = 100 / 200
+	Total migrated priority: 
+		Priority 1 = 100 / 200
+		Priority 2 = 0 / 0
+		Priority 3 = 0 / 0
+	Total violated VM = 0
+	Total migration time = 21577.031446829013 (Avg. = 215.77031446829014) secs
+	Total down time = 1729.3171704074314 (Avg. = 17.293171704074314) secs
+
+Environment details ::
+	Network type = dynamic
+		Max Bandwidth = 64.0 Mbps
+		Mean Bandwidth = 50.0 Mbps
+		Network's standard deviation = 12.0%
+		Network Interval = 1.0
+	Page size = 4 KB
+	Time limit = 21600.0 secs
+	Schedule type = priority
+	Migration type = precopy
+		Normal dirty rate = 20.0%
+		WWS dirty rate = 90.0%
+		WWS page ratio = 1.0%
+		Max pre-copy iteration = 30
+		Min dirty page = 50
+		Max no-progress round = 2
+	Control type = openloop
+

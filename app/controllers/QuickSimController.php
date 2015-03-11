@@ -25,6 +25,7 @@ class QuickSimController extends \BaseController {
 	public $simulation_name;
 	public $sim_round;
 	public $vmList;
+	public $network_mean;
 	
 
 	/**
@@ -222,9 +223,13 @@ class QuickSimController extends \BaseController {
 		$this->migration_alg = Input::get('migration_algorithm');
 		$this->control_alg = Input::get('control_algorithm');
 		$this->network_alg = Input::get('network_status');
+		if($this->network_alg == "stable") {
+			$this->network_alg = "static";
+		}
 		$this->limit_time = Input::get('limit_time');
 		$this->network_bandwidth = Input::get('network_bandwidth');
 		$this->network_interval = Input::get('network_interval');
+		$this->network_mean = Input::get('network_mean');
 		$this->network_sd = Input::get('network_sd');
 		$this->page_dirty = Input::get('page_dirty');
 		$this->wwws_ratio = Input::get('wwws_ratio');
@@ -298,6 +303,7 @@ class QuickSimController extends \BaseController {
 		$envi_data['maxNoProgressRound' ] =(int) $this->max_no_prog_round;
 		$envi_data['networkInterval' ] = (double)$this->network_interval;
 		$envi_data['networkSD' ] = (float)$this->network_sd;
+		$envi_data['networkSD' ] = (float)$this->network_mean;
 
 		// this will be looped
 		
@@ -371,6 +377,7 @@ class QuickSimController extends \BaseController {
 			$envi->min_dirty_page = $this->min_dirty_page;
 			$envi->max_no_progress_round = $this->max_no_prog_round;
 			$envi->network_interval = $this->network_interval;
+			$envi->network_mean = $this->network_mean;
 			$envi->network_sd = $this->network_sd;
 		
 			$envi->configuration_id = $config->id;

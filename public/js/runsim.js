@@ -102,7 +102,7 @@ $(function() {
            		$('#schedule').text(data.envi.schedule_type);
            		$('#migration').text(data.envi.migration_type);
            		$('#control').text(data.envi.control_type);
-           		$('#network').text(data.envi.network_type);
+           		
            		$('#page_size').text(data.envi.page_size);
            		$('#wws_ratio').text(data.envi.wws_ratio);
            		$('#wws_dirty_rate').text(data.envi.wws_dirty_rate);
@@ -113,6 +113,7 @@ $(function() {
            		$('#network_type').text(data.envi.network_type);
            		$('#page_size').text(data.envi.page_size);
            		$('#network_interval').text(data.envi.network_interval);
+           		$('#network_mean').text(data.envi.network_mean);
            		$('#network_sd').text(data.envi.network_sd);
 
 

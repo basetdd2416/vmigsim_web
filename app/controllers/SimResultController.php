@@ -61,7 +61,11 @@ class SimResultController extends \BaseController {
 
 	public function ajaxSimRsType() {
 		$data = array();
+		$data['compare'] = false;
 		$sim_name = Input::get('sim_name');
+		//$sim_name = substr(0,strpos(Input::get('sim_name'), '.text'));
+		//return var_dump($sim_name);
+		
 		$rs_type = Input::get('rs_type');
 		$dir_output_base = 'run_simulation/output/';
 		$dir_log = '/logfile';
@@ -83,25 +87,157 @@ class SimResultController extends \BaseController {
 			}
 			
 		}
+		// read by line and graph
+		if ($rs_type == 'net') {
+			$graphData = array();
+			$details = array();
+
+			$details['head_title'] = 'Network bandwidth each interval in second.';
+			$details['sub_title'] = $dirs['0'];
+			$details['y_title'] = 'Bandwidth (Mbps)';
+			
+
+			$graphData = $this->initGraph($details);
+			$graphData['legend']['enabled'] = false;
+			
+
+			$graphData['chart']['zoomType'] = 'x';
+			$graphData['chart']['renderTo'] = 'graph_container';
+			$graphData['chart']['type'] = 'line';
+		
+			//$graphData['xAxis']['minTickInterval'] = 10;
+			$graphData['scrollbar']['enabled'] = true;
+			$graphData['xAxis']['minRange'] = 20;
+			
+
+			
+
+				$sim_obj = Simulation::where('sim_name','=',$sim_name)->first();
+				$envi = Environment::where('configuration_id','=',$sim_obj->configuration_id)->first();
+				$amountData = $envi->time_limit / $envi->network_interval;
+				// optional
+				if($amountData  > 600) {
+					$graphData['xAxis']['max'] = 600;
+				}
+				
+
+				$handle = fopen($dir_output_to_file.'/'.$dirs[0], "r");
+				
+
+
+				if ($handle) {
+					
+					$graphData['series'][0]['name'] = $dirs[0];
+					
+					$index = 1;
+				    while (($line = fgets($handle)) !== false) {
+				    			
+				    				$graphData['xAxis']['categories'][] = $index * $envi->network_interval;
+				    				$graphData['series'][0]['data'][] = floatval($line);
+				    				
+				    		
+				    		$index++;
+				    }
+				    $data['compare'] = true;
+				    $data['graphData']['chart'] = $graphData;
+				    fclose($handle);
+				} else {
+				    // error opening the file.
+				} 
+			}
+		
+		else if ($rs_type == 'compar-net') {
+			$graphData = array();
+			$details = array();
+			$barData = array(); 
+			$details['head_title'] = 'Network bandwidth each interval in second.';
+			$details['sub_title'] = 'All round';
+			$details['y_title'] = 'Bandwidth (Mbps)';
+
+			$graphData = $this->initGraph($details);
+			
+
+
+			$graphData['chart']['zoomType'] = 'x';
+			$graphData['chart']['renderTo'] = 'graph_container';
+			$graphData['chart']['type'] = 'line';
+		
+			//$graphData['xAxis']['minTickInterval'] = 10;
+			$graphData['scrollbar']['enabled'] = true;
+			$graphData['xAxis']['minRange'] = 20;
+
+			$graphData['tooltip']['shared'] = true;
+			$sim_obj = Simulation::where('sim_name','=',$sim_name)->first();
+			$envi = Environment::where('configuration_id','=',$sim_obj->configuration_id)->first();
+			$amountData = $envi->time_limit / $envi->network_interval;
+				// optional
+				if($amountData  > 600) {
+					$graphData['xAxis']['max'] = 600;
+				}
+			for ($i = 0 ; $i < count($dirs) ; $i++) {
+
+				
+				$handle = fopen($dir_output_to_file.'/'.$dirs[$i], "r");
+				
+				if ($handle) {
+					
+					$graphData['series'][$i]['name'] = $dirs[$i];
+					
+					$index = 1;
+				    while (($line = fgets($handle)) !== false) {
+				    			
+				    				if ($i==0) {
+				    					$graphData['xAxis']['categories'][] = $index * $envi->network_interval;
+				    				}
+				    				
+				    				$graphData['series'][$i]['data'][] = floatval($line);
+				    			
+				    			
+				    		
+				    		$index++;
+				    }
+				    // part of min max avg sd of each round for bar graph.
+				    
+				    
+				    $barData['sim_round_name'][] = $dirs[$i]; 
+				    $barData['max'][] = max($graphData['series'][$i]['data']);
+				    $barData['min'][] = min($graphData['series'][$i]['data']);
+				    $barData['avg'][] = array_sum($graphData['series'][$i]['data']) / count($graphData['series'][$i]['data']);
+				    $barData['sd'][] = $this->stats_standard_deviation($graphData['series'][$i]['data']);				
+				    
+
+
+				    
+				    fclose($handle);
+				} else {
+				    // error opening the file.
+				} 
+			}
+
+			
+
+			$all_round = array();
+
+			$all_round['max'] = array_sum($barData['max']) / count($barData['sim_round_name']);
+			$all_round['min'] = array_sum($barData['min']) / count($barData['sim_round_name']);
+			$all_round['avg'] = array_sum($barData['avg']) / count($barData['sim_round_name']);
+			$all_round['sd'] = array_sum($barData['sd']) / count($barData['sim_round_name']);
+
+			$barData['sim_round_name'][] = 'All round';
+			$barData['max'][] = $all_round['max'];
+			$barData['min'][] = $all_round['min']; 
+			$barData['avg'][] = $all_round['avg'];
+			$barData['sd'][] = $all_round['sd'];
+
+			$data['compare'] = true;
+			$data['graphData']['bar'] = $barData;
+			$data['graphData']['chart'] = $graphData;
+		}
 		// take name and show detail of file name
 		$file = file_get_contents($dir_output_to_file.'/'.$dirs['0'], FILE_USE_INCLUDE_PATH);
-		
 		$file = '<pre>'. $file .'</pre>';
-		 //$file = explode("\n", $file);
-		/*$file  = "";
-		$handle = fopen($dir_output_to_file.'/'.$dirs['0'], "r");
-		if ($handle) {
-   			 while (($line = fgets($handle)) !== false) {
-        // process the line read
-        $file .= $line . '</br>';
-   	 	}
-
-    	
-} else {
-    // error opening the file.
-		}
-		fclose($handle); */
 		$data['content_default'] = $file;
+		
 		$data['f_names'] = $dirs;
 		$data['success'] = true;
 		return Response::json($data);
@@ -130,6 +266,51 @@ class SimResultController extends \BaseController {
 			$dir_output_to_file = $dir_output_base.$sim_name.$dir_log;
 		}
 
+		// read by line and graph
+		if ($rs_type == 'net') {
+			$graphData = array();
+			$details = array();
+
+			$details['head_title'] = 'Network bandwidth each interval in second.';
+			$details['sub_title'] = $round_name;
+			$details['y_title'] = 'Bandwidth (Mbps)';
+			
+
+			$graphData = $this->initGraph($details);
+			$graphData['legend']['enabled'] = false;
+			
+
+			$graphData['chart']['zoomType'] = 'x';
+			$graphData['chart']['renderTo'] = 'graph_container';
+			$graphData['chart']['type'] = 'line';
+		
+			//$graphData['xAxis']['minTickInterval'] = 10;
+			$graphData['scrollbar']['enabled'] = true;
+			$graphData['xAxis']['minRange'] = 20;
+
+			$sim_obj = Simulation::where('sim_name','=',$sim_name)->first();
+			$envi = Environment::where('configuration_id','=',$sim_obj->configuration_id)->first();
+			$amountData = $envi->time_limit / $envi->network_interval;
+				// optional
+				if($amountData  > 600) {
+					$graphData['xAxis']['max'] = 600;
+				}
+			$handle = fopen($dir_output_to_file.'/'.$round_name, "r");
+			
+			if ($handle) {
+				$graphData['series'][0]['name'] = $round_name;
+				$index = 1;
+			    while (($line = fgets($handle)) !== false) {
+			    			$graphData['xAxis']['categories'][] = $index * $envi->network_interval;
+				    		$graphData['series'][0]['data'][] = floatval($line);
+			    		$index++;
+			    }
+			    $data['graphData']['chart'] = $graphData;
+			    fclose($handle);
+			} else {
+			    // error opening the file.
+			} 
+		}
 
 
 
@@ -144,6 +325,62 @@ class SimResultController extends \BaseController {
 		$data['success'] = true;
 		return Response::json($data);
 	}
+
+
+	public function initGraph($details)
+	{
+			$graphData = array();
+
+			$graphData['title']['text'] = $details['head_title'];
+			$graphData['title']['x'] = -20;
+
+			$graphData['subtitle']['text'] = $details['sub_title'];
+			$graphData['subtitle']['x']	  = -20;
+
+			$graphData['yAxis']['title']['text'] = $details['y_title'];
+			$graphData['yAxis']['plotLines'][]['value'] = 0;
+			$graphData['yAxis']['plotLines'][]['width'] = 1;
+			$graphData['yAxis']['plotLines'][]['color'] = '#808080';
+			
+			$graphData['tooltip']['valueSuffix'] = 'Mbps';
+			$graphData['legend']['layout'] = 'vertical';
+			$graphData['legend']['align'] = 'right';
+			$graphData['legend']['verticalAlign'] = 'middle';
+			$graphData['legend']['borderWidth'] = 0;
+
+			
+			
+
+		return $graphData;
+	}
+
+	public function stats_standard_deviation(array $a, $sample = false) {
+        $n = count($a);
+        if ($n === 0) {
+            trigger_error("The array has zero elements", E_USER_WARNING);
+            return false;
+        }
+        if ($sample && $n === 1) {
+            trigger_error("The array has only 1 element", E_USER_WARNING);
+            return false;
+        }
+        $mean = array_sum($a) / $n;
+        $carry = 0.0;
+        foreach ($a as $val) {
+            $d = ((double) $val) - $mean;
+            $carry += $d * $d;
+        };
+        if ($sample) {
+           --$n;
+        }
+        return sqrt($carry / $n);
+    }
+
+
+	public function ajaxSimNetCompar ()
+	{
+
+	} 
 	/**
 	 * Show the form for creating a new resource.
 	 *

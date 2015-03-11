@@ -93,6 +93,9 @@ class RunSimController extends \BaseController {
 		$data = array();
 		$config_id = Input::get('config_id');
 		$envi = Environment::where('configuration_id','=',$config_id)->first();
+		if($envi->network_type=="static") {
+			$envi->network_type = "Stable";
+		}
 		if(!Input::get('create_exist')) {
 
 
@@ -152,7 +155,8 @@ class RunSimController extends \BaseController {
 				$envi_db = Environment::where("configuration_id","=",Input::get('config_name'))->first();
 				$vms_db = Vm::where("configuration_id","=",Input::get('config_name'))->get();
 
-				$envi['bandwidth'] = $envi_db->bandwidth;
+				$envi['maxBandwidth'] = $envi_db->bandwidth;
+				$envi['meanBandwidth'] = $envi_db->network_mean;
 				$envi['timeLimit'] = $envi_db->time_limit;
 				$envi['scheduleType'] = $envi_db->schedule_type;
 				$envi['migrationType'] = $envi_db->migration_type;

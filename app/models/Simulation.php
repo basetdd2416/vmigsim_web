@@ -6,5 +6,10 @@
 				'configuration_id',
 				'round'
 			);
+
+		public function configuration()
+		{
+			return $this->hasOne('Configuration','id','configuration_id');
+		}
 		
 	}

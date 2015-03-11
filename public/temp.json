@@ -1,7 +1,9 @@
 {
 	"environment" : 
 		{
-			"bandwidth" : 64,
+			
+			"maxBandwidth" : 64 ,
+			"meanBandwidth" : 40 ,
 			"timeLimit" : 21600,
 			"scheduleType" : "priority",
 			"migrationType" : "offline",

@@ -1,0 +1,27 @@
+{
+    "environment": {
+        "bandwidth": 64,
+        "timeLimit": 21600,
+        "scheduleType": "priority",
+        "migrationType": "precopy",
+        "controlType": "openloop",
+        "networkType": "dynamic",
+        "pageSize": 4,
+        "wwsRatio": 1,
+        "wwsDirtyRate": 90,
+        "normalDirtyRate": 20,
+        "maxPreCopyRound": 30,
+        "minDirtyPage": 50,
+        "maxNoProgressRound": 2,
+        "networkInterval": 60,
+        "networkSD": 62
+    },
+    "vmSpecList": [
+        {
+            "vmAmount": 200,
+            "ram": 512,
+            "qos": 300,
+            "priority": 1
+        }
+    ]
+}
