@@ -81,6 +81,12 @@ Route::get('/shell', function()
 Route::get('test', 'TestJsonController@index');
 Route::get('test/querydata', 'TestJsonController@queryData');
 Route::get('test/form1', 'TestJsonController@form1');
+Route::get('test/mytestform1', function()
+{
+	$data = array();
+	$data['message'] = 'hello';
+	return Response::json($data);
+});
 Route::post('test/form1', 'TestJsonController@processform1');
 Route::post('test/form2', 'TestJsonController@processForm2');
 Route::get('test/form2', 'TestJsonController@createForm2');

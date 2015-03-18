@@ -1,11 +1,11 @@
 $(function() {
 	// clock
-	
+	var info = $('.information--status__waiting');
 	
  	
 	//
 	$('#simbar').attr('class','active');
-	var mesgalert = $('.alert');
+	var mesgalert = $('.alert--sim');
 	var envi_info = $('#envi_info');
 	var policy_info = $('#policy_info');
 	var app_info = $('#app_info');
@@ -13,11 +13,13 @@ $(function() {
 
 
 	$(document).ajaxStart(function(){
-	mesgalert.hide().find('ul').empty();
+	 mesgalert.hide().find('ul').empty();
     $('#loading').show();
+    info.show();
+    
     $('.myform').hide();
  }).ajaxStop(function(){
-    $('#loading').hide();
+   $('#loading').hide();
     $('.myform').show();
 
  });
@@ -142,21 +144,25 @@ $(function() {
 	});
 	
 	$(".update_form").click(function() { // changed
-	$('img').attr('height','600');
-	$('img').attr('width','600');
-	$('img').attr('src','http://vmig.dev/images/loading-src-dest-3.gif');
-	 
-	 var myform = $(this).closest("form");
-	 var mycustomform =	myform.serializeObject();
-	 //setInterval('updateClock()', 1000);
-	
-	 
+  	
+    $('img').attr('height','600');
+  	$('img').attr('width','600');
+  	$('img').attr('src','http://vmig.dev/images/loading-src-dest-3.gif');
+  	var sim_name = $('#info--sim__name');
+    var sim_status = $('#info--sim__status');
+    var sim_link = $('#info--sim__link');
+  	var myform = $(this).closest("form");
+  	var mycustomform =	myform.serializeObject();
+  	 //setInterval('updateClock()', 1000);
+    
+  	sim_name.text(mycustomform.simulation_name);
+	  sim_link.hide();
     $.ajax({
-		
+
            type: "POST",
            url: "savesimulation",
            dataType: 'json',
-      
+           async : true,
            
            cache: false,
            data:  mycustomform,
@@ -164,19 +170,32 @@ $(function() {
            {
            	//alert(data.success);
            		mesgalert.hide().find('ul').empty();
-           		mesgalert.attr('class','alert alert--sim alert-danger');
+           		//mesgalert.attr('class','alert alert--sim alert-danger');
            		if(!data.success) {
-           			
+           			mesgalert.attr('class','alert--sim alert-danger alert');
            			//window.location.replace(data.redirect);
            			//top.location.href = data.redirect;
            			//window.location.href = data.redirect;
            			$.each(data.errors , function (index,error){
+
            				mesgalert.find('ul').append('<li>'+error+'</li>');
            			});
+                
+                sim_status.hide();
+                sim_status.find('span').attr('class','label label-danger');
+                sim_status.find('span').text('failed');
+                sim_status.fadeIn("slow");
            			mesgalert.slideDown();
-           		} else {
-           			window.location.href = data.redirect;
-           			
+           		} else { // sucess case 
+           			//window.location.href = data.redirect;
+                // change status to complete and link to view result na ja
+               
+                sim_link.find('a').attr('href',data.redirect);
+                sim_status.hide();
+                sim_status.find('span').attr('class','label label-success');
+                sim_status.find('span').text('success');
+                sim_status.fadeIn("slow");
+           			sim_link.fadeIn("slow");
            		}
            		
                // show response from the php script.
@@ -188,7 +207,11 @@ $(function() {
 			   
 			   
 			   
-           }
+           },
+            error: function (xhr, ajaxOptions, thrownError) {
+            alert(xhr.responseText);
+            alert(thrownError);
+          }
          });
 		 
     return false; // avoid to execute the actual submit of the form.

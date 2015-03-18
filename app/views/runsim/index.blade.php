@@ -22,11 +22,33 @@ content:"\e080";
 @endif
 <h1>Run simulation</h1>
 <hr>
+<div id="prog"></div>
 <div class="alert--sim alert-dismissible" role="alert" style="display:none;">
 				  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				  <ul>
 
 				  </ul>
+</div>
+<div class="information--status__waiting panel panel-primary" style="display:none">
+	  <div class="panel-heading">
+			<h3 class="panel-title">Running informations</h3>
+	  </div>
+	  <div class="panel-body">
+	  	<div  class="form-horizontal" role="form">
+	  		<div class="form-group">
+				<label for="inputEmail3" class="col-sm-4 control-label">Simulation name:</label>
+				<label id="info--sim__name" for="inputEmail3" class="control-label">SimA Test</label>
+			</div>
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-4 control-label">Status:</label>
+				<label id="info--sim__status" for="inputEmail3" class="control-label"><span class="label label-primary">Running</span></label>
+			</div>
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-4 control-label">Link to result:</label>
+				<label id="info--sim__link" for="inputEmail3" class="control-label"><a href="#"> <i class="fa fa-bar-chart"></i></a></label>
+			</div>
+		</div>
+	  </div>
 </div>
 
 <div class="row">
@@ -41,6 +63,7 @@ content:"\e080";
 		</div>
 	</div>
 </div>
+
 <form  class="form-horizontal myform" role="form" method="post">
 	<div id="phase1" class="panel panel-info">
 		<div class="panel-heading">
@@ -54,7 +77,7 @@ content:"\e080";
 				<div class="form-group">
 					<label for="inputEmail3" class="col-sm-4 control-label">Simulation name</label>
 					<div class="col-sm-6">
-						<input type="text" class="form-control" name="simulation_name" id="simulation_name" value="{{Input::old('simulation_name')}}" placeholder="enter your simulation name">
+						<input type="text" class="form-control" name="simulation_name" id="simulation_name" value="{{Input::old('simulation_name')}}" placeholder="enter your simulation name" required>
 					</div>
 				</div>
 				<div class="form-group">
@@ -232,12 +255,15 @@ content:"\e080";
 			<button id="nextPahse5" type="submit" class="btn btn-sm btn-success update_form">
 					<i class="fa fa-play-circle-o"></i> Run
 			</button>
+
 		</div>
 	</div>
 	</form>	
 	@section('js')
 	{{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
+	{{ HTML::script('js/jquery.ajax-progress.js') }}
 	{{ HTML::script('js/jquery.serialize-object.js') }}
+
 	{{ HTML::script('js/runsim.js') }}
 	<script type="text/javascript">
 		$("input[name='round']").TouchSpin({

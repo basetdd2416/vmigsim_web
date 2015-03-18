@@ -16,7 +16,7 @@
      {{ HTML::style('css/plugins/morris.css') }}
     <!-- Custom Fonts -->
     
-    {{ HTML::style('font-awesome-4.1.0/css/font-awesome.min.css') }}
+    {{ HTML::style('css/font-awesome-4.3.0/css/font-awesome.min.css') }}
 	{{ HTML::style('css/jquery.bootstrap-touchspin.css') }}
     
     <!-- MetisMenu CSS -->

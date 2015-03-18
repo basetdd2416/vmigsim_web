@@ -77,52 +77,111 @@ content:"\e080";
 						<div class="radio">
 							<label class="control-label "><input type="radio" name="rs_type" value="net">Newrok trace</label>
 						</div>
+						
 						<div class="radio">
-							<label class="control-label "><input type="radio" name="rs_type" value="compar-net">Comparison network trace each round</label>
+							<label class="control-label "><input type="radio" name="rs_type" value="priority">Priority</label>
+						</div>
+						<div class="radio">
+							<label class="control-label "><input type="radio" name="rs_type" value="down-time-round">Down time</label>
+						</div>
+						<div class="radio">
+							<label class="control-label "><input type="radio" name="rs_type" value="migration-time-round">Migration time</label>
+						</div>
+						<div class="radio">
+							<label class="control-label "><input type="radio" name="rs_type" value="violation">Violation</label>
 						</div>
 					</div>
 				</div>
-				<div id="round_info" class="form-group" style="display:none;">
+		
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- test tab ja-->
+	<div id="tab--info" style="display:none;">
+		<ul id="myTab" class="nav nav-tabs">
+			<li class="active"><a href="#round" data-toggle="tab">On round</a></li>
+			<li class=""><a href="#all" data-toggle="tab">On all round</a></li>
+		</ul>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div id="loading" style="display:none" >
+					<p class="text-center"><img height="200" width="200" src="{{URL::to('images/loading.gif')}}" /><br> Please Wait...... </p>
+				</div>
+			</div>
+		</div>
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active in" id="round">
+				<div class="panel-heading jumbotron">
+					<h3 class="panel-title"><i class="fa fa-pencil-square-o"></i> On round</h3>
+					
+
+				</div>
+				
+					<div id="round_info" class="form-group round_info" style="display:none;">
 					<label for="inputEmail3" class="col-sm-4 control-label">round_name</label>
 					<div class="col-sm-6">
-						<select name="round_name" id="round_select" class="form-control" required="required">
+						<select name="round_name" id="round_select" class="form-control round_select" required="required">
 							<option value="" selected disabled>Please select</option>
 						</select>
 					</div>
 				</div>
-				
+					<div id="graph--info__round" class="panel panel-info" style="display:none;">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+							<a class="graph_title" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"></a>
+							</h3>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div id="graph_container" style="min-width: 800px; height: 400px; margin: 0 auto">
+								</div>
+								<div id="graph--bar__container" style="min-width: 800px; height: 400px; margin: 0 auto; display:none;">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="content_info"  style="display:none;" class="panel panel-info">
+						<div class="panel-heading">
+							
+							<h3 class="panel-title">
+							<a id="stat_title" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							</a></h3>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse in">
+							<div class="panel-body mypanel">
+								
+							</div>
+						</div>
+					</div>
+
+
 			</div>
-		</div>
-	</div>
-	<div id="graph_info" class="panel panel-info" style="display:none;">
-		  <div class="panel-heading">
-				<h3 class="panel-title">Network bandwidth graph</h3>
-		  </div>
-		  <div class="panel-body">
-				<div id="graph_container" style="min-width: 800px; height: 400px; margin: 0 auto">
-
+			<div class="tab-pane fade" id="all" >
+				<div class="panel-heading jumbotron">
+					<h3 class="panel-title"><i class="fa fa-pencil-square-o"></i> On all round</h3>
 				</div>
-
-				<div id="graph--bar__container" style="min-width: 800px; height: 400px; margin: 0 auto; display:none;">
-
-				</div>
-		  </div>
-	</div>
-	<div id="content_info"  style="display:none;" class="panel panel-info">
-		<div class="panel-heading">
-			
-			<h3 class="panel-title">
-			<a id="stat_title" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-			</a></h3>
-		</div>
-		<div id="collapseThree" class="panel-collapse collapse in">
-			<div class="panel-body mypanel">
-				
+				<div id="graph--info__all" class="panel panel-info" style="display:none;">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+			<a class="graph_title" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"></a>
+			</h3>
+						</div>
+						<div id="collapseFive" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div id="graph--chart" style="min-width: 800px; height: 400px; margin: 0 auto display:none">
+								</div>
+								<div id="graph--bar" style="min-width: 800px; height: 400px; margin: 0 auto display:none">
+								</div>
+							</div>
+						</div>
+					</div>
+					
 			</div>
 		</div>
 	</div>
 </form>
-
 <style type="text/css">
 .mypanel{
 max-height: 400px;
@@ -132,9 +191,9 @@ overflow-y:scroll;
 @section('js')
 {{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
 {{ HTML::script('js/jquery.serialize-object.js') }}
-
 {{ HTML::script('http://code.highcharts.com/stock/highstock.js') }}
 {{ HTML::script('http://code.highcharts.com/modules/exporting.js') }}
+{{ HTML::script('js/jquery-scrollto.js') }}
 {{ HTML::script('js/sim_result.js') }}
 @stop
 @stop
