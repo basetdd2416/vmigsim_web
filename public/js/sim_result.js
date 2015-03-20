@@ -1,5 +1,14 @@
 $(function() {
 
+
+	var lastPath = 'simulation_result';
+	var pathName = $(location).attr('pathname');
+	var lastPathHref = pathName.split('/').pop();
+	if(lastPath != lastPathHref) {
+			window.history.pushState("", "", '/simulation/simulation_result');
+	}
+	
+	$('#side-menu li:last').find('a').attr('class','active');
 	$('#simbar').attr('class','active');
 	var mesgalert = $('.alert');
 	var rs_info = $('#rs_info');
@@ -700,7 +709,7 @@ $(function() {
 	        	 		tab_info.slideDown("slow");
 	        	 		rs_info.slideDown("slow");
 	        	 		content_info.slideDown("slow");
-
+	        	 		
 	        	 		
 	        	 		/* jump to elemnt 
 	        	 		$('html, body').animate({
@@ -715,48 +724,11 @@ $(function() {
 	$("#sim_select").on('change',function(e){
 		e.preventDefault();
 
-		var sim_name = e.target.value;
-		 $.ajax({
+		$('input:radio[name=rs_type]')[0].checked = true;
+		$('input:radio[name=rs_type]:nth(0)').val('log').change();
 		
-           type: "GET",
-           url: "ajax-sim-name",
-           dataType: 'json',
-      	
-           
-           cache: false,
-           data:  {
-           		sim_name : sim_name
-
-           },
-           success: function(data)
-           {
-           		rs_info.hide();
-
-           		if(!data.success) {
-           			alert('it failed');
-           		} else {
-           			//alert(data.success);
-           			$('input:radio[name=rs_type]')[0].checked = true;
-           			$('input:radio[name=rs_type]:nth(0)').val('log').change();
-           			
-           			
-           		}
-           	
-
-           		
-           		
-           	}
-               // show response from the php script.
-			   //$('#collapseOne').attr('class','panel-collapse collapse');
-			   //$('#collapseTwo').attr('class','panel-collapse collapse in');
-			  	
-			   
-				
-			   
-			   
-			   
-           
-         });
+		
+		
 	});
 
 	$("#round_select").on('change',function(e){
@@ -917,5 +889,6 @@ $(function() {
     });
 
 
-	 
+	var sim_name = $("#sim_select").val();
+	$("#sim_select").val(sim_name).trigger('change');
 });

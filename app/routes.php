@@ -63,13 +63,19 @@ Route::get('simulation/quicksim/createvm', 'QuickSimController@createVM');
 Route::get('simulation/quicksim/createenvi', 'QuickSimController@createEnvi');
 Route::get('simulation/quicksim/reportcreate', 'QuickSimController@reportCreate');
 Route::get('simulation/runsimulation', 'RunSimController@index');
+Route::get('simulation/run-sim-engine', 'RunSimController@runSimEngine');
+Route::get('simulation/check-status', 'RunSimController@checkStatus');
+Route::get('simulation/query-sim-detail', 'RunSimController@querySimDetail');
 Route::get('simulation/ajax-config', 'RunSimController@ajaxConfig');
 Route::post('simulation/savesimulation', 'RunSimController@ajaxSaveSimulation');
-Route::get('simulation/simulation_result', 'SimResultController@index');
+Route::get('simulation/ajax-run-sim-history', 'RunSimController@ajaxSimList');
+Route::get('simulation/simulation_result/{id?}', 'SimResultController@index');
+
 Route::get('simulation/ajax-sim-name', 'SimResultController@ajaxSimName');
 Route::get('simulation/ajax-sim-rs', 'SimResultController@ajaxSimRsType');
 Route::get('simulation/ajax-sim-round', 'SimResultController@ajaxSimRound');
 Route::get('simulation/ajax-sim-netcompar', 'SimResultController@ajaxSimNetCompar');
+
 //existing sim
 Route::get('simulation/quicksim/existing-config', 'ExistConfigController@index');
 Route::post('simulation/quicksim/uploadConfig', 'UploadConfigController@index');

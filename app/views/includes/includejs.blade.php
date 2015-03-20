@@ -8,6 +8,6 @@
     <!-- Metis Menu Plugin JavaScript -->
 {{ HTML::script('js/plugins/metisMenu/metisMenu.min.js') }}
 
-
+	
 
 

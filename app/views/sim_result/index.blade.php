@@ -48,13 +48,7 @@ content:"\e080";
 				<div class="form-group">
 					<label for="inputEmail3" class="col-sm-4 control-label">Simulation name</label>
 					<div class="col-sm-6">
-						<select name="sim_name" id="sim_select" class="form-control" required="required">
-							<option value="" selected disabled>Please select</option>
-							
-							@foreach($sim_name_list as $s)
-							<option value="{{$s}}">{{$s}}</option>
-							@endforeach
-						</select>
+						{{Form::select('sim_name', $sim_name_list, $default,array('class'=>'form-control','id'=>'sim_select'))}}
 					</div>
 				</div>
 			</div>

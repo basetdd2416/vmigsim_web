@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set("Asia/Bangkok"); 
 class SimResultController extends \BaseController {
 
 	/**
@@ -7,18 +7,32 @@ class SimResultController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index($id = null)
 	{
+		$default = null;
 		$directory = 'run_simulation/output/';
 		$scanned_directory = array_diff(scandir($directory), array('..', '.'));
 		$dirs = array();
 		$index = 0;
 		for ($i=2; $i < count($scanned_directory)+2 ; $i++) { 
 
-			$dirs[$index] = $scanned_directory[$i];
+			$dirs[$scanned_directory[$i]] = $scanned_directory[$i];
 			$index++;
 		}
-		return View::make('sim_result.index')->with('sim_name_list',$dirs);
+		if($id != null) {
+			if(Input::get('sim_name')) {
+				$sim_name = Input::get('sim_name');
+				return View::make('sim_result.index')->with('sim_name_list',$dirs)->with('default',$sim_name);
+			}
+			
+
+			$default = Simulation::find($id);
+			return View::make('sim_result.index')->with('sim_name_list',$dirs)->with('default',$default->sim_name);
+		} else {
+			return View::make('sim_result.index')->with('sim_name_list',$dirs)->with('default',$default);
+		} 
+		
+		
 		/*var_dump($scanned_directory);
 		var_dump($dirs);
 		$dir_out = 'run_simulation/output';

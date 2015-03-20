@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set("Asia/Bangkok"); 
 class RunSimController extends \BaseController {
 
 	/**
@@ -11,14 +11,25 @@ class RunSimController extends \BaseController {
 	{
 		//$config_select = array('0'=>'Please select configuration name');
 		$configs = Configuration::orderBy('created_at', 'desc')->get();
+		$sim_list = Simulation::orderBy('id','desc')->paginate(5);
 		/*foreach ($configs as $c) {
 			$config_select[$c->id] = $c->config_name; 
 		}*/
 		//var_dump($config_select);
-		return View::make('runsim.index')->with('configs',$configs);
+		return View::make('runsim.index')->with('configs',$configs)->with('sim_list',$sim_list);
 	}
 
-
+	public function ajaxSimList()
+	{
+		//$config_select = array('0'=>'Please select configuration name');
+		$configs = Configuration::orderBy('created_at', 'desc')->get();
+		$sim_list = Simulation::orderBy('id','desc')->paginate(5);
+		/*foreach ($configs as $c) {
+			$config_select[$c->id] = $c->config_name; 
+		}*/
+		//var_dump($config_select);
+		return View::make('runsim.simlist')->with('configs',$configs)->with('sim_list',$sim_list)->render();
+	}
 	/**
 	 * Show the form for creating a new resource.
 	 *
@@ -146,14 +157,15 @@ class RunSimController extends \BaseController {
 			$sim->sim_name = Input::get('simulation_name');
 			$sim->configuration_id = Input::get('config_name');
 			$sim->round = Input::get('round');
+			$sim->status = 'running';
 			if($sim->save()){
 				// get json
 				
 				$config_input_file = array();
 				$envi = array();
 				$vms = array();
-				$envi_db = Environment::where("configuration_id","=",Input::get('config_name'))->first();
-				$vms_db = Vm::where("configuration_id","=",Input::get('config_name'))->get();
+				$envi_db = Environment::where("configuration_id","=",$sim->configuration_id)->first();
+				$vms_db = Vm::where("configuration_id","=",$sim->configuration_id)->get();
 
 				$envi['maxBandwidth'] = $envi_db->bandwidth;
 				$envi['meanBandwidth'] = $envi_db->network_mean;
@@ -192,28 +204,23 @@ class RunSimController extends \BaseController {
 					mkdir($filename, 0777);
 				}
 
+				
+
 				$fp = fopen($fullpathtofile, 'w');
  				fwrite($fp, json_encode($config_input_file,JSON_PRETTY_PRINT));
  				fclose($fp);
+ 				$data['simId'] = $sim->id;
+ 				$data['inputPathToFile'] = $fullpathtofile;
+ 				$data['outputPath'] = $outputPath;
+ 				$data['round'] = $sim->round;
+ 				$data['success'] = true;
 
+ 				return Response::json($data);
  				//$this->execInBackground('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1');
  				//$objDateTime = new DateTime('NOW')
 
 			
-				ini_set('max_execution_time', 300);
- 				exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $sim->round,$output, $return);
- 				
- 				//pclose(popen('start /B java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $sim->round.' 2>nul >nul', "r")); 
- 				if (!$return) {
- 				//var_dump( shell_exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1 2>&1'));
- 				//$PID = shell_exec('nohup java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1' . ' ' . '> /dev/null 2> /dev/null & echo $!');
- 				//var_dump($PID);
- 				Session::flash('success_msg', 'Run simulation completed.');
-				$data['redirect'] = 'simulation_result';
-				$data['success'] = true;
-
-				return Response::json($data);
-				}
+				
 			} else {
 				$data['success'] = false;
 				$data['errors'] = 'insert fails';
@@ -230,26 +237,121 @@ class RunSimController extends \BaseController {
 
 	}
 	public function execInBackground($cmd) { 
-    if (substr(php_uname(), 0, 7) == "Windows"){ 
-        pclose(popen("start /B ". $cmd, "r"));  
-    } 
-    else { 
-        exec($cmd . " > /dev/null &");   
-    } 
-}
+	    if (substr(php_uname(), 0, 7) == "Windows"){ 
+	        pclose(popen("start /B ". $cmd, "r"));  
+	    } 
+	    else { 
+	        exec($cmd . " > /dev/null &");   
+	    } 
+	}
 
-public function get_time_difference($time1, $time2) 
-{ 
-    $time1 = strtotime("1/1/1980 $time1"); 
-    $time2 = strtotime("1/1/1980 $time2"); 
-     
-    if ($time2 < $time1) 
-    { 
-        $time2 = $time2 + 86400; 
-    } 
-     
-    return ($time2 - $time1) / 3600; 
-     
-}  
+	public function get_time_difference($time1, $time2) 
+	{ 
+	    $time1 = strtotime("1/1/1980 $time1"); 
+	    $time2 = strtotime("1/1/1980 $time2"); 
+	     
+	    if ($time2 < $time1) 
+	    { 
+	        $time2 = $time2 + 86400; 
+	    } 
+	     
+	    return ($time2 - $time1) / 3600; 
+	     
+	}
+
+	public function saveOutputTodb() {
+
+	}
+
+	public function runSimEngine() {
+		
+		
+		$data = array();
+		$simId = Input::get('simId');
+		$fullpathtofile = Input::get('inputPathToFile');
+		$outputPath = Input::get('outputPath');
+		$round = Input::get('round');
+		$sim = Simulation::find(Input::get('simId'));
+		ini_set('max_execution_time', 300);
+ 		
+ 		$startedTime = date('Y-m-d G:i:s');
+ 		$sim->started = $startedTime;
+ 		//$sim->save();
+ 		exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $sim->round,$output, $return);
+		$finishedTime = date('Y-m-d G:i:s');
+
+		$sim->status = 'success';
+		$sim->started = $startedTime;
+		$sim->finished = $finishedTime;
+ 		if($sim->save()){
+ 			//$this->saveOutputTodb();
+ 			//pclose(popen('start /B java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $sim->round.' 2>nul >nul', "r")); 
+	 		if (!$return) {
+		 		//var_dump( shell_exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1 2>&1'));
+		 		//$PID = shell_exec('nohup java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1' . ' ' . '> /dev/null 2> /dev/null & echo $!');
+		 		//var_dump($PID);
+		 		Session::flash('success_msg', 'Run simulation completed.');
+				$data['redirect'] = 'simulation_result';
+				$data['success'] = true;
+
+				return Response::json($data);
+			}
+		} else {
+			$data['success'] = false;
+			$data['errors'] = 'insert fails';
+			return Response::json($data);
+		}
+	}
+
+	public function checkStatus() {
+		$data = array();
+		$data['isSimRun'] = false;
+		$sim_id = Input::get('id');
+		$sim_list = Simulation::where('status','=','running')->get();
+		if(count($sim_list) > 0 ) {
+			$data['isSimRun'] = true;
+		}
+		/*$all_sim = Simulation::orderBy('id','desc')->get();
+		$all_sim = Simulation::find($sim_id);
+		$data['redirect'] = 'simulation_result';
+		$data['all_sim'] = $all_sim;*/
+		$configs = Configuration::orderBy('created_at', 'desc')->get();
+		$sim_list = Simulation::orderBy('id','desc')->paginate(5);
+		/*foreach ($configs as $c) {
+			$config_select[$c->id] = $c->config_name; 
+		}*/
+		//var_dump($config_select);
+		$data['render'] = View::make('runsim.simlist')->with('configs',$configs)->with('sim_list',$sim_list)->render();
+		return Response::json($data);
+	}
+
+	public function querySimDetail() {
+		$data = array();
+		$simId = Input::get('id');
+
+		// found id
+		if($simId != null) {
+			$sim = Simulation::find($simId);
+			$configId = $sim->configuration_id;
+			$config = $sim->configuration;
+			$envi = Environment::where('configuration_id','=',$configId)->first();
+			$vms = Vm::where('configuration_id','=',$configId)->get();
+		
+			$data['sim'] = $sim;
+			$data['config'] = $config;
+			$data['envi'] = $envi;
+			$data['vms'] = $vms;
+
+ 			$data['success'] = true;
+			return Response::json($data);
+		}
+		// no id found
+		$data['success'] = falase;
+		return Response::json($data);
+		
+		
+	}
+
+
 
 }

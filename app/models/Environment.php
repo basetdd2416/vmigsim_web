@@ -1,5 +1,6 @@
 <?php
 	class Environment extends Eloquent {
+		public $timestamps = true;
 		protected $fillable = array(
 			'bandwidth',
 			'time_limit',
@@ -19,5 +20,9 @@
 			'configuration_id'
 			);
 
+		public function configuration()
+		{
+			return $this->hasOne('Configuration');
+		}
 		
 	}

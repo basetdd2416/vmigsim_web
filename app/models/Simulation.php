@@ -1,6 +1,7 @@
 <?php
 	class Simulation extends Eloquent 
 	{
+		public $timestamps = true;
 		protected $fillable = array(
 				'name',
 				'configuration_id',

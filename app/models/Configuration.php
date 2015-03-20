@@ -1,6 +1,6 @@
 <?php
 	class Configuration extends Eloquent {
-
+		public $timestamps = true;
 		protected $fillable = array('name');
 
 		public function vms ()

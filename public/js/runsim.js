@@ -1,8 +1,21 @@
 $(function() {
 	// clock
-	var info = $('.information--status__waiting');
+
+ 
+  
+
+	function toggleChevron(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find("i.indicator")
+        .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+        
+  }
+  $('#accordion').on('hidden.bs.collapse', toggleChevron);
+  $('#accordion').on('shown.bs.collapse', toggleChevron);
+
 	
- 	
+
 	//
 	$('#simbar').attr('class','active');
 	var mesgalert = $('.alert--sim');
@@ -14,13 +27,13 @@ $(function() {
 
 	$(document).ajaxStart(function(){
 	 mesgalert.hide().find('ul').empty();
-    $('#loading').show();
-    info.show();
+    //$('#loading').show();
     
-    $('.myform').hide();
+    
+    //$('.myform').hide();
  }).ajaxStop(function(){
-   $('#loading').hide();
-    $('.myform').show();
+   //$('#loading').hide();
+    //$('.myform').show();
 
  });
  
@@ -119,7 +132,7 @@ $(function() {
            		$('#network_sd').text(data.envi.network_sd);
 
 
-           		$("#showVM > tbody").html("");
+        $("#showVM > tbody").html("");
 				$.each(data.vms, function( index, value ) {
 				$('#showVM').append('<tr><td>'+(index+1)+'</td><td>'+value.amount+'</td><td>'+value.ram+'</td><td>'+value.qos+'</td><td>'+value.priority+'</td></tr>');
 				
@@ -145,6 +158,8 @@ $(function() {
 	
 	$(".update_form").click(function() { // changed
   	
+    $("#collapseOne").collapse('show');
+    $("#collapseTwo").collapse('hide');
     $('img').attr('height','600');
   	$('img').attr('width','600');
   	$('img').attr('src','http://vmig.dev/images/loading-src-dest-3.gif');
@@ -157,6 +172,7 @@ $(function() {
     
   	sim_name.text(mycustomform.simulation_name);
 	  sim_link.hide();
+
     $.ajax({
 
            type: "POST",
@@ -189,13 +205,44 @@ $(function() {
            		} else { // sucess case 
            			//window.location.href = data.redirect;
                 // change status to complete and link to view result na ja
-               
-                sim_link.find('a').attr('href',data.redirect);
+                var ajaxTime = new Date().getTime();
+                var clock = $('.your-clock').FlipClock({
+                });
+                  
+
+
+                console.log(ajaxTime);
+                console.log(data);
+                checkStatus();
+                
+                $.ajax({
+                    type: "GET",
+                    url: "run-sim-engine",
+                    dataType: 'json',
+                    cache: false,
+                    data: data,
+                    success: function(engineData) {
+                      if(engineData.success) {
+                          clock.stop();
+                          console.log(clock);
+                          var totalTime = new Date().getTime() - ajaxTime;
+                          var totalTimeUse =  clock.getTime();
+                          console.log('totalTimeUse: '+ (totalTimeUse - 1) );
+                          console.log('total time: '+ totalTime);
+                      } else {
+                        alert('failed');
+                      }
+                    },
+                    complete: function () {
+                      
+                    }
+                });
+                /*sim_link.find('a').attr('href',data.redirect);
                 sim_status.hide();
                 sim_status.find('span').attr('class','label label-success');
                 sim_status.find('span').text('success');
                 sim_status.fadeIn("slow");
-           			sim_link.fadeIn("slow");
+           			sim_link.fadeIn("slow");*/
            		}
            		
                // show response from the php script.
@@ -217,8 +264,108 @@ $(function() {
     return false; // avoid to execute the actual submit of the form.
 	});
 });
+var timer = null
+function checkStatus() {
+      
+      $.ajax({
+        url: 'check-status', //'check-status',
+        
+        type:  'GET',
+       
+        success: function(data)
+           {
+              
+              console.log(data);
+              $('#collapseOne').html(data.render);
+              //$('#collapseOne').find('.panel-body').hide();
+            
+              //$('#collapseOne').find('.panel-body').fadeIn('slow');
+              // element running will fadeIn
+              $('.run').each(function() {
+                var currentElement = $(this);
+                currentElement.hide();
+                currentElement.fadeIn(1000);
+              });
+              if(data.isSimRun) {
+                timer = setTimeout(checkStatus,1000);
+              } else {
+                
+                clearTimeout(timer);
+                var mesgalert = $('.alert--sim');
+                mesgalert.attr('class','alert alert--sim alert-success');
+                mesgalert.find('ul').append('<li>Run simulation completed.</li>');
+                mesgalert.slideDown();
+              }
+              
+              
+        }
 
+    });
+}
 
+$(document).on('click','tr td .details',function(e){ 
+    e.preventDefault();
+    var id = $(this).attr('href');
+
+    $.ajax({
+        url: 'query-sim-detail',
+        data: {
+          id: id
+        },
+        cache: false,
+        dataType: 'json',
+
+        success: function (data){
+
+          if(!data.success) {
+              alert('id not found');
+          } else {
+            var sim = data.sim;
+            var config = data.config;
+            var envi = data.envi;
+
+            var vms = data.vms;
+              BootstrapDialog.show({
+                title: sim.sim_name,
+                message: '<p><b>Config name: </b>' + config.config_name + '</p>'
+                      +  '<p><b>Environment name: </b>' + envi.name + '</p>' 
+                      +  '<p><b>Time limitation: </b>' + envi.time_limit + '</p>'
+                      +  '<p><b>Schedule algorithm: </b>' + envi.schedule_type + '</p>'
+                      +  '<p><b>Migration algorithm: </b>' + envi.migration_type + '</p>'
+                      +  '<p><b>Control algorithm: </b>' + envi.control_type + '</p>'
+                      +  '<p><b>Network algorithm: </b>' + envi.network_type + '</p>',
+                       buttons: [{
+                            id: 'btn-ok',   
+                            icon: 'glyphicon glyphicon-check',       
+                            label: 'OK',
+                            cssClass: 'btn-primary', 
+                            autospin: false,
+                            action: function(dialogRef){    
+                                dialogRef.close();
+                            }
+                    }]
+            });
+          }
+        
+        }
+    });
+    
+});
+
+$(document).on('click','.pagination a',function(e){
+  e.preventDefault();
+  var page = $(this).attr('href').split('page=')[1];
+  getSims(page);
+});
+
+function getSims(page) {
+  $.ajax({
+    url: 'ajax-run-sim-history?page='+ page
+  }).done(function(data){
+    $('#collapseOne').html(data);
+    
+  });
+}
 function updateClock ( )
     {
     var currentTime = new Date ( );

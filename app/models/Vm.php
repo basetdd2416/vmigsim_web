@@ -1,5 +1,6 @@
 <?php
 	class Vm extends Eloquent {
+		public $timestamps = true;
 		protected $fillable = array(
 				'amount',
 				'ram',
