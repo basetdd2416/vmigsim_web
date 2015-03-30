@@ -1,8 +1,9 @@
 $(function() {
 	// clock
 
- 
-  
+ $('#sidebar .nav > li:eq(1)').addClass('active'); 
+ var run_info = $('#run--info');
+ var run_history = $('#run--history');
 
 	function toggleChevron(e) {
     $(e.target)
@@ -27,13 +28,13 @@ $(function() {
 
 	$(document).ajaxStart(function(){
 	 mesgalert.hide().find('ul').empty();
-    //$('#loading').show();
+    $('#loading').show();
     
     
-    //$('.myform').hide();
+    run_info.hide();
  }).ajaxStop(function(){
-   //$('#loading').hide();
-    //$('.myform').show();
+   $('#loading').hide();
+    run_info.show();
 
  });
  
@@ -158,11 +159,11 @@ $(function() {
 	
 	$(".update_form").click(function() { // changed
   	
-    $("#collapseOne").collapse('show');
+    /*$("#collapseOne").collapse('show');
     $("#collapseTwo").collapse('hide');
     $('img').attr('height','600');
   	$('img').attr('width','600');
-  	$('img').attr('src','http://vmig.dev/images/loading-src-dest-3.gif');
+  	$('img').attr('src','http://vmig.dev/images/loading-src-dest-3.gif');*/
   	var sim_name = $('#info--sim__name');
     var sim_status = $('#info--sim__status');
     var sim_link = $('#info--sim__link');
@@ -213,7 +214,8 @@ $(function() {
 
                 console.log(ajaxTime);
                 console.log(data);
-                checkStatus();
+                
+                window.location.href = "history";
                 
                 $.ajax({
                     type: "GET",
@@ -222,6 +224,7 @@ $(function() {
                     cache: false,
                     data: data,
                     success: function(engineData) {
+                      console.log(engineData);
                       if(engineData.success) {
                           clock.stop();
                           console.log(clock);

@@ -8,7 +8,7 @@
 	</ul>
 </div>
 @endif
-<h1>Run simulation</h1>
+<h1 id="head-title">Run simulation</h1>
 <hr>
 <div class="alert alert--sim" role="alert" style="display:none;">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -16,7 +16,6 @@
 	</ul>
 </div>
 <div class="your-clock" style="display:none"></div>
-
 <div class="row">
 	<div id="clock" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		
@@ -30,15 +29,15 @@
 	</div>
 </div>
 <div class="panel-group" id="accordion">
-	<div class="panel panel-default">
+	<div id="run--history" class="panel panel-default" style="display:none">
 		<div class="panel-heading">
 			<h4 class="panel-title">
-			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+			<a class="accordion-toggle" data-toggle="collapse in" data-parent="#accordion" href="#collapseOne">
 				History of simulation running
-			</a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+			</a></i>
 			</h4>
 		</div>
-		<div id="collapseOne" class="panel-collapse collapse in">
+		<div id="collapseOne" class="panel-collapse collapse ">
 			<div class="panel-body">
 				<!-- content of simlist-->
 				<div class="text-right">
@@ -59,25 +58,24 @@
 						</thead>
 						<tbody>
 							<?php $i = $sim_list->getFrom()?>
-							@foreach ($sim_list as $sim) 
-								<tr>
-									<td>{{$i}}</td>
-									<td>{{$sim->sim_name}}</td>
-									<td><a class="details" href="{{$sim->id}}"> <i class="fa fa-eye"></i></a></td>
-									@if($sim->status == 'running')
-										<td>{{$sim->started}}</td>
-										<td>waiting</td>
-										<td><span class="label label-info">{{$sim->status}}</span></td>
-
-										<td>waiting</td>
-									@else 
-										<td>{{$sim->started}}</td>
-										<td>{{$sim->finished}}</td>
-										<td><span class="label label-success">{{$sim->status}}</span></td>
-										<td><a href="simulation_result/{{$sim->id}}"> <i class="fa fa-bar-chart"></i></a></td>
-									@endif
-									
-								</tr>
+							@foreach ($sim_list as $sim)
+							<tr>
+								<td>{{$i}}</td>
+								<td>{{$sim->sim_name}}</td>
+								<td><a class="details" href="{{$sim->id}}"> <i class="fa fa-eye"></i></a></td>
+								@if($sim->status == 'running')
+								<td>{{$sim->started}}</td>
+								<td>waiting</td>
+								<td><span class="label label-info">{{$sim->status}}</span></td>
+								<td>waiting</td>
+								@else
+								<td>{{$sim->started}}</td>
+								<td>{{$sim->finished}}</td>
+								<td><span class="label label-success">{{$sim->status}}</span></td>
+								<td><a href="simulation_result/{{$sim->id}}" target="_blank"> <i class="fa fa-bar-chart"></i></a></td>
+								@endif
+								
+							</tr>
 							<?php $i++ ?>
 							@endforeach
 							
@@ -91,15 +89,15 @@
 			</div>
 		</div>
 	</div>
-	<div class="panel panel-default">
+	<div id="run--info" class="panel panel-default">
 		<div class="panel-heading">
 			<h4 class="panel-title">
 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 				Simulation settings
-			</a><i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
+			</a></i>
 			</h4>
 		</div>
-		<div id="collapseTwo" class="panel-collapse collapse">
+		<div id="collapseTwo" class="panel-collapse collapse in">
 			<div class="panel-body">
 				<!-- -->
 				<form  class="form-horizontal myform" role="form" method="post">
@@ -280,23 +278,21 @@
 						</div>
 					</div>
 					<div class="form-group">
-	<br>
-	<div class="col-sm-offset-4 col-sm-12">
-		<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
-		<button id="setAllDefault" type="button" class="btn btn-sm btn-primary">
-		<i class="fa fa-circle-o-notch"></i> set all default
-		</button>
-		<button id="nextPahse5" type="submit" class="btn btn-sm btn-success update_form">
-		<i class="fa fa-play-circle-o"></i> Run
-		</button>
-	</div>
-</div>
+						<br>
+						<div class="col-sm-offset-4 col-sm-12">
+							<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
+							<button id="setAllDefault" type="button" class="btn btn-sm btn-primary">
+							<i class="fa fa-circle-o-notch"></i> set all default
+							</button>
+							<button id="nextPahse5" type="submit" class="btn btn-sm btn-success update_form">
+							<i class="fa fa-play-circle-o"></i> Run
+							</button>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-</div>
-
 </div>
 @section('js')
 {{ HTML::script('js/jquery.bootstrap-touchspin.js') }}

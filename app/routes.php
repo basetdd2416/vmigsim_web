@@ -31,6 +31,11 @@ Route::get('/about', function()
 	return View::make('pages.about');
 });
 
+Route::get('/project-info', function()
+{
+	return View::make('pages.project-info');
+});
+
 Route::resource('simulation/srcdc', 'SrcDCController');
 Route::resource('simulation/srchost', 'SrcHostController');
 Route::resource('simulation/srcvm', 'SrcVMController');
@@ -63,13 +68,15 @@ Route::get('simulation/quicksim/createvm', 'QuickSimController@createVM');
 Route::get('simulation/quicksim/createenvi', 'QuickSimController@createEnvi');
 Route::get('simulation/quicksim/reportcreate', 'QuickSimController@reportCreate');
 Route::get('simulation/runsimulation', 'RunSimController@index');
+Route::get('simulation/history', 'HistoryController@index');
 Route::get('simulation/run-sim-engine', 'RunSimController@runSimEngine');
 Route::get('simulation/check-status', 'RunSimController@checkStatus');
 Route::get('simulation/query-sim-detail', 'RunSimController@querySimDetail');
 Route::get('simulation/ajax-config', 'RunSimController@ajaxConfig');
 Route::post('simulation/savesimulation', 'RunSimController@ajaxSaveSimulation');
 Route::get('simulation/ajax-run-sim-history', 'RunSimController@ajaxSimList');
-Route::get('simulation/simulation_result/{id?}', 'SimResultController@index');
+Route::get('simulation/simulation_result', 'SimResultController@index');
+Route::get('simulation/simulation_result/{id}', 'SimResultController@show');
 
 Route::get('simulation/ajax-sim-name', 'SimResultController@ajaxSimName');
 Route::get('simulation/ajax-sim-rs', 'SimResultController@ajaxSimRsType');

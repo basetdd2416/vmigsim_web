@@ -23,4 +23,14 @@
 				</div>
 </div>
 
+@section('js')
+<script>
+    $(document).ready(function () {
+    	$('#simbar').attr('class','active'); 
+    	$('#sidebar .nav > li:first').addClass('active');
+        });
+    </script>
+@stop
+
+
 @stop

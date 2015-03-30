@@ -274,61 +274,9 @@ class QuickSimController extends \BaseController {
 		$vms_data = array();
 		$all_data = array();
 		$this->setAllInput();
-		for ($i=0; $i < count($this->vmList); $i++) { 
-			$vms_data[$i]['vmAmount'] = (int)$this->vmList[$i]['amount'];
-			$vms_data[$i]['ram'] = (int)$this->vmList[$i]['ram'];
-			$vms_data[$i]['qos'] = (int)$this->vmList[$i]['qos'];
-			$vms_data[$i]['priority'] = (int)$this->vmList[$i]['priority'];
-		}
-		//return Response::json($vms_data);
-		
-		
 
+		$this->saveToFile();
 		
-
-		
-
-		$envi_data['bandwidth'] = (double)$this->network_bandwidth;
-		$envi_data['timeLimit'] = (double)$this->limit_time;
-		$envi_data['scheduleType'] = $this->scheduling_alg;
-		$envi_data['migrationType'] = $this->migration_alg;
-		$envi_data['controlType'] = $this->control_alg;
-		$envi_data['networkType'] = $this->network_alg;
-		$envi_data['pageSize'] = (int)$this->page_dirty; // fix name
-		$envi_data['wwsRatio'] = (double)$this->wwws_ratio;
-		$envi_data['wwsDirtyRate'] = (double)$this->wws_dirty_rate;
-		$envi_data['normalDirtyRate'] = (double)$this->normal_dirty_rate;
-		$envi_data['maxPreCopyRound' ] = (int)$this->max_pre_copy_rate;
-		$envi_data['minDirtyPage' ] = (int)$this->min_dirty_page;
-		$envi_data['maxNoProgressRound' ] =(int) $this->max_no_prog_round;
-		$envi_data['networkInterval' ] = (double)$this->network_interval;
-		$envi_data['networkSD' ] = (float)$this->network_sd;
-		$envi_data['networkSD' ] = (float)$this->network_mean;
-
-		// this will be looped
-		
-		/*
-		$vms_data[$i]['amonut'] = $this->amonut;
-			$vms_data[$i]['ram'] = $this->ram;
-			$vms_data[$i]['qos'] = $this->qos;
-			$vms_data[$i]['priority'] = $this->priority;
-			$i++;*/
-
-		$all_data['environment'] = $envi_data;
-		$all_data['vmSpecList'] = $vms_data;
-		
-
-		$configname = $this->config_name.'.json';
-		$dirname = $this->simulation_name;
-		$filename = "run_simulation/input/" . $dirname . "/";
-		$fullpathtofile = $filename.$configname;
-		$outputPath = 'run_simulation/output/' . $dirname . "/";
-		if(!file_exists($filename)){
-			mkdir($filename, 0777);
-		}
-		$fp = fopen($filename.$configname, 'w');
- 		fwrite($fp, json_encode($all_data,JSON_PRETTY_PRINT));
- 		fclose($fp);
 
 
 		$this->saveToDatabase();
@@ -339,7 +287,7 @@ class QuickSimController extends \BaseController {
 		Session::flash('success_msg', 'Create configuration success.');
 		return Response::json($data);
 
-		//return Response::json($data);
+		
 		
 	}
 
@@ -392,7 +340,59 @@ class QuickSimController extends \BaseController {
 		
 
 	}
- 
+ 	
+ 	public function saveToFile() {
+ 		$all_data = array();
+ 		for ($i=0; $i < count($this->vmList); $i++) { 
+			$vms_data[$i]['vmAmount'] = (int)$this->vmList[$i]['amount'];
+			$vms_data[$i]['ram'] = (int)$this->vmList[$i]['ram'];
+			$vms_data[$i]['qos'] = (int)$this->vmList[$i]['qos'];
+			$vms_data[$i]['priority'] = (int)$this->vmList[$i]['priority'];
+		}
+		//return Response::json($vms_data);
+		$envi_data['maxBandwidth'] = (double)$this->network_bandwidth;
+		$envi_data['timeLimit'] = (double)$this->limit_time;
+		$envi_data['scheduleType'] = $this->scheduling_alg;
+		$envi_data['migrationType'] = $this->migration_alg;
+		$envi_data['controlType'] = $this->control_alg;
+		$envi_data['networkType'] = $this->network_alg;
+		$envi_data['pageSize'] = (int)$this->page_dirty; // fix name
+		$envi_data['wwsRatio'] = (double)$this->wwws_ratio;
+		$envi_data['wwsDirtyRate'] = (double)$this->wws_dirty_rate;
+		$envi_data['normalDirtyRate'] = (double)$this->normal_dirty_rate;
+		$envi_data['maxPreCopyRound' ] = (int)$this->max_pre_copy_rate;
+		$envi_data['minDirtyPage' ] = (int)$this->min_dirty_page;
+		$envi_data['maxNoProgressRound' ] =(int) $this->max_no_prog_round;
+		$envi_data['networkInterval' ] = (double)$this->network_interval;
+		$envi_data['networkSD' ] = (float)$this->network_sd;
+		$envi_data['networkSD' ] = (float)$this->network_mean;
+
+		// this will be looped
+		
+		/*
+		$vms_data[$i]['amonut'] = $this->amonut;
+			$vms_data[$i]['ram'] = $this->ram;
+			$vms_data[$i]['qos'] = $this->qos;
+			$vms_data[$i]['priority'] = $this->priority;
+			$i++;*/
+
+		$all_data['environment'] = $envi_data;
+		$all_data['vmSpecList'] = $vms_data;
+		
+
+		$configname = $this->config_name.'.json';
+		$dirname = $this->simulation_name;
+		$filename = "run_simulation/input/" . $dirname . "/";
+		$fullpathtofile = $filename.$configname;
+		$outputPath = 'run_simulation/output/' . $dirname . "/";
+		if(!file_exists($filename)){
+			mkdir($filename, 0777);
+		}
+		$fp = fopen($filename.$configname, 'w');
+ 		fwrite($fp, json_encode($all_data,JSON_PRETTY_PRINT));
+ 		fclose($fp);
+ 		return $all_data;
+ 	}
 	public function runSim() {
 		return var_dump(Simulation::all());
 	}

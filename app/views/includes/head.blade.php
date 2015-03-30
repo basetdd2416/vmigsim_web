@@ -5,7 +5,7 @@
 {{ HTML::style('css/vmig.css') }}
 {{ HTML::style('css/plugins/metisMenu/metisMenu.min.css') }}
 
-
+{{ HTML::style('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css') }}
 
 
  <!-- Custom CSS -->

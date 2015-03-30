@@ -744,7 +744,25 @@ class SimResultController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		
+		$directory = 'run_simulation/output/';
+		$scanned_directory = array_diff(scandir($directory), array('..', '.'));
+		$dirs = array();
+		$index = 0;
+
+		for ($i=2; $i < count($scanned_directory)+2 ; $i++) { 
+
+			$dirs[$scanned_directory[$i]] = $scanned_directory[$i];
+			$index++;
+		}
+				if(Input::get('sim_name')) {
+				$sim_name = Input::get('sim_name');
+				return View::make('sim_result.show')->with('sim_name_list',$dirs)->with('default',$sim_name);
+			}
+			
+			$default = Simulation::find($id);
+			return View::make('sim_result.show')->with('sim_name_list',$dirs)->with('default',$default->sim_name);
+		 
 	}
 
 

@@ -175,7 +175,7 @@ class RunSimController extends \BaseController {
 				$envi['controlType'] = $envi_db->control_type;
 				$envi['networkType'] = $envi_db->network_type;
 				$envi['pageSize'] = $envi_db->page_size; // fix name
-				$envi['wwsRatio'] = $envi_db->wws_ratio;
+				$envi['wwsPercentage'] = $envi_db->wws_ratio;
 				$envi['wwsDirtyRate'] = $envi_db->wws_dirty_rate;
 				$envi['normalDirtyRate'] = $envi_db->normal_dirty_rate;
 				$envi['maxPreCopyRound' ] = $envi_db->max_precopy_round;
@@ -196,9 +196,9 @@ class RunSimController extends \BaseController {
 				$config_input_file['vmSpecList'] = $vms;
 				$configname = Configuration::find(Input::get('config_name'))->config_name.'.json';
 				$dirname = $sim->sim_name;
-				$filename = 'run_simulation\\input\\' . $dirname . '\\';
+				$filename = 'run_simulation/input/' . $dirname . '/';
 				$fullpathtofile = $filename.$configname;
-				$outputPath = 'run_simulation\\output\\' . $dirname;
+				$outputPath = 'run_simulation/output/' . $dirname;
 				
 				if(!file_exists($filename)){
 					mkdir($filename, 0777);
@@ -264,8 +264,11 @@ class RunSimController extends \BaseController {
 	}
 
 	public function runSimEngine() {
-		
-		
+		ini_set("display_errors", 1);
+		ini_set("track_errors", 1);
+		ini_set("html_errors", 1);
+		error_reporting(E_ALL);
+		//putenv("PATH=/usr/lib/jvm/java-8-oracle/bin/");
 		$data = array();
 		$simId = Input::get('simId');
 		$fullpathtofile = Input::get('inputPathToFile');
@@ -277,16 +280,27 @@ class RunSimController extends \BaseController {
  		$startedTime = date('Y-m-d G:i:s');
  		$sim->started = $startedTime;
  		//$sim->save();
- 		exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $sim->round,$output, $return);
+ 		ob_start();
+ 		
+ 		//passthru('/opt/bitnami/apps/laravel/public/java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $round);
+ 		//passthru('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $round);
+		//exec('java -version 2>&1', $output);
+		//exec('which java 2>&1', $output);
+		exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $round. ' ' . '100000' . ' ' . '2>&1',$output);
+		//print_r($output);
+		//var_dump($output);
+		$var = ob_get_contents();
+		$data['response'] = $output;
 		$finishedTime = date('Y-m-d G:i:s');
-
+		
+		
 		$sim->status = 'success';
 		$sim->started = $startedTime;
 		$sim->finished = $finishedTime;
  		if($sim->save()){
  			//$this->saveOutputTodb();
  			//pclose(popen('start /B java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $sim->round.' 2>nul >nul', "r")); 
-	 		if (!$return) {
+	 		
 		 		//var_dump( shell_exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1 2>&1'));
 		 		//$PID = shell_exec('nohup java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . '1' . ' ' . '> /dev/null 2> /dev/null & echo $!');
 		 		//var_dump($PID);
@@ -295,7 +309,7 @@ class RunSimController extends \BaseController {
 				$data['success'] = true;
 
 				return Response::json($data);
-			}
+			
 		} else {
 			$data['success'] = false;
 			$data['errors'] = 'insert fails';

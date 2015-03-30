@@ -1,19 +1,18 @@
 $(function() {
 
 	$('#sidebar .nav > li:eq(3)').addClass('active'); 
-	/*var firstPath = $(location).prop('pathname').split('/')[1];
-	var lastPath = 'simulation_result';
 	var pathName = $(location).attr('pathname');
-	var lastPathHref = pathName.split('/').pop();
-	console.log(lastPath + '\n' +  + '\n' + lastPathHref + '\n' );
-	if (firstPath == 'vmigsim') {
-		window.history.pushState("", "", 'vmigsim/simulation/simulation_result');
-	}
-	if(lastPath != lastPathHref) {
-			window.history.pushState("", "", '/simulation/simulation_result');
-	}*/
-	
-	
+	pathName = pathName.split("/");
+	var myPathReal = "";
+	for (var i = 1; i < pathName.length; i++) {
+		if(i!= pathName.length-1) {
+			myPathReal += '/' + pathName[i];
+		}
+		
+	};
+	window.history.pushState("", "", myPathReal);
+	console.log(myPathReal);
+
 	$('#simbar').attr('class','active');
 	var mesgalert = $('.alert');
 	var rs_info = $('#rs_info');
@@ -582,6 +581,7 @@ $(function() {
  	}
 
 	$('input[type=radio][name=rs_type]').change(function() {
+		
 	        var rs_type = $(this).val();
 	        var sim_name = $("#sim_select").val();
 	       	var tab_bar = $("#myTab");
@@ -607,6 +607,7 @@ $(function() {
 	        	 	if(!data.success) {
 	        	 		alert('failed');
 	        	 	} else {
+	        	 		
 	        	 		$('#round_select').empty();
 	        	 		$.each(data.f_names, function( index, n ) {
 							$('#round_select').append('<option value="'+n+'">'+n+'</option>');

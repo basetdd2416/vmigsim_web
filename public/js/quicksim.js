@@ -4,8 +4,10 @@ $(function() {
    
     console.log(jQuery.fn.jquery);
 }
+	$('#sidebar .nav > li:first').addClass('active'); 
+	//$('#simbar').attr('class','active'); 
 	defineSpinner();
-	$('#simbar').attr('class','active');
+	
 	var mesgalert = $('.alert-danger');
 
 	var amount,qos,priority,ram,name;
@@ -348,8 +350,8 @@ $(function() {
 	});
 
 	//remove vm
-	$('table#showVM ').on('click','tr td .deleteLink',function(e){
-        e.preventDefault();
+	
+       $('table#showVM ').on('click','tr td .deleteLink',function(e){ e.preventDefault();
         mesgalert.hide().find('ul').empty();
         var row_index = $(this).closest('tr').index();
         if (row_index > -1) {

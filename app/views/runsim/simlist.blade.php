@@ -36,7 +36,7 @@
 										<td>{{$sim->started}}</td>
 										<td>{{$sim->finished}}</td>
 										<td><span class="label label-success">{{$sim->status}}</span></td>
-										<td><a href="simulation_result/{{$sim->id}}"> <i class="fa fa-bar-chart"></i></a></td>
+										<td><a href="{{URL::to('simulation/simulation_result/'.$sim->id)}}" target="_blank"> <i class="fa fa-bar-chart"></i></a></td>
 									@endif
 									
 								</tr>

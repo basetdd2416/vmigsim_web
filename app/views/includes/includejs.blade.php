@@ -1,4 +1,4 @@
-{{ HTML::script('js/jquery.js') }}
+{{ HTML::script('js/jquery-2.1.1.js') }}
 {{ HTML::script('js/moment.js') }}
 {{ HTML::script('js/bootstrap.js') }}
 
