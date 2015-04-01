@@ -49,12 +49,14 @@
 				@include('includes.header')
 			</header>
 			
-			<div class="jumbotron">
-				<h1>Project informations</h1>
+			<div class="jumbotron text-center">
+				<h1>Executive Summary: Enabling continued operation of IT services 
+and infrastructures during floods and other disasters
+</h1>
 			</div>
 			<div class="row">
 				<div class="col-xs-3" id="myScrollspy">
-					<ul class="nav nav-tabs nav-stacked affix-top" data-spy="affix" data-offset-top="125">
+					<ul class="nav nav-tabs nav-stacked affix-top" data-spy="affix" data-offset-top="400">
 						<li class="active"><a href="#section-1">The data collection and analysis</a></li>
 						<li><a href="#section-2">Flood impact & Feasibility Study</a></li>
 						<li><a href="#section-3">The feasibility study of leveraging VM migration as a mitigating mechanism for service continuation and disaster recovery.</a></li>

@@ -448,7 +448,10 @@ class SimResultController extends \BaseController {
     	$total_vm_migrated[] = $jsonData['overall']['totalMigratedPriority']['priority3']['total'];
 
     	
-
+    	$p = array();
+    	$p[0] = $jsonData['overall']['totalMigratedPriority']['priority1']['migrated'];
+    	$p[1] = $jsonData['overall']['totalMigratedPriority']['priority2']['migrated'];
+    	$p[2] = $jsonData['overall']['totalMigratedPriority']['priority3']['migrated'];
 
 
     	$migrated_incomple[] = $jsonData['overall']['totalMigratedPriority']['priority1']['total'] - $jsonData['overall']['totalMigratedPriority']['priority1']['migrated'];
@@ -459,19 +462,19 @@ class SimResultController extends \BaseController {
     	$migrated_comple[] = $jsonData['overall']['totalMigratedPriority']['priority3']['migrated'];
     	
     	// check total 0
-    	if($migrated_incomple[0] != 0) {
+    	if($p[0] != 0) {
     		$grapPriority['incomplete'][0] = $migrated_incomple[0];
     	} else {
     		$grapPriority['incomplete'][0] = null;
     	} 
 
-    	if($migrated_incomple[1] != 0) {
+    	if($p[1] != 0) {
     		$grapPriority['incomplete'][1] = $migrated_incomple[1];
     	} else {
     		$grapPriority['incomplete'][1] = null;
     	}
 
-    	if($migrated_incomple[2] != 0) {
+    	if($p[2] != 0) {
     		$grapPriority['incomplete'][2] = $migrated_incomple[2];
     	} else {
     		$grapPriority['incomplete'][2] = null;

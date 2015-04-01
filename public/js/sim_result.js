@@ -156,7 +156,7 @@ $(function() {
 		                type: 'column'
 		            },
 		            title: {
-		                text: 'Percent of VMs complete migrated by each priority '
+		                text: 'Completely migrated VMs by priority level'
 		            },
 		            xAxis: {
 		                categories: ['Priority1', 'Priority2', 'Priority3'],
@@ -710,7 +710,8 @@ $(function() {
 	        	 			graph_info_round.slideDown("slow");
 	        	 		} 
 
-	        	 		
+	        	 		graph_title.text('Graph stat');
+	        	 		stat_title.text('Log stat');
 	        	 		tab_info.slideDown("slow");
 	        	 		rs_info.slideDown("slow");
 	        	 		content_info.slideDown("slow");

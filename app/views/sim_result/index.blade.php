@@ -73,7 +73,7 @@ content:"\e080";
 						</div>
 						
 						<div class="radio">
-							<label class="control-label "><input type="radio" name="rs_type" value="priority">Priority</label>
+							<label class="control-label "><input type="radio" name="rs_type" value="priority">Completely migrated VMs by priority level</label>
 						</div>
 						<div class="radio">
 							<label class="control-label "><input type="radio" name="rs_type" value="down-time-round">Down time</label>
