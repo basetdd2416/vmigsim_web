@@ -76,6 +76,7 @@ class SimResultController extends \BaseController {
 	public function ajaxSimRsType() {
 		$data = array();
 		$data['compare'] = false;
+		$fileName = array();
 		$sim_name = Input::get('sim_name');
 		//$sim_name = substr(0,strpos(Input::get('sim_name'), '.text'));
 		//return var_dump($sim_name);
@@ -103,18 +104,21 @@ class SimResultController extends \BaseController {
 		$index = 0;
 		for ($i=0; $i < count($scanned_directory) ; $i++) { 
 			if($i!=0 && $i!=1) {
-				$dirs[$index] = $scanned_directory[$i];
+				$dirTarget = $scanned_directory[$i];
+				$fileName[$index] = $this->createNameNoType($dirTarget); 
+				$dirs[$index] = $dirTarget;
 				$index++;
 			}
 			
 		}
+		
 		// read by line and graph
 		if ($rs_type == 'net') {
 			$graphData = array();
 			$details = array();
 
-			$details['head_title'] = 'Network bandwidth each interval in second.';
-			$details['sub_title'] = $dirs['0'];
+			$details['head_title'] = 'Network bandwidth trace interval';
+			$details['sub_title'] = $fileName[0];
 			$details['y_title'] = 'Bandwidth (Mbps)';
 			
 
@@ -137,8 +141,8 @@ class SimResultController extends \BaseController {
 				$envi = Environment::where('configuration_id','=',$sim_obj->configuration_id)->first();
 				$amountData = $envi->time_limit / $envi->network_interval;
 				// optional
-				if($amountData  > 600) {
-					$graphData['xAxis']['max'] = 600;
+				if($amountData  > 200) {
+					$graphData['xAxis']['max'] = 200;
 				}
 				
 
@@ -147,8 +151,10 @@ class SimResultController extends \BaseController {
 
 
 				if ($handle) {
+
 					
-					$graphData['series'][0]['name'] = $dirs[0];
+					
+					$graphData['series'][0]['name'] = $fileName[0]; 
 					
 					$index = 1;
 				    while (($line = fgets($handle)) !== false) {
@@ -171,7 +177,7 @@ class SimResultController extends \BaseController {
 			$graphData = array();
 			$details = array();
 			$barData = array(); 
-			$details['head_title'] = 'Network bandwidth each interval in second.';
+			$details['head_title'] = 'Network trace each interval';
 			$details['sub_title'] = 'All round';
 			$details['y_title'] = 'Bandwidth (Mbps)';
 
@@ -187,14 +193,15 @@ class SimResultController extends \BaseController {
 			//$graphData['xAxis']['minTickInterval'] = 10;
 			$graphData['scrollbar']['enabled'] = true;
 			$graphData['xAxis']['minRange'] = 20;
+			
 
 			$graphData['tooltip']['shared'] = true;
 			$sim_obj = Simulation::where('sim_name','=',$sim_name)->first();
 			$envi = Environment::where('configuration_id','=',$sim_obj->configuration_id)->first();
 			$amountData = $envi->time_limit / $envi->network_interval;
 				// optional
-				if($amountData  > 600) {
-					$graphData['xAxis']['max'] = 600;
+				if($amountData  > 100) {
+					$graphData['xAxis']['max'] = 100;
 				}
 			for ($i = 0 ; $i < count($dirs) ; $i++) {
 
@@ -203,7 +210,7 @@ class SimResultController extends \BaseController {
 				
 				if ($handle) {
 					
-					$graphData['series'][$i]['name'] = $dirs[$i];
+					$graphData['series'][$i]['name'] = $fileName[$i];
 					
 					$index = 1;
 				    while (($line = fgets($handle)) !== false) {
@@ -280,7 +287,7 @@ class SimResultController extends \BaseController {
 		$file = '<pre>'. $file .'</pre>';
 		$data['content_default'] = $file;
 		
-		$data['f_names'] = $dirs;
+		$data['f_names'] = $fileName;
 		$data['success'] = true;
 		return Response::json($data);
 	}
@@ -300,11 +307,16 @@ class SimResultController extends \BaseController {
 		$dir_log = '/logfile';
 		$dir_net = '/network';
 		$dir_result = "/result";
+		$type = "";
 		if($rs_type=='log') {
 			$dir_output_to_file = $dir_output_base.$sim_name.$dir_log;
+			$type = ".txt";
 		} else if ($rs_type=='net' || $rs_type=='compar-net') {
 			$dir_output_to_file = $dir_output_base.$sim_name.$dir_net;
+
+			$type = '.txt';
 		}  else if ($rs_type=='priority'||$rs_type=='violation' || $rs_type=='down-time-round'||$rs_type=='migration-time-round') {
+			$type = '.json';
 			$dir_output_to_file = $dir_output_base.$sim_name.$dir_result;
 		}
 
@@ -312,8 +324,8 @@ class SimResultController extends \BaseController {
 		if ($rs_type == 'net') {
 			$graphData = array();
 			$details = array();
-
-			$details['head_title'] = 'Network bandwidth each interval in second.';
+			
+			$details['head_title'] = 'Network bandwidth trace each interval';
 			$details['sub_title'] = $round_name;
 			$details['y_title'] = 'Bandwidth (Mbps)';
 			
@@ -333,9 +345,10 @@ class SimResultController extends \BaseController {
 			$sim_obj = Simulation::where('sim_name','=',$sim_name)->first();
 			$envi = Environment::where('configuration_id','=',$sim_obj->configuration_id)->first();
 			$amountData = $envi->time_limit / $envi->network_interval;
+			
 				// optional
-				if($amountData  > 600) {
-					$graphData['xAxis']['max'] = 600;
+				if($amountData  > 200) {
+					$graphData['xAxis']['max'] = 200;
 				}
 			$handle = fopen($dir_output_to_file.'/'.$round_name, "r");
 			
@@ -370,7 +383,7 @@ class SimResultController extends \BaseController {
 		
 		
 
-		$file = file_get_contents($dir_output_to_file.'/'.$round_name, FILE_USE_INCLUDE_PATH);
+		$file = file_get_contents($dir_output_to_file.'/'.$round_name.$type, FILE_USE_INCLUDE_PATH);
 		$file = '<pre>'. $file .'</pre>';
 		$data['content_default'] = $file;
 		
@@ -390,10 +403,12 @@ class SimResultController extends \BaseController {
 			$graphData['subtitle']['x']	  = -20;
 
 			$graphData['yAxis']['title']['text'] = $details['y_title'];
+			$graphData['yAxis']['min'] = 0;
 			$graphData['yAxis']['plotLines'][]['value'] = 0;
 			$graphData['yAxis']['plotLines'][]['width'] = 1;
 			$graphData['yAxis']['plotLines'][]['color'] = '#808080';
-			
+			$graphData['xAxis']['title']['enabled'] = true;
+			$graphData['xAxis']['title']['text'] = 'Interval (Seconds)';
 			$graphData['tooltip']['valueSuffix'] = 'Mbps';
 			$graphData['legend']['layout'] = 'vertical';
 			$graphData['legend']['align'] = 'right';
@@ -436,7 +451,7 @@ class SimResultController extends \BaseController {
     	$pathToRsDir = "run_simulation/output/".$sim_name."/result/";
     	$rsFiles = $this->scanDirectory($pathToRsDir);
     	if($round_name != null){
-    		$pathToFile = "run_simulation/output/".$sim_name."/result/".$round_name;
+    		$pathToFile = "run_simulation/output/".$sim_name."/result/".$round_name.'.json';
     	} else {
     		$pathToFile = "run_simulation/output/".$sim_name."/result/".$rsFiles[0]; 
     	} 
@@ -555,12 +570,12 @@ class SimResultController extends \BaseController {
     	$rsFiles = $this->scanDirectory($pathToRsDir);
 
     	if($round_name!=null){
-    		$pathToFile = "run_simulation/output/".$sim_name."/result/".$round_name;
+    		$pathToFile = "run_simulation/output/".$sim_name."/result/".$round_name.'.json';
     		$graphDownTime['name'][] = $round_name;
     	} else {
     		$pathToFile = "run_simulation/output/".$sim_name."/result/".$rsFiles[0];
     		
-    		$graphDownTime['name'][] = $rsFiles[0];
+    		$graphDownTime['name'][] = $this->createNameNoType($rsFiles[0]);
     	}
     	$jsonData = json_decode(file_get_contents($pathToFile,FILE_USE_INCLUDE_PATH),true);
     	$vmList = array();
@@ -616,11 +631,11 @@ class SimResultController extends \BaseController {
     	$rsFiles = $this->scanDirectory($pathToRsDir);
 
     	if($round_name!=null){
-    		$pathToFile = "run_simulation/output/".$sim_name."/result/".$round_name;
+    		$pathToFile = "run_simulation/output/".$sim_name."/result/".$round_name.'.json';
     		$graphMigrationTime['name'][] = $round_name;
     	} else {
     		$pathToFile = "run_simulation/output/".$sim_name."/result/".$rsFiles[0];
-    		$graphMigrationTime['name'][] = $rsFiles[0];
+    		$graphMigrationTime['name'][] = $this->createNameNoType($rsFiles[0]);
     	}
     	
     	$jsonData = json_decode(file_get_contents($pathToFile,FILE_USE_INCLUDE_PATH),true);
@@ -652,11 +667,11 @@ class SimResultController extends \BaseController {
     	$rsFiles = $this->scanDirectory($pathToRsDir);
 
     	if($round_name!=null){
-    		$pathToFile = "run_simulation/output/".$sim_name."/result/".$round_name;
+    		$pathToFile = "run_simulation/output/".$sim_name."/result/".$round_name.'.json';
     		$graphViolation['name'] = $round_name;
     	} else {
     		$pathToFile = "run_simulation/output/".$sim_name."/result/".$rsFiles[0];
-    		$graphViolation['name'] = $rsFiles[0];
+    		$graphViolation['name'] = $this->createNameNoType($rsFiles[0]);
     	}
     	
     	$jsonData = json_decode(file_get_contents($pathToFile,FILE_USE_INCLUDE_PATH),true);
@@ -764,10 +779,15 @@ class SimResultController extends \BaseController {
 			}
 			
 			$default = Simulation::find($id);
-			return View::make('sim_result.show')->with('sim_name_list',$dirs)->with('default',$default->sim_name);
+			return View::make('sim_result.index')->with('sim_name_list',$dirs)->with('default',$default->sim_name);
 		 
 	}
 
+	public function createNameNoType ($target){
+		$name = "";
+		$name = substr($target,0,strrpos($target,'.'));
+		return $name;
+	}
 
 	/**
 	 * Show the form for editing the specified resource.

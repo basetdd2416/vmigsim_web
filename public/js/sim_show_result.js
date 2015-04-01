@@ -4,14 +4,17 @@ $(function() {
 	var pathName = $(location).attr('pathname');
 	pathName = pathName.split("/");
 	var myPathReal = "";
-	for (var i = 1; i < pathName.length; i++) {
-		if(i!= pathName.length-1) {
-			myPathReal += '/' + pathName[i];
-		}
+	if(pathName[pathName.length-1] != 'simulation_result') {
+		for (var i = 1; i < pathName.length; i++) {
+			if(i!= pathName.length-1) {
+				myPathReal += '/' + pathName[i];
+			}
+			
+		};
+		window.history.pushState("", "", myPathReal);
+		console.log(myPathReal);
+	}
 		
-	};
-	window.history.pushState("", "", myPathReal);
-	console.log(myPathReal);
 
 	$('#simbar').attr('class','active');
 	var mesgalert = $('.alert');

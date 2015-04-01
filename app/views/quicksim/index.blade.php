@@ -1,12 +1,12 @@
 @extends('layouts.sidebarsim')
 @section('content')
 
-<h1>Quick simulation</h1>
+<h1>Create configuration</h1>
 <hr>
 <div class="form-group">
-				<div class="col-sm-3">
+				<div class="col-sm-2">
 					
-					<a href="{{ URL::to('simulation/quicksim/createconfig') }}"class="btn btn-primary btn-lg"><i class="fa fa-plus"></i> from screatches</a>
+					<a href="{{ URL::to('simulation/quicksim/createconfig') }}"class="btn btn-primary btn-lg"><i class="fa fa-plus"></i> from new</a>
 
 					
 				</div>

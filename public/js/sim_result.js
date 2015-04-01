@@ -1,6 +1,20 @@
 $(function() {
 
 	$('#sidebar .nav > li:eq(3)').addClass('active'); 
+	var pathName = $(location).attr('pathname');
+	pathName = pathName.split("/");
+	var myPathReal = "";
+	if(pathName[pathName.length-1] != 'simulation_result') {
+		for (var i = 1; i < pathName.length; i++) {
+			if(i!= pathName.length-1) {
+				myPathReal += '/' + pathName[i];
+			}
+			
+		};
+		window.history.pushState("", "", myPathReal);
+		console.log(myPathReal);
+	}
+
 	/*var firstPath = $(location).prop('pathname').split('/')[1];
 	var lastPath = 'simulation_result';
 	var pathName = $(location).attr('pathname');
@@ -12,7 +26,7 @@ $(function() {
 	if(lastPath != lastPathHref) {
 			window.history.pushState("", "", '/simulation/simulation_result');
 	}*/
-	
+	getParameterByName('');
 	
 	$('#simbar').attr('class','active');
 	var mesgalert = $('.alert');
@@ -104,7 +118,11 @@ $(function() {
 		        },
 		        xAxis: {
 		            categories: barData.sim_round_name,
-		            crosshair: true
+		            crosshair: true,
+		            title: {
+			            	enabled: true,
+			            	text: 'Interval (Seconds)'
+			            }
 		        },
 		        yAxis: {
 		            min: 0,
@@ -177,7 +195,7 @@ $(function() {
 		                    enabled: true,
 		                    formatter: function() {
 		                        	if(this.axis.series[1].yData[this.x]) {
-		                        		return (this.axis.series[1].yData[this.x] / this.total * 100).toPrecision(2) + '%';
+		                        		return 'Completed' + ' ' + (this.axis.series[1].yData[this.x] / this.total * 100).toPrecision(2) + '%';
 		                        	} else {
 		                        		return 'No VM';
 		                        	}
@@ -232,10 +250,10 @@ $(function() {
 			             renderTo: downData.renderTo
 			        },
 			        title: {
-			            text: 'VMs downtime each round in second '
+			            text: 'Average VM downtime each round'
 			        },
 			        subtitle: {
-			            text: 'VmigSimEngine'
+			            text: 'VmigSim Engine'
 			        },
 			        xAxis: {
 			            categories: downData.name,
@@ -289,7 +307,7 @@ $(function() {
 			             renderTo: downData.renderTo
 			        },
 			        title: {
-			            text: 'VMs down time in '+ downData.name
+			            text: 'VM downtime in '+ downData.name
 			        },
 			        subtitle: {
 			            text: 'VmigSim Engine'
@@ -303,13 +321,13 @@ $(function() {
 			            crosshair: true,
 			            title: {
 			            	enabled: true,
-			            	text: '#VMs'
+			            	text: 'No. of VM'
 			            }
 			        },
 			        yAxis: {
 			            min: 0,
 			            title: {
-			                text: 'Down time (seconds)'
+			                text: 'Downtime (seconds)'
 			            }
 			        },
 			        tooltip: {
@@ -349,17 +367,17 @@ $(function() {
 			                renderTo: downData.renderTo
 			        },
 			        title: {
-			            text: 'VMs Migration time in '+ downData.name
+			            text: 'VM Migration time in '+ downData.name
 			        },
 			        subtitle: {
-			            text: 'VmigSimEngine'
+			            text: 'VmigSim Engine'
 			        },
 			        xAxis: {
 			            categories: downData.number,
 			            crosshair: true,
 			            title: {
 			            	enabled: true,
-			            	text: '#VM'
+			            	text: 'No. of VM'
 			            }
 			        },
 			        legend: {
@@ -410,10 +428,10 @@ $(function() {
 			            renderTo: migration.renderTo
 			        },
 			        title: {
-			            text: 'VMs Migration time each round in second '
+			            text: 'Average VM Migration time each round'
 			        },
 			        subtitle: {
-			            text: 'VmigSimEngine'
+			            text: 'VmigSim Engine'
 			        },
 			        xAxis: {
 			            categories: migration.name,
@@ -480,7 +498,7 @@ $(function() {
                
             },
 	            title: {
-	                text: 'VMs violation in '+ vio.name
+	                text: 'QoS violated VM in '+ vio.name
 	            },
 	            tooltip: {
 	                pointFormat: '{series.name}: <b>{point.y:.1f}</b>'
@@ -526,7 +544,7 @@ $(function() {
 			            renderTo: vio.renderTo
 			        },
 			        title: {
-			            text: 'VMs violation each round '
+			            text: 'QoS violated VM each round'
 			        },
 			        subtitle: {
 			            text: 'VmigSimEngine'
@@ -768,6 +786,7 @@ $(function() {
            			if (data.graphData) {
            				showGraphCompare(data.graphData);
            				graph_info_round.slideDown("slow");
+           				
            			}
            			
            			
@@ -792,7 +811,10 @@ $(function() {
          });
 	});
 	 
-	$('.nav-tabs').bind('click', function (e) {
+	 $("#myTab a").click(function(e){
+    	e.preventDefault();
+    	$(this).tab('show');
+ 
 	    var target = $(e.target).attr("href"); // activated tab
 	  	var sim_name = $("#sim_select").val();
 	    var tab_bar = $("#myTab");
@@ -806,8 +828,8 @@ $(function() {
 	    
 	    //tabpane.empty();
 	   	rstype = checkRsType(rstype,target);
-
-	    tab_content.hide();
+	   	tab_content.hide();
+	    $(this).parent('li').hide();
 
 	     $.ajax({
 	     		type : 'GET',
@@ -819,12 +841,15 @@ $(function() {
 	        		rs_type : rstype
 	        	},
 	        	 success: function(data) {
+	        	 	$('#round_select').val(data.f_names[0]);
 	        	 	graph_info_round.hide();
 	        	 	graph_info_all.hide();
 	        	 	graph_chart.hide();
 	        	 	graph_bar.hide();
-	        	 	tab_bar.find("li:eq(0)").hide();
-	        	 	tab_bar.find("li:eq(1)").hide();
+	        	 	
+
+	        	 	tab_bar.find("li").hide();
+	        	 	
 	        	 	showGraphCompare(data.graphData);
 	        	 	if(rstype == 'net') {
 	        	 		$('.nav-tabs li:eq(0) a').tab('show'); 
@@ -851,6 +876,7 @@ $(function() {
 	        	 		graph_info_round.slideDown("slow");
 
 	        	 	} else if (rstype == 'down-time') {
+
 	        	 		$('.nav-tabs li:eq(1) a').tab('show'); 
 	        	 		tab_bar.find("li:eq(0)").show();
 	        	 		tab_bar.find("li:eq(1)").show();
@@ -859,15 +885,24 @@ $(function() {
 	        	 		graph_bar.show();
 
 	        	 	} else if (rstype == 'migration-time-round') {
-	        	 		$('.nav-tabs li:first-child a').tab('show'); 
+	        	 		
 	        	 		tab_bar.find("li:eq(0)").show();
 	        	 		tab_bar.find("li:eq(1)").show();
+	        	 		
+	        	 		//$('a[href=#round]').tab('show');
+	        	 		//$('.nav-tabs a[href="#round"]').tab('show');
 	        	 		graph_info_round.slideDown("slow");
 
 	        	 	} else if (rstype == 'migration-time') {
-	        	 		$('.nav-tabs li:eq(1) a').tab('show'); 
+	        	 		
+	        	 		
 	        	 		tab_bar.find("li:eq(0)").show();
 	        	 		tab_bar.find("li:eq(1)").show();
+	        	 		
+	        	 		//$('a[href=#all]').tab('show');
+						//$('.nav-tabs a[href="#all"]').tab('show');
+	        	 		
+	        	 		
 	        	 		graph_info_all.slideDown("slow");
 	        	 		
 	        	 		graph_bar.show();
@@ -884,7 +919,8 @@ $(function() {
 	        	 		tab_bar.find("li:eq(1)").show();
 	        	 		graph_info_all.slideDown("slow");
 	        	 		graph_bar.slideDown('slow');
-	        	 	} 
+	        	 	}
+	        	 	
 	        	 	tab_content.slideDown("slow");
 	        	 }
 
@@ -894,6 +930,12 @@ $(function() {
 	    
     });
 
+	function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
 
 	var sim_name = $("#sim_select").val();
 	$("#sim_select").val(sim_name).trigger('change');

@@ -69,20 +69,21 @@ content:"\e080";
 							<label class="control-label "><input type="radio" name="rs_type" value="log" checked>Log file</label>
 						</div>
 						<div class="radio">
-							<label class="control-label "><input type="radio" name="rs_type" value="net">Newrok trace</label>
+							<label class="control-label "><input type="radio" name="rs_type" value="net">Network banwidth trace interaval</label>
 						</div>
 						
 						<div class="radio">
-							<label class="control-label "><input type="radio" name="rs_type" value="priority">Completely migrated VMs by priority level</label>
+							<label class="control-label "><input type="radio" name="rs_type" value="priority">Completely migrated VM by priority level</label>
 						</div>
 						<div class="radio">
-							<label class="control-label "><input type="radio" name="rs_type" value="down-time-round">Down time</label>
+							<label class="control-label "><input type="radio" name="rs_type" value="migration-time-round">VM migration time</label>
 						</div>
 						<div class="radio">
-							<label class="control-label "><input type="radio" name="rs_type" value="migration-time-round">Migration time</label>
+							<label class="control-label "><input type="radio" name="rs_type" value="down-time-round">VM Downtime</label>
 						</div>
+						
 						<div class="radio">
-							<label class="control-label "><input type="radio" name="rs_type" value="violation">Violation</label>
+							<label class="control-label "><input type="radio" name="rs_type" value="violation">QoS violated VM</label>
 						</div>
 					</div>
 				</div>

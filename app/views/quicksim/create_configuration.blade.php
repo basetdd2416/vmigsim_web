@@ -29,7 +29,7 @@
 
 
 <form  class="form-horizontal myform" role="form" method="post">
-	<h1>Create from scratch</h1>
+	<h1>Create from new</h1>
 	<hr>
 	<div class="alert alert-danger alert-dismissible danger" role="alert" style="display:none;">
 	  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -392,6 +392,7 @@
 
 	$(function() {
 		// process when doc ready
+	
 		function hidePanels(){
 			$('#phase2').hide();
 			$('#phase3').hide();
