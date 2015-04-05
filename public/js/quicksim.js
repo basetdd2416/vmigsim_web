@@ -20,17 +20,30 @@ $(function() {
     $('#loading').hide();
     $('.myform').show();
  });
+
+	$('#network_status').on('change', function() {
+	  	var type = this.value ; // or $(this).val()
+	  	var sd = $('#containner-sd');
+	  	if (type == 'dynamic') {
+	  		sd.slideDown();
+	  	} else {
+	  		sd.hide();
+	  	}
+	});
+
  	function defineSpinner() {
  		//part of spinnere
 		$("input[name='amount']").TouchSpin({
 		verticalbuttons: true,
 		max: 1000,
-		initval: 1
+		initval: 1,
+		min: 1
 		});
 		$("input[name='ram']").TouchSpin({
 		verticalbuttons: true,
 		max: 1000,
 		initval: 512,
+		min: 1,
 		postfix: 'MB'
 		});
 
@@ -38,6 +51,7 @@ $(function() {
 		verticalbuttons: true,
 		max: 1000,
 		initval: 30,
+		min: 1,
 		postfix: 'Min'
 		});
 
@@ -45,18 +59,21 @@ $(function() {
 		verticalbuttons: true,
 		max: 1000,
 		initval: 1,
+		min: 1,
 		postfix: 'Second'
 		});
 		$("input[name='network_mean']").TouchSpin({
 		verticalbuttons: true,
 		max: 1000,
-		initval: 62,	
+		initval: 62,
+		min: 1,	
 		forcestepdivisibility: 'none',
 		postfix: 'Mbps'
 		});
 		$("input[name='network_sd']").TouchSpin({
 		verticalbuttons: true,
-		max: 1000,
+		max: 100,
+		min: 1,
 		initval: 54.8222,
 		forcestepdivisibility: 'none',
 		postfix: '%'
@@ -64,20 +81,23 @@ $(function() {
 
 		$("input[name='wwws_ratio']").TouchSpin({
 		verticalbuttons: true,
-		max: 1000,
+		max: 100,
+		min: 1,
 		initval: 1,
 		postfix: '%'
 		});
 
 		$("input[name='wws_dirty_rate']").TouchSpin({
 		verticalbuttons: true,
-		max: 1000,
+		max: 100,
+		min: 1,
 		initval: 90,
 		postfix: '%'
 		});
 		$("input[name='normal_dirty_rate']").TouchSpin({
 		verticalbuttons: true,
-		max: 1000,
+		max: 100,
+		min: 1,
 		initval: 20,
 		postfix: '%'
 		});
@@ -85,18 +105,21 @@ $(function() {
 		$("input[name='max_pre_copy_rate']").TouchSpin({
 		verticalbuttons: true,
 		max: 1000,
+		min: 1,
 		initval: 30
 		});
 
 		$("input[name='min_dirty_page']").TouchSpin({
 		verticalbuttons: true,
 		max: 1000,
+		min: 1,
 		initval: 50
 		});
 
 		$("input[name='max_no_prog_round']").TouchSpin({
 		verticalbuttons: true,
 		max: 1000,
+		min: 1,
 		initval: 2
 		});
 
@@ -109,18 +132,21 @@ $(function() {
 		$("input[name='limit_time']").TouchSpin({
 		      verticalbuttons: true,
 		      max: 100000,
+		      min: 1,
 		      postfix: 'Second'
 
 		    });
 		$("input[name='network_bandwidth']").TouchSpin({
 		      verticalbuttons: true,
 		      max: 150000,
+		      min: 1,
 		      forcestepdivisibility: 'none',
 		      postfix: 'Mbps'
 		    });
 		     $("input[name='page_dirty']").TouchSpin({
 		      verticalbuttons: true,
-		      postfix: 'KB'
+		      postfix: 'KB',
+		      min: 1
 		       
 		    });
 
@@ -178,6 +204,7 @@ $(function() {
 			ram: 512
 		 });
 		 updateVMTable();
+		 $('#network_status').change();
 	}
 
 	defineDefalut();
@@ -313,6 +340,7 @@ $(function() {
 		 mesgalert.slideDown("slow");
 		collaseAllPanel();
 		$("html, body").animate({ scrollTop: 0 }, "slow");
+		 $('#network_status').change();
   		return false;
 		
 	});

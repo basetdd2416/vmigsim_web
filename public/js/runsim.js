@@ -1,7 +1,10 @@
+
+
 $(function() {
 	// clock
 
  $('#sidebar .nav > li:eq(1)').addClass('active'); 
+
  var run_info = $('#run--info');
  var run_history = $('#run--history');
 
@@ -132,6 +135,13 @@ $(function() {
            		$('#network_mean').text(data.envi.network_mean);
            		$('#network_sd').text(data.envi.network_sd);
 
+              var sd = $('#containner-sd');
+              if(data.envi.network_type == 'dynamic') {
+                
+                sd.show();
+              } else {
+                sd.hide();
+              }
 
         $("#showVM > tbody").html("");
 				$.each(data.vms, function( index, value ) {
@@ -306,8 +316,27 @@ function checkStatus() {
     });
 }
 
+ 
+
+
 $(document).on('click','tr td .details',function(e){ 
     e.preventDefault();
+    var sim = null;
+    var config = null;
+    var envi = null;
+    var vmobj = {};
+   
+    var $textAndPic = $('<div></div>');
+    $textAndPic.append('<img id="beatles" src="../images/map-area.jpg" usemap="#beatles-map"/>');
+    var $capStype = $('<div class="center-block" style="width:390px; height: 200px; font-size: 12px; "></div>');
+    var $capContain = $('<div  id="beatles-caption" style="clear:both;border: 1px solid black; width: 400px; padding: 6px; display:none;"></div>');
+    var $capHead = $('<div id="beatles-caption-header" style="font-style: italic; font-weight: bold; margin-bottom: 12px;"></div>')
+    var $capText = $('<div id="beatles-caption-text"></div>')
+    $capContain.append($capHead);
+    $capContain.append($capText);
+    $capStype.append($capContain);
+    $textAndPic.append($capStype);
+
     var id = $(this).attr('href');
 
     $.ajax({
@@ -319,24 +348,20 @@ $(document).on('click','tr td .details',function(e){
         dataType: 'json',
 
         success: function (data){
-
+          
           if(!data.success) {
               alert('id not found');
           } else {
-            var sim = data.sim;
-            var config = data.config;
-            var envi = data.envi;
 
-            var vms = data.vms;
+            sim = data.sim;
+            config = data.config;
+            envi = data.envi;
+            vmobj = processVM(data.vms);
+            console.log(vmobj);
               BootstrapDialog.show({
                 title: sim.sim_name,
-                message: '<p><b>Config name: </b>' + config.config_name + '</p>'
-                      +  '<p><b>Environment name: </b>' + envi.name + '</p>' 
-                      +  '<p><b>Time limitation: </b>' + envi.time_limit + '</p>'
-                      +  '<p><b>Schedule algorithm: </b>' + envi.schedule_type + '</p>'
-                      +  '<p><b>Migration algorithm: </b>' + envi.migration_type + '</p>'
-                      +  '<p><b>Control algorithm: </b>' + envi.control_type + '</p>'
-                      +  '<p><b>Network algorithm: </b>' + envi.network_type + '</p>',
+                cssClass: 'login-dialog',
+                message:  $textAndPic,
                        buttons: [{
                             id: 'btn-ok',   
                             icon: 'glyphicon glyphicon-check',       
@@ -350,10 +375,109 @@ $(document).on('click','tr td .details',function(e){
             });
           }
         
+        },
+        complete: function() {
+          
+         
+          
+          
+          var inArea,
+    map = $textAndPic.find('#beatles'),
+    captions = {
+        src: ["Source datacenter",
+            "<b>Total VMs:</b> "+ vmobj.total,
+            "<b>Priority 1:</b> " + vmobj.p1,
+            "<b>Priority 2:</b> " + vmobj.p2,
+            "<b>Priority 3:</b> " + vmobj.p3
+             ],
+        dest: ["Comming soon.",
+            "Comming soon."],
+        envi: ["Environment",
+            "<b>Scheduling:</b> "    + envi.schedule_type , 
+            "<b>Migration:</b> "         + envi.migration_type ,
+            "<b>Control alogorithm:</b> " + envi.control_type ,
+            "<b>Time limit:</b> " + (envi.time_limit / 60 ) + ' '+ '<b>Minutes</b>'
+
+            ],
+        network: ["Network",
+            "<b>Type:</b> "    + envi.network_type , 
+            "<b>Bandwidth:</b> "         + envi.bandwidth      +' '+ '<b>Mbps</b>' ,
+            "<b>Mean:</b> " + envi.network_mean + ' '+ '<b>%</b>',
+            "<b>Standard derivation:</b> " + envi.network_sd + ' '+ '<b>%</b>'
+
+           
+
+            ]
+     
+    },
+    single_opts = {
+        fillColor: '000000',
+        fillOpacity: 0,
+        stroke: true,
+        strokeColor: 'ff0000',
+        strokeWidth: 2
+    },
+    all_opts = {
+        fillColor: 'ffffff',
+        fillOpacity: 0.6,
+        stroke: true,
+        strokeWidth: 2,
+        strokeColor: 'ffffff'
+    },
+    initial_opts = {
+        mapKey: 'data-name',
+        isSelectable: false,
+        onMouseover: function (data) {
+            inArea = true;
+            for (var i = 0 ; i < captions[data.key].length ; i++) {
+              if(i==0) {
+                $textAndPic.find('#beatles-caption-header').text(captions[data.key][0]);
+              } else {
+                $textAndPic.find('#beatles-caption-text').append('<p>'+ captions[data.key][i] +'</p>');
+              }
+            }
+            
+            $textAndPic.find('#beatles-caption').show();
+        },
+        onMouseout: function (data) {
+            inArea = false;
+            $textAndPic.find('#beatles-caption-text').empty();
+            $textAndPic.find('#beatles-caption').hide();
+
+        }
+    };
+    opts = $.extend({}, all_opts, initial_opts, single_opts);
+
+
+    // Bind to the image 'mouseover' and 'mouseout' events to activate or deactivate ALL the areas, like the
+    // original demo. Check whether an area has been activated with "inArea" - IE<9 fires "onmouseover" 
+    // again for the image when entering an area, so all areas would stay highlighted when entering
+    // a specific area in those browsers otherwise. It makes no difference for other browsers.
+
+    map.mapster('unbind')
+        .mapster(opts)
+        .bind('mouseover', function () {
+         
+            if (!inArea) {
+               //alert('over');
+                map.mapster('set_options', all_opts)
+                    .mapster('set', true, 'all')
+                    .mapster('set_options', single_opts);
+            }
+        }).bind('mouseout', function () {
+
+            if (!inArea) {
+              //alert('out');
+                map.mapster('set', false, 'all');
+            }
+        });
         }
     });
     
 });
+
+
+
 
 $(document).on('click','.pagination a',function(e){
   e.preventDefault();
@@ -396,3 +520,96 @@ function updateClock ( )
     $("#clock").html(currentTimeString);
          
  	}
+
+  function createMapArea() {
+
+    var inArea,
+    map = $textAndPic.find('#beatles'),
+    captions = {
+        src: ["Paul McCartney - Bass Guitar and Vocals",
+            "Paul McCartney's song, Yesterday, recently voted the most popular song "
+                + "of the century by a BBC poll, was initially composed without lyrics. "
+                + "Paul used the working title 'scrambled eggs' before coming up with the final words."],
+        dest: ["Ringo Starr - Drums",
+            "Dear Prudence was written by John and Paul about Mia Farrow's sister, Prudence, "
+            + "when she wouldn't come out and play with Mia and the Beatles at a religious retreat "
+            + "in India."],
+        envi: ["John Lennon - Guitar and Vocals",
+            "In 1962, The Beatles won the Mersyside Newspaper's biggest band in Liverpool "
+            + "contest principally because they called in posing as different people and voted "
+            + "for themselves numerous times."]
+     
+    },
+    single_opts = {
+        fillColor: '000000',
+        fillOpacity: 0,
+        stroke: true,
+        strokeColor: 'ff0000',
+        strokeWidth: 2
+    },
+    all_opts = {
+        fillColor: 'ffffff',
+        fillOpacity: 0.6,
+        stroke: true,
+        strokeWidth: 2,
+        strokeColor: 'ffffff'
+    },
+    initial_opts = {
+        mapKey: 'data-name',
+        isSelectable: false,
+        onMouseover: function (data) {
+            inArea = true;
+            $textAndPic.find('#beatles-caption-header').text(captions[data.key][0]);
+            $textAndPic.find('#beatles-caption-text').text(captions[data.key][1]);
+            $textAndPic.find('#beatles-caption').show();
+        },
+        onMouseout: function (data) {
+            inArea = false;
+            $textAndPic.find('#beatles-caption').hide();
+        }
+    };
+    opts = $.extend({}, all_opts, initial_opts, single_opts);
+
+
+    // Bind to the image 'mouseover' and 'mouseout' events to activate or deactivate ALL the areas, like the
+    // original demo. Check whether an area has been activated with "inArea" - IE<9 fires "onmouseover" 
+    // again for the image when entering an area, so all areas would stay highlighted when entering
+    // a specific area in those browsers otherwise. It makes no difference for other browsers.
+
+    map.mapster('unbind')
+        .mapster(opts)
+        .bind('mouseover', function () {
+            if (!inArea) {
+              
+                map.mapster('set_options', all_opts)
+                    .mapster('set', true, 'all')
+                    .mapster('set_options', single_opts);
+            }
+        }).bind('mouseout', function () {
+            if (!inArea) {
+
+                map.mapster('set', false, 'all');
+            }
+        });
+  }
+
+  function processVM (data) {
+    var vms = data;
+    var vmobj = {};
+    vmobj.total = 0;
+    vmobj.p1 = 0;
+    vmobj.p2 = 0;
+    vmobj.p3 = 0;
+
+          for (var i = 0 ; i< vms.length ; i++ ) {
+            vmobj.total += vms[i].amount;
+            if (vms[i].priority == 1) {
+              vmobj.p1 += vms[i].amount
+            } else if (vms[i].priority == 2) {
+              vmobj.p2 += vms[i].amount;
+            } else {
+              vmobj.p3 += vms[i].amount;
+            }
+          }
+    return vmobj;
+  }

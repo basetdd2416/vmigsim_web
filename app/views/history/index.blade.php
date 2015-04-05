@@ -1,5 +1,11 @@
 @extends('layouts.sidebarsim')
 @section('content')
+<style type="text/css">
+.login-dialog .modal-dialog {
+                width: 650px;
+
+}
+</style>
 <h1>History simulation</h1>
 <hr>
 <div class="alert alert--sim" role="alert" style="display:none;">
@@ -68,6 +74,17 @@
 		</div>
 	</div>
 
+    <map name="beatles-map">  
+        <area shape="rect" data-name="src,all" coords="11,70,104,163" href="#" alt="1">  
+        <area shape="rect" data-name="dest,all" coords="491,70,587,166" href="#" alt="2">  
+        <area shape="rect" data-name="envi,all" coords="247,51,341,120" href="#" alt="3">  
+        <area shape="rect" data-name="network,all" coords="255,186,333,263" href="#" alt="4">  
+    </map>  
+
+  
+
+  
+
 @section('js')
 {{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
 {{ HTML::script('js/jquery.serialize-object.js') }}
@@ -76,6 +93,7 @@
 {{ HTML::script('js/run_prettify.js') }}
 {{ HTML::style('css/bootstrap-dialog.css') }}
 {{ HTML::script('js/bootstrap-dialog.js') }}
+{{ HTML::script('js/jquery.imagemapster.js') }}
 {{ HTML::script('js/runsim.js') }}
 <script type="text/javascript">
 	$(function() {

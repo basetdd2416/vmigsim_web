@@ -178,7 +178,7 @@
 									</div>
 									
 									<div class="panel-body" >
-										<div class="form-group">
+										<div class="form-group" style="display:none">
 											<label for="inputEmail3" class="col-sm-4 control-label">Environment name:</label>
 											<label id="envi_name" for="inputEmail3" class="control-label"></label>
 										</div>
@@ -207,8 +207,8 @@
 											<label for="inputEmail3" class="col-sm-4 control-label">Network Mean (Mbps):</label>
 											<label id="network_mean" for="inputEmail3" class="control-label"></label>
 										</div>
-										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-4 control-label">Network SD (Percent):</label>
+										<div id="containner-sd" class="form-group" style="display:none">
+											<label for="inputEmail3" class="col-sm-4 control-label">Network SD (%):</label>
 											<label id="network_sd" for="inputEmail3" class="control-label"></label>
 										</div>
 									</div>

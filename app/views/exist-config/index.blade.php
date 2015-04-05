@@ -13,6 +13,10 @@ color: grey;         /* adjust as needed */
 /* symbol for "collapsed" panels */
 content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
+.tooltip-inner {
+min-width: 200px; //the minimum width
+max-width: 300px;
+}
 </style>
 <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -68,10 +72,10 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 			Create configuration</a>
 			</h3>
 		</div>
-		<div id="collapseOne" class="panel-collapse collapse">
+		<div id="collapseOne" class="panel-collapse collapse in">
 			<div class="panel-body">
 				<div class="form-group">
-					<label for="inputEmail3" class="col-sm-4 control-label">Configuration name</label>
+					<label for="inputEmail3" class="col-sm-4 control-label">New Configuration name</label>
 					<div class="col-sm-6">
 						{{ Form::text('name', Input::old('name'), array('class' => 'form-control','id'=>'name')) }}
 						
@@ -89,7 +93,7 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 			</div>
 		</div>
 	</div>
-	<div id="vm_info" class="panel panel-info">
+	<div id="phase2" class="panel panel-info">
 		<div class="panel-heading">
 			<h3 class="panel-title">
 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
@@ -107,7 +111,7 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 				</div>
 				
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">RAM</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">RAM(MB)</label>
 					<div class="col-sm-6">
 						<input id="ram" type="text" value="" name="ram" placeholder="enter your RAM">
 					</div>
@@ -125,22 +129,26 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 							<option>4</option>
 						</select>
 					</div>
-					<a id="mytool" href="#" data-toggle="tooltip" title="ลำดับความสำคัญเลขน้อยจะสำคัญมากที่สุด"><i class="fa fa-question-circle"></i> </a>
+					<a class="tips" id="mytool" href="#" data-toggle="tooltip" title="the priority order of VMs  order by smallest number is very important."><i class="fa fa-question-circle"></i> </a>
 				</div>
 				<div class="form-group">
 					<label for="inputPassword3" class="col-sm-4 control-label">(QoS)Maximum down time</label>
 					<div class="col-sm-6">
 						<input id="qos" type="text" value="" name="qos" placeholder="enter maximum down time">
 					</div>
+					<a class="tips" id="tip-max_qos" href="#" data-toggle="tooltip"
+						title="The downtime of VMs that is acceptable.">
+						<i class="fa fa-question-circle"></i>
+					</a>
 				</div>
 				<div class="form-group">
 					
 					<div class="col-sm-4 pull-right">
 						<button id="backPhase1" type="button" class="btn btn-primary">
-						<i class="fa fa-caret-left"></i> back
+						<i class="fa fa-caret-left"></i> Back
 						</button>
 						<button id="addVM" type="button" class="btn btn-primary">
-						<i class="fa fa-caret-right"></i> add
+						<i class="fa fa-caret-right"></i> Add
 						</button>
 						<button id="nextPahse2" type="button" class="btn btn-primary">
 						<i class="fa fa-caret-right"></i> Next
@@ -148,10 +156,9 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 					</div>
 				</div>
 				<div class="alert alert-success alert--vm alert-dismissible success " role="alert" style="display:none;">
-				  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				  <ul>
-
-				  </ul>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<ul>
+					</ul>
 				</div>
 				<table id="showVM" class="table table-striped table-hover">
 					<thead>
@@ -171,70 +178,86 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 			</div>
 		</div>
 	</div>
-	<div id="envi_info" class="panel panel-info">
-	<div class="panel-heading">
-
-		<h3 class="panel-title">
- <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-			Create migration environment
-		</a>
-		</h3>
-	</div>
+	<div id="phase3" class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				Create migration environment
+			</a>
+			</h3>
+		</div>
 		<div id="collapseThree" class="panel-collapse collapse">
-	<div class="panel-body">
-			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-4 control-label">Migration environment name</label>
-				<div class="col-sm-6">
-					<input type="text" class="form-control" name="enviname_name" id="enviname_name" value="" placeholder="enter your migration enviroment name">
+			<div class="panel-body">
+				<div class="form-group" style="display:none">
+					<label for="inputEmail3" class="col-sm-4 control-label">Migration environment name</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" name="enviname_name" id="enviname_name" value="" placeholder="enter your migration enviroment name">
+					</div>
 				</div>
-			</div>
-			
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Time limitation of migration </label>
-				<div class="col-sm-6">
-					<input id="limit_time" name="limit_time" type="text" value="" placeholder="enter your time limitation of migration">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network bandwidth</label>
-				<div class="col-sm-6">
-					<input id="network_bandwidth" type="text" value="" name="network_bandwidth" placeholder="enter your network bandwidth">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network status</label>
-				<div class="col-sm-6">
-					<select id="network_status" name="network_status" class="form-control">
-						
-						<option value="stable">Stable</option>
-						<option value="dynamic">Dynamic</option>
-					</select>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Page size</label>
-				<div class="col-sm-6">
-					<input id="page_dirty" type="text" value="" name="page_dirty" placeholder="enter your network bandwidth">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network Interval</label>
-				<div class="col-sm-6">
-					<input id="network_interval" type="text" value="" name="network_interval" placeholder="enter your network bandwidth">
-				</div>
-			</div>
+				
 				<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network Mean</label>
-				<div class="col-sm-6">
-					<input id="network_mean" type="text" value="" name="network_mean" placeholder="enter your network bandwidth">
+					<label for="inputPassword3" class="col-sm-4 control-label">Time limitation of migration </label>
+					<div class="col-sm-6">
+						<input id="limit_time" name="limit_time" type="text" value="" placeholder="enter your time limitation of migration">
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-4 control-label">Network SD</label>
-				<div class="col-sm-6">
-					<input id="network_sd" type="text" value="" name="network_sd" placeholder="enter your network bandwidth">
+				
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-4 control-label">Network bandwidth</label>
+					<div class="col-sm-6">
+						<input id="network_bandwidth" type="text" value="" name="network_bandwidth" placeholder="enter your network bandwidth">
+					</div>
 				</div>
-			</div>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-4 control-label">Network status</label>
+					<div class="col-sm-6">
+						<select id="network_status" name="network_status" class="form-control">
+							
+							<option value="stable">Stable</option>
+							<option value="dynamic">Dynamic</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-4 control-label">Page size</label>
+					<div class="col-sm-6">
+						<input id="page_dirty" type="text" value="" name="page_dirty" placeholder="enter your page size">
+					</div>
+					<a class="tips" id="tip-page_size" href="#" data-toggle="tooltip"
+						title="The memory page size of VMs">
+						<i class="fa fa-question-circle"></i>
+					</a>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-4 control-label">Network Interval</label>
+					<div class="col-sm-6">
+						<input id="network_interval" type="text" value="" name="network_interval" placeholder="enter your network interval">
+					</div>
+					<a class="tips" id="tip-network_interval" href="#" data-toggle="tooltip"
+						title="the network monitoring interval.">
+						<i class="fa fa-question-circle"></i>
+					</a>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-4 control-label">Network Mean</label>
+					<div class="col-sm-6">
+						<input id="network_mean" type="text" value="" name="network_mean" placeholder="enter your network mean">
+					</div>
+					<a class="tips" id="tip-network_mean" href="#" data-toggle="tooltip"
+						title="the mean of network bandwidth.">
+						<i class="fa fa-question-circle"></i>
+					</a>
+				</div>
+				<div id="containner-sd" class="form-group">
+					<label for="inputPassword3" class="col-sm-4 control-label">Network SD</label>
+					<div class="col-sm-6">
+						<input id="network_sd" type="text" value="" name="network_sd" placeholder="enter your network bandwidth">
+					</div>
+					<a class="tips" id="tip-sd" href="#" data-toggle="tooltip"
+						title="The standard derivation of bandwidth.">
+						<i class="fa fa-question-circle"></i>
+					</a>
+				</div>
 				<div class="form-group">
 					
 					<div class="col-sm-4 pull-right">
@@ -249,7 +272,7 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 			</div>
 		</div>
 	</div>
-	<div id="app_info" class="panel panel-info">
+	<div id="phase4" class="panel panel-info">
 		<div class="panel-heading">
 			<h3 class="panel-title">
 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
@@ -260,40 +283,64 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 		<div id="collapseFour" class="panel-collapse collapse">
 			<div class="panel-body">
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">WWS ratio</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">WWS proportion</label>
 					<div class="col-sm-6">
 						<input id="wwws_ratio" name="wwws_ratio" type="text" value="" placeholder="enter your time limitation of migration">
 					</div>
+					<a class="tips" id="tip-wws_ratio" href="#" data-toggle="tooltip"
+						title="The proportion of the memory pages that have very high update rate.">
+						<i class="fa fa-question-circle"></i>
+					</a>
 				</div>
 				<div class="form-group">
 					<label for="inputPassword3" class="col-sm-4 control-label">WWS dirty rate</label>
 					<div class="col-sm-6">
 						<input id="wws_dirty_rate" type="text" value="" name="wws_dirty_rate" placeholder="enter your network bandwidth">
 					</div>
+					<a class="tips" id="tip-wws_dirty_rate" href="#" data-toggle="tooltip"
+						title="The memory update rate of WWS.">
+						<i class="fa fa-question-circle"></i>
+					</a>
 				</div>
 				<div class="form-group">
 					<label for="inputPassword3" class="col-sm-4 control-label">Normal dirty rate</label>
 					<div class="col-sm-6">
 						<input id="normal_dirty_rate" type="text" value="" name="normal_dirty_rate" placeholder="enter your network bandwidth">
 					</div>
+					<a class="tips" id="tip-normal_dirty_rate" href="#" data-toggle="tooltip"
+						title="The memory update rate of the pages that are not WWS.">
+						<i class="fa fa-question-circle"></i>
+					</a>
 				</div>
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">Max precopy round</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">Max pre-copy round</label>
 					<div class="col-sm-6">
 						<input id="max_pre_copy_rate" type="text" value="" name="max_pre_copy_rate" placeholder="enter your network bandwidth">
 					</div>
+					<a class="tips" id="tip-max_pre_round" href="#" data-toggle="tooltip"
+						title="The maxmimum iteration of pre-copy phase.">
+						<i class="fa fa-question-circle"></i>
+					</a>
 				</div>
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">Min dirt page</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">Min dirty page</label>
 					<div class="col-sm-6">
 						<input id="min_dirty_page" type="text" value="" name="min_dirty_page" placeholder="enter your network bandwidth">
 					</div>
+					<a class="tips" id="tip-min_dir_page" href="#" data-toggle="tooltip"
+						title="The minimum dirty pages that will cause the live migration process to enter the stop-and-copy phase.">
+						<i class="fa fa-question-circle"></i>
+					</a>
 				</div>
 				<div class="form-group">
 					<label for="inputPassword3" class="col-sm-4 control-label">Max no progress round</label>
 					<div class="col-sm-6">
 						<input id="max_no_prog_round" type="text" value="" name="max_no_prog_round" placeholder="enter your network bandwidth">
 					</div>
+					<a class="tips" id="tip-max_no_prog" href="#" data-toggle="tooltip"
+						title="The iteration number of pre-copy phase that has higher dirtied memory pages than transferred memory pages.">
+						<i class="fa fa-question-circle"></i>
+					</a>
 				</div>
 				<div class="form-group">
 					
@@ -309,18 +356,18 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 			</div>
 		</div>
 	</div>
-	<div id="policy_info" class="panel panel-info">
+	<div id="phase5" class="panel panel-info">
 		<div class="panel-heading">
 			<h3 class="panel-title">
 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-				Ccreate policy settings
+				Create policy settings
 			</a>
 			</h3>
 		</div>
 		<div id="collapseFive" class="panel-collapse collapse">
 			<div class="panel-body">
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">Migration algorithm</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">Migration</label>
 					<div  class="col-sm-6">
 						<select id="migration_algorithm" name="migration_algorithm" class="form-control">
 							
@@ -328,9 +375,13 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 							<option value="precopy">Pre-copy</option>
 						</select>
 					</div>
+					<a class="tips" id="tip-migration" href="#" data-toggle="tooltip"
+						title="VmigSim supports two types of migration algorithm, cold migration (Offline) and live migration (Pre-copy).">
+						<i class="fa fa-question-circle"></i>
+					</a>
 				</div>
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-4 control-label">Scheduling algorithm</label>
+					<label for="inputPassword3" class="col-sm-4 control-label">Scheduling</label>
 					<div class="col-sm-6">
 						<select id="scheduling_algorithm" name="scheduling_algorithm" class="form-control">
 							
@@ -338,6 +389,10 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 							<option value="priority">Priority based</option>
 						</select>
 					</div>
+					<a class="tips" id="tip-scheduling" href="#" data-toggle="tooltip"
+						title="Scheduling algorithm is used to manage the sequence of being-migrated VMs. FIFO does not considered VM's priority, while Priority-based do.">
+						<i class="fa fa-question-circle"></i>
+					</a>
 				</div>
 				<div class="form-group">
 					<label for="inputPassword3" class="col-sm-4 control-label">Control alogorithm</label>
@@ -345,9 +400,13 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 						<select id="control_algorithm" name="control_algorithm" class="form-control">
 							
 							<option value="openloop">Open loop</option>
-							<option value="closeloop">Close loop</option>
+							
 						</select>
 					</div>
+					<a class="tips" id="tip-control" href="#" data-toggle="tooltip"
+						title="The control alogrithm is utilization of resource, which open loop doesn't have feedback for utilization control.">
+						<i class="fa fa-question-circle"></i>
+					</a>
 				</div>
 				<div class="form-group">
 					
@@ -363,7 +422,7 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 	</div>
 	<div class="form-group">
 		
-		<div class="col-sm-offset-4 col-sm-12">
+		<div class="col-sm-offset-4 col-sm-8">
 			<a href="{{URL::to('simulation/quicksim')}}" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> cancel</a>
 			<button id="setAllDefault" type="button" class="btn btn-sm btn-primary">
 			<i class="fa fa-circle-o-notch"></i> reset all default
@@ -377,6 +436,11 @@ content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 	
 
 @section('js')
+<script type="text/javascript">
+	$(".tips").tooltip({
+			placement : 'right'
+		});
+</script>
 {{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
 {{ HTML::script('js/jquery.serialize-object.js') }}
 {{ HTML::script('js/quicksim.js') }}

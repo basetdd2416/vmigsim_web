@@ -1,20 +1,20 @@
 {
     "overall": {
-        "totalViolated": 50,
+        "totalViolated": 0,
         "downtime": {
-            "average": 21.721102700780126,
-            "total": 3714.308561833401
+            "average": 21.582875349684464,
+            "total": 3669.088809446359
         },
         "totalViolatedPriority": {
             "priority2": 0,
             "priority3": 0,
             "priority1": 0
         },
-        "totalMigrated": 171,
+        "totalMigrated": 170,
         "totalVm": 600,
         "migrationTime": {
-            "average": 126.22040857155183,
-            "total": 21583.689865735363
+            "average": 126.45266698541558,
+            "total": 21496.953387520647
         },
         "totalMigratedPriority": {
             "priority2": {
@@ -27,1376 +27,1368 @@
             },
             "priority1": {
                 "total": 200,
-                "migrated": 171
+                "migrated": 170
             }
         }
     },
     "migratedVm": {
         "88": {
             "violated": false,
-            "downtime": 20.191805309621298,
+            "downtime": 25.34663529178645,
             "qos": 300,
-            "migrationTime": 120.67163529450916,
+            "migrationTime": 127.25018200385054,
             "priority": 1,
             "ram": 512
         },
         "89": {
             "violated": false,
-            "downtime": 23.360283717185535,
+            "downtime": 20.963283337932765,
             "qos": 300,
-            "migrationTime": 125.78932906960732,
+            "migrationTime": 125.54752238106947,
             "priority": 1,
             "ram": 512
         },
         "190": {
             "violated": false,
-            "downtime": 20.77186582163612,
+            "downtime": 21.10913016510767,
             "qos": 300,
-            "migrationTime": 131.30566998457408,
+            "migrationTime": 124.17666290855885,
             "priority": 1,
             "ram": 512
         },
         "191": {
             "violated": false,
-            "downtime": 20.876129817300004,
+            "downtime": 21.8024585457718,
             "qos": 300,
-            "migrationTime": 125.29703689469233,
+            "migrationTime": 131.43031435861568,
             "priority": 1,
             "ram": 512
         },
         "192": {
             "violated": false,
-            "downtime": 21.04145356387962,
+            "downtime": 19.705788163189467,
             "qos": 300,
-            "migrationTime": 118.55174177948604,
-            "priority": 1,
-            "ram": 512
-        },
-        "193": {
-            "violated": false,
-            "downtime": 20.022876009607128,
-            "qos": 300,
-            "migrationTime": 129.53572869016995,
+            "migrationTime": 123.35501138709483,
             "priority": 1,
             "ram": 512
         },
         "194": {
             "violated": false,
-            "downtime": 23.080435116826294,
+            "downtime": 23.189462687018473,
             "qos": 300,
-            "migrationTime": 126.16679649422788,
+            "migrationTime": 129.740553030102,
+            "priority": 1,
+            "ram": 512
+        },
+        "195": {
+            "violated": false,
+            "downtime": 20.623711658134507,
+            "qos": 300,
+            "migrationTime": 125.22651147884885,
             "priority": 1,
             "ram": 512
         },
         "196": {
             "violated": false,
-            "downtime": 24.127702142110394,
+            "downtime": 23.676505682218092,
             "qos": 300,
-            "migrationTime": 133.46508194704805,
+            "migrationTime": 124.40140889848836,
             "priority": 1,
             "ram": 512
         },
         "197": {
             "violated": false,
-            "downtime": 25.839125198540163,
+            "downtime": 22.866698780540098,
             "qos": 300,
-            "migrationTime": 132.93623531819534,
+            "migrationTime": 126.58259227116756,
             "priority": 1,
             "ram": 512
         },
         "198": {
             "violated": false,
-            "downtime": 20.877650191422216,
+            "downtime": 23.211285628040848,
             "qos": 300,
-            "migrationTime": 131.91578128954563,
+            "migrationTime": 128.9476979720356,
             "priority": 1,
             "ram": 512
         },
         "110": {
             "violated": false,
-            "downtime": 19.378355306123023,
+            "downtime": 21.91655823288966,
             "qos": 300,
-            "migrationTime": 121.02223803082494,
-            "priority": 1,
-            "ram": 512
-        },
-        "111": {
-            "violated": false,
-            "downtime": 23.57713102741417,
-            "qos": 300,
-            "migrationTime": 119.95892406655267,
+            "migrationTime": 123.84966559949386,
             "priority": 1,
             "ram": 512
         },
         "199": {
             "violated": false,
-            "downtime": 22.504419398396102,
+            "downtime": 19.98751130242791,
             "qos": 300,
-            "migrationTime": 116.36178082253696,
+            "migrationTime": 121.2481381249138,
+            "priority": 1,
+            "ram": 512
+        },
+        "111": {
+            "violated": false,
+            "downtime": 21.54977443713439,
+            "qos": 300,
+            "migrationTime": 122.57984382114479,
             "priority": 1,
             "ram": 512
         },
         "112": {
             "violated": false,
-            "downtime": 23.543744126684068,
+            "downtime": 22.972621537634982,
             "qos": 300,
-            "migrationTime": 124.88142897312719,
+            "migrationTime": 123.36185069553595,
+            "priority": 1,
+            "ram": 512
+        },
+        "113": {
+            "violated": false,
+            "downtime": 22.702083379527885,
+            "qos": 300,
+            "migrationTime": 125.31019118314691,
             "priority": 1,
             "ram": 512
         },
         "114": {
             "violated": false,
-            "downtime": 24.51680727827504,
+            "downtime": 24.382580849283634,
             "qos": 300,
-            "migrationTime": 134.642572705435,
+            "migrationTime": 131.65333988128344,
             "priority": 1,
             "ram": 512
         },
         "115": {
             "violated": false,
-            "downtime": 23.372223747434717,
+            "downtime": 20.065173269569694,
             "qos": 300,
-            "migrationTime": 124.47930596300668,
+            "migrationTime": 124.33956217226236,
+            "priority": 1,
+            "ram": 512
+        },
+        "116": {
+            "violated": false,
+            "downtime": 22.143435999761145,
+            "qos": 300,
+            "migrationTime": 126.87391980589351,
             "priority": 1,
             "ram": 512
         },
         "117": {
             "violated": false,
-            "downtime": 21.62615452473991,
+            "downtime": 22.388660556536255,
             "qos": 300,
-            "migrationTime": 120.19397838039131,
+            "migrationTime": 134.23425333047868,
             "priority": 1,
             "ram": 512
         },
         "90": {
             "violated": false,
-            "downtime": 19.773848059529108,
+            "downtime": 19.41185646334482,
             "qos": 300,
-            "migrationTime": 127.64591044660929,
+            "migrationTime": 122.67863165838853,
             "priority": 1,
             "ram": 512
         },
         "118": {
             "violated": false,
-            "downtime": 22.95526232392594,
+            "downtime": 19.98580712743625,
             "qos": 300,
-            "migrationTime": 128.01319883207717,
+            "migrationTime": 121.42265553235147,
             "priority": 1,
             "ram": 512
         },
         "91": {
             "violated": false,
-            "downtime": 19.634969539720856,
+            "downtime": 20.289400457478507,
             "qos": 300,
-            "migrationTime": 124.30449082922534,
+            "migrationTime": 125.01518629358232,
             "priority": 1,
             "ram": 512
         },
-        "119": {
+        "92": {
             "violated": false,
-            "downtime": 22.19353934476321,
+            "downtime": 22.613248127375172,
             "qos": 300,
-            "migrationTime": 122.2342426655693,
+            "migrationTime": 121.34752746088986,
             "priority": 1,
             "ram": 512
         },
         "93": {
             "violated": false,
-            "downtime": 22.018282243600524,
+            "downtime": 20.564459173801144,
             "qos": 300,
-            "migrationTime": 118.6758863377127,
+            "migrationTime": 128.61249003545166,
+            "priority": 1,
+            "ram": 512
+        },
+        "94": {
+            "violated": false,
+            "downtime": 21.004550963503434,
+            "qos": 300,
+            "migrationTime": 126.83996573710972,
             "priority": 1,
             "ram": 512
         },
         "95": {
             "violated": false,
-            "downtime": 20.30230289599272,
+            "downtime": 21.687315411234202,
             "qos": 300,
-            "migrationTime": 117.22783592369527,
+            "migrationTime": 122.65124538871183,
             "priority": 1,
             "ram": 512
         },
         "96": {
             "violated": false,
-            "downtime": 21.671351273879033,
+            "downtime": 26.091327594342378,
             "qos": 300,
-            "migrationTime": 129.628058422818,
+            "migrationTime": 127.42961976956327,
             "priority": 1,
             "ram": 512
         },
         "97": {
             "violated": false,
-            "downtime": 20.222980559798852,
+            "downtime": 18.75770100298134,
             "qos": 300,
-            "migrationTime": 126.7456103139953,
-            "priority": 1,
-            "ram": 512
-        },
-        "98": {
-            "violated": false,
-            "downtime": 23.29077629031217,
-            "qos": 300,
-            "migrationTime": 128.30792558153283,
+            "migrationTime": 126.44780151798696,
             "priority": 1,
             "ram": 512
         },
         "10": {
             "violated": false,
-            "downtime": 26.280103709229508,
+            "downtime": 22.78034111045344,
             "qos": 300,
-            "migrationTime": 131.53225328694822,
+            "migrationTime": 119.66731914742573,
             "priority": 1,
             "ram": 512
         },
         "99": {
             "violated": false,
-            "downtime": 19.443561045201477,
+            "downtime": 19.571061315965768,
             "qos": 300,
-            "migrationTime": 124.92641218396321,
+            "migrationTime": 128.7668939197419,
             "priority": 1,
             "ram": 512
         },
         "12": {
             "violated": false,
-            "downtime": 18.696439508363078,
+            "downtime": 22.49978969251209,
             "qos": 300,
-            "migrationTime": 126.42912648493771,
+            "migrationTime": 135.65702091283876,
             "priority": 1,
             "ram": 512
         },
         "13": {
             "violated": false,
-            "downtime": 22.72694564809057,
+            "downtime": 21.99175728698677,
             "qos": 300,
-            "migrationTime": 129.1335082151816,
+            "migrationTime": 127.17642982201566,
             "priority": 1,
             "ram": 512
         },
         "14": {
             "violated": false,
-            "downtime": 21.02719408521859,
+            "downtime": 20.94991130917449,
             "qos": 300,
-            "migrationTime": 129.32070058141403,
+            "migrationTime": 126.81300047389792,
             "priority": 1,
             "ram": 512
         },
         "15": {
             "violated": false,
-            "downtime": 17.824690741427638,
+            "downtime": 20.534605998164867,
             "qos": 300,
-            "migrationTime": 125.05436580773949,
-            "priority": 1,
-            "ram": 512
-        },
-        "16": {
-            "violated": false,
-            "downtime": 21.784104736448626,
-            "qos": 300,
-            "migrationTime": 129.22304624358816,
-            "priority": 1,
-            "ram": 512
-        },
-        "17": {
-            "violated": false,
-            "downtime": 22.33760456632636,
-            "qos": 300,
-            "migrationTime": 130.37956503551558,
+            "migrationTime": 122.64523035933495,
             "priority": 1,
             "ram": 512
         },
         "18": {
             "violated": false,
-            "downtime": 20.81807817239554,
+            "downtime": 24.000884781037815,
             "qos": 300,
-            "migrationTime": 131.65704949697937,
+            "migrationTime": 126.55992217900699,
             "priority": 1,
             "ram": 512
         },
         "19": {
             "violated": false,
-            "downtime": 20.272525424831876,
+            "downtime": 23.020026049951117,
             "qos": 300,
-            "migrationTime": 124.60722721756377,
+            "migrationTime": 116.21808520030174,
             "priority": 1,
             "ram": 512
         },
         "120": {
             "violated": false,
-            "downtime": 21.815873695959542,
+            "downtime": 20.711350518213507,
             "qos": 300,
-            "migrationTime": 130.5360303097648,
-            "priority": 1,
-            "ram": 512
-        },
-        "121": {
-            "violated": false,
-            "downtime": 21.561666337964212,
-            "qos": 300,
-            "migrationTime": 129.97030020822035,
+            "migrationTime": 122.73884879801354,
             "priority": 1,
             "ram": 512
         },
         "0": {
             "violated": false,
-            "downtime": 23.488502855372655,
+            "downtime": 20.675859268740613,
             "qos": 300,
-            "migrationTime": 128.98222665148631,
+            "migrationTime": 124.50424349060899,
+            "priority": 1,
+            "ram": 512
+        },
+        "121": {
+            "violated": false,
+            "downtime": 24.634222921909984,
+            "qos": 300,
+            "migrationTime": 130.76952640426455,
             "priority": 1,
             "ram": 512
         },
         "1": {
             "violated": false,
-            "downtime": 20.593865795138132,
+            "downtime": 20.670268038130597,
             "qos": 300,
-            "migrationTime": 127.36339478921543,
+            "migrationTime": 126.46919778214748,
             "priority": 1,
             "ram": 512
         },
         "122": {
             "violated": false,
-            "downtime": 19.71507707154269,
+            "downtime": 22.822288719929304,
             "qos": 300,
-            "migrationTime": 117.45724593580898,
+            "migrationTime": 124.17727571379301,
             "priority": 1,
             "ram": 512
         },
         "2": {
             "violated": false,
-            "downtime": 22.083063744389108,
+            "downtime": 22.512368189312618,
             "qos": 300,
-            "migrationTime": 129.2979311232878,
+            "migrationTime": 129.84155366401072,
             "priority": 1,
             "ram": 512
         },
         "123": {
             "violated": false,
-            "downtime": 20.43135788574994,
+            "downtime": 23.814935242465364,
             "qos": 300,
-            "migrationTime": 126.95779954663985,
+            "migrationTime": 129.30360024263578,
+            "priority": 1,
+            "ram": 512
+        },
+        "3": {
+            "violated": false,
+            "downtime": 19.426771489105942,
+            "qos": 300,
+            "migrationTime": 125.29583842343627,
             "priority": 1,
             "ram": 512
         },
         "124": {
             "violated": false,
-            "downtime": 23.40621867397667,
+            "downtime": 20.642488743219978,
             "qos": 300,
-            "migrationTime": 124.85831158380009,
-            "priority": 1,
-            "ram": 512
-        },
-        "4": {
-            "violated": false,
-            "downtime": 21.496316621886457,
-            "qos": 300,
-            "migrationTime": 125.5926174048981,
+            "migrationTime": 124.10456498104193,
             "priority": 1,
             "ram": 512
         },
         "125": {
             "violated": false,
-            "downtime": 17.583389627916773,
+            "downtime": 21.77308027164962,
             "qos": 300,
-            "migrationTime": 124.11009263919844,
+            "migrationTime": 126.95191834327179,
+            "priority": 1,
+            "ram": 512
+        },
+        "4": {
+            "violated": false,
+            "downtime": 21.51225015078428,
+            "qos": 300,
+            "migrationTime": 130.17694130087645,
             "priority": 1,
             "ram": 512
         },
         "5": {
             "violated": false,
-            "downtime": 24.05753529244844,
+            "downtime": 23.914363887703566,
             "qos": 300,
-            "migrationTime": 137.63827303068197,
+            "migrationTime": 135.89355047598613,
             "priority": 1,
             "ram": 512
         },
         "126": {
             "violated": false,
-            "downtime": 21.79058307560918,
+            "downtime": 19.902334240986285,
             "qos": 300,
-            "migrationTime": 131.19437734388623,
-            "priority": 1,
-            "ram": 512
-        },
-        "127": {
-            "violated": false,
-            "downtime": 21.734816203780078,
-            "qos": 300,
-            "migrationTime": 127.24538008865272,
+            "migrationTime": 133.88153082248286,
             "priority": 1,
             "ram": 512
         },
         "6": {
             "violated": false,
-            "downtime": 22.901609587021756,
+            "downtime": 20.053007296473186,
             "qos": 300,
-            "migrationTime": 127.02377629743116,
+            "migrationTime": 127.72843552353483,
             "priority": 1,
             "ram": 512
         },
         "128": {
             "violated": false,
-            "downtime": 24.137528668869518,
+            "downtime": 21.990565184670515,
             "qos": 300,
-            "migrationTime": 127.71004177703782,
+            "migrationTime": 128.80251773051177,
             "priority": 1,
             "ram": 512
         },
         "7": {
             "violated": false,
-            "downtime": 20.643123097783555,
+            "downtime": 23.594381543900877,
             "qos": 300,
-            "migrationTime": 124.22099371281696,
+            "migrationTime": 129.1476496986954,
             "priority": 1,
             "ram": 512
         },
         "8": {
             "violated": false,
-            "downtime": 18.695436147372412,
+            "downtime": 20.191016068167208,
             "qos": 300,
-            "migrationTime": 125.86335326136427,
+            "migrationTime": 121.86420747977755,
             "priority": 1,
             "ram": 512
         },
         "129": {
             "violated": false,
-            "downtime": 23.007612378631396,
+            "downtime": 23.684318132596598,
             "qos": 300,
-            "migrationTime": 125.26730592024377,
+            "migrationTime": 132.13492247458095,
+            "priority": 1,
+            "ram": 512
+        },
+        "9": {
+            "violated": false,
+            "downtime": 21.312233529576247,
+            "qos": 300,
+            "migrationTime": 127.30847836243599,
+            "priority": 1,
+            "ram": 512
+        },
+        "20": {
+            "violated": false,
+            "downtime": 23.127035730710844,
+            "qos": 300,
+            "migrationTime": 133.72675488819812,
             "priority": 1,
             "ram": 512
         },
         "21": {
             "violated": false,
-            "downtime": 20.661917595124912,
+            "downtime": 19.35135811356954,
             "qos": 300,
-            "migrationTime": 122.2376287283681,
+            "migrationTime": 128.0818194276313,
             "priority": 1,
             "ram": 512
         },
         "22": {
             "violated": false,
-            "downtime": 19.53027791211285,
+            "downtime": 19.44277974921969,
             "qos": 300,
-            "migrationTime": 120.14142036459941,
+            "migrationTime": 117.30721149107379,
             "priority": 1,
             "ram": 512
         },
         "23": {
             "violated": false,
-            "downtime": 21.98580621014157,
+            "downtime": 23.128739492567295,
             "qos": 300,
-            "migrationTime": 128.20789156636243,
+            "migrationTime": 121.64938454297511,
+            "priority": 1,
+            "ram": 512
+        },
+        "24": {
+            "violated": false,
+            "downtime": 23.497451296167547,
+            "qos": 300,
+            "migrationTime": 130.08593214870987,
             "priority": 1,
             "ram": 512
         },
         "25": {
             "violated": false,
-            "downtime": 21.483154204814195,
+            "downtime": 21.304798925890243,
             "qos": 300,
-            "migrationTime": 124.36135848743442,
+            "migrationTime": 129.52380389539724,
             "priority": 1,
             "ram": 512
         },
         "26": {
             "violated": false,
-            "downtime": 25.09602738393322,
+            "downtime": 20.766827412591166,
             "qos": 300,
-            "migrationTime": 128.64090285364676,
+            "migrationTime": 130.2899773256132,
             "priority": 1,
             "ram": 512
         },
         "27": {
             "violated": false,
-            "downtime": 22.255420070629402,
+            "downtime": 19.936152186954303,
             "qos": 300,
-            "migrationTime": 127.77306294258128,
+            "migrationTime": 127.87327882305061,
             "priority": 1,
             "ram": 512
         },
         "28": {
             "violated": false,
-            "downtime": 21.150690532705035,
+            "downtime": 22.01584291982454,
             "qos": 300,
-            "migrationTime": 126.47258153506979,
+            "migrationTime": 128.17296685892833,
+            "priority": 1,
+            "ram": 512
+        },
+        "29": {
+            "violated": false,
+            "downtime": 24.917370712253287,
+            "qos": 300,
+            "migrationTime": 130.43916963646126,
             "priority": 1,
             "ram": 512
         },
         "130": {
             "violated": false,
-            "downtime": 19.863749027734197,
+            "downtime": 22.238935562587162,
             "qos": 300,
-            "migrationTime": 125.21692863747333,
+            "migrationTime": 125.38754990395614,
             "priority": 1,
             "ram": 512
         },
         "131": {
             "violated": false,
-            "downtime": 23.99200875310795,
+            "downtime": 18.106280367097575,
             "qos": 300,
-            "migrationTime": 127.30582611639343,
+            "migrationTime": 122.49632918468058,
             "priority": 1,
             "ram": 512
         },
         "132": {
             "violated": false,
-            "downtime": 23.058239391169707,
+            "downtime": 19.59771408994591,
             "qos": 300,
-            "migrationTime": 117.68688802740682,
+            "migrationTime": 119.9025993593515,
             "priority": 1,
             "ram": 512
         },
         "133": {
             "violated": false,
-            "downtime": 23.110004510882206,
+            "downtime": 21.23049787956606,
             "qos": 300,
-            "migrationTime": 124.80520824364369,
+            "migrationTime": 122.15771356818114,
             "priority": 1,
             "ram": 512
         },
         "134": {
             "violated": false,
-            "downtime": 24.970798042059045,
+            "downtime": 18.852833410268474,
             "qos": 300,
-            "migrationTime": 127.03874818333237,
+            "migrationTime": 120.34112638720984,
             "priority": 1,
             "ram": 512
         },
         "135": {
             "violated": false,
-            "downtime": 19.31503401927784,
+            "downtime": 21.686778534279767,
             "qos": 300,
-            "migrationTime": 119.94761789557975,
+            "migrationTime": 125.76298053434063,
             "priority": 1,
             "ram": 512
         },
         "136": {
             "violated": false,
-            "downtime": 21.32744479054183,
+            "downtime": 21.39770361541443,
             "qos": 300,
-            "migrationTime": 122.4133498061232,
+            "migrationTime": 128.8586254536179,
             "priority": 1,
             "ram": 512
         },
         "137": {
             "violated": false,
-            "downtime": 19.519767293459722,
+            "downtime": 19.873142441868787,
             "qos": 300,
-            "migrationTime": 125.84265093382686,
-            "priority": 1,
-            "ram": 512
-        },
-        "138": {
-            "violated": false,
-            "downtime": 20.702888616332977,
-            "qos": 300,
-            "migrationTime": 125.30700555026831,
+            "migrationTime": 123.87107721638947,
             "priority": 1,
             "ram": 512
         },
         "139": {
             "violated": false,
-            "downtime": 19.182396396535662,
+            "downtime": 22.327977353703055,
             "qos": 300,
-            "migrationTime": 125.34360951538466,
+            "migrationTime": 130.08881647703197,
+            "priority": 1,
+            "ram": 512
+        },
+        "30": {
+            "violated": false,
+            "downtime": 21.544073085371632,
+            "qos": 300,
+            "migrationTime": 125.91042858541732,
             "priority": 1,
             "ram": 512
         },
         "31": {
             "violated": false,
-            "downtime": 20.283892237187995,
+            "downtime": 23.206822392674653,
             "qos": 300,
-            "migrationTime": 122.91297686920917,
+            "migrationTime": 128.43686259017792,
             "priority": 1,
             "ram": 512
         },
-        "33": {
+        "32": {
             "violated": false,
-            "downtime": 20.209832510419368,
+            "downtime": 19.12761863513992,
             "qos": 300,
-            "migrationTime": 131.89493356265044,
-            "priority": 1,
-            "ram": 512
-        },
-        "34": {
-            "violated": false,
-            "downtime": 18.008767508566976,
-            "qos": 300,
-            "migrationTime": 120.80479704512524,
+            "migrationTime": 124.23937066827979,
             "priority": 1,
             "ram": 512
         },
         "35": {
             "violated": false,
-            "downtime": 24.59111449426876,
+            "downtime": 20.390466568967906,
             "qos": 300,
-            "migrationTime": 125.34871484619421,
+            "migrationTime": 123.33910063400651,
             "priority": 1,
             "ram": 512
         },
         "36": {
             "violated": false,
-            "downtime": 21.123364104916064,
+            "downtime": 19.658961496166473,
             "qos": 300,
-            "migrationTime": 126.69159473749502,
-            "priority": 1,
-            "ram": 512
-        },
-        "37": {
-            "violated": false,
-            "downtime": 22.910496405443425,
-            "qos": 300,
-            "migrationTime": 126.80595825817164,
+            "migrationTime": 118.4242385709557,
             "priority": 1,
             "ram": 512
         },
         "38": {
             "violated": false,
-            "downtime": 26.565535719155115,
+            "downtime": 21.054204514842553,
             "qos": 300,
-            "migrationTime": 129.69866479939768,
+            "migrationTime": 129.2542478308607,
+            "priority": 1,
+            "ram": 512
+        },
+        "39": {
+            "violated": false,
+            "downtime": 22.17344670221224,
+            "qos": 300,
+            "migrationTime": 132.64236950360794,
             "priority": 1,
             "ram": 512
         },
         "140": {
             "violated": false,
-            "downtime": 19.596142940183544,
+            "downtime": 23.405224890074148,
             "qos": 300,
-            "migrationTime": 124.44804131445636,
+            "migrationTime": 132.29213917737712,
             "priority": 1,
             "ram": 512
         },
         "141": {
             "violated": false,
-            "downtime": 21.202185253543853,
+            "downtime": 18.7031669057996,
             "qos": 300,
-            "migrationTime": 129.36668265405004,
+            "migrationTime": 127.79169810530735,
             "priority": 1,
             "ram": 512
         },
-        "143": {
+        "142": {
             "violated": false,
-            "downtime": 20.401931071892406,
+            "downtime": 26.386187267759894,
             "qos": 300,
-            "migrationTime": 115.3420490510561,
+            "migrationTime": 128.9560948051832,
             "priority": 1,
             "ram": 512
         },
         "144": {
             "violated": false,
-            "downtime": 23.976641975041634,
+            "downtime": 19.09161357698215,
             "qos": 300,
-            "migrationTime": 123.29958760363445,
+            "migrationTime": 122.29792437850142,
+            "priority": 1,
+            "ram": 512
+        },
+        "145": {
+            "violated": false,
+            "downtime": 23.097451469690313,
+            "qos": 300,
+            "migrationTime": 135.06426353572627,
             "priority": 1,
             "ram": 512
         },
         "146": {
             "violated": false,
-            "downtime": 23.55083048212761,
+            "downtime": 20.13023442846908,
             "qos": 300,
-            "migrationTime": 128.15119319991186,
+            "migrationTime": 127.84189231831525,
             "priority": 1,
             "ram": 512
         },
         "147": {
             "violated": false,
-            "downtime": 21.83892985501165,
+            "downtime": 17.88429485849669,
             "qos": 300,
-            "migrationTime": 129.3683914261067,
+            "migrationTime": 124.24758223944669,
             "priority": 1,
             "ram": 512
         },
         "148": {
             "violated": false,
-            "downtime": 20.447298828616837,
+            "downtime": 23.290533515918412,
             "qos": 300,
-            "migrationTime": 125.19343157695047,
+            "migrationTime": 122.57435508065137,
             "priority": 1,
             "ram": 512
         },
         "149": {
             "violated": false,
-            "downtime": 21.122144834205,
+            "downtime": 23.017564764537404,
             "qos": 300,
-            "migrationTime": 125.78566383009424,
+            "migrationTime": 124.91997874911641,
+            "priority": 1,
+            "ram": 512
+        },
+        "40": {
+            "violated": false,
+            "downtime": 22.447338775246365,
+            "qos": 300,
+            "migrationTime": 125.17108611210075,
+            "priority": 1,
+            "ram": 512
+        },
+        "41": {
+            "violated": false,
+            "downtime": 18.901454383397404,
+            "qos": 300,
+            "migrationTime": 124.69512467503084,
             "priority": 1,
             "ram": 512
         },
         "42": {
             "violated": false,
-            "downtime": 20.219405785816182,
+            "downtime": 21.1048073810904,
             "qos": 300,
-            "migrationTime": 127.07352924597762,
+            "migrationTime": 128.9582457556841,
             "priority": 1,
             "ram": 512
         },
         "43": {
             "violated": false,
-            "downtime": 19.97982890948671,
+            "downtime": 23.33103363173731,
             "qos": 300,
-            "migrationTime": 120.17358192588598,
+            "migrationTime": 127.54618778883827,
             "priority": 1,
             "ram": 512
         },
         "44": {
             "violated": false,
-            "downtime": 20.674847571254425,
+            "downtime": 21.287280381848465,
             "qos": 300,
-            "migrationTime": 134.13004133163014,
+            "migrationTime": 120.08126976126992,
             "priority": 1,
             "ram": 512
         },
         "46": {
             "violated": false,
-            "downtime": 22.681264556104683,
+            "downtime": 20.46527357315681,
             "qos": 300,
-            "migrationTime": 134.32536571889455,
+            "migrationTime": 120.55364123486764,
             "priority": 1,
             "ram": 512
         },
         "47": {
             "violated": false,
-            "downtime": 21.588755304084128,
+            "downtime": 21.25942452281279,
             "qos": 300,
-            "migrationTime": 117.2766900637156,
+            "migrationTime": 128.95807770190723,
             "priority": 1,
             "ram": 512
         },
         "48": {
             "violated": false,
-            "downtime": 22.436444252186654,
+            "downtime": 21.948938670406378,
             "qos": 300,
-            "migrationTime": 127.3102772855126,
+            "migrationTime": 119.72754565041113,
             "priority": 1,
             "ram": 512
         },
         "49": {
             "violated": false,
-            "downtime": 22.853770166034185,
+            "downtime": 20.456644234106886,
             "qos": 300,
-            "migrationTime": 133.1253357046291,
+            "migrationTime": 120.41205528677519,
             "priority": 1,
             "ram": 512
         },
         "150": {
             "violated": false,
-            "downtime": 21.29134038549139,
+            "downtime": 25.133449218316454,
             "qos": 300,
-            "migrationTime": 118.83327626965742,
+            "migrationTime": 136.61296934322235,
             "priority": 1,
             "ram": 512
         },
         "151": {
             "violated": false,
-            "downtime": 24.106271772010032,
+            "downtime": 20.02933076907227,
             "qos": 300,
-            "migrationTime": 123.2462311816995,
+            "migrationTime": 125.85581784432715,
             "priority": 1,
             "ram": 512
         },
         "152": {
             "violated": false,
-            "downtime": 22.25463433002855,
+            "downtime": 25.194434039740948,
             "qos": 300,
-            "migrationTime": 126.07966600673235,
+            "migrationTime": 131.01943557959476,
             "priority": 1,
             "ram": 512
         },
         "153": {
             "violated": false,
-            "downtime": 23.203677585568666,
+            "downtime": 19.708245778185965,
             "qos": 300,
-            "migrationTime": 130.51904413032497,
+            "migrationTime": 125.84495327581723,
             "priority": 1,
             "ram": 512
         },
         "154": {
             "violated": false,
-            "downtime": 21.109326880521635,
+            "downtime": 20.290235038525136,
             "qos": 300,
-            "migrationTime": 129.29275117354183,
+            "migrationTime": 125.31625383904853,
             "priority": 1,
             "ram": 512
         },
         "155": {
             "violated": false,
-            "downtime": 21.487223136905218,
+            "downtime": 18.85993212449285,
             "qos": 300,
-            "migrationTime": 121.95379632242249,
+            "migrationTime": 122.1722054093357,
             "priority": 1,
             "ram": 512
         },
         "156": {
             "violated": false,
-            "downtime": 24.483833199544282,
+            "downtime": 19.8556858972724,
             "qos": 300,
-            "migrationTime": 138.45770361844552,
+            "migrationTime": 130.81982028446626,
             "priority": 1,
             "ram": 512
         },
         "157": {
             "violated": false,
-            "downtime": 21.866230161432014,
+            "downtime": 20.629560875303245,
             "qos": 300,
-            "migrationTime": 122.81514367820334,
+            "migrationTime": 128.5514029011283,
             "priority": 1,
             "ram": 512
         },
         "158": {
             "violated": false,
-            "downtime": 22.071209714605594,
+            "downtime": 20.245452942696165,
             "qos": 300,
-            "migrationTime": 121.98112624863248,
-            "priority": 1,
-            "ram": 512
-        },
-        "159": {
-            "violated": false,
-            "downtime": 21.610404818574604,
-            "qos": 300,
-            "migrationTime": 138.81161778842286,
-            "priority": 1,
-            "ram": 512
-        },
-        "50": {
-            "violated": false,
-            "downtime": 18.769435104243264,
-            "qos": 300,
-            "migrationTime": 120.80778158224419,
-            "priority": 1,
-            "ram": 512
-        },
-        "51": {
-            "violated": false,
-            "downtime": 22.76470403184787,
-            "qos": 300,
-            "migrationTime": 136.37573671891553,
+            "migrationTime": 126.09548591015475,
             "priority": 1,
             "ram": 512
         },
         "52": {
             "violated": false,
-            "downtime": 20.146083422191527,
+            "downtime": 20.29520524294506,
             "qos": 300,
-            "migrationTime": 121.7991812028806,
+            "migrationTime": 123.41378707363586,
             "priority": 1,
             "ram": 512
         },
         "53": {
             "violated": false,
-            "downtime": 22.26789277709785,
+            "downtime": 20.95071017794366,
             "qos": 300,
-            "migrationTime": 124.25545634755639,
+            "migrationTime": 123.02678307890623,
             "priority": 1,
             "ram": 512
         },
         "54": {
             "violated": false,
-            "downtime": 22.773251841805507,
+            "downtime": 19.499129407368294,
             "qos": 300,
-            "migrationTime": 123.6321919806526,
+            "migrationTime": 127.30846175308565,
             "priority": 1,
             "ram": 512
         },
         "55": {
             "violated": false,
-            "downtime": 29.044636735240868,
+            "downtime": 20.476354524077838,
             "qos": 300,
-            "migrationTime": 133.06609652958443,
+            "migrationTime": 127.88853299112166,
             "priority": 1,
             "ram": 512
         },
         "56": {
             "violated": false,
-            "downtime": 21.340518224462613,
+            "downtime": 20.09381681008222,
             "qos": 300,
-            "migrationTime": 122.99205811765302,
-            "priority": 1,
-            "ram": 512
-        },
-        "57": {
-            "violated": false,
-            "downtime": 22.790464260084565,
-            "qos": 300,
-            "migrationTime": 135.41477988654407,
+            "migrationTime": 128.2157639848308,
             "priority": 1,
             "ram": 512
         },
         "58": {
             "violated": false,
-            "downtime": 18.99071947209825,
+            "downtime": 18.816391572125383,
             "qos": 300,
-            "migrationTime": 118.31090343119213,
+            "migrationTime": 120.44888551814189,
             "priority": 1,
             "ram": 512
         },
         "59": {
             "violated": false,
-            "downtime": 23.242771512374393,
+            "downtime": 22.871064512031886,
             "qos": 300,
-            "migrationTime": 130.7961328575846,
+            "migrationTime": 131.4438824711866,
             "priority": 1,
             "ram": 512
         },
-        "160": {
+        "161": {
             "violated": false,
-            "downtime": 21.166569302332295,
+            "downtime": 22.768080355887644,
             "qos": 300,
-            "migrationTime": 135.4360790751248,
+            "migrationTime": 126.75865202189325,
             "priority": 1,
             "ram": 512
         },
         "162": {
             "violated": false,
-            "downtime": 22.901561849209653,
+            "downtime": 19.150783472115098,
             "qos": 300,
-            "migrationTime": 130.59165051709766,
+            "migrationTime": 129.09498521778968,
             "priority": 1,
             "ram": 512
         },
         "163": {
             "violated": false,
-            "downtime": 21.782240531171453,
+            "downtime": 22.568985385932066,
             "qos": 300,
-            "migrationTime": 122.79537001180357,
+            "migrationTime": 124.7103121103596,
             "priority": 1,
             "ram": 512
         },
         "164": {
             "violated": false,
-            "downtime": 23.73973159988835,
+            "downtime": 21.873212493110884,
             "qos": 300,
-            "migrationTime": 131.7052075040143,
+            "migrationTime": 122.18536397698061,
             "priority": 1,
             "ram": 512
         },
         "165": {
             "violated": false,
-            "downtime": 19.542179353508367,
+            "downtime": 18.942266020803473,
             "qos": 300,
-            "migrationTime": 119.82641202895869,
-            "priority": 1,
-            "ram": 512
-        },
-        "166": {
-            "violated": false,
-            "downtime": 18.862006591806768,
-            "qos": 300,
-            "migrationTime": 123.86374547602429,
+            "migrationTime": 126.27376136732693,
             "priority": 1,
             "ram": 512
         },
         "167": {
             "violated": false,
-            "downtime": 19.57512708446898,
+            "downtime": 27.03235215918153,
             "qos": 300,
-            "migrationTime": 121.70782412233478,
+            "migrationTime": 127.69204327931187,
             "priority": 1,
             "ram": 512
         },
         "168": {
             "violated": false,
-            "downtime": 24.543689131104554,
+            "downtime": 27.84420721188104,
             "qos": 300,
-            "migrationTime": 133.56615592797237,
-            "priority": 1,
-            "ram": 512
-        },
-        "169": {
-            "violated": false,
-            "downtime": 21.26607719005159,
-            "qos": 300,
-            "migrationTime": 125.33016984771514,
+            "migrationTime": 128.63099563989437,
             "priority": 1,
             "ram": 512
         },
         "60": {
             "violated": false,
-            "downtime": 19.67266759279046,
+            "downtime": 25.84274195409679,
             "qos": 300,
-            "migrationTime": 120.40299930599707,
-            "priority": 1,
-            "ram": 512
-        },
-        "61": {
-            "violated": false,
-            "downtime": 21.848966685757016,
-            "qos": 300,
-            "migrationTime": 115.48201746280897,
+            "migrationTime": 132.00243569392174,
             "priority": 1,
             "ram": 512
         },
         "62": {
             "violated": false,
-            "downtime": 17.700893515692083,
+            "downtime": 23.257872212869383,
             "qos": 300,
-            "migrationTime": 120.1488921211829,
+            "migrationTime": 123.17606674113148,
             "priority": 1,
             "ram": 512
         },
         "63": {
             "violated": false,
-            "downtime": 21.659085443082922,
+            "downtime": 22.92240306246939,
             "qos": 300,
-            "migrationTime": 129.40314809246883,
-            "priority": 1,
-            "ram": 512
-        },
-        "64": {
-            "violated": false,
-            "downtime": 23.489819032879094,
-            "qos": 300,
-            "migrationTime": 128.1725126465886,
+            "migrationTime": 122.65868665269491,
             "priority": 1,
             "ram": 512
         },
         "65": {
             "violated": false,
-            "downtime": 24.43452248709929,
+            "downtime": 20.877461582049005,
             "qos": 300,
-            "migrationTime": 126.92704108170705,
+            "migrationTime": 131.24461256266613,
             "priority": 1,
             "ram": 512
         },
         "66": {
             "violated": false,
-            "downtime": 21.56611254862683,
+            "downtime": 19.147148745416953,
             "qos": 300,
-            "migrationTime": 123.3222503160306,
+            "migrationTime": 127.44446164946852,
             "priority": 1,
             "ram": 512
         },
         "67": {
             "violated": false,
-            "downtime": 20.214538267914406,
+            "downtime": 19.498558659941768,
             "qos": 300,
-            "migrationTime": 121.86004671696726,
+            "migrationTime": 115.82735642283762,
             "priority": 1,
             "ram": 512
         },
-        "68": {
+        "69": {
             "violated": false,
-            "downtime": 21.770965025380058,
+            "downtime": 19.440116661464046,
             "qos": 300,
-            "migrationTime": 129.5011152578252,
+            "migrationTime": 119.93265591197869,
+            "priority": 1,
+            "ram": 512
+        },
+        "170": {
+            "violated": false,
+            "downtime": 24.572784482076013,
+            "qos": 300,
+            "migrationTime": 126.65026784538004,
             "priority": 1,
             "ram": 512
         },
         "171": {
             "violated": false,
-            "downtime": 21.04656537323617,
+            "downtime": 21.791705403961167,
             "qos": 300,
-            "migrationTime": 127.78925486385418,
+            "migrationTime": 131.394394499488,
             "priority": 1,
             "ram": 512
         },
-        "172": {
+        "174": {
             "violated": false,
-            "downtime": 24.848291019005753,
+            "downtime": 21.89369006093216,
             "qos": 300,
-            "migrationTime": 126.78227931206622,
-            "priority": 1,
-            "ram": 512
-        },
-        "173": {
-            "violated": false,
-            "downtime": 21.272344850360014,
-            "qos": 300,
-            "migrationTime": 122.32309097313819,
+            "migrationTime": 132.38570873051935,
             "priority": 1,
             "ram": 512
         },
         "175": {
             "violated": false,
-            "downtime": 21.56055437167639,
+            "downtime": 19.615673422849653,
             "qos": 300,
-            "migrationTime": 136.2989663153226,
+            "migrationTime": 118.4430523179586,
             "priority": 1,
             "ram": 512
         },
-        "177": {
+        "176": {
             "violated": false,
-            "downtime": 24.154687086174807,
+            "downtime": 23.510155266145194,
             "qos": 300,
-            "migrationTime": 126.15302106580887,
+            "migrationTime": 134.44664384311048,
             "priority": 1,
             "ram": 512
         },
         "178": {
             "violated": false,
-            "downtime": 21.065359659327363,
+            "downtime": 19.546309639955503,
             "qos": 300,
-            "migrationTime": 124.0494082173403,
+            "migrationTime": 125.90259223297207,
             "priority": 1,
             "ram": 512
         },
         "179": {
             "violated": false,
-            "downtime": 21.81797519404799,
+            "downtime": 20.830624623809918,
             "qos": 300,
-            "migrationTime": 120.62536774676349,
+            "migrationTime": 116.36520815218171,
             "priority": 1,
             "ram": 512
         },
         "70": {
             "violated": false,
-            "downtime": 19.312729534841242,
+            "downtime": 23.165722482389995,
             "qos": 300,
-            "migrationTime": 122.18247203560288,
+            "migrationTime": 134.90727881752804,
             "priority": 1,
             "ram": 512
         },
         "71": {
             "violated": false,
-            "downtime": 21.831192719324154,
+            "downtime": 20.033862859006895,
             "qos": 300,
-            "migrationTime": 120.12863190208007,
+            "migrationTime": 133.42506770414943,
             "priority": 1,
             "ram": 512
         },
         "72": {
             "violated": false,
-            "downtime": 20.648976223034424,
+            "downtime": 23.003348808932454,
             "qos": 300,
-            "migrationTime": 121.98519029646275,
+            "migrationTime": 135.2310996782791,
             "priority": 1,
             "ram": 512
         },
         "73": {
             "violated": false,
-            "downtime": 22.19997159448508,
+            "downtime": 19.601731664698452,
             "qos": 300,
-            "migrationTime": 127.01078375041989,
+            "migrationTime": 128.29822035207914,
             "priority": 1,
             "ram": 512
         },
         "74": {
             "violated": false,
-            "downtime": 21.48486228120611,
+            "downtime": 22.22431515203235,
             "qos": 300,
-            "migrationTime": 125.96969313543168,
+            "migrationTime": 129.18402160291257,
+            "priority": 1,
+            "ram": 512
+        },
+        "75": {
+            "violated": false,
+            "downtime": 20.579248626986047,
+            "qos": 300,
+            "migrationTime": 126.8775867325242,
             "priority": 1,
             "ram": 512
         },
         "76": {
             "violated": false,
-            "downtime": 20.9286891386124,
+            "downtime": 22.630290274809553,
             "qos": 300,
-            "migrationTime": 123.68699351485976,
-            "priority": 1,
-            "ram": 512
-        },
-        "77": {
-            "violated": false,
-            "downtime": 22.31914282189476,
-            "qos": 300,
-            "migrationTime": 125.18965249779103,
+            "migrationTime": 123.25944727971262,
             "priority": 1,
             "ram": 512
         },
         "78": {
             "violated": false,
-            "downtime": 20.06426667338524,
+            "downtime": 21.72713881003044,
             "qos": 300,
-            "migrationTime": 130.85885087594718,
+            "migrationTime": 131.22755913822908,
             "priority": 1,
             "ram": 512
         },
-        "180": {
+        "79": {
             "violated": false,
-            "downtime": 23.52241089311661,
+            "downtime": 24.44520235101993,
             "qos": 300,
-            "migrationTime": 124.81006480601947,
+            "migrationTime": 131.3268236892182,
             "priority": 1,
             "ram": 512
         },
         "181": {
             "violated": false,
-            "downtime": 20.520063650018095,
+            "downtime": 21.89932135249666,
             "qos": 300,
-            "migrationTime": 131.82615468548397,
+            "migrationTime": 125.8654795000889,
             "priority": 1,
             "ram": 512
         },
         "182": {
             "violated": false,
-            "downtime": 22.769362357255716,
+            "downtime": 20.53941501296924,
             "qos": 300,
-            "migrationTime": 126.02743607813665,
+            "migrationTime": 122.2150085625981,
             "priority": 1,
             "ram": 512
         },
         "183": {
             "violated": false,
-            "downtime": 20.8515304883234,
+            "downtime": 19.810882798778113,
             "qos": 300,
-            "migrationTime": 131.71999039531462,
+            "migrationTime": 118.38552073431359,
             "priority": 1,
             "ram": 512
         },
         "184": {
             "violated": false,
-            "downtime": 20.123098439921797,
+            "downtime": 24.509351736411865,
             "qos": 300,
-            "migrationTime": 125.62524879667586,
+            "migrationTime": 128.35139597768642,
             "priority": 1,
             "ram": 512
         },
         "185": {
             "violated": false,
-            "downtime": 25.39670437300692,
+            "downtime": 22.650382722540634,
             "qos": 300,
-            "migrationTime": 135.86105070923426,
+            "migrationTime": 127.08330444749225,
             "priority": 1,
             "ram": 512
         },
         "186": {
             "violated": false,
-            "downtime": 20.723124276551047,
+            "downtime": 20.729307883938638,
             "qos": 300,
-            "migrationTime": 118.31837424067265,
+            "migrationTime": 124.35984805444471,
             "priority": 1,
             "ram": 512
         },
         "187": {
             "violated": false,
-            "downtime": 21.760112135669736,
+            "downtime": 22.182742365164888,
             "qos": 300,
-            "migrationTime": 126.74009013072654,
+            "migrationTime": 132.4855169927179,
+            "priority": 1,
+            "ram": 512
+        },
+        "188": {
+            "violated": false,
+            "downtime": 21.937732725874355,
+            "qos": 300,
+            "migrationTime": 123.4376261965252,
             "priority": 1,
             "ram": 512
         },
         "100": {
             "violated": false,
-            "downtime": 22.34542852142311,
+            "downtime": 21.730608292217077,
             "qos": 300,
-            "migrationTime": 122.40756529979052,
+            "migrationTime": 129.16487929573202,
             "priority": 1,
             "ram": 512
         },
         "101": {
             "violated": false,
-            "downtime": 21.429467472277903,
+            "downtime": 26.55181303714885,
             "qos": 300,
-            "migrationTime": 126.679610047999,
-            "priority": 1,
-            "ram": 512
-        },
-        "189": {
-            "violated": false,
-            "downtime": 21.75261507738111,
-            "qos": 300,
-            "migrationTime": 129.66537714215517,
+            "migrationTime": 127.5261064550223,
             "priority": 1,
             "ram": 512
         },
         "102": {
             "violated": false,
-            "downtime": 25.237736987574383,
+            "downtime": 22.94325283109586,
             "qos": 300,
-            "migrationTime": 135.16087722712524,
+            "migrationTime": 125.83809923203185,
             "priority": 1,
             "ram": 512
         },
         "103": {
             "violated": false,
-            "downtime": 18.22345558917141,
+            "downtime": 22.031461155709188,
             "qos": 300,
-            "migrationTime": 124.53338511755018,
+            "migrationTime": 130.09231486506525,
             "priority": 1,
             "ram": 512
         },
         "104": {
             "violated": false,
-            "downtime": 21.06184603357168,
+            "downtime": 20.72611211823498,
             "qos": 300,
-            "migrationTime": 121.83559958780525,
+            "migrationTime": 125.17568903134497,
             "priority": 1,
             "ram": 512
         },
         "105": {
             "violated": false,
-            "downtime": 23.30865523771715,
+            "downtime": 20.914562108750037,
             "qos": 300,
-            "migrationTime": 131.00035224342605,
+            "migrationTime": 121.09780499737413,
             "priority": 1,
             "ram": 512
         },
         "106": {
             "violated": false,
-            "downtime": 21.47907227993204,
+            "downtime": 20.889905579479638,
             "qos": 300,
-            "migrationTime": 128.9773009011853,
+            "migrationTime": 121.93593756546119,
             "priority": 1,
             "ram": 512
         },
         "107": {
             "violated": false,
-            "downtime": 24.54552310872687,
+            "downtime": 20.06757702773688,
             "qos": 300,
-            "migrationTime": 125.96610788100834,
+            "migrationTime": 121.50245593042283,
             "priority": 1,
             "ram": 512
         },
         "80": {
             "violated": false,
-            "downtime": 19.287515720978636,
+            "downtime": 20.369403109434455,
             "qos": 300,
-            "migrationTime": 125.7986324208025,
+            "migrationTime": 123.92934934730367,
             "priority": 1,
             "ram": 512
         },
         "108": {
             "violated": false,
-            "downtime": 19.79821623660526,
+            "downtime": 23.504889919672536,
             "qos": 300,
-            "migrationTime": 120.60657296772405,
+            "migrationTime": 127.34619011102723,
             "priority": 1,
             "ram": 512
         },
-        "82": {
+        "81": {
             "violated": false,
-            "downtime": 21.788270227580586,
+            "downtime": 21.5972507852437,
             "qos": 300,
-            "migrationTime": 128.45451393207594,
+            "migrationTime": 128.39662397364413,
+            "priority": 1,
+            "ram": 512
+        },
+        "109": {
+            "violated": false,
+            "downtime": 20.724111550458844,
+            "qos": 300,
+            "migrationTime": 135.80110010458515,
             "priority": 1,
             "ram": 512
         },
         "83": {
             "violated": false,
-            "downtime": 20.316219508924092,
+            "downtime": 22.30664576556863,
             "qos": 300,
-            "migrationTime": 122.27452579038476,
+            "migrationTime": 132.5982732175725,
             "priority": 1,
             "ram": 512
         },
         "84": {
             "violated": false,
-            "downtime": 21.55752435129632,
+            "downtime": 17.794329684546213,
             "qos": 300,
-            "migrationTime": 123.22287632047276,
+            "migrationTime": 121.45666100858986,
             "priority": 1,
             "ram": 512
         },
         "85": {
             "violated": false,
-            "downtime": 21.617693311279123,
+            "downtime": 20.950076469398304,
             "qos": 300,
-            "migrationTime": 129.00917570941056,
+            "migrationTime": 121.15405443694519,
             "priority": 1,
             "ram": 512
         },
         "86": {
             "violated": false,
-            "downtime": 21.724171691917363,
+            "downtime": 22.795421291329202,
             "qos": 300,
-            "migrationTime": 125.26917067378724,
+            "migrationTime": 122.78414626109914,
             "priority": 1,
             "ram": 512
         },
         "87": {
             "violated": false,
-            "downtime": 22.66640397990005,
+            "downtime": 19.285472055954493,
             "qos": 300,
-            "migrationTime": 130.60153086832807,
+            "migrationTime": 130.47225181176177,
             "priority": 1,
             "ram": 512
         }

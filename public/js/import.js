@@ -1,5 +1,6 @@
 $(function() {
 	var mesgalert = $('.alert');
+	
 	$("#fileuploader").uploadFile({
 	dragDrop:true,
 	
