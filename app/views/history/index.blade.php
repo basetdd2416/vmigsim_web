@@ -6,7 +6,7 @@
 
 }
 </style>
-<h1>History simulation</h1>
+<h1>Simulation history</h1>
 <hr>
 <div class="alert alert--sim" role="alert" style="display:none;">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -17,7 +17,7 @@
 		<div class="panel-heading">
 			<h4 class="panel-title">
 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-				History of simulation running
+				History of running simulation
 			</a>
 			</h4>
 		</div>
@@ -32,7 +32,7 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>Sim name</th>
+								<th>Simulation name</th>
 								<th>Details</th>
 								<th>Started</th>
 								<th>Finished</th>

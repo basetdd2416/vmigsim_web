@@ -8,7 +8,7 @@
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>Sim name</th>
+								<th>Simulation name</th>
 								<th>Details</th>
 								<th>Started</th>
 								<th>Finished</th>

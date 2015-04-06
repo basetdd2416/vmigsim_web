@@ -50,7 +50,7 @@
 			</header>
 			
 			<div class="jumbotron text-center">
-				<h1>Executive Summary: Enabling continued operation of IT services 
+				<h2>Enabling continued operation of IT services 
 and infrastructures during floods and other disasters
 </h1>
 			</div>

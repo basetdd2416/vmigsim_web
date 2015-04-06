@@ -1,4 +1,4 @@
- <title>Look! I'm CRUDding</title>
+ <title>VmigSim</title>
 
 {{ HTML::style('css/bootstrap.css') }}
 {{ HTML::style('css/jasny-bootstrap.css') }}

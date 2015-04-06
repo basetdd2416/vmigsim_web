@@ -325,7 +325,7 @@ $(document).on('click','tr td .details',function(e){
     var config = null;
     var envi = null;
     var vmobj = {};
-   
+    var netCapDetail = [];
     var $textAndPic = $('<div></div>');
     $textAndPic.append('<img id="beatles" src="../images/map-area.jpg" usemap="#beatles-map"/>');
     var $capStype = $('<div class="center-block" style="width:390px; height: 200px; font-size: 12px; "></div>');
@@ -357,7 +357,9 @@ $(document).on('click','tr td .details',function(e){
             config = data.config;
             envi = data.envi;
             vmobj = processVM(data.vms);
+            netCapDetail = processNetwork(data.envi);
             console.log(vmobj);
+            console.log(netCapDetail);
               BootstrapDialog.show({
                 title: sim.sim_name,
                 cssClass: 'login-dialog',
@@ -377,39 +379,35 @@ $(document).on('click','tr td .details',function(e){
         
         },
         complete: function() {
-          
+
+          var captions = {
+              src: ["Source datacenter",
+                  "<b>Total VMs:</b> "+ vmobj.total,
+                  "<b>Priority 1:</b> " + vmobj.p1,
+                  "<b>Priority 2:</b> " + vmobj.p2,
+                  "<b>Priority 3:</b> " + vmobj.p3,
+                  "<b>Priority 4:</b> " + vmobj.p4
+                   ],
+              dest: ["Destination datacenter results type",
+                  "Log file","Network bandwidth trace interval","Completely migrated VM by priority", "VM migration time", "VM downtime", "QoS violated VM"],
+              envi: ["Environment",
+                  "<b>Scheduling:</b> "    + envi.schedule_type , 
+                  "<b>Migration:</b> "         + envi.migration_type ,
+                  "<b>Control algorithm:</b> " + envi.control_type ,
+                  "<b>Time limit:</b> " + (envi.time_limit / 60 ) + ' '+ '<b>Minutes</b>'
+
+                  ],
+              network: []
+     
+        }
+
+        captions.network = processNetwork(envi);
          
           
           
           var inArea,
     map = $textAndPic.find('#beatles'),
-    captions = {
-        src: ["Source datacenter",
-            "<b>Total VMs:</b> "+ vmobj.total,
-            "<b>Priority 1:</b> " + vmobj.p1,
-            "<b>Priority 2:</b> " + vmobj.p2,
-            "<b>Priority 3:</b> " + vmobj.p3
-             ],
-        dest: ["Comming soon.",
-            "Comming soon."],
-        envi: ["Environment",
-            "<b>Scheduling:</b> "    + envi.schedule_type , 
-            "<b>Migration:</b> "         + envi.migration_type ,
-            "<b>Control alogorithm:</b> " + envi.control_type ,
-            "<b>Time limit:</b> " + (envi.time_limit / 60 ) + ' '+ '<b>Minutes</b>'
-
-            ],
-        network: ["Network",
-            "<b>Type:</b> "    + envi.network_type , 
-            "<b>Bandwidth:</b> "         + envi.bandwidth      +' '+ '<b>Mbps</b>' ,
-            "<b>Mean:</b> " + envi.network_mean + ' '+ '<b>%</b>',
-            "<b>Standard derivation:</b> " + envi.network_sd + ' '+ '<b>%</b>'
-
-           
-
-            ]
-     
-    },
+    
     single_opts = {
         fillColor: '000000',
         fillOpacity: 0,
@@ -595,21 +593,39 @@ function updateClock ( )
 
   function processVM (data) {
     var vms = data;
-    var vmobj = {};
-    vmobj.total = 0;
-    vmobj.p1 = 0;
-    vmobj.p2 = 0;
-    vmobj.p3 = 0;
-
+    var vmo = {};
+    vmo.total = 0;
+    vmo.p1 = 0;
+    vmo.p2 = 0;
+    vmo.p3 = 0;
+    vmo.p4 = 0;
           for (var i = 0 ; i< vms.length ; i++ ) {
-            vmobj.total += vms[i].amount;
+            
             if (vms[i].priority == 1) {
-              vmobj.p1 += vms[i].amount
+              vmo.p1 = parseInt(vmo.p1 + vms[i].amount);
             } else if (vms[i].priority == 2) {
-              vmobj.p2 += vms[i].amount;
+              vmo.p2 = parseInt(vmo.p2 + vms[i].amount);
+            } else if(vms[i].priority == 3) {
+              vmo.p3 = parseInt(vmo.p3 + vms[i].amount);
             } else {
-              vmobj.p3 += vms[i].amount;
+              vmo.p4 = parseInt(vmo.p4 + vms[i].amount);
             }
           }
-    return vmobj;
+          vmo.total = vmo.p1+vmo.p2+vmo.p3+vmo.p4;
+    return vmo;
+  }
+
+  function processNetwork (data) {
+    var envi = data;
+    var nettmp = [];
+    nettmp[0] = "Network"
+    nettmp[1] = "<b>Type:</b> "    + envi.network_type;
+    nettmp[2] = "<b>Bandwidth:</b> "         + envi.bandwidth      +' '+ '<b>Mbp per seconds</b>';
+    nettmp[3] = "<b>Mean:</b> " + envi.network_mean + ' '+ '<b>%</b>';
+            
+   if (data.network_type=='dynamic') {
+    nettmp[4]  = "<b>Standard deviation:</b> " + envi.network_sd + ' '+ '<b>%</b>'
+   }
+
+    return nettmp;
   }

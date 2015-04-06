@@ -5,7 +5,7 @@ $(function() {
     console.log(jQuery.fn.jquery);
 }
 	$('#sidebar .nav > li:first').addClass('active'); 
-	//$('#simbar').attr('class','active'); 
+	$('#simbar').addClass('active'); 
 	defineSpinner();
 	
 	var mesgalert = $('.alert-danger');
