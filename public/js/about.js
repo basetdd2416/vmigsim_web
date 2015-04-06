@@ -14,5 +14,5 @@ $(function() {
     var target = $(e.target).attr("href") // activated tab
 
     
-});
+    });
 });

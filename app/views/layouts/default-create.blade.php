@@ -23,7 +23,7 @@
 		<!-- main content -->
 		<div id="content" class="col-md-9">
 			@yield('head-title')
-			@yield('upload')
+			@yield('content')
 			@include('includes.createconfig')
 			
 		</div>

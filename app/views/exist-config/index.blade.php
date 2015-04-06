@@ -1,4 +1,5 @@
 @extends('layouts.default-create')
+
 @section('head-title')
 <style type="text/css">
 .panel-heading .accordion-toggle:after {
@@ -17,8 +18,34 @@ min-width: 200px; //the minimum width
 max-width: 300px;
 }
 </style>
-<h1>Create from existing configuration</h1>
-@stop	
+	<h1>Create from existing configuration</h1>
+	@stop
+	
+	@section('content')
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseConfigList">Select configuration name</a>
+			</h3>
+		</div>
+		<div id="collapseConfigList" class="panel-collapse collapse in">
+			<div class="panel-body">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-4 control-label">Configuration name</label>
+					<div class="col-sm-6">
+						<select required="required" name="cf-ajx" id="cf-ajx" class="form-control" >
+							<option value="" selected disabled>Please select</option>
+							
+							@foreach($configs as $c)
+							<option value="{{$c->id}}">{{$c->config_name}}</option>
+							@endforeach
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@stop
 	
 
 @section('js')
