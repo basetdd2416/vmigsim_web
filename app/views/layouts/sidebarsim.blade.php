@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	@include('includes.head')
-	
 </head>
 <body>
+	
 <div class="container">
 
 	<header class="row">
@@ -27,7 +27,7 @@
 
 	</div>
 
-	<footer class="row" >
+	<footer>
 		@include('includes.footer')
 	</footer>
 

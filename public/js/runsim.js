@@ -108,41 +108,56 @@ $(function() {
            		envi_info.hide();
            		app_info.hide();
            		vm_info.hide();
-           		
+           		var STATUS_PSUDO = 1;
+              var STATUS_RECORD = 2;
+              var contain_psudo = $('#status--psudo');
+              var contain_record = $('#status--record');
            		if(data.envi.id) {
 
 
            		//$('#envi_name').empty();
-           		console.log(data.envi);
-           		$("#config_select").val(data.envi.configuration_id);
-           		$('#envi_name').text(data.envi.name);
-           		$('#bandwidth').text(data.envi.bandwidth);
-           		$('#time_limit').text(data.envi.time_limit);
-           		$('#schedule').text(data.envi.schedule_type);
-           		$('#migration').text(data.envi.migration_type);
-           		$('#control').text(data.envi.control_type);
-           		
-           		$('#page_size').text(data.envi.page_size);
-           		$('#wws_ratio').text(data.envi.wws_ratio);
-           		$('#wws_dirty_rate').text(data.envi.wws_dirty_rate);
-           		$('#max_pre_round').text(data.envi.max_precopy_round);
-           		$('#normal_dirty_rate').text(data.envi.normal_dirty_rate);
-           		$('#min_dirty_page').text(data.envi.min_dirty_page);
-           		$('#max_no_prog').text(data.envi.max_no_progress_round);
-           		$('#network_type').text(data.envi.network_type);
-           		$('#page_size').text(data.envi.page_size);
-           		$('#network_interval').text(data.envi.network_interval);
-           		$('#network_mean').text(data.envi.network_mean);
-           		$('#network_sd').text(data.envi.network_sd);
-
-              var sd = $('#containner-sd');
-              if(data.envi.network_type == 'dynamic') {
-                
-                sd.show();
-              } else {
-                sd.hide();
+              console.log(data.envi);
+              if(data.envi.is_record_trace == STATUS_RECORD) {
+                $('#record_trace_name').text(data.envi.record_trace_file);
+                contain_psudo.hide();
+                contain_record.show();
               }
+           		else {
+               		$("#config_select").val(data.envi.configuration_id);
+               		$('#envi_name').text(data.envi.name);
+               		$('#bandwidth').text(data.envi.bandwidth);
+               		$('#time_limit').text(data.envi.time_limit);
+                  $('#network_interval').text(data.envi.network_interval);
+                  $('#network_mean').text(data.envi.network_mean);
+                  $('#network_sd').text(data.envi.network_sd);
+                  contain_record.hide();
+                  contain_psudo.show();
+              }
+             		$('#schedule').text(data.envi.schedule_type);
+             		$('#migration').text(data.envi.migration_type);
+             		$('#control').text(data.envi.control_type);
+             		
+             		//$('#page_size').text(data.envi.page_size);
+             		$('#wws_ratio').text(data.envi.wws_ratio);
+             		$('#wws_dirty_rate').text(data.envi.wws_dirty_rate);
+             		$('#max_pre_round').text(data.envi.max_precopy_round);
+             		$('#normal_dirty_rate').text(data.envi.normal_dirty_rate);
+             		$('#min_dirty_page').text(data.envi.min_dirty_page);
+             		$('#max_no_prog').text(data.envi.max_no_progress_round);
+             		$('#network_type').text(data.envi.network_type);
+             		//$('#page_size').text(data.envi.page_size);
+             		
 
+                var sd = $('#containner-sd');
+                if(data.envi.network_type == 'dynamic') {
+                  
+                  sd.show();
+                } else {
+                  sd.hide();
+                }
+                
+               
+              
         $("#showVM > tbody").html("");
 				$.each(data.vms, function( index, value ) {
 				$('#showVM').append('<tr><td>'+(index+1)+'</td><td>'+value.amount+'</td><td>'+value.ram+'</td><td>'+value.qos+'</td><td>'+value.priority+'</td></tr>');
@@ -327,6 +342,7 @@ $(document).on('click','tr td .details',function(e){
     var vmobj = {};
     var netCapDetail = [];
     var $textAndPic = $('<div></div>');
+    $textAndPic.append('<div class="alert alert-info"><i class="fa fa-info-circle"></i> Use mouse hover the picture for show information.</div>')
     $textAndPic.append('<img id="beatles" src="../images/map-area.jpg" usemap="#beatles-map"/>');
     var $capStype = $('<div class="center-block" style="width:390px; height: 200px; font-size: 12px; "></div>');
     var $capContain = $('<div  id="beatles-caption" style="clear:both;border: 1px solid black; width: 400px; padding: 6px; display:none;"></div>');
@@ -413,7 +429,8 @@ $(document).on('click','tr td .details',function(e){
         fillOpacity: 0,
         stroke: true,
         strokeColor: 'ff0000',
-        strokeWidth: 2
+        strokeWidth: 2,
+
     },
     all_opts = {
         fillColor: 'ffffff',
@@ -425,7 +442,9 @@ $(document).on('click','tr td .details',function(e){
     initial_opts = {
         mapKey: 'data-name',
         isSelectable: false,
+
         onMouseover: function (data) {
+          $textAndPic.find('#beatles-caption-text').empty();
             inArea = true;
             for (var i = 0 ; i < captions[data.key].length ; i++) {
               if(i==0) {
@@ -439,14 +458,21 @@ $(document).on('click','tr td .details',function(e){
         },
         onMouseout: function (data) {
             inArea = false;
-            $textAndPic.find('#beatles-caption-text').empty();
-            $textAndPic.find('#beatles-caption').hide();
+            //$textAndPic.find('#beatles-caption-text').empty();
+            //$textAndPic.find('#beatles-caption').hide();
 
         }
     };
     opts = $.extend({}, all_opts, initial_opts, single_opts);
-
-
+    // initial show
+    for (var i = 0 ; i < captions['envi'].length ; i++) {
+              if(i==0) {
+                $textAndPic.find('#beatles-caption-header').text(captions['envi'][0]);
+              } else {
+                $textAndPic.find('#beatles-caption-text').append('<p>'+ captions['envi'][i] +'</p>');
+              }
+            }
+    $textAndPic.find('#beatles-caption').show();
     // Bind to the image 'mouseover' and 'mouseout' events to activate or deactivate ALL the areas, like the
     // original demo. Check whether an area has been activated with "inArea" - IE<9 fires "onmouseover" 
     // again for the image when entering an area, so all areas would stay highlighted when entering

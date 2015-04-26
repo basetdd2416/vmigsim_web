@@ -1,4 +1,17 @@
 
- <hr class="featurette-divider">
- <p class="pull-right"><a href="#">Back to top</a></p>
-<div class="footer text-center">© Copyright CS@TU 2014</div>
+
+
+<div class="row">
+	<hr class="featurette-divider">
+</div>
+<div class="row">
+		 
+
+	<div class="text-center col-md-8 col-md-offset-2">
+		<p>© Copyright CS@TU 2014</p>
+	</div>
+
+	<div class="text-right col-md-2">
+		<a href="#">Back to top</a>
+	</div>
+</div>

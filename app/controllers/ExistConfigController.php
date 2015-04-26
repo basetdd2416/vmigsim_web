@@ -9,8 +9,11 @@ class ExistConfigController extends \BaseController {
 	 */
 	public function index()
 	{
+		$quick = new QuickSimController;
+		$fileNames = array();
+		$fileNames = $quick->queryRecord();
 		$configs = Configuration::orderBy('created_at', 'desc')->get();
-		return View::make('exist-config.index')->with('configs',$configs);
+		return View::make('exist-config.index')->with('configs',$configs)->with('fileNames',$fileNames);
 		
 	}
 

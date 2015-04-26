@@ -30,6 +30,13 @@ min-width: 200px;
 	var confname,amount,ram,priority,qos
 	$(function() {
 		
+		$('#collapseDiv').on('shown.bs.collapse', function () {
+   			$(".glyphicon").removeClass("glyphicon-folder-close").addClass("glyphicon-folder-open");
+		});
+
+		$('#collapseDiv').on('hidden.bs.collapse', function () {
+   			$(".glyphicon").removeClass("glyphicon-folder-open").addClass("glyphicon-folder-close");
+		});
 		
 		$(".tips").tooltip({
 			placement : 'right'

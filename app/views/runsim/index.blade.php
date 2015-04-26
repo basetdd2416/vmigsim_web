@@ -178,40 +178,46 @@
 									</div>
 									
 									<div class="panel-body" >
-										<div class="form-group" style="display:none">
-											<label for="inputEmail3" class="col-sm-4 control-label">Environment name:</label>
-											<label id="envi_name" for="inputEmail3" class="control-label"></label>
+										<div id = "status--psudo" style="display:none">
+												<div class="form-group" style="display:none">
+													<label for="inputEmail3" class="col-sm-4 control-label">Environment name:</label>
+													<label id="envi_name" for="inputEmail3" class="control-label"></label>
+												</div>
+												<div class="form-group">
+													<label for="inputEmail3" class="col-sm-5 control-label">Time limitation of migration (Second):</label>
+													<label id="time_limit" for="inputEmail3" class="control-label"></label>
+												</div>
+												<div class="form-group">
+													<label for="inputEmail3" class="col-sm-4 control-label">Network bandwidth (Mbit/s):</label>
+													<label id="bandwidth" for="inputEmail3" class="control-label"></label>
+												</div>
+												
+												<div class="form-group">
+													<label for="inputEmail3" class="col-sm-4 control-label">Network status:</label>
+													<label id="network_type" for="inputEmail3" class="control-label"></label>
+												</div>
+												<div class="form-group">
+													<label for="inputEmail3" class="col-sm-4 control-label">Page size (KB):</label>
+													<label id="page_size" for="inputEmail3" class="control-label"></label>
+												</div>
+												<div class="form-group">
+													<label for="inputEmail3" class="col-sm-4 control-label">Network interval (Second):</label>
+													<label id="network_interval" for="inputEmail3" class="control-label"></label>
+												</div>
+												<div class="form-group">
+													<label for="inputEmail3" class="col-sm-4 control-label">Network Mean (Mbps):</label>
+													<label id="network_mean" for="inputEmail3" class="control-label"></label>
+												</div>
+												<div id="containner-sd" class="form-group" style="display:none">
+													<label for="inputEmail3" class="col-sm-4 control-label">Network SD (%):</label>
+													<label id="network_sd" for="inputEmail3" class="control-label"></label>
+												</div>
 										</div>
-										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-5 control-label">Time limitation of migration (Second):</label>
-											<label id="time_limit" for="inputEmail3" class="control-label"></label>
+										<div id="status--record" style="display:none">
+											<label for="inputEmail3" class="col-sm-4 control-label">Record trace name:</label>
+													<label id="record_trace_name" for="inputEmail3" class="control-label"></label>
 										</div>
-										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-4 control-label">Network bandwidth (Mbit/s):</label>
-											<label id="bandwidth" for="inputEmail3" class="control-label"></label>
-										</div>
-										
-										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-4 control-label">Network status:</label>
-											<label id="network_type" for="inputEmail3" class="control-label"></label>
-										</div>
-										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-4 control-label">Page size (KB):</label>
-											<label id="page_size" for="inputEmail3" class="control-label"></label>
-										</div>
-										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-4 control-label">Network interval (Second):</label>
-											<label id="network_interval" for="inputEmail3" class="control-label"></label>
-										</div>
-										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-4 control-label">Network Mean (Mbps):</label>
-											<label id="network_mean" for="inputEmail3" class="control-label"></label>
-										</div>
-										<div id="containner-sd" class="form-group" style="display:none">
-											<label for="inputEmail3" class="col-sm-4 control-label">Network SD (%):</label>
-											<label id="network_sd" for="inputEmail3" class="control-label"></label>
-										</div>
-									</div>
+								</div>
 								</div>
 								
 								<!-- application -->

@@ -33,5 +33,23 @@
    
     {{ HTML::style('css/plugins/morris.css') }}
 
-
+<!-- specific footer section on bottom. -->
+<style type="text/css">
+        html {
+          position: relative;
+          min-height: 100%;
+        }
+        body {
+          /* Margin bottom by footer height */
+          margin-bottom: 60px;
+        }
+        footer {
+          position: absolute;
+          bottom: 0;
+          width: 85%;
+          /* Set the fixed height of the footer here */
+          /*height: 30px;*/
+          /*background-color: #f5f5f5;*/
+        }
+    </style>
   

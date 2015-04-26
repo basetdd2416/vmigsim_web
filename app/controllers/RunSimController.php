@@ -153,6 +153,7 @@ class RunSimController extends \BaseController {
 			));
 
 		if(!$validator->fails()) {
+
 			$sim = new Simulation;
 			$sim->sim_name = Input::get('simulation_name');
 			$sim->configuration_id = Input::get('config_name');
@@ -174,7 +175,7 @@ class RunSimController extends \BaseController {
 				$envi['migrationType'] = $envi_db->migration_type;
 				$envi['controlType'] = $envi_db->control_type;
 				$envi['networkType'] = $envi_db->network_type;
-				$envi['pageSize'] = $envi_db->page_size; // fix name
+				//$envi['pageSize'] = $envi_db->page_size; // fix name
 				$envi['wwsPercentage'] = $envi_db->wws_ratio;
 				$envi['wwsDirtyRate'] = $envi_db->wws_dirty_rate;
 				$envi['normalDirtyRate'] = $envi_db->normal_dirty_rate;
@@ -183,6 +184,40 @@ class RunSimController extends \BaseController {
 				$envi['maxNoProgressRound' ] =$envi_db->max_no_progress_round;
 				$envi['networkInterval' ] = $envi_db->network_interval;
 				$envi['networkSD' ] = $envi_db->network_sd;
+				// save to trace
+				$quick = new QuickSimController;
+				if($envi_db->is_record_trace == $quick->RECORD_STATUS) {
+					$envi['isRecordedTrace' ] = true;
+				} else {
+					$envi['isRecordedTrace' ] = false;
+				}
+				
+				$fileType = ".txt"; 
+				$pathToFiles = 'run_simulation/record-trace/'. $envi_db->record_trace_file . $fileType;
+				$envi['traceFile' ] = realpath($pathToFiles);
+				$envi['threadNum' ] = $envi_db->thread_num;
+				/*
+				$typeMigration = Input::get('rs_type');
+				$fileName = Input::get('record_name');
+				$PSUDO_STATUS = 1;
+				$RECORD_STATUS = 2;
+				$fileType = ".txt"; 
+				$pathToFiles = 'run_simulation/record-trace/'. $fileName . $fileType;*/
+				//$pathToFiles = 'run_simulation' . DIRECTORY_SEPARATOR .'record-trace' . DIRECTORY_SEPARATOR . $fileName . $fileType;
+				/*if($typeMigration == $RECORD_STATUS) {
+					
+					$splitFileName = explode("-",$fileName);
+					$THREAD_NUM_POS = 2;
+					$threadNum = $splitFileName[$THREAD_NUM_POS];	
+					$envi['isRecordedTrace'] = true;
+					$envi['traceFile'] = realpath($pathToFiles);
+					$envi['threadNum'] = $threadNum;
+
+				} else {
+					$envi['traceFile'] = null;
+					$envi['isRecordedTrace'] = false;
+
+				}*/
 
 				for ($i=0; $i < count($vms_db) ; $i++) { 
 					$vms[$i]['vmAmount'] = $vms_db[$i]['amount'];
@@ -286,7 +321,8 @@ class RunSimController extends \BaseController {
  		//passthru('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $round);
 		//exec('java -version 2>&1', $output);
 		//exec('which java 2>&1', $output);
-		exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $round. ' ' . '100000' . ' ' . '2>&1',$output);
+		exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $round . ' ' . '2>&1',$output);
+		//exec('java -jar vmigsim.jar'. ' ' . $fullpathtofile . ' ' . $outputPath . ' ' . $round. ' ' . '100000' . ' ' . '2>&1',$output);
 		//print_r($output);
 		//var_dump($output);
 		$var = ob_get_contents();

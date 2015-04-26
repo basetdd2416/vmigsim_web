@@ -26,8 +26,15 @@ class QuickSimController extends \BaseController {
 	public $sim_round;
 	public $vmList;
 	public $network_mean;
-	
-
+	public $record_trace_file;
+	public $thread_num;
+	public $is_record_trace;
+	public $PSUDO_STATUS = 1;
+	public $RECORD_STATUS = 2;
+	public $BW_FILE_TYPE = ".txt";
+	public $BW_PATH_TO_RECORD = "run_simulation/record-trace/"; 
+	public $bw_file_name; 
+	public $migration_type;
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -40,13 +47,17 @@ class QuickSimController extends \BaseController {
 
 	public function import()
 	{
-		return View::make('quicksim.import');
+
+		$fileNames = array();
+		$fileNames = $this->queryRecord();
+		return View::make('quicksim.import')->with('fileNames',$fileNames);
 	}
 
 	public function createConfig()
 	{	
-
-		return View::make('quicksim.create_configuration');
+		$fileNames = array();
+		$fileNames = $this->queryRecord();
+		return View::make('quicksim.create_configuration')->with('fileNames',$fileNames);
 	}
 
 	public function execInBackground($cmd) { 
@@ -240,7 +251,23 @@ class QuickSimController extends \BaseController {
 		$this->max_no_prog_round = Input::get('max_no_prog_round');
 		$this->simulation_name = Input::get('simulation_name');
 		$this->sim_round = Input::get('sim_round');
+		$this->is_record_trace = Input::get('rs_type');
+		if($this->is_record_trace == $this->RECORD_STATUS) {
+			$this->record_trace_file = Input::get('record_name');
 
+			$splitFileName = explode("-",$this->record_trace_file);
+			$THREAD_NUM_POS = 2;
+			$threadNum = $splitFileName[$THREAD_NUM_POS];
+			$this->thread_num = $threadNum;
+		} else {
+			$this->record_trace_file = null;
+			$this->thread_num = null;
+		}
+
+		
+		
+
+		
 	}
 	public function saveAllConfig() {
 		
@@ -293,6 +320,7 @@ class QuickSimController extends \BaseController {
 
 	public function saveToDatabase() {
 		// config
+		
 		$config = new Configuration;
 		$config->config_name = $this->config_name;
 		if($config->save()) {
@@ -327,8 +355,11 @@ class QuickSimController extends \BaseController {
 			$envi->network_interval = $this->network_interval;
 			$envi->network_mean = $this->network_mean;
 			$envi->network_sd = $this->network_sd;
-		
+			$envi->record_trace_file = $this->record_trace_file;
+			$envi->is_record_trace = $this->is_record_trace;
+			$envi->thread_num = $this->thread_num;
 			$envi->configuration_id = $config->id;
+
 			$envi->save();
 			// sim 
 			/*$sim = new Simulation;
@@ -343,6 +374,7 @@ class QuickSimController extends \BaseController {
  	
  	public function saveToFile() {
  		$all_data = array();
+
  		for ($i=0; $i < count($this->vmList); $i++) { 
 			$vms_data[$i]['vmAmount'] = (int)$this->vmList[$i]['amount'];
 			$vms_data[$i]['ram'] = (int)$this->vmList[$i]['ram'];
@@ -356,8 +388,8 @@ class QuickSimController extends \BaseController {
 		$envi_data['migrationType'] = $this->migration_alg;
 		$envi_data['controlType'] = $this->control_alg;
 		$envi_data['networkType'] = $this->network_alg;
-		$envi_data['pageSize'] = (int)$this->page_dirty; // fix name
-		$envi_data['wwsRatio'] = (double)$this->wwws_ratio;
+		//$envi_data['pageSize'] = (int)$this->page_dirty; // fix name
+		$envi_data['wwsPercentage']  = (double)$this->wwws_ratio;
 		$envi_data['wwsDirtyRate'] = (double)$this->wws_dirty_rate;
 		$envi_data['normalDirtyRate'] = (double)$this->normal_dirty_rate;
 		$envi_data['maxPreCopyRound' ] = (int)$this->max_pre_copy_rate;
@@ -365,8 +397,23 @@ class QuickSimController extends \BaseController {
 		$envi_data['maxNoProgressRound' ] =(int) $this->max_no_prog_round;
 		$envi_data['networkInterval' ] = (double)$this->network_interval;
 		$envi_data['networkSD' ] = (float)$this->network_sd;
-		$envi_data['networkSD' ] = (float)$this->network_mean;
+		$envi_data['meanBandwidth'] = (float)$this->network_mean;
 
+		
+		
+		$pathToFiles = $this->BW_PATH_TO_RECORD . $this->record_trace_file . $this->BW_FILE_TYPE;
+		//$pathToFiles = 'run_simulation' . DIRECTORY_SEPARATOR .'record-trace' . DIRECTORY_SEPARATOR . $fileName . $fileType;
+		if($this->is_record_trace == $this->RECORD_STATUS) {
+			$envi_data['isRecordedTrace'] = true;
+			$envi_data['traceFile'] = realpath($pathToFiles);
+			$envi_data['threadNum'] = (int)$this->thread_num;
+
+		} else {
+			$envi_data['traceFile'] = null;
+			$envi_data['threadNum'] = null;
+			$envi_data['isRecordedTrace'] = false;
+
+		}
 		// this will be looped
 		
 		/*
@@ -395,6 +442,37 @@ class QuickSimController extends \BaseController {
  	}
 	public function runSim() {
 		return var_dump(Simulation::all());
+	}
+
+	public function queryRecord()
+	{
+		$pathToFiles = 'run_simulation/record-trace/';
+		$data = array();
+		$fileName = array();
+		$dirs = array();
+		$scanned_directory = scandir($pathToFiles);
+		$index = 0;
+		for ($i=0; $i < count($scanned_directory) ; $i++) { 
+			if($i!=0 && $i!=1) {
+				$dirTarget = $scanned_directory[$i];
+				$nameNoType = $this->createNameNoType($dirTarget); 
+				$fileName[$nameNoType] = $nameNoType;
+				$dirs[$index] = $dirTarget;
+				$index++;
+			}
+			
+		}
+		//sort($fileName, SORT_NATURAL | SORT_FLAG_CASE);
+		asort($fileName,SORT_NATURAL | SORT_FLAG_CASE);
+		return $fileName;
+		//$data['fileNames'] = $fileName;
+		//return Response::json($data);
+	}
+
+	public function createNameNoType ($target){
+		$name = "";
+		$name = substr($target,0,strrpos($target,'.'));
+		return $name;
 	}
 	/**
 	 * Show the form for creating a new resource.

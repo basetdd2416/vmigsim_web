@@ -1,4 +1,5 @@
 @extends('layouts.default-create')
+
 @section('head-title')
 <style type="text/css">
 .panel-heading .accordion-toggle:after {
@@ -27,7 +28,7 @@ min-width: 200px; //the minimum width
 			Upload
 		</div>
 	</div>
-@stop
+
 
 
 	
@@ -40,11 +41,14 @@ min-width: 200px; //the minimum width
 		});
 </script>
 {{ HTML::script('js/jquery.bootstrap-touchspin.js') }}
-{{ HTML::style('css/uploadfile.css') }}
+
 {{ HTML::script('js/jquery.serialize-object.js') }}
-{{ HTML::script('js/jquery.uploadfile.min.js') }}
+
 {{ HTML::script('js/quicksim.js') }}
 {{ HTML::script('js/exist-config.js') }}
+{{ HTML::style('css/uploadfile.css') }}
+{{ HTML::script('js/jquery.uploadfile.min.js') }}
 {{ HTML::script('js/import.js') }}
 @stop
+
 @stop

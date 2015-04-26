@@ -406,12 +406,14 @@ $(function() {
 	
 	$(".update_form").click(function() { // changed
 	 var myform = $(this).closest("form");
+
 	 var mycustomform =	myform.serializeObject();
 	 
 	 	
 	 
 	 mycustomform['vmList'] = vmList;
-	
+	 
+	 console.log(mycustomform);	
 	
     $.ajax({
 		
@@ -437,7 +439,8 @@ $(function() {
            			});
            			mesgalert.slideDown();
            		} else {
-           			window.location.href = data.redirect;
+           			console.log(data);
+           			//window.location.href = data.redirect;
            		}
            		
                // show response from the php script.
@@ -454,4 +457,47 @@ $(function() {
 		 
     return false; // avoid to execute the actual submit of the form.
 	});
+
+	// radio type of injection
+	$('input[type=radio][name=rs_type]').change(function() {
+		var rs_type = $(this).val();
+		var STATUS_PSUDO = 1;
+		var STATUS_RECORD = 2;
+		var select_contain = $('#select--record--trace');
+		var cre_contain_mig = $('.create--cont--mig');
+		console.log(rs_type);
+		if(rs_type == STATUS_PSUDO) {
+			select_contain.slideUp("slow");
+			cre_contain_mig.slideDown("slow");
+		} else {
+
+			cre_contain_mig.slideUp("slow");
+			select_contain.slideDown("slow");
+			
+		}
+	});
+
+	function ajaxReadRecord() {
+		$.ajax({
+				type: "GET",
+           		url: "query-record",
+           		dataType: 'json', 
+           		cache: false,
+           		success: function(data) {
+           			console.log(data);
+           			var select = $('#select-record-name');
+           			select.empty();
+           			$.each(data.fileNames, function (i, item) {
+					    select.append($('<option>', { 
+					        value: item,
+					        text : item 
+					    }));
+					});
+
+           			cre_contain_mig.slideUp("slow");
+					select_contain.slideDown("slow");
+           		}
+
+			});
+	}
 });

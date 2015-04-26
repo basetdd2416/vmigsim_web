@@ -67,6 +67,7 @@ Route::post('simulation/quicksim/backtoconfig', 'QuickSimController@backToConfig
 Route::get('simulation/quicksim/createvm', 'QuickSimController@createVM');
 Route::get('simulation/quicksim/createenvi', 'QuickSimController@createEnvi');
 Route::get('simulation/quicksim/reportcreate', 'QuickSimController@reportCreate');
+Route::get('simulation/quicksim/query-record', 'QuickSimController@queryRecord');
 Route::get('simulation/runsimulation', 'RunSimController@index');
 Route::get('simulation/history', 'HistoryController@index');
 Route::get('simulation/run-sim-engine', 'RunSimController@runSimEngine');

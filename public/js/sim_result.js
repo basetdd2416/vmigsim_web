@@ -59,7 +59,6 @@ $(function() {
 	   		} else {
 
 	   			rstype = 'compar-net';
-
 	   		}
 	   		
 	   	} else if (rstype == 'down-time-round') {
