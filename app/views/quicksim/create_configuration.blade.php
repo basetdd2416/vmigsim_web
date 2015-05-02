@@ -18,6 +18,7 @@ min-width: 200px;
 
 }
 </style>
+
 <h1>Create from new</h1>
 @stop
 

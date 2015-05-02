@@ -1,6 +1,7 @@
 @extends('layouts.sidebarsim')
 @section('content')
 
+
 <h1>Create configuration</h1>
 <hr>
 <div class="form-group">
@@ -26,8 +27,10 @@
 @section('js')
 <script>
     $(document).ready(function () {
-    	$('#simbar').attr('class','active'); 
-    	$('#sidebar .nav > li:first').addClass('active');
+	    	$('#simbar').attr('class','active'); 
+	    	$('#sidebar .nav > li:first').addClass('active');
+	    	
+	    	
         });
     </script>
 @stop

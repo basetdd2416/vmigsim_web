@@ -440,7 +440,7 @@ $(function() {
            			mesgalert.slideDown();
            		} else {
            			console.log(data);
-           			//window.location.href = data.redirect;
+           			window.location.href = data.redirect;
            		}
            		
                // show response from the php script.

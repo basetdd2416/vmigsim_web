@@ -188,13 +188,15 @@ class RunSimController extends \BaseController {
 				$quick = new QuickSimController;
 				if($envi_db->is_record_trace == $quick->RECORD_STATUS) {
 					$envi['isRecordedTrace' ] = true;
+					$fileType = ".txt"; 
+					$pathToFiles = 'run_simulation/record-trace/'. $envi_db->record_trace_file . $fileType;
+					$envi['traceFile' ] = realpath($pathToFiles);
 				} else {
 					$envi['isRecordedTrace' ] = false;
+					$envi['traceFile' ] = $envi_db->record_trace_file;
+
 				}
 				
-				$fileType = ".txt"; 
-				$pathToFiles = 'run_simulation/record-trace/'. $envi_db->record_trace_file . $fileType;
-				$envi['traceFile' ] = realpath($pathToFiles);
 				$envi['threadNum' ] = $envi_db->thread_num;
 				/*
 				$typeMigration = Input::get('rs_type');

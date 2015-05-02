@@ -260,8 +260,8 @@ class QuickSimController extends \BaseController {
 			$threadNum = $splitFileName[$THREAD_NUM_POS];
 			$this->thread_num = $threadNum;
 		} else {
-			$this->record_trace_file = null;
-			$this->thread_num = null;
+			$this->record_trace_file = "";
+			$this->thread_num = 1;
 		}
 
 		
@@ -409,8 +409,8 @@ class QuickSimController extends \BaseController {
 			$envi_data['threadNum'] = (int)$this->thread_num;
 
 		} else {
-			$envi_data['traceFile'] = null;
-			$envi_data['threadNum'] = null;
+			$envi_data['traceFile'] = "";
+			$envi_data['threadNum'] = 1;
 			$envi_data['isRecordedTrace'] = false;
 
 		}

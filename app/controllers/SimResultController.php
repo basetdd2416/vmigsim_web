@@ -11,14 +11,17 @@ class SimResultController extends \BaseController {
 	{
 		$default = null;
 		$directory = 'run_simulation/output/';
-		$scanned_directory = array_diff(scandir($directory), array('..', '.'));
+		/*$scanned_directory = array_diff(scandir($directory), array('..', '.'));
 		$dirs = array();
 		$index = 0;
 		for ($i=2; $i < count($scanned_directory)+2 ; $i++) { 
 
 			$dirs[$scanned_directory[$i]] = $scanned_directory[$i];
 			$index++;
-		}
+		}*/
+
+		$dirs = $this->scan_dir($directory);
+		
 		if($id != null) {
 			if(Input::get('sim_name')) {
 				$sim_name = Input::get('sim_name');
@@ -72,7 +75,23 @@ class SimResultController extends \BaseController {
 		    echo $file .'<br>';
 		}*/
 	}
+	public function scan_dir($dir) {
+	    $ignored = array('.', '..', '.svn', '.htaccess');
 
+	    $files = array();
+	    $key = array();    
+	    foreach (scandir($dir) as $file) {
+	        if (in_array($file, $ignored)) continue;
+	        $files[$file] = filemtime($dir . '/' . $file);
+	        $key[] = $file;
+	    }
+
+	    arsort($files);
+	    $files = array_keys($files);
+	    $files = array_combine($files, $files);
+
+	    return ($files) ? $files : false;
+	}
 	public function ajaxSimRsType() {
 		$data = array();
 		$data['compare'] = false;
@@ -111,7 +130,7 @@ class SimResultController extends \BaseController {
 			}
 			
 		}
-		
+		sort($fileName,SORT_NATURAL | SORT_FLAG_CASE);
 		// read by line and graph
 		if ($rs_type == 'net') {
 			$graphData = array();
@@ -251,7 +270,7 @@ class SimResultController extends \BaseController {
 			$all_round['min'] = array_sum($barData['min']) / count($barData['sim_round_name']);
 			$all_round['avg'] = array_sum($barData['avg']) / count($barData['sim_round_name']);
 			$all_round['sd'] = array_sum($barData['sd']) / count($barData['sim_round_name']);
-
+			sort($barData['sim_round_name'],SORT_NATURAL | SORT_FLAG_CASE);
 			$barData['sim_round_name'][] = 'All round';
 			$barData['max'][] = $all_round['max'];
 			$barData['min'][] = $all_round['min']; 
@@ -286,7 +305,8 @@ class SimResultController extends \BaseController {
 		$file = file_get_contents($dir_output_to_file.'/'.$dirs['0'], FILE_USE_INCLUDE_PATH);
 		$file = '<pre>'. $file .'</pre>';
 		$data['content_default'] = $file;
-		
+
+		//sort($fileName, SORT_NATURAL | SORT_FLAG_CASE);
 		$data['f_names'] = $fileName;
 		$data['success'] = true;
 		return Response::json($data);
@@ -552,11 +572,13 @@ class SimResultController extends \BaseController {
 	    	$graphDownTime['average'][] = $jsonData['overall']['downtime']['average'];
 	    	$graphDownTime['total'][] = $jsonData['overall']['downtime']['total'];
     	}
+    	sort($graphDownTime['name'],SORT_NATURAL | SORT_FLAG_CASE);
     	$graphDownTime['title'] = 'VMs Down time in second ';
     	$graphDownTime['name'][] = 'All round';
     	$graphDownTime['average'][] = array_sum($graphDownTime['average']) / count($graphDownTime['average']);
     	$graphDownTime['total'][] = array_sum($graphDownTime['total']) / count($graphDownTime['total']);
     	$graphDownTime['renderTo'] = 'graph--bar';
+    	
     	return $graphDownTime;
    		
    		
@@ -613,6 +635,7 @@ class SimResultController extends \BaseController {
 	    	$graphMigrationTime['average'][] = $jsonData['overall']['migrationTime']['average'];
 	    	$graphMigrationTime['total'][] = $jsonData['overall']['migrationTime']['total'];
     	}
+    	sort($graphMigrationTime['name'],SORT_NATURAL | SORT_FLAG_CASE);
     	$graphMigrationTime['title'] = 'VMs Migration time in second ';
     	$graphMigrationTime['name'][] = 'All round';
     	$graphMigrationTime['average'][] = array_sum($graphMigrationTime['average']) / count($graphMigrationTime['average']);
@@ -703,6 +726,7 @@ class SimResultController extends \BaseController {
 	    	$graphViolation['violated'][] = $jsonData['overall']['totalViolated'];
 	    	$graphViolation['total'][] = $jsonData['overall']['totalMigrated'];
     	}
+    	sort($graphViolation['name'],SORT_NATURAL | SORT_FLAG_CASE);
     	$graphViolation['title'] = 'VMs Migration time in second ';
     	$graphViolation['name'][] = 'All round';
     	$graphViolation['nonviolated'][] = array_sum($graphViolation['nonviolated']) / count($graphViolation['nonviolated']);
@@ -764,7 +788,7 @@ class SimResultController extends \BaseController {
 	{
 		
 		$directory = 'run_simulation/output/';
-		$scanned_directory = array_diff(scandir($directory), array('..', '.'));
+		/*$scanned_directory = array_diff(scandir($directory), array('..', '.'));
 		$dirs = array();
 		$index = 0;
 
@@ -772,7 +796,8 @@ class SimResultController extends \BaseController {
 
 			$dirs[$scanned_directory[$i]] = $scanned_directory[$i];
 			$index++;
-		}
+		}*/
+		$dirs = $this->scan_dir($directory);
 				if(Input::get('sim_name')) {
 				$sim_name = Input::get('sim_name');
 				return View::make('sim_result.show')->with('sim_name_list',$dirs)->with('default',$sim_name);

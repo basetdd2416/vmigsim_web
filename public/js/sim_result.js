@@ -92,7 +92,8 @@ $(function() {
 	   			rstype = 'violation-all';
 
 	   		}
-	   	}  
+	   	} 
+	   	console.log(rstype);
 	   	return rstype;
 	}
  	function showGraphCompare (graphData) {
@@ -625,7 +626,9 @@ $(function() {
 	        	 		alert('failed');
 	        	 	} else {
 	        	 		$('#round_select').empty();
+	        	 		//console.log(data.f_names);
 	        	 		$.each(data.f_names, function( index, n ) {
+	        	 			
 							$('#round_select').append('<option value="'+n+'">'+n+'</option>');
 				
 						});
@@ -645,7 +648,8 @@ $(function() {
 	        	 		
 	        	 		if(rs_type == "log") {
 	        	 			stat_title.text('Log stat');
-	        	 			
+	        	 			tab_bar.find("li:eq(0)").show();
+	        	 			$('.nav-tabs li:first-child a').tab('show'); 
 	        	 			round_info.slideDown("slow");
 	        	 		} else if(rs_type == "net") {
 	        	 			graph_title.text('Network bandwidth graph');

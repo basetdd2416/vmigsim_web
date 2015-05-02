@@ -29,66 +29,7 @@
 	</div>
 </div>
 <div class="panel-group" id="accordion">
-	<div id="run--history" class="panel panel-default" style="display:none">
-		<div class="panel-heading">
-			<h4 class="panel-title">
-			<a class="accordion-toggle" data-toggle="collapse in" data-parent="#accordion" href="#collapseOne">
-				History of simulation running
-			</a></i>
-			</h4>
-		</div>
-		<div id="collapseOne" class="panel-collapse collapse ">
-			<div class="panel-body">
-				<!-- content of simlist-->
-				<div class="text-right">
-					From {{$sim_list->getFrom()}} to {{$sim_list->getTo()}} of {{$sim_list->getTotal()}}
-				</div>
-				<div class="table-responsive">
-					<table id="simlist" class="table table-hover">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>Sim name</th>
-								<th>Details</th>
-								<th>Started</th>
-								<th>Finished</th>
-								<th>Status</th>
-								<th>Link to result</th>
-							</tr>
-						</thead>
-						<tbody>
-							<?php $i = $sim_list->getFrom()?>
-							@foreach ($sim_list as $sim)
-							<tr>
-								<td>{{$i}}</td>
-								<td>{{$sim->sim_name}}</td>
-								<td><a class="details" href="{{$sim->id}}"> <i class="fa fa-eye"></i></a></td>
-								@if($sim->status == 'running')
-								<td>{{$sim->started}}</td>
-								<td>waiting</td>
-								<td><span class="label label-info">{{$sim->status}}</span></td>
-								<td>waiting</td>
-								@else
-								<td>{{$sim->started}}</td>
-								<td>{{$sim->finished}}</td>
-								<td><span class="label label-success">{{$sim->status}}</span></td>
-								<td><a href="simulation_result/{{$sim->id}}" target="_blank"> <i class="fa fa-bar-chart"></i></a></td>
-								@endif
-								
-							</tr>
-							<?php $i++ ?>
-							@endforeach
-							
-						</tbody>
-					</table>
-					<div class="text-center">
-						{{$sim_list->links()}}
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<div id="run--info" class="panel panel-default">
 		<div class="panel-heading">
 			<h4 class="panel-title">
@@ -179,45 +120,45 @@
 									
 									<div class="panel-body" >
 										<div id = "status--psudo" style="display:none">
-												<div class="form-group" style="display:none">
-													<label for="inputEmail3" class="col-sm-4 control-label">Environment name:</label>
-													<label id="envi_name" for="inputEmail3" class="control-label"></label>
-												</div>
-												<div class="form-group">
-													<label for="inputEmail3" class="col-sm-5 control-label">Time limitation of migration (Second):</label>
-													<label id="time_limit" for="inputEmail3" class="control-label"></label>
-												</div>
-												<div class="form-group">
-													<label for="inputEmail3" class="col-sm-4 control-label">Network bandwidth (Mbit/s):</label>
-													<label id="bandwidth" for="inputEmail3" class="control-label"></label>
-												</div>
-												
-												<div class="form-group">
-													<label for="inputEmail3" class="col-sm-4 control-label">Network status:</label>
-													<label id="network_type" for="inputEmail3" class="control-label"></label>
-												</div>
-												<div class="form-group">
-													<label for="inputEmail3" class="col-sm-4 control-label">Page size (KB):</label>
-													<label id="page_size" for="inputEmail3" class="control-label"></label>
-												</div>
-												<div class="form-group">
-													<label for="inputEmail3" class="col-sm-4 control-label">Network interval (Second):</label>
-													<label id="network_interval" for="inputEmail3" class="control-label"></label>
-												</div>
-												<div class="form-group">
-													<label for="inputEmail3" class="col-sm-4 control-label">Network Mean (Mbps):</label>
-													<label id="network_mean" for="inputEmail3" class="control-label"></label>
-												</div>
-												<div id="containner-sd" class="form-group" style="display:none">
-													<label for="inputEmail3" class="col-sm-4 control-label">Network SD (%):</label>
-													<label id="network_sd" for="inputEmail3" class="control-label"></label>
-												</div>
+											<div class="form-group" style="display:none">
+												<label for="inputEmail3" class="col-sm-4 control-label">Environment name:</label>
+												<label id="envi_name" for="inputEmail3" class="control-label"></label>
+											</div>
+											<div class="form-group">
+												<label for="inputEmail3" class="col-sm-5 control-label">Time limitation of migration (Second):</label>
+												<label id="time_limit" for="inputEmail3" class="control-label"></label>
+											</div>
+											<div class="form-group">
+												<label for="inputEmail3" class="col-sm-4 control-label">Network bandwidth (Mbit/s):</label>
+												<label id="bandwidth" for="inputEmail3" class="control-label"></label>
+											</div>
+											
+											<div class="form-group">
+												<label for="inputEmail3" class="col-sm-4 control-label">Network status:</label>
+												<label id="network_type" for="inputEmail3" class="control-label"></label>
+											</div>
+											<div class="form-group">
+												<label for="inputEmail3" class="col-sm-4 control-label">Page size (KB):</label>
+												<label id="page_size" for="inputEmail3" class="control-label"></label>
+											</div>
+											<div class="form-group">
+												<label for="inputEmail3" class="col-sm-4 control-label">Network interval (Second):</label>
+												<label id="network_interval" for="inputEmail3" class="control-label"></label>
+											</div>
+											<div class="form-group">
+												<label for="inputEmail3" class="col-sm-4 control-label">Network Mean (Mbps):</label>
+												<label id="network_mean" for="inputEmail3" class="control-label"></label>
+											</div>
+											<div id="containner-sd" class="form-group" style="display:none">
+												<label for="inputEmail3" class="col-sm-4 control-label">Network SD (%):</label>
+												<label id="network_sd" for="inputEmail3" class="control-label"></label>
+											</div>
 										</div>
 										<div id="status--record" style="display:none">
 											<label for="inputEmail3" class="col-sm-4 control-label">Record trace name:</label>
-													<label id="record_trace_name" for="inputEmail3" class="control-label"></label>
+											<label id="record_trace_name" for="inputEmail3" class="control-label"></label>
 										</div>
-								</div>
+									</div>
 								</div>
 								
 								<!-- application -->
@@ -285,7 +226,7 @@
 					</div>
 					<div class="form-group">
 						<br>
-						<div class="col-sm-offset-4 col-sm-12">
+						<div class="col-sm-offset-4 col-sm-8">
 							<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-times"></i> Cancel</a>
 							<button id="setAllDefault" type="button" class="btn btn-sm btn-primary">
 							<i class="fa fa-circle-o-notch"></i> set all default

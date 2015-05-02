@@ -7,7 +7,7 @@
 {{ HTML::script('js/sb-admin-2.js') }}
     <!-- Metis Menu Plugin JavaScript -->
 {{ HTML::script('js/plugins/metisMenu/metisMenu.min.js') }}
-
+{{ HTML::script('js/bootstrap-breadcrumb.js') }}
 	
 
 
